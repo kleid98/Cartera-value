@@ -80,10 +80,10 @@ def main():
     ev = extraer(path) if path.endswith(".md") else json.load(open(path))
     propio = calcular(ev)
     out = {"ticker": ev["ticker"], "propio": propio}
-    com = ev.get("comite")
-    if com:
-        vc = com.get("valorador_ciego", {}); bj = com.get("bajista", {})
-        pd = max(ev["escenarios"]["desastre"]["prob"], vc.get("prob_desastre", 0), bj.get("prob_desastre", 0))
+    com = ev.get("comite") or {}
+    vc = com.get("valorador_ciego") or {}; bj = com.get("bajista") or {}
+    if vc.get("tir") is not None or vc.get("prob_desastre") is not None or bj.get("prob_desastre") is not None:
+        pd = max(ev["escenarios"]["desastre"]["prob"], vc.get("prob_desastre") or 0, bj.get("prob_desastre") or 0)
         ajust = calcular(ev, pd)
         tir_vc = vc.get("tir")
         if tir_vc is None: tir_final = ajust["tir"]; regla = "sin valorador ciego"
