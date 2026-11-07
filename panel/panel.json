@@ -1,0 +1,64 @@
+{
+ "resumen": [
+  {
+   "actualizado": "2026-11-07 19:32:38",
+   "valor_total_eur": 10000.0,
+   "aportado_eur": 10000.0,
+   "rentabilidad": 0.0,
+   "caja_eur": 10000.0,
+   "invertido_eur": 0.0,
+   "n_posiciones": 0,
+   "max_posiciones": 20,
+   "rent_bench_principal": 0.0,
+   "alfa": 0.0,
+   "n_provisionales": 0,
+   "pendientes_investing": 0
+  }
+ ],
+ "historico": [
+  {
+   "fecha": "2026-11-07",
+   "cartera": 0.0,
+   "principal": 0.0,
+   "secundario": 0.0,
+   "control": 0.0
+  }
+ ],
+ "posiciones": [],
+ "operaciones": [
+  {
+   "id": "T-0001",
+   "fecha": "2026-11-07 19:32:38",
+   "tipo": "APORTACION",
+   "nombre": "Capital inicial",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 10000.0,
+   "motivo": "Capital inicial simulado"
+  }
+ ],
+ "ordenes": [],
+ "investing": [],
+ "benchmarks": [
+  {
+   "clave": "principal",
+   "nombre": "MSCI Europe Value",
+   "ticker": "CEMS.DE",
+   "rent": 0.0
+  },
+  {
+   "clave": "secundario",
+   "nombre": "MSCI World ex USA",
+   "ticker": "EXUS.DE",
+   "rent": 0.0
+  },
+  {
+   "clave": "control",
+   "nombre": "MSCI World",
+   "ticker": "IWDA.AS",
+   "rent": 0.0
+  }
+ ]
+}

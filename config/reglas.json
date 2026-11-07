@@ -1,0 +1,90 @@
+{
+  "_doc": "Reglas acordadas con Ale (sesión de grill-me, 07/11/2026). NO modificar sin acuerdo explícito.",
+  "capital_inicial_eur": 10000,
+  "fecha_inicio": "2026-11-09",
+  "importe_objetivo_compra_eur": 500,
+  "max_valores": 20,
+  "precio_unitario": {"max_eur_compra_1_accion": 750},
+  "universo": {
+    "excluir_sede_eeuu": true,
+    "solo_bolsa_origen": true,
+    "prohibido_adr": true,
+    "nucleo": "Europa (UE, Reino Unido, Suiza, Escandinavia)",
+    "satelites": ["Japón", "Canadá"],
+    "max_peso_fuera_europa": 0.30,
+    "excluidos": ["Hong Kong", "China"],
+    "exclusiones_sectoriales": []
+  },
+  "filtros_duros": {
+    "capitalizacion_min_eur": 2000000000,
+    "volumen_medio_diario_min_eur": 2000000,
+    "anos_historial_min": 10,
+    "anos_beneficio_operativo_positivo_min_de_10": 7,
+    "deuda_neta_ebitda_max": 3.0,
+    "financieras_cet1_min": 0.12,
+    "sin_insolvencia_ni_going_concern": true,
+    "excepcion_fallen_angels": "Puede incumplir temporalmente beneficio operativo si EV lo justifica; nunca capitalización, liquidez ni riesgo de quiebra"
+  },
+  "filtros_blandos": {"roce_medio_min": 0.10, "fcf_positivo_min_de_5": 3, "dilucion_anual_max": 0.02},
+  "ev": {
+    "escenarios": ["desastre", "bajista", "base", "alcista"],
+    "horizonte_anos": 3,
+    "tir_min_zona_euro": 0.15,
+    "tir_min_fuera_euro": 0.17,
+    "desastre_min_retorno": -0.50,
+    "asimetria_min": 2.0
+  },
+  "comite": {
+    "agentes": ["bajista", "valorador_ciego"],
+    "si_diferencia_tir_menor_5pp": "media",
+    "si_diferencia_tir_mayor_5pp": "la más baja salvo error concreto documentado",
+    "prob_desastre": "la más alta de las tres",
+    "veto": "riesgo del bajista que cumple condición de invalidación"
+  },
+  "venta": {
+    "tir_residual_min": 0.05,
+    "rotacion_mejora_min_pp": 10,
+    "peso_max": 0.10,
+    "recorte_hasta": 0.07,
+    "stop_loss": false
+  },
+  "recompra": {
+    "caida_min_desde_ultima_compra": 0.20,
+    "mejora_tir_min_pp": 5,
+    "max_compras_por_valor": 3,
+    "peso_max_coste": 0.10,
+    "dias_entre_compras": 30,
+    "promediar_al_alza": "permitido si cumple reglas de compra, mismo tope 10%"
+  },
+  "fase0": {
+    "inicio": "2026-11-09",
+    "fin": "2026-11-13",
+    "objetivo_posiciones": 20,
+    "provisionales_rotacion_mejora_min_pp": 5,
+    "provisionales_semanas": 8,
+    "max_por_sector": 4,
+    "max_por_pais": 6,
+    "dias_sin_ejecutar_antes_de_ask": 2
+  },
+  "ritmo_post_fase0": {"max_compras_nuevas_dia": 2},
+  "ejecucion": {
+    "fuente_libro": "Equiduct MarketViewer (VBB/VBO para tamaño User Entered)",
+    "fallback_compra_bajo_ultimo_pct": 0.0010,
+    "fallback_venta_sobre_ultimo_pct": 0.0010,
+    "agresiva_pct": 0.0025,
+    "validacion": "vela 1m posterior a la orden con mínimo estrictamente < límite (compra) o máximo estrictamente > límite (venta)",
+    "vigencia": "DAY",
+    "japon": "decidir en ejecución nocturna; ejecutar a precio de apertura de Tokio"
+  },
+  "fiscalidad": {
+    "irpf_simulado": false,
+    "dividendos": "netos de retención en origen (convenio con España), sin IRPF español",
+    "impuestos_transaccion": true
+  },
+  "avisos_push": "solo cuando haya operaciones",
+  "benchmarks": {
+    "principal": {"nombre": "MSCI Europe Value", "ticker": "CEMS.DE"},
+    "secundario": {"nombre": "MSCI World ex USA", "ticker": "EXUS.DE"},
+    "control": {"nombre": "MSCI World", "ticker": "IWDA.AS"}
+  }
+}

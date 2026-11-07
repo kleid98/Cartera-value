@@ -1,0 +1,16 @@
+{
+  "_doc": "Por país del EMISOR (no de la bolsa). Residente fiscal en España. Retención en origen = la que se aplica en la práctica al abonar (sin reclamaciones posteriores). Sin IRPF español. Verificar periódicamente.",
+  "fx": {"comision_pct": 0.00002, "comision_min_usd": 2.0, "diferencial_pct": 0.0003, "_doc": "Conversión manual IdealPro: 0,20 pb, mínimo 2 USD; diferencial odd-lot ~0,03% (conservador)"},
+  "impuesto_transaccion_compra": {
+    "GB": {"pct": 0.005, "nombre": "UK Stamp Duty (SDRT)"},
+    "IE": {"pct": 0.010, "nombre": "Irish Stamp Duty"},
+    "FR": {"pct": 0.004, "nombre": "TTF Francia (capitalización > 1.000M€)", "cap_min_eur": 1000000000, "_verificar": "subió de 0,3% a 0,4% el 01/04/2025; comprobar LF 2026"},
+    "ES": {"pct": 0.002, "nombre": "ITF España (capitalización > 1.000M€)", "cap_min_eur": 1000000000},
+    "IT": {"pct": 0.001, "nombre": "Tobin tax Italia (capitalización ≥ 500M€)", "cap_min_eur": 500000000}
+  },
+  "retencion_dividendos": {
+    "DE": 0.26375, "FR": 0.128, "NL": 0.15, "BE": 0.30, "LU": 0.15, "IE": 0.25, "IT": 0.26, "PT": 0.25,
+    "AT": 0.275, "FI": 0.35, "ES": 0.0, "GB": 0.0, "CH": 0.35, "SE": 0.30, "DK": 0.27, "NO": 0.25,
+    "JP": 0.15315, "CA": 0.15
+  }
+}

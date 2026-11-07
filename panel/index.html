@@ -1,0 +1,339 @@
+<meta name="dash-one-writer">
+<style>
+  .cv { display: grid; gap: var(--cds-gap-xl); max-width: 76rem; margin-inline: auto; font-family: var(--font-anthropic-sans); }
+  .cv-head { display: grid; gap: var(--cds-gap-xs); }
+  .cv-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .cv-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; }
+  .cv-take { margin: 0; max-width: 62ch; line-height: 1.5; }
+  .cv-take b { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .cv-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+  .cv-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+  .cv-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; }
+  .cv-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .cv-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .cv-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); min-width: 0; }
+  .cv-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .cv-card > p { margin: 0; }
+  .cv-chart { position: relative; min-height: 280px; }
+  .cv-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .cv-tip .d { color: var(--cds-text-secondary); }
+  .cv-tip i { display: inline-block; width: .6rem; height: .6rem; border-radius: 2px; margin-right: .35rem; }
+  .cv-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cv-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+  .cv-legend i { display: inline-block; width: .9rem; height: 2px; }
+  .cv-scroll { overflow-x: auto; }
+  .cv-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+  .cv-table th { text-align: left; font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .cv-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .cv-table .n { text-align: right; white-space: nowrap; }
+  .cv-table .sm { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .cv-pill { display: inline-block; font-size: var(--cds-font-size-caption); padding: 0 .45rem; border-radius: 999px; border: 1px solid var(--color-border-line); white-space: nowrap; }
+  .cv-pill.prov { color: var(--color-warn); border-color: currentColor; }
+  .cv-pill.def { color: var(--color-ok); border-color: currentColor; }
+  .cv-up { color: var(--color-ok); }
+  .cv-down { color: var(--color-bad); }
+  .cv-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; }
+  .cv-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr)); gap: var(--cds-gap-md); }
+  .cv-inv td.big { font-weight: 600; }
+  .cv-warn { color: var(--color-warn); font-size: var(--cds-font-size-caption); }
+  @media (max-width: 40rem) { .cv-hide-sm { display: none; } }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  [data-dash-source-state=empty] { color: transparent; }
+</style>
+
+<div class="cv" lang="es">
+  <header class="cv-head" id="resumen">
+    <h1>Cartera VALUE ex-USA</h1>
+    <p class="cv-sub">Simulación IBKR · 10.000 € iniciales · compras de ~500 € · máximo 20 valores · sin empresas de EE. UU. · actualizado <span data-draw="actualizado" data-source="resumen" data-field="actualizado" data-row="0">—</span></p>
+    <p class="cv-take cv-take-vacio" hidden>La cartera aún está en caja. La Fase 0 arranca el lunes 9 de noviembre de 2026 con el objetivo de tener 20 posiciones al cierre del viernes 13.</p>
+    <p class="cv-take cv-take-lleno" hidden>Desde el inicio la cartera rinde <b data-draw="rent" data-source="resumen" data-field="rentabilidad" data-row="0">—</b>, frente a <b data-draw="rentb" data-source="resumen" data-field="rent_bench_principal" data-row="0">—</b> del MSCI Europe Value: un alfa de <b data-draw="alfa" data-source="resumen" data-field="alfa" data-row="0">—</b>.</p>
+  </header>
+
+  <section class="cv-tiles" aria-label="Cifras principales">
+    <div class="cv-tile">
+      <span class="cv-label">Valor de la cartera</span>
+      <span class="cv-big" data-draw="valor" data-source="resumen" data-field="valor_total_eur" data-row="0">—</span>
+      <span class="cv-note">aportado <span data-draw="aportado" data-source="resumen" data-field="aportado_eur" data-row="0">—</span></span>
+    </div>
+    <div class="cv-tile">
+      <span class="cv-label">Rentabilidad total</span>
+      <span class="cv-big" data-draw="rent2" data-source="resumen" data-field="rentabilidad" data-row="0">—</span>
+      <span class="cv-note">MSCI Europe Value <span data-draw="rentb2" data-source="resumen" data-field="rent_bench_principal" data-row="0">—</span></span>
+    </div>
+    <div class="cv-tile">
+      <span class="cv-label">Posiciones</span>
+      <span class="cv-big"><span data-draw="npos" data-source="resumen" data-field="n_posiciones" data-row="0">—</span> / 20</span>
+      <span class="cv-note"><span data-draw="nprov" data-source="resumen" data-field="n_provisionales" data-row="0">—</span> provisionales</span>
+    </div>
+    <div class="cv-tile">
+      <span class="cv-label">Caja</span>
+      <span class="cv-big" data-draw="caja" data-source="resumen" data-field="caja_eur" data-row="0">—</span>
+      <span class="cv-note">invertido <span data-draw="invertido" data-source="resumen" data-field="invertido_eur" data-row="0">—</span></span>
+    </div>
+    <div class="cv-tile">
+      <span class="cv-label">Pendiente de pasar a Investing</span>
+      <span class="cv-big" data-draw="ninv" data-source="resumen" data-field="pendientes_investing" data-row="0">—</span>
+      <span class="cv-note">operaciones</span>
+    </div>
+  </section>
+
+  <section class="cv-card" id="evolucion">
+    <h2>Rentabilidad acumulada frente a los benchmarks</h2>
+    <p class="cv-note">Las carteras fantasma invierten los mismos euros en las mismas fechas en cada ETF (CEMS, EXUS, IWDA), con su comisión.</p>
+    <div class="cv-legend">
+      <span><i class="cv-sw0"></i>Cartera</span>
+      <span><i class="cv-sw1"></i>MSCI Europe Value</span>
+      <span><i class="cv-sw2"></i>MSCI World ex USA</span>
+      <span><i class="cv-sw3"></i>MSCI World</span>
+    </div>
+    <div class="cv-chart" data-draw="chart" data-source="historico"></div>
+  </section>
+
+  <section class="cv-card" id="posiciones">
+    <h2>Posiciones</h2>
+    <p class="cv-note">Provisional: entró en la Fase 0 sin llegar al 15% de TIR esperada; se puede rotar con +5 puntos durante 8 semanas.</p>
+    <p class="cv-empty cv-pos-vacio" hidden>Sin posiciones todavía. Las primeras compras se lanzan el lunes 9 de noviembre a las 9:30.</p>
+    <div class="cv-scroll">
+      <table class="cv-table" data-source="posiciones" data-row-key="ticker">
+        <thead><tr>
+          <th data-field="nombre">Empresa</th>
+          <th data-field="ticker">Ticker</th>
+          <th data-field="estado">Estado</th>
+          <th class="n" data-field="peso">Peso</th>
+          <th class="n" data-field="valor_eur">Valor</th>
+          <th class="n" data-field="pyg_pct">P&amp;G</th>
+          <th class="n cv-hide-sm" data-field="var_dia_pct">Hoy</th>
+          <th class="n cv-hide-sm" data-field="tir_esperada">TIR esperada</th>
+          <th class="cv-hide-sm" data-field="sector">Sector</th>
+        </tr></thead>
+        <tbody data-draw="tpos"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="cv-card" id="investing">
+    <h2>Pasar a Investing (cartera VALUE ex-USA)</h2>
+    <p class="cv-note">En el orden del formulario. Londres: precio en peniques (GBX) y comisión en libras. La comisión incluye IBKR, tasas y stamp duty o TTF.</p>
+    <p class="cv-empty cv-inv-vacio" hidden>Nada pendiente.</p>
+    <div class="cv-scroll">
+      <table class="cv-table cv-inv" data-source="investing" data-row-key="id">
+        <thead><tr>
+          <th data-field="id">Ref.</th>
+          <th data-field="nombre">Buscar</th>
+          <th data-field="bolsa">Bolsa</th>
+          <th data-field="tipo">Tipo</th>
+          <th data-field="fecha">Fecha</th>
+          <th class="n" data-field="cantidad">Cantidad</th>
+          <th class="n" data-field="precio">Precio</th>
+          <th class="n" data-field="comision">Comisión</th>
+        </tr></thead>
+        <tbody data-draw="tinv"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="cv-grid2">
+    <section class="cv-card" id="ordenes">
+      <h2>Órdenes de hoy y pendientes</h2>
+      <p class="cv-note">Órdenes limitadas en el bid de Equiduct; se ejecutan si el precio cruza el límite.</p>
+      <p class="cv-empty cv-ord-vacio" hidden>Sin órdenes abiertas.</p>
+      <div class="cv-scroll">
+        <table class="cv-table" data-source="ordenes" data-row-key="id">
+          <thead><tr>
+            <th data-field="id">Orden</th>
+            <th data-field="lado">Lado</th>
+            <th data-field="nombre">Empresa</th>
+            <th class="n" data-field="cantidad">Cant.</th>
+            <th class="n" data-field="limite">Límite</th>
+            <th data-field="estado">Estado</th>
+          </tr></thead>
+          <tbody data-draw="tord"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cv-card" id="operaciones">
+      <h2>Últimas operaciones</h2>
+      <p class="cv-note">Registro de solo añadir: compras, ventas, cambios de divisa y dividendos netos de retención.</p>
+      <div class="cv-scroll">
+        <table class="cv-table" data-source="operaciones" data-row-key="id">
+          <thead><tr>
+            <th data-field="fecha">Fecha</th>
+            <th data-field="tipo">Tipo</th>
+            <th data-field="nombre">Detalle</th>
+            <th class="n" data-field="importe_eur">Importe</th>
+          </tr></thead>
+          <tbody data-draw="tops"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  const keys = ['resumen', 'historico', 'posiciones', 'operaciones', 'ordenes', 'investing'];
+  for (const k of keys) {
+    dash.loader(k, { description: 'Toma la parte «' + k + '» de panel.json (generado por scripts/panel.py desde el ledger)', fn: ({ answer }) => (typeof answer === 'string' ? JSON.parse(answer) : answer)[k] || [] });
+  }
+  d3.formatDefaultLocale({ decimal: ',', thousands: '.', grouping: [3], currency: ['', ' €'] });
+  window.cvf = {
+    eur: d3.format('$,.2f'),
+    eur0: d3.format('$,.0f'),
+    pct: (v) => (v == null || isNaN(v)) ? '—' : d3.format('+.2%')(v),
+    pct1: (v) => (v == null || isNaN(v)) ? '—' : d3.format('.1%')(v),
+    num: (v, d) => (v == null) ? '—' : d3.format(',.' + (d ?? 0) + 'f')(v),
+    sign: (v) => v == null ? '' : v > 0 ? 'cv-up' : v < 0 ? 'cv-down' : '',
+  };
+  const row0 = () => { const r = dash.data('resumen'); return r.status === 'ok' && r.data.length ? r.data[0] : null; };
+  dash.onData(() => {
+    const r = row0();
+    const lleno = !!(r && r.n_posiciones > 0);
+    document.querySelectorAll('.cv-take-vacio').forEach((e) => { e.hidden = !r || lleno; });
+    document.querySelectorAll('.cv-take-lleno').forEach((e) => { e.hidden = !lleno; });
+    const p = dash.data('posiciones'), i = dash.data('investing'), o = dash.data('ordenes');
+    document.querySelectorAll('.cv-pos-vacio').forEach((e) => { e.hidden = !(p.status === 'ok' && p.data.length === 0); });
+    document.querySelectorAll('.cv-inv-vacio').forEach((e) => { e.hidden = !(i.status === 'ok' && i.data.length === 0); });
+    document.querySelectorAll('.cv-ord-vacio').forEach((e) => { e.hidden = !(o.status === 'ok' && o.data.length === 0); });
+    document.querySelectorAll('.cv-sw0,.cv-sw1,.cv-sw2,.cv-sw3').forEach((e) => {
+      const n = +e.className.slice(-1); e.style.background = n === 0 ? dash.colors[0] : n === 1 ? dash.colors[1] : n === 2 ? dash.colors[2] : dash.colors[3];
+    });
+  });
+  const fieldDraw = (name, field, fmt, colored) => dash.draw(name, (el) => {
+    const r = row0();
+    if (!r || r[field] == null) { el.textContent = '—'; el.className = ''; return; }
+    el.textContent = fmt(r[field]);
+    if (colored) el.className = cvf.sign(r[field]);
+  });
+  fieldDraw('actualizado', 'actualizado', (v) => v ? v.slice(8, 10) + '/' + v.slice(5, 7) + '/' + v.slice(0, 4) + ' ' + v.slice(11, 16) : '—');
+  fieldDraw('rent', 'rentabilidad', cvf.pct, true);
+  fieldDraw('rentb', 'rent_bench_principal', cvf.pct, false);
+  fieldDraw('alfa', 'alfa', cvf.pct, true);
+  fieldDraw('valor', 'valor_total_eur', cvf.eur0);
+  fieldDraw('aportado', 'aportado_eur', cvf.eur0);
+  fieldDraw('rent2', 'rentabilidad', cvf.pct, true);
+  fieldDraw('rentb2', 'rent_bench_principal', cvf.pct);
+  fieldDraw('npos', 'n_posiciones', (v) => cvf.num(v));
+  fieldDraw('nprov', 'n_provisionales', (v) => cvf.num(v));
+  fieldDraw('caja', 'caja_eur', cvf.eur0);
+  fieldDraw('invertido', 'invertido_eur', cvf.eur0);
+  fieldDraw('ninv', 'pendientes_investing', (v) => cvf.num(v));
+</script>
+
+<script>
+  dash.draw('chart', (el) => {
+    el.replaceChildren();
+    const h = dash.data('historico');
+    if (h.status === 'error') {
+      const m = document.createElement('p'); m.className = 'cv-empty'; m.textContent = 'No se pudo cargar el histórico.'; el.append(m); return;
+    }
+    if (h.status !== 'ok') return;
+    const rows = h.data.map((d) => ({ ...d, t: new Date(d.fecha + 'T00:00:00Z') }));
+    const series = [['cartera', 'Cartera'], ['principal', 'MSCI Europe Value'], ['secundario', 'MSCI World ex USA'], ['control', 'MSCI World']];
+    if (rows.length < 2) {
+      const m = document.createElement('p'); m.className = 'cv-empty';
+      m.textContent = 'El gráfico empieza a dibujarse con el segundo cierre diario.';
+      el.append(m);
+    }
+    const W = Math.max(280, el.clientWidth), H = 280;
+    const vals = rows.flatMap((d) => series.map(([k]) => d[k]).filter((v) => v != null));
+    const lo = Math.min(0, d3.min(vals) ?? 0), hi = Math.max(0, d3.max(vals) ?? 0);
+    const pad = Math.max(0.01, (hi - lo) * 0.1);
+    const y = d3.scaleLinear([lo - pad, hi + pad], [H - 26, 10]).nice();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Rentabilidad acumulada');
+    const yt = y.ticks(5);
+    const probe = svg.append('text').attr('font-size', 12).text(d3.format('+.0%')(yt[0]));
+    let ml = 0; yt.forEach((t) => { probe.text(d3.format('+.1%')(t)); ml = Math.max(ml, probe.node().getComputedTextLength()); });
+    probe.remove(); ml += 10;
+    const t0 = rows.length ? rows[0].t : new Date(), t1 = rows.length > 1 ? rows[rows.length - 1].t : d3.utcDay.offset(t0, 7);
+    const x = d3.scaleUtc([t0, t1], [ml, W - 8]);
+    const g = svg.append('g');
+    g.selectAll('line.gr').data(yt).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 1);
+    g.append('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    g.selectAll('text.yl').data(yt).join('text').attr('x', ml - 6).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text((d) => d3.format('+.1%')(d));
+    const nx = Math.max(2, Math.min(6, Math.floor((W - ml) / 90)));
+    g.selectAll('text.xl').data(x.ticks(nx)).join('text').attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(d3.utcFormat('%d/%m'));
+    series.forEach(([k], i) => {
+      const pts = rows.filter((d) => d[k] != null);
+      const line = d3.line().x((d) => x(d.t)).y((d) => y(d[k]));
+      svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', dash.colors[i]).attr('stroke-width', i === 0 ? 2.5 : 1.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', line);
+      if (pts.length) svg.append('circle').attr('cx', x(pts[pts.length - 1].t)).attr('cy', y(pts[pts.length - 1][k])).attr('r', i === 0 ? 3.5 : 2.5).attr('fill', dash.colors[i]);
+    });
+    const tip = document.createElement('div'); tip.className = 'cv-tip'; tip.hidden = true; el.append(tip);
+    const rule = svg.append('line').attr('y1', 10).attr('y2', H - 26).attr('stroke', 'var(--cds-chart-reference)').attr('visibility', 'hidden');
+    svg.on('pointermove', (ev) => {
+      if (!rows.length) return;
+      const [px] = d3.pointer(ev); const tt = x.invert(px);
+      const d = rows[Math.max(0, Math.min(rows.length - 1, d3.bisector((r) => r.t).center(rows, tt)))];
+      rule.attr('x1', x(d.t)).attr('x2', x(d.t)).attr('visibility', 'visible');
+      tip.replaceChildren();
+      const dd = document.createElement('div'); dd.className = 'd'; dd.textContent = d3.utcFormat('%d/%m/%Y')(d.t); tip.append(dd);
+      series.forEach(([k, n], i) => {
+        if (d[k] == null) return;
+        const l = document.createElement('div'); const sw = document.createElement('i'); sw.style.background = dash.colors[i];
+        l.append(sw, document.createTextNode(n + ' ' + d3.format('+.2%')(d[k]))); tip.append(l);
+      });
+      tip.hidden = false;
+      const bw = tip.offsetWidth; const left = Math.min(Math.max(0, x(d.t) / W * el.clientWidth + 12), el.clientWidth - bw);
+      tip.style.left = left + 'px'; tip.style.top = '12px';
+    }).on('pointerleave', () => { tip.hidden = true; rule.attr('visibility', 'hidden'); });
+  });
+</script>
+
+<script>
+  const td = (tr, text, cls) => { const c = document.createElement('td'); c.textContent = text; if (cls) c.className = cls; tr.append(c); return c; };
+  dash.draw('tpos', (tb) => {
+    tb.replaceChildren();
+    const p = dash.data('posiciones'); if (p.status !== 'ok') return;
+    for (const r of p.data) {
+      const tr = document.createElement('tr'); tr.dataset.key = r.ticker;
+      td(tr, r.nombre); td(tr, r.ticker, 'sm');
+      const c = document.createElement('td'); const pill = document.createElement('span');
+      pill.className = 'cv-pill ' + (r.estado === 'Provisional' ? 'prov' : 'def'); pill.textContent = r.estado; c.append(pill); tr.append(c);
+      td(tr, cvf.pct1(r.peso), 'n'); td(tr, cvf.eur(r.valor_eur), 'n');
+      td(tr, cvf.pct(r.pyg_pct), 'n ' + cvf.sign(r.pyg_pct));
+      td(tr, cvf.pct(r.var_dia_pct), 'n cv-hide-sm ' + cvf.sign(r.var_dia_pct));
+      td(tr, r.tir_esperada == null ? '—' : cvf.pct1(r.tir_esperada), 'n cv-hide-sm');
+      td(tr, r.sector, 'cv-hide-sm sm');
+      tb.append(tr);
+    }
+  });
+  dash.draw('tinv', (tb) => {
+    tb.replaceChildren();
+    const p = dash.data('investing'); if (p.status !== 'ok') return;
+    for (const r of p.data) {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      td(tr, r.id, 'sm'); td(tr, r.nombre, 'big'); td(tr, r.bolsa); td(tr, r.tipo); td(tr, r.fecha);
+      td(tr, cvf.num(r.cantidad), 'n big');
+      const dec = (r.unidad === 'GBX' || r.unidad === 'JPY') ? 1 : r.precio < 10 ? 4 : 2;
+      const pc = td(tr, cvf.num(r.precio, dec) + ' ' + r.unidad, 'n big');
+      if (r.unidad === 'GBX') { const w = document.createElement('div'); w.className = 'cv-warn'; w.textContent = 'peniques'; pc.append(w); }
+      td(tr, cvf.num(r.comision, 2) + ' ' + r.divisa_comision, 'n big');
+      tb.append(tr);
+    }
+  });
+  dash.draw('tord', (tb) => {
+    tb.replaceChildren();
+    const p = dash.data('ordenes'); if (p.status !== 'ok') return;
+    for (const r of p.data) {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      td(tr, r.id, 'sm'); td(tr, r.lado === 'COMPRA' ? 'Compra' : 'Venta', r.lado === 'COMPRA' ? 'cv-up' : 'cv-down');
+      td(tr, r.nombre); td(tr, cvf.num(r.cantidad), 'n'); td(tr, cvf.num(r.limite, r.limite < 10 ? 4 : 2), 'n');
+      td(tr, r.estado.charAt(0) + r.estado.slice(1).toLowerCase(), 'sm');
+      tb.append(tr);
+    }
+  });
+  const tipos = { APORTACION: 'Aportación', FX: 'Cambio de divisa', COMPRA: 'Compra', VENTA: 'Venta', DIVIDENDO: 'Dividendo' };
+  dash.draw('tops', (tb) => {
+    tb.replaceChildren();
+    const p = dash.data('operaciones'); if (p.status !== 'ok') return;
+    for (const r of p.data) {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      td(tr, r.fecha.slice(8, 10) + '/' + r.fecha.slice(5, 7) + ' ' + r.fecha.slice(11, 16), 'sm');
+      td(tr, tipos[r.tipo] || r.tipo);
+      td(tr, r.nombre + (r.cantidad ? ' · ' + cvf.num(r.cantidad) + ' acc.' : ''));
+      const neg = r.tipo === 'COMPRA' || r.tipo === 'FX';
+      td(tr, (neg ? '−' : '+') + cvf.eur(Math.abs(r.importe_eur)), 'n ' + (r.tipo === 'APORTACION' || r.tipo === 'DIVIDENDO' ? 'cv-up' : ''));
+      tb.append(tr);
+    }
+  });
+</script>
