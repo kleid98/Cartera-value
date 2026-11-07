@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+panel/_doc_index.json
+data/benchmarks/
