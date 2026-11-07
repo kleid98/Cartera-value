@@ -39,7 +39,9 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `panel/` | Panel web (HTML) que se publica cada noche |
 | `scripts/cartera.py` | Motor: precios, libro, órdenes, validación, costes, dividendos, estado, Investing |
 | `scripts/ev.py` | Calculadora de EV/TIR/asimetría y reconciliación del comité |
-| `scripts/panel.py` | Genera `panel/index.html` |
+| `scripts/panel.py` | Genera `panel/panel.json` (datos del panel) |
+| `scripts/cribado.py` | Cribado del universo `config/universo.csv` → `plan/cribado.csv` y `plan/candidatos.md` |
+| `scripts/comite.py` | Genera los prompts ciegos del comité para una tesis |
 
 ## 2. Tipos de ejecución
 
@@ -74,7 +76,7 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
 6. Viernes: informe semanal. Commit y push. Push al móvil solo si `validar` ejecutó algo.
 
 ### 2.3 DOMINGO
-1. Cribado del universo con filtros duros; actualiza `plan/candidatos.md` (ranking por señales value).
+1. `python3 scripts/cribado.py` (filtros duros medibles + ranking value) → `plan/candidatos.md`. Amplía `config/universo.csv` si encuentras empresas que encajen.
 2. Calendario de resultados de la semana para posiciones y candidatos (`plan/calendario.md`).
 3. Tesis nuevas para los mejores candidatos (con comité) para que entre semana solo haya que ejecutar.
 4. Revisa provisionales 🟡: ¿pasan ya a 🟢 (TIR ≥ umbral tras revisión a fondo) o rotar (+5 pp, 8 semanas)?
@@ -102,7 +104,8 @@ sector y 6 por país. Tras la Fase 0: máx. 2 compras nuevas por día. La caja o
 
 ### 3.1 Comité de inversión (2 subagentes independientes, en paralelo)
 1. Escribe primero tu tesis completa con escenarios y bloque ```ev```.
-2. Lanza en paralelo (herramienta Agent, `general-purpose`), rellenando los prompts de `comite/`:
+2. `python3 scripts/comite.py tesis/X.md <dir_temporal>` genera los dos prompts ya rellenos y ciegos.
+   Lanza en paralelo (herramienta Agent, `general-purpose`) un agente con cada prompt:
    - 🔴 **Bajista** (`comite/bajista.md`): recibe SOLO la tesis cualitativa y las condiciones de invalidación.
    - 🔵 **Valorador ciego** (`comite/valorador_ciego.md`): recibe SOLO ticker, nombre y bolsa.
 3. Copia sus respuestas a la sección "Comité" de la tesis y rellena `comite` en el bloque ev
@@ -137,9 +140,10 @@ python3 scripts/cartera.py anular O-0007 --motivo "..."
 - Dividendos (`dividendos`): netos de retención en origen; sin IRPF español. Plusvalías se reinvierten íntegras.
 
 ## 5. Panel e informes
-- `python3 scripts/panel.py` genera `panel/index.html`. Se publica como Artifact en la URL de
-  `config/panel.json` (Artifact publish con `url` = esa URL; si es la primera vez en la sesión, haz antes
-  `Artifact action=read` de esa URL). Si la publicación falla, basta con el fichero del repo.
+- El panel es un Artifact de tipo Dashboard (URL y pasos en `config/panel.json`). Cada noche:
+  `python3 scripts/panel.py` → subir `panel/panel.json` como asset (Artifact publish, `url`, `asset: true`) →
+  `ArtifactData` get de los 6 `datasets/<id>` y batch `update` con el nuevo `source.url`, `updated` y `edit`
+  (con `if_version`). No toques `files/index.html` salvo que Ale pida cambios de diseño (`panel/index.html` es su copia).
 - Informe semanal (viernes, `informes/semana-AAAA-WW.md`): rentabilidad vs. benchmarks, qué funcionó/qué no,
   tesis que cambiaron, órdenes no ejecutadas (coste/beneficio de ser paciente), plan de la semana siguiente.
 - Métricas a seguir: rentabilidad, volatilidad, drawdown, alfa vs. MSCI Europe Value (CEMS.DE), % aciertos,
