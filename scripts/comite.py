@@ -23,7 +23,7 @@ def main():
     fecha = C.now().strftime("%d/%m/%Y")
     tesis = seccion(txt, "Tesis (cualitativa)"); inval = seccion(txt, "Condiciones de invalidación")
     # Por seguridad, quita cualquier cifra de TIR/EV que se haya colado en la tesis cualitativa
-    tesis = re.sub(r"(?i)(TIR|EV|retorno esperado)[^\n]*", "[omitido]", tesis)
+    tesis = re.sub(r"(?i)\b(TIR|EV|retorno esperado)\b[^\n.]*", "[omitido]", tesis)
     def cuerpo(f):
         s = open(os.path.join(ROOT, "comite", f), encoding="utf-8").read()
         return s.split("---", 1)[1].strip()
@@ -34,8 +34,10 @@ def main():
     extra = ("\n\nNo modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con "
              f"`cd /home/user/Cartera-value && python3 scripts/cartera.py precio {t}`. Tu respuesta final es tu informe completo.")
     os.makedirs(out, exist_ok=True)
-    open(os.path.join(out, f"bajista_{t}.txt"), "w").write(b + extra)
-    open(os.path.join(out, f"valorador_{t}.txt"), "w").write(v + extra)
+    guardar = lambda rol: (f"\nAntes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en "
+                           f"{os.path.abspath(out)}/informe_{rol}_{t}.md")
+    open(os.path.join(out, f"bajista_{t}.txt"), "w").write(b + extra + guardar("bajista"))
+    open(os.path.join(out, f"valorador_{t}.txt"), "w").write(v + extra + guardar("valorador"))
     print(f"ok {t}: bajista {len(b)} chars, valorador {len(v)} chars")
 
 if __name__ == "__main__":
