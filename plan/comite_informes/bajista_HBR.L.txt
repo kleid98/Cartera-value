@@ -1,0 +1,59 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: Harbour Energy (HBR.L, LONDRES)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** Harbour es una petrolera independiente con casi toda su producción en mares maduros (Noruega y Reino Unido) y una parte creciente en EE. UU., Argentina y México. El mercado la trata como un negocio en liquidación lenta con tres problemas: (1) **el Estado se lleva casi todo el beneficio extraordinario**: en el Reino Unido el impuesto especial sobre beneficios energéticos (EPL) lleva el tipo marginal al 78% hasta marzo de 2030, y en Noruega el tipo también es del 78%, así que las subidas del crudo y del gas se quedan en su mayor parte en Hacienda; (2) **sus reservas probadas y probables solo dan para unos seis años** de producción, por lo que tiene que reinvertir mucho o comprar empresas para no encogerse, y ha demostrado apetito por compras grandes (Wintershall, LLOG) que diluyeron a los accionistas; (3) **los precios actuales se consideran transitorios**: el crudo y el gas europeo están disparados por la guerra con Irán y los problemas en Ormuz, pero la curva de futuros descuenta un fuerte descenso en 2027–2028 y se espera una avalancha de gas natural licuado (EE. UU., Catar) que presionaría el gas europeo. A eso se suman una factura de desmantelamiento de plataformas enorme y a largo plazo, unos bonos híbridos que van por delante del accionista, un beneficio contable neto feo por los impuestos diferidos y una presión vendedora constante: BASF ha estado colocando paquetes con descuento durante todo el año y aún conserva una participación relevante.
+
+**Qué espera el mercado.** Que la caja extraordinaria de 2026 sea flor de un día: que con la normalización del crudo y del gas la caja libre vuelva a niveles modestos, que la producción del mar del Norte decline y que Harbour tenga que gastar en nuevas compras para reponer reservas. Por eso cotiza a una fracción del beneficio de explotación de un año normal, como un activo de vida corta.
+
+**Qué espero yo y por qué podría tener razón.** (1) El balance ya no es el de Premier Oil: deuda neta baja frente al EBITDAX y grado de inversión en las tres agencias, con la agencia más dura mejorando la perspectiva. (2) La caja de 2026 y la del inicio de 2027, mientras los precios sigan altos, se está usando para amortizar deuda y recomprar acciones a precios bajos: en un año se ha retirado más del 9% del capital, buena parte a BASF, y cada recompra aumenta la parte del negocio de cada acción. (3) El negocio está más diversificado: EE. UU. (LLOG) aporta petróleo con fiscalidad normal y crecimiento, y Argentina y México añaden proyectos de largo plazo, con lo que la dependencia del Reino Unido baja. (4) El EPL tiene fecha de caducidad (marzo de 2030) y se sustituirá por un mecanismo que solo grava los ingresos por encima de umbrales de precio; hacia el año 3 el mercado empezará a descontar una fiscalidad británica mucho más benigna. Además, el EPL se apaga si los precios caen por debajo de sus umbrales, lo que actúa como un amortiguador parcial en un escenario de precios bajos. (5) El fin de la salida de BASF eliminaría el principal lastre técnico de la cotización. Ahora bien: la acción es, en el fondo, una apuesta apalancada al precio del crudo y del gas europeo con una vida de reservas corta, y el equipo directivo tiene un historial de compras con acciones; la tesis no funciona si los precios vuelven a niveles de 2023–2025 y además se repite una gran adquisición dilutiva.
+
+**Catalizadores.** Fin del *lock-up* de BASF (mediados de noviembre de 2026) y eventual colocación final; actualización operativa de enero de 2027 y resultados anuales (marzo de 2027) con la guía de producción, capex y retribución de 2027; evolución de la guerra con Irán y del tráfico en Ormuz; desarrollo del proyecto Zama (México) y de Vaca Muerta (Argentina); primeras señales sobre el régimen fiscal británico posterior a 2030; posible conversión de las acciones sin voto de LetterOne.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. Harbour pierde el grado de inversión en cualquiera de las tres agencias (S&P, Moody's o Fitch), o el apalancamiento que publica (deuda neta / EBITDAX) supera 1,5x en un cierre trimestral o semestral.
+2. Recorte o suspensión del dividendo base (16,10 c$ por acción con voto al año) o pago en acciones.
+3. Ampliación de capital o emisión de acciones superior al 5% del capital (incluido el pago de una adquisición en acciones), o una adquisición con un precio superior a 2.000 M$.
+4. La producción media de un ejercicio completo queda por debajo de 430 kboe/d, o las reservas 2P de cierre de año caen por debajo de 0,9 mil millones de boe.
+5. El Reino Unido endurece la fiscalidad del petróleo y el gas: sube el tipo del EPL, prorroga el EPL más allá del 31/03/2030 o aprueba un régimen sustitutivo con un gravamen superior al anunciado (35% sobre ingresos por encima de umbrales).
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio HBR.L`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_HBR.L.md
