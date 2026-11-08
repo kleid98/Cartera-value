@@ -57,16 +57,42 @@ Año 3 = ejercicio 2029 (precio a nov-2029). Métrica principal: BPA (beneficio 
 
 ```ev
 {
-  "ticker": "AYV.PA", "mercado": "PARIS", "pais": "FR", "precio_actual": 9.615, "fecha": "2026-11-08",
+  "ticker": "AYV.PA",
+  "mercado": "PARIS",
+  "pais": "FR",
+  "precio_actual": 9.615,
+  "fecha": "2026-11-08",
   "escenarios": {
-    "desastre": {"prob": 0.12, "precio_3a": 4.2, "dividendos_3a": 0.90},
-    "bajista":  {"prob": 0.30, "precio_3a": 8.0, "dividendos_3a": 1.75},
-    "base":     {"prob": 0.43, "precio_3a": 12.5, "dividendos_3a": 2.60},
-    "alcista":  {"prob": 0.15, "precio_3a": 16.5, "dividendos_3a": 3.20}
+    "desastre": {
+      "prob": 0.12,
+      "precio_3a": 4.2,
+      "dividendos_3a": 0.9
+    },
+    "bajista": {
+      "prob": 0.3,
+      "precio_3a": 8.0,
+      "dividendos_3a": 1.75
+    },
+    "base": {
+      "prob": 0.43,
+      "precio_3a": 12.5,
+      "dividendos_3a": 2.6
+    },
+    "alcista": {
+      "prob": 0.15,
+      "precio_3a": 16.5,
+      "dividendos_3a": 3.2
+    }
   },
   "comite": {
-    "valorador_ciego": {"tir": null, "prob_desastre": null},
-    "bajista": {"prob_desastre": null, "veto": false}
+    "valorador_ciego": {
+      "tir": 0.1,
+      "prob_desastre": 0.1
+    },
+    "bajista": {
+      "prob_desastre": 0.22,
+      "veto": false
+    }
   }
 }
 ```
@@ -79,8 +105,142 @@ Resultado `python3 scripts/ev.py tesis/AYV.PA.md` (08/11/2026):
 
 ## Comité
 ### 🔴 Bajista
+#### Informe bajista: Ayvens (AYV.PA), 08/11/2026
+
+Precio de referencia: 9,615 € (cierre 06/11/2026). Acciones en circulación: 770,8 M, así que la capitalización ronda 7.410 M€. NTAV/acción: 9,75 € (8,84 € tras la provisión de dividendo), es decir 1,0–1,09x el valor contable tangible.
+
+#### Riesgos principales (los 3 más graves, ordenados)
+
+1. **El usado no ha tocado fondo: se está hundiendo trimestre a trimestre, y la próxima condición de invalidación (UCS neto negativo en 2027) es más probable que improbable.** El resultado bruto de usados por unidad bajó así: T1-2026 470 €, T2 326 €, T3 118 € (T3-2025: 1.110 €). La guía de 2026 es 200–600 €/ud. Con un T4 cercano a cero, el año acabaría en la parte baja de la guía, por mucho que el acumulado de 9 meses (313 €) siga "en línea". El UCS neto ya es negativo dos trimestres seguidos: T2 −8 M€ y T3 −21 M€ (T3-2025: +75 M€). En los 9 meses suma +29 M€, frente a 411 M€ en todo 2025. El stock de depreciación prospectiva pasó de −12 M€ (30/06) a −61 M€ (30/09) en un solo trimestre. Es decir, la dirección sigue reconociendo un deterioro de residuales que llegará a la cuenta de resultados en los próximos trimestres, porque la contabilidad prospectiva (NIC 16) reparte la pérdida a lo largo de la vida que le queda al contrato y la retrasa. El volumen vendido también cae (127k unidades frente a 140k). Con un bruto de unos 100 €/ud sobre unas 500k unidades al año (≈50 M€) y ajustes de depreciación de −100/−150 M€ al año (9M-2026: −96 M€), sale un **UCS neto de 2027 de −50 a −100 M€ por pura extrapolación**. Para que fuera positivo, el bruto tendría que volver a 250–300 €/ud con un mercado que empeora: petróleo caro que castiga el usado de combustión, residuales de eléctricos en Reino Unido (revaluación de flota de −35 M€ en el S1) y presión de precios de los fabricantes chinos (Fitch: la mayor cuota de eléctricos eleva el riesgo de residuales en el ABS de leasing europeo). La tesis dice que "el usado ya está en suelo". Los datos dicen lo contrario: la pendiente se acelera. Fuentes: comunicado del T3-2026 de Ayvens/webdisclosure; Idéal Investisseur; guía de 2026 en los comunicados del T1/T2.
+
+2. **El colchón de capital es mínimo y la propia dirección lo quiere así. Más que un dato estable, el CET1 es una variable que se gestiona a la baja.** CET1: 13,2% (dic-2025), 12,6% (jun-2026) y 12,8% (sep-2026). El plan 2029 fija como **objetivo un CET1 de ~12,5%** y reparte todo el capital que exceda ese nivel. La regla de la cartera exige ≥ 12,0%: quedan **50 pb de margen estructural**, unos 270 M€ de CET1 sobre unos RWA de 53.363 M€. Basta un solo hecho como el que cubre la invalidación 3 (deterioros de flota > 300 M€ antes de impuestos, unos 220 M€ netos) más la deriva de RWA (+10% de activos productivos previstos en 2026–29), el efecto divisa (GBP, TRY) o un ajuste regulatorio de CRR3 para acabar por debajo del 12% al cierre de un trimestre. Pasó en junio de 2026: −60 pb en un trimestre tras los repartos. Además, el "décimo de la capitalización al año" no es repetible. Los ~1.400 M€ repartidos en 9M-2026 (≈19% de la capitalización) agotaron el exceso de capital por encima del 12,5%. A partir de ahora, el reparto ≈ beneficio (≈1.000 M€ si todo sale bien) − cupones de AT1 − consumo de capital por crecimiento (+3,3%/año de activos productivos × 12,5% ≈ 200–220 M€/año). Quedan unos 700–750 M€, un 9–10% de la capitalización **solo si** el beneficio se mantiene en 1.000 M€. Con un beneficio de 850 M€, la cifra baja al 7%. Fuentes: comunicado del T3-2026 (RWA, CET1, requisito mínimo del 9,35%); plan estratégico 2029 (CET1 ~12,5%, *payout* 50–60% + sobrante).
+
+3. **El "núcleo que mejora" se apoya en sinergias que se acaban, en impuestos excepcionales y en una flota que encoge.** (a) La flota total baja un **−4,7% interanual en términos comparables** (3.044k vehículos). Los activos productivos llevan dos años planos: −1,0% (dic-25), −0,5% (jun-26) y +0,3% (sep-26). Los márgenes de *leasing* y servicios caen un **−2,0% interanual en el T3** (761 M€). El "margen subyacente" sube (+4,6%, 620 pb) solo porque excluye la hiperinflación turca (−56 M€ de no recurrentes, que existen y son caja). (b) Las sinergias de LeasePlan (338 M€ en 9M) terminan con PowerUP 2026, y el plan 2029 reconoce **un viento en contra de 5 puntos de ratio de eficiencia** por el menor margen de mantenimiento de los eléctricos. También reconoce que los márgenes **bajarán en porcentaje sobre activos** por la electrificación. (c) La tasa fiscal del T3 fue del **21,5%** (29,7% hace un año) gracias a dos impactos excepcionales: bases imponibles negativas de una antigua filial neerlandesa de LeasePlan y la reversión de un impuesto diferido en Turquía. Con una tasa normal del 27–28%, el ROTE del T3 baja de 13,2% a ~12,3%, y el beneficio neto del T3 ya cayó un −11,9%. El margen frente a la invalidación 2 (ROTE < 11%) es de unos 130 pb, no de 300. Fuentes: comunicado del T3-2026; plan 2029; Idéal Investisseur.
+
+#### Lo que el gestor no ha tenido en cuenta
+
+- **Dividendo ordinario frente al del año anterior (invalidación 5).** El de 2025 fue de **0,59 €/acción** (BPA de 2025 ≈ 1,13 €, beneficio de 996 M€ con 411 M€ de UCS neto). El BPA de 9M-2026 es de 0,90 €. Con un T4 de ~0,25–0,27 € (el UCS empeora y la tasa fiscal vuelve a la normalidad), el BPA de 2026 queda en ~1,15 € y, al 50% de *payout* (la base sobre la que la compañía provisiona), el dividendo sería de ~0,57–0,58 €: **por debajo de 0,59 €**. Evitar un recorte técnico en febrero de 2027 depende de que el consejo suba el *payout* al rango 50–60% del plan nuevo. No es un hecho asegurado, y la cartera lo ha fijado como condición de venta automática. Para 2027, con UCS negativo, el riesgo es mayor.
+- **Riesgo soberano francés en la financiación.** En octubre de 2026, la OAT a 10 años rozó el 5% (4,92%, máximo desde 2002) y el diferencial con el Bund superó los 150 pb, el mayor desde 2011, en plena tramitación de unos presupuestos de 2027 bajo tensión. Las calificaciones de Ayvens (A1/A/A−) dependen de Société Générale y SG depende de Francia. Una rebaja soberana encarece los 35.700 M€ de deuda financiera y los depósitos minoristas (15.000 M€, que son sensibles a la confianza). La dirección dice que +100 pb de tipos valen +20 M€, pero el diferencial de crédito propio es otra cosa y no se repercute al momento a contratos de 3–4 años.
+- **El accionista de control recorta la subida, no la caída.** SG tiene ~53%. Las recompras sin participación de SG aumentan su peso poco a poco. La salida "con prima" funciona en los dos sentidos: con la acción a ~1x el NTAV y en mínimos históricos (por debajo de 8,60 € el 19/10/2026), SG o SG junto a un fondo (en 2025 se habló de Blackstone, Brookfield y CVC, sin resultado) puede excluir de bolsa a los minoritarios con una prima del 20–30% sobre un precio deprimido (11–12 €). Eso limita el escenario alcista justo cuando la tesis empezaría a funcionar. Mientras tanto, SG tiene incentivos para exprimir los repartos (CET1 al 12,5%) y sacar capital hacia la matriz, lo que deja a los minoritarios con más apalancamiento.
+- **La contabilidad prospectiva retrasa las malas noticias.** El deterioro de residuales no se reconoce de golpe: se reparte a lo largo de la vida del contrato. Los −61 M€ de stock pendiente y los −35 M€ de nueva depreciación del T3 son el "iceberg" de 2027. El beneficio que se publica va por detrás del valor económico real de la flota (~50.000 M€ de activos productivos: una caída del 1% en el valor residual de la flota equivale a varios cientos de millones de euros).
+- **Turquía y la hiperinflación** son un coste recurrente que la compañía presenta como no recurrente (−56 M€ solo en el T3).
+- **Recargo del impuesto de sociedades en Francia.** El proyecto de presupuestos de 2027 mantiene el recargo a grandes empresas, aunque reducido un 30%. Penaliza el beneficio francés de 2027.
+- **El mercado lleva tres trimestres seguidos bajando las expectativas** (Jefferies, JPMorgan y UBS han rebajado precios objetivo). El plan 2029 se recibió con una caída de más del 5% en el día de su presentación. Un plan que sube objetivos y a la vez ve caer la acción es señal de que nadie se cree esos objetivos.
+
+#### Escenario desastre según el bajista
+
+En 2027 el bruto por unidad pasa a ser negativo o nulo y el UCS neto se queda entre −150 y −250 M€. A eso se suma una revaluación de flota (eléctricos en Reino Unido y combustión por el petróleo, con el tirón a la baja del eléctrico chino barato) de 300–400 M€ en un solo ejercicio. Al acabar las sinergias, el beneficio neto cae a 650–750 M€ (ROTE ~9–10%). El CET1 baja al 12,0–12,2% en algún cierre trimestral: se suspende la recompra y se recorta el dividendo ordinario (BPA ~0,85 €, DPA ~0,45 €). Con la tensión soberana francesa, el coste de financiación sube 30–50 pb. El mercado vuelve a valorarla como en 2023–24, a 0,6–0,65x el NTAV (NTAV ~9 € tras los deterioros). **Precio objetivo del desastre a 3 años: ~5,5 € (−43%); en el extremo, 4,8 € (−50%).** Contando ~1,2–1,5 € de dividendos cobrados antes del recorte, la pérdida total queda en −30/−38%. Una variante del desastre sería SG excluyendo de bolsa a los minoritarios a 9–10 € (rentabilidad total cercana a cero después de 3 años de riesgo) tras una ampliación o un recorte del reparto.
+
+#### Probabilidad de desastre
+
+PROB_DESASTRE: 0.22
+
+#### ¿Se cumple ya alguna condición de invalidación del gestor?
+
+VETO: NO. A 08/11/2026 no se cumple ninguna con hechos publicados.
+1. CET1 del 12,8% a 30/09/2026 (≥ 12,0%). No hay límites del regulador: el BCE aprobó la recompra de 450 M€ en julio de 2026.
+2. El plan 2029 *sube* los objetivos (ROTE 14–16%, *payout* 50–60% + sobrante). ROTE de 9M-2026: 13,6%.
+3. El UCS neto de 2027 aún no se conoce. Los ajustes de depreciación de 9M-2026 suman −96 M€ (< 300 M€).
+4. Margen subyacente de 620 pb (> 550). Activos productivos +0,3% interanual (no bajan > 3%).
+5. El dividendo ordinario de 2025 subió (0,59 € frente a 0,37 €). La recompra sigue en marcha (~39% ejecutada a 16/10/2026). No hay ampliación de capital.
+
+Aviso: las condiciones 3 (UCS neto de 2027 < 0) y 5 (dividendo de 2026 < 0,59 €) tienen una probabilidad alta de cumplirse en los próximos 3–15 meses. La primera prueba es la publicación del 04/02/2027 (dividendo de 2026 y guía de usado de 2027).
+
+#### Fuentes
+
+- https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q3-2026-financial-results
+- https://www.webdisclosure.com/press-release/robust-q3-2026-in-a-volatile-used-car-market-on-track-to-achieve-powerup-2026-targets-stoGQHxfI7Y
+- https://quartr.com/events/ayvens-ayv-q3-2026_FGkyLsYJ
+- https://www.ideal-investisseur.fr/en/stock-news/ayvens-profit-down-11-9-in-third-quarter-weighed-down-by-used-vehicle-resales/28144.html
+- https://www.ideal-investisseur.fr/actions-b/laction-ayvens-repasse-sous-les-860-et-signe-un-plus-bas-inedit/27433.html
+- https://www.ideal-investisseur.fr/actions-b/laction-ayvens-rebondit-de-65-sur-la-semaine-apres-un-plus-bas-inedit/28649.html
+- https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q2-2026-financial-results/
+- https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/q1-2026-financial-results/
+- https://www.ayvens.com/it-it/chi-siamo/area-stampa/comunicati-stampa/strategic-plan-2029/
+- https://bourse.fortuneo.fr/actualites/ayvens-prevoit-un-rote-compris-entre-14-et-16-en-2029-4942755
+- https://www.ideal-investisseur.fr/en/stock-news/ayvens-shares-drop-more-than-5-and-break-through-their-10-33-eur-support-level/25455.html
+- https://www.ayvens.com/en-cp/news/newsroom/corporate-news/ayvens-share-buyback-program-and-exceptional-interim-dividend/
+- https://finance-connect.com/ayvens-profit-jumps-46-in-2025-to-e996m-q4-earnings-up-45/
+- https://www.marketscreener.com/news/ayvens-proposes-distribution-for-year-2025-ce7e5ad9df80fe2d
+- https://stockanalysis.com/quote/epa/AYV/financials
+- https://www.stockopedia.com/share-prices/ayvens-sa-EPA:AYV/news/soc-gen-apos-s-car-leasing-unit-ayvens-attracting-buyout-interest-bloomberg-news-reports-019e6db8-7ca7-74c3-b486-49d2462a8d39/
+- https://en.amwalalghad.com/?p=190839 (Fitch, riesgo de residuales de eléctricos)
+- https://cleantechnica.com/2026/09/30/what-is-the-situation-with-residual-values-in-europe/
+- https://www.am-online.com/news/uk-leasing-industry-expect-ev-values-to-fall-in-2026
+- https://www.abcbourse.com/marches/dette-francaise-le-taux-a-10-ans-atteint-4-92--un-sommet-inedit-depuis-2002_703529
+- https://www.tradingsat.com/actualites/marches-financiers/ils-reclamaient-sa-suppression-la-surtaxe-sur-les-grands-groupes-dont-ceux-du-cac-40-sera-reduite-de-30-dans-le-budget-2027-1170981.html
+- https://www.marketscreener.com/news/ayvens-slips-as-jefferies-trims-price-target-ce7e50dedd8bf025
+
 ### 🔵 Valorador ciego
+#### Valoración ciega e independiente: Ayvens (AYV.PA, París), 08/11/2026
+
+#### Datos clave
+- **Precio actual:** 9,615 € (cierre del 06/11/2026; rango del día 9,39–9,615). En junio de 2026 cotizaba en torno a 11,8 € y en octubre llegó a mínimos de unos 8,7 €.
+- **Acciones:** 770,8 M a 30/09/2026 (783,2 M a 31/12/2025). La recompra de 450 M€ anunciada en julio de 2026 sigue en marcha.
+- **Capitalización:** unos 7.410 M€. Sociedad Générale tiene la mayoría (en torno al 52%), así que el free float es reducido.
+- **Deuda neta:** no tiene sentido medirla. Ayvens es una entidad de crédito (arrendamiento financiero) y está regulada por capital: 52,8 bn€ de activos productivos financiados con depósitos, bonos y titulizaciones. Lo que mide su balance es el CET1: 12,8% a 30/09/2026, frente a un mínimo del 9,35% (colchón de 344 pb). La ratio total de capital es del 17,0%.
+- **PER:** 8,2x sobre el BPA estimado de 2026, unos 1,17 € (0,90 € en los 9 primeros meses más un cuarto trimestre de unos 0,27 €). Sobre el BPA de 2025 (1,11 €) sale 8,7x.
+- **Valor contable tangible por acción (NTAV):** 9,75 €, o 8,84 € tras la provisión de reparto. P/NTAV ≈ 0,99x (1,09x sobre 8,84 €).
+- **EV/EBIT:** no aplica (es una entidad financiera). Como referencia, el resultado antes de impuestos de los 9 meses fue de 1.011 M€; anualizado, la capitalización equivale a unas 5,5x.
+- **FCF yield:** no aplica (el inmovilizado en flota es su "inventario" financiado). Como sustituto uso el rendimiento de reparto: 1,4 bn€ devueltos entre el 3T25 y el 2T26 (dividendos extraordinarios más recompras), cerca del 19% de la capitalización en un año. No es recurrente.
+- **Rentabilidad por dividendo:** el ordinario (payout del 50%, unos 0,59 €) da un 6,1%. Si se suma el extraordinario de 0,32 € de septiembre de 2026, el efectivo cobrado en 2026 ronda el 9,5%. Los DPS previos fueron 0,37 € (2024) y 0,59 € (2025), además de 0,42 € extraordinarios en diciembre de 2025.
+- **ROCE medio (en este caso ROTE):** unos 11–12% de media entre 2023 y 2026 (2025: 12,9%; 9M26: 13,6%; 3T26: 13,2%). ALD, antes de la fusión con LeasePlan, rondaba el 14–16%.
+- **Histórico de BPA:** 2021: 2,16 €; 2022: 2,68 € (ganancias extraordinarias de coches usados, con muchas menos acciones antes de la ampliación por LeasePlan); 2023: 0,99 €; 2024: 0,73 €; 2025: 1,11 €; 9M26: 0,90 €. El beneficio neto ha sido positivo todos los años de la última década.
+- **Guía de la compañía:**
+  - PowerUP 2026 sigue "en línea": ROTE del 13–15%, coste/ingresos por debajo del ~52% y CET1 de ~12%. Resultado bruto de coches usados (UCS) de 200–600 € por unidad en 2026; en los 9M26 va en 313 €/unidad y en el 3T26 bajó a solo 118 €/unidad.
+  - Plan 2029 (sept. 2026): ROTE del 14–16%, coste/ingresos del ~49%, CET1 de ~12,5%, payout del 50–60% más devolución del exceso de capital, y activos productivos un +10% entre dic-26 y dic-29. Se espera que los coches usados "contribuyan poco".
+  - La guía de coches usados para 2027 llegará con los resultados anuales de 2026.
+
+#### Escenarios
+Horizonte: noviembre de 2029. Métrica: BPA de 2029, con ROTE × NTAV/acción y una base de acciones de 720–745 M tras las recompras. Los dividendos son los cobrados entre noviembre de 2026 y noviembre de 2029: el final del ejercicio 2026, pagado en 2027 (unos 0,58–0,60 €, ya devengado), y los de los ejercicios 2027 y 2028.
+
+| Escenario | Prob | Métrica año 3 | Múltiplo | Precio 3a | Dividendos 3a | Retorno total |
+|---|---|---|---|---|---|---|
+| Desastre | 0,10 | BPA 0,60 € (ROTE ~6%). Hundimiento de los valores residuales de los BEV, que obliga a pérdidas de UCS y a ajustes de amortización de cientos de M€ al año. Además, recesión con coste del riesgo de 40–50 pb y encarecimiento de la financiación. NTAV ~9 € | 8,3x PER / 0,55x NTAV. Es el mínimo de 2024 (~5,5 €, unas 0,65x) con un deterioro mayor | 5,00 € | 0,90 € (dividendo de 2026 casi garantizado; después, recortado con payout mínimo y sin extraordinarios) | −38,6% |
+| Bajista | 0,25 | BPA 1,10 € (ROTE ~11%). Coches usados ligeramente negativos en 2027–28 por la mayor proporción de BEV devueltos; el plan 2029 se cumple solo en parte (coste/ingresos de ~51%) y la flota apenas crece | 7,5x PER / ~0,85x NTAV. Es el múltiplo habitual del mercado para un arrendador con riesgo residual que no llega a su ROE objetivo | 8,25 € | 1,73 € (0,58 + 0,55 + 0,60; payout del 50%, sin extraordinarios) | +3,8% |
+| Base | 0,45 | BPA 1,38 € (ROTE ~13,5%, por debajo del objetivo de 14–16%). Coches usados cerca de cero, coste/ingresos de ~50%, activos +8%, recompras del exceso de capital. NTAV ~10,2 € | 8,5x PER / ~1,15x NTAV. Equivale a un coste de capital del ~11–12% con un ROTE del 13,5% y un crecimiento bajo; está en línea con el rango histórico de 7–10x | 11,70 € | 2,04 € (0,59 + 0,70 + 0,75; payout del 55%) | +42,9% |
+| Alcista | 0,20 | BPA 1,62 € (ROTE ~15,5%). Se cumple el plan 2029, los coches usados se normalizan en positivo (ICE/híbridos al alza), el ahorro por IA llega a cuenta y la recompra es intensa | 9x PER / ~1,4x NTAV. Una re-valoración similar a la de ALD en 2021, o una opa de exclusión de SocGen sobre los minoritarios | 14,60 € | 2,60 € (ordinarios con payout del 60% más algún extraordinario) | +78,9% |
+
+**Retorno esperado a 3 años** = 0,10×(−38,6%) + 0,25×3,8% + 0,45×42,9% + 0,20×78,9% = **+32,2%**.
+**TIR anual** = 1,322^(1/3) − 1 = **9,7%** (bruta, sin costes).
+
+#### Resultado
+TIR_ANUAL: 0.10
+PROB_DESASTRE: 0.10
+PRECIO_ACTUAL: 9.615
+
+#### Lo que más incertidumbre te genera
+- **Valores residuales de los coches eléctricos en 2027–2029.** Es la variable que decide el caso. El resultado de coches usados pasó de 1.110 €/unidad (3T25) a 118 €/unidad (3T26), con un neto de −21 M€ en el trimestre. La propia Ayvens prevé que los precios de PHEV y BEV bajen, y los BEV con más fuerza, a medida que crece su peso en la flota devuelta. Si el mercado de BEV usados se desploma, a las pérdidas por venta se suman ajustes de amortización prospectiva sobre toda la flota viva.
+- **Historial de incumplimiento de objetivos.** El primer PowerUP prometía más y el ROTE de 2024 fue muy inferior; la integración de LeasePlan costó más de lo previsto. El nuevo plan sube los objetivos (ROTE del 14–16%) justo cuando el beneficio trimestral cae un 12%. Lo aplico con descuento.
+- **Tipos y financiación.** El mercado descuenta subidas del BCE. La directiva estima unos +20 M€ por cada 100 pb gracias a la repercusión al cliente, pero el traslado se produce con retraso y depende de la competencia de los fabricantes (cautivas de OEM, BYD…).
+- **Sociedad Générale como accionista mayoritario.** Supone liquidez limitada y riesgo de gobierno corporativo. En positivo, una posible opa de exclusión a prima; en negativo, que SocGen use Ayvens para sus propias necesidades de capital o venda en bloque y presione el precio.
+- **Calidad y sostenibilidad del reparto.** El rendimiento de 2025–26 (más del 9%) incluye extraordinarios ligados a la liberación de capital, que no son recurrentes. Con un CET1 objetivo de ~12,5% (más alto que antes), el exceso de capital disponible será menor.
+- **Datos no verificados.** No he encontrado un consenso posterior al 3T26. Los BPA de consenso de 1,40 € (2027) y 1,49 € (2028) son de julio de 2026, anteriores a la caída del resultado de coches usados, y probablemente bajarán. Tampoco he podido confirmar el importe pendiente de la recompra de 450 M€.
+
+#### Fuentes
+- https://www.webdisclosure.com/press-release/robust-q3-2026-in-a-volatile-used-car-market-on-track-to-achieve-powerup-2026-targets-stoGQHxfI7Y
+- https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q3-2026-financial-results
+- https://quartr.com/events/ayvens-ayv-q3-2026_FGkyLsYJ
+- https://quartr.com/events/ayvens-ayv-h1-2026_FGky9xy1
+- https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q2-2026-financial-results/
+- https://www.finanznachrichten.de/nachrichten-2026-07/69164815-ayvens-strong-q2-2026-operating-performance-in-a-tough-used-car-market-h1-2026-results-in-line-with-powerup-2026-targets-c-eur-700m-distribution-t-399.htm
+- https://live.euronext.com/en/products/equities/company-news/2026-02-06-q4-and-fy-2025-strong-financial-results-delivering
+- https://webdisclosure.com/press-release/ald-epa-ald-ayvens-2029-strategic-plan-aim-for-excellence-execute-better-every-day-TXE5MFQxZLV
+- https://www.autocarpro.in/news/ayvens-targets-14-to-16-percent-rote-in-2029-strategic-roadmap-135102
+- https://stockanalysis.com/quote/epa/AYV/financials/
+- https://stockanalysis.com/quote/epa/AYV/forecast/
+- https://stocksguide.com/en/forecast/Ayvens-FR0013258662
+- https://www.marketscreener.com/news/ayvens-slips-as-jefferies-trims-price-target-ce7e50dedd8bf025
+- https://www.fleetnews.co.uk/news/used-car-market-volatility-impacts-ayvens-profits
+- https://aktien.guide/dividende/Ayvens-FR0013258662
+- Precio: `python3 scripts/cartera.py precio AYV.PA` (Yahoo, 06/11/2026 17:35)
+
 ### Reconciliación
+- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.22**
+- TIR propia ajustada 0.062 · TIR valorador ciego 0.1 → **TIR final 0.081** (diferencia < 5 pp → media)
+- Veto del bajista: no
+- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- **compra_ok (reglas completas): False**
 
 ## Decisión
 **NO COMPRAR (provisional, a la espera del comité)**. TIR propia del 9,5%, lejos del 15%. Si el plan 2029 se cumple, el escenario base rinde ~15% anual solo con el reparto de capital, sin necesidad de que suba el múltiplo. Pero el bajista (usado en cero, ROTE del 11–12%) deja el capital plano a 3 años, y el desastre (−49%) roza el límite por el apalancamiento sobre el valor residual de la flota. La asimetría es buena (5,8) y el filtro de CET1 va justo (12,8% frente al 12%). Se reconsideraría por debajo de ~7,5 € con la guía 2026 cumplida, o si los resultados FY2026 (04/02/2027) traen una guía de usado 2027 positiva, un dividendo ordinario ≥ 0,65 € y un CET1 ≥ 12,8%.
