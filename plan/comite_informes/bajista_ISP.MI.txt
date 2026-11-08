@@ -1,6 +1,6 @@
 Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
 Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
-es un error. Fecha de hoy: 08/11/2026.
+es un error. Fecha de hoy: 09/11/2026.
 
 Empresa: Intesa Sanpaolo (ISP.MI, MILAN)
 
@@ -62,4 +62,4 @@ VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia
 - URLs consultadas
 
 No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio ISP.MI`. Tu respuesta final es tu informe completo.
-Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_ISP.MI.md
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_ISP.MI.md
