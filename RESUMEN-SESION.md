@@ -112,7 +112,7 @@ Todas las reglas numéricas están en `config/reglas.json` y el manual de operac
 - 6 datasets (`resumen`, `historico`, `posiciones`, `operaciones`, `ordenes`, `investing`) que leen un único asset `panel.json`. El asset actual es `/_blob/aa12e649d3bbd59b5b05ec01fd2f0414`.
 - La copia de la página está en `panel/index.html`. No tocar `files/index.html` salvo que haya cambios de diseño.
 
-**Tareas programadas** (sesión nueva en cada disparo; clonan el repo con `add_repo` y siguen `CLAUDE.md` sobre `main`)
+**Tareas programadas** (sesión nueva en cada disparo; clonan el repo con `add_repo` y siguen `CLAUDE.md` sobre `main`). **Ahora mismo las 4 están PAUSADAS**; ver la sección 6.
 
 | Ejecución | ID | Horario | Push |
 |---|---|---|---|
@@ -181,13 +181,13 @@ TIR propia / TIR del comité (si ya está registrado):
    - Mazda, como orden `--tipo APERTURA` decidida en un CIERRE.
    - Regla del 3er día: AGRESIVA.
 3. **Actualizar cada tesis** a 🟡 provisional en "Estado" y "Decisión".
-4. Commit y push a la rama. El PR se actualiza solo. Pedir a Ale que **fusione el PR antes de la primera ejecución**.
-5. **Riesgo de calendario:** si el PR no está fusionado, las tareas programadas leerán `main`, que solo tiene el README, y no encontrarán `CLAUDE.md`.
-   - Hoy a las **18:04** se dispara la de DOMINGO y mañana a las **9:34** la primera compra.
-   - Si el plan no está listo, proponer a Ale **pausar** las tareas con `update_trigger enabled=false` y reactivarlas cuando esté. Son tareas creadas en esta sesión.
-6. **Preguntas abiertas a Ale:**
-   - Existe una **tarea programada antigua, `trig_01UJiwFhup6i55z79wxW5PFz` "Cartera value: revisión diaria 16:00"**, de un proyecto anterior (cartera de 100.000 €, MANDATO.md, yfinance). Apunta a este mismo repo y se ejecutará el lunes a las 16:00 sobre `main`, en paralelo al sistema nuevo.
-     - Pedir permiso para desactivarla o borrarla. **No se ha tocado.**
+4. Commit y push a la rama. El PR se actualiza solo. Pedir a Ale que **fusione el PR**.
+5. **⏸️ LAS 4 TAREAS PROGRAMADAS ESTÁN PAUSADAS** (Ale lo pidió el 08/11/2026 a las 14:18) hasta que el comité y el plan estén listos y el PR fusionado.
+   - IDs: `trig_01CEGapUaBpMEvxHmy3HZAt8`, `trig_01AikUWcNyEwnr1XY35S6jAY`, `trig_01Q31HxP6FUV3dPWk9v1Rt2a` y `trig_01UnKHPrvh2AaPgsFJfzg9PC`.
+   - **Para reanudar:** `update_trigger` con `enabled=true` en las cuatro, **solo después** de que Ale fusione el PR.
+   - Como la Fase 0 ya no empieza el lunes 09/11, hay que **mover las fechas de la Fase 0** a la semana real de arranque: `config/reglas.json` → `fase0.inicio`/`fin` y `fecha_inicio`, y las menciones de "09–13/11/2026" en `CLAUDE.md`. Es un cambio de calendario, no de reglas, pero confírmalo con Ale al proponer la fecha.
+6. ✅ **Tarea programada antigua borrada** (`trig_01UJiwFhup6i55z79wxW5PFz`, "Cartera value: revisión diaria 16:00", del proyecto anterior de 100.000 €), por orden de Ale.
+7. **Pregunta abierta a Ale:**
    - **Hallazgo importante:** ninguno de los 24 candidatos (todos large caps) llega a la TIR del 15%. El rango es −3% a 10%.
      - La Fase 0 será 100% provisional.
      - Comentar a Ale si quiere mantener el umbral, ampliar el universo a mid caps de 2.000–10.000 M€ (más probable encontrar un 15%), o dejarlo así y que la rotación mejore la cartera con el tiempo.
