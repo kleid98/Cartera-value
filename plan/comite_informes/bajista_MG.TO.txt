@@ -1,0 +1,60 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: Magna International Inc. (MG.TO, TORONTO)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** Magna es el mayor proveedor de automoción de Norteamérica y uno de los tres o cuatro mayores del mundo, con una gama muy amplia: carrocerías, chasis y estructuras, espejos, cámaras y electrónica de asistencia a la conducción, transmisiones y sistemas eléctricos, asientos, y además ensambla vehículos completos para terceros en Graz (Austria). El mercado la cotiza como un proveedor maduro y cíclico, sin crecimiento, y le aplica un múltiplo de beneficio de un dígito por varias razones: (1) la política comercial de EE. UU.: los aranceles sobre piezas y metales, y que el tratado T-MEC/USMCA no ha salido reforzado de la revisión de 2026 (según la tesis LNR.TO de este repo, queda en revisiones anuales; no lo he vuelto a verificar), lo que pone en duda el modelo de fabricación integrada entre Canadá, EE. UU. y México en el que Magna es protagonista; (2) la apuesta por el coche eléctrico salió mal: los fabricantes cancelaron o retrasaron programas en Norteamérica, Magna tuvo que reestructurar y aún hoy parte de su caja procede de compensaciones de los clientes por esas cancelaciones; (3) la dirección ha incumplido varias veces los márgenes que prometió en sus días del inversor anteriores, y el beneficio reportado está muy por debajo del ajustado año tras año por deterioros y reestructuraciones, de modo que el mercado no se cree el beneficio ajustado; (4) las ventas no crecen: la producción en Norteamérica y Europa está estancada, el negocio de vehículos completos encoge y en China los fabricantes locales desplazan a los clientes occidentales de Magna.
+
+**Qué espero yo.** Que Magna deje de ser una historia de crecimiento y pase a ser una máquina de generar caja que se recompra a sí misma. Ha simplificado el grupo (venta de iluminación y de techos), está cerrando plantas en Europa y ha bajado la inversión por debajo del 4% de las ventas. El margen ajustado ha subido de forma sostenida en los últimos trimestres gracias a la eficiencia operativa, a la recuperación de los costes arancelarios de los clientes y al fin de las pérdidas en programas eléctricos. Con la inversión ya en niveles de mantenimiento y una caja libre recurrente alta respecto a su capitalización, Magna puede pagar el dividendo y recomprar cada año una parte significativa del capital; la nueva autorización de recompra cubre el 10% del free float. Aunque el beneficio total apenas crezca, el beneficio por acción puede subir a buen ritmo por la reducción del número de acciones. No necesito que el mercado se vuelva optimista con el sector: me basta con que el negocio no se deteriore y con que la dirección siga con su disciplina de capital.
+
+**Por qué podría tener razón y por qué podría no tenerla.** A favor: es un proveedor imprescindible para casi todos los fabricantes occidentales, con una diversificación por cliente, producto y región que pocos competidores tienen; ha ganado dinero en todos los años de la última década, incluido 2020; tiene balance de grado de inversión y una larga historia de dividendo creciente. En contra, y es importante: su margen operativo es fino (de un 5% a un 7%), de modo que pequeñas variaciones de volumen, aranceles o precios a los clientes mueven mucho el beneficio; la diferencia entre beneficio ajustado y reportado es persistente, y "costes extraordinarios" que se repiten cada año son, en realidad, costes; la caja libre de 2025–2026 está inflada por compensaciones puntuales de los clientes; y Europa (Alemania sobre todo) y la planta de Graz dependen de fabricantes en plena reestructuración. Mi ventaja frente al mercado es moderada: el mercado ve los mismos datos y los descuenta con un múltiplo bajo que, en un sector así, suele estar justificado.
+
+**Catalizadores.** Investor Day del 11/11/2026 (nuevos objetivos de margen y de retorno al accionista a medio plazo; si son creíbles y moderados, pueden volver a dar credibilidad a la dirección, y si son agresivos repetirán la historia de incumplimientos); ejecución de la nueva recompra del 10% del free float; resultados del Q4 y guía 2027 (≈ febrero de 2027); cualquier acuerdo sectorial de automoción entre EE. UU. y Canadá dentro de las revisiones del T-MEC; cierre de las desinversiones pendientes en el cuarto trimestre.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. EE. UU. impone aranceles generales a las piezas de automóvil canadienses o mexicanas que cumplen las reglas de origen del T-MEC (o anuncia su salida del tratado) y Magna declara que no puede repercutir a sus clientes la mayor parte del coste.
+2. Deuda neta (sin arrendamientos) sobre EBITDA por encima de 1,75x al cierre de un trimestre, o pérdida del grado de inversión en cualquiera de las grandes agencias.
+3. Recorte o suspensión del dividendo, o abandono de las recompras por necesidad de caja (no por una adquisición pequeña y explicada).
+4. Caja libre negativa en un ejercicio completo, o una guía anual de caja libre inferior a 1.000 M USD.
+5. Una adquisición grande (más del 15% de la capitalización) pagada con deuda o con ampliación de capital, o una nueva apuesta de inversión fuerte que vuelva a subir el capex por encima del 5% de las ventas.
+6. Pérdida operativa ajustada en el segmento Body Exteriors & Structures o en Power & Vision durante dos trimestres seguidos.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio MG.TO`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_MG.TO.md

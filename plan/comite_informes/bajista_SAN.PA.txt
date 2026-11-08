@@ -1,0 +1,62 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: Sanofi (SAN.PA, PARIS)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** Sanofi cotiza como una compañía con fecha de caducidad. Su gran activo, Dupixent (compartido con Regeneron), supone ya más del 40% de las ventas y una parte aún mayor del beneficio, y sus patentes principales empiezan a vencer a principios de la década de 2030. El mercado descuenta que, tras esa fecha, el beneficio caerá con fuerza y que la cartera de I+D no tiene con qué sustituirlo: en el último año han fracasado o se han abandonado casi todos los candidatos llamados a ser los "sucesores" (amlitelimab en dermatitis atópica, itepekimab en EPOC, balinatunfib en psoriasis; tolebrutinib recibió una carta de rechazo de la FDA en esclerosis múltiple). Esto le costó el puesto al consejero delegado anterior (relevado en febrero de 2026) y la nueva consejera delegada, Belén Garijo (ex Merck KGaA, desde mayo de 2026), ha hecho limpieza de activos no competitivos, ha cambiado al jefe de I+D y ha reconocido que la prioridad es "proteger el beneficio a través de la pérdida de exclusividad de Dupixent". A esto se suman las vacunas en retroceso (gripe, Beyfortus frente a competencia, natalidad en China) y el riesgo regulatorio de precios en EE. UU. (acuerdo de "nación más favorecida" firmado en diciembre de 2025).
+
+**Qué espera el mercado.** Que los próximos años sean buenos —Dupixent sigue creciendo a doble dígito con nuevas indicaciones (EPOC, urticaria, penfigoide)— pero que ese beneficio sea transitorio y que la compañía acabe "quemando" caja en adquisiciones caras para tapar el agujero. Por eso paga un múltiplo muy inferior al de la gran farma europea comparable.
+
+**Qué espero yo.** Que el negocio actual siga generando mucho efectivo durante los tres años del horizonte: Dupixent crece, los lanzamientos de enfermedades raras y hematología (Altuviiio, Ayvakit, Qfitlia, Wayrilz, Rezurock) suben a ritmo del 30%, la compañía recompra acciones y mantiene un dividendo progresivo, y la desinversión de medicamentos maduros en Cheplapharm (a cambio de una participación del 26,4%) simplifica la cartera. El balance, con apalancamiento inferior a 1x, deja margen para adquisiciones relevantes. La ampliación de la alianza con Regeneron (cuatro nuevos anticuerpos de la familia IL-4/IL-13, incluida una formulación de acción prolongada, más una opción sobre lunsekimig) es el primer intento serio de "alargar" la franquicia Dupixent más allá del vencimiento de patentes y resolvió además el litigio entre ambos socios.
+
+**Por qué podría tener razón… y por qué no del todo.** El punto a favor es que el precio actual ya incorpora mucho pesimismo y que un fármaco biológico pierde ventas más despacio que una molécula pequeña, con lo que el beneficio de los próximos años es bastante visible. El punto débil, y la razón por la que no veo una gran oportunidad, es que dentro de tres años el vencimiento de Dupixent estará a la vuelta de la esquina: salvo que la cartera de I+D o las adquisiciones demuestren entonces que pueden sustituirlo, el mercado no tendrá motivo para pagar un múltiplo mayor que el actual, y podría pagar menos. La tesis es, en esencia, "cobrar dividendo y crecimiento del beneficio sin expansión de múltiplo", lo que da un retorno razonable pero no excepcional.
+
+**Catalizadores.** Resultados FY2026 y guía 2027 (28/01/2027); primeras lecturas de fase 2/3 de lunsekimig, duvakitug (colitis ulcerosa, fase 3 en 2028), frexalimab y de los nuevos anticuerpos con Regeneron; decisiones de la nueva dirección sobre adquisiciones (capacidad estimada por analistas en torno a 20.000 M€); cierre de la operación con Cheplapharm (2027); evolución de las indicaciones de Dupixent en EPOC; posible día del inversor con la nueva estrategia.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. La compañía rebaja su objetivo de ventas de Dupixent para 2030 o Dupixent registra dos trimestres consecutivos de caída interanual de ventas a tipo constante antes de 2029.
+2. Un biosimilar o competidor obtiene acceso al mercado estadounidense antes de lo previsto (resolución judicial que invalide patentes clave de Dupixent o acuerdo de entrada anticipada), o Dupixent es seleccionado para negociación de precio Medicare con efectos antes de 2031.
+3. Sanofi anuncia una adquisición que, sumada a la deuda existente, eleva la deuda neta/EBITDA por encima de 2,5x o se financia con ampliación de capital significativa (> 5% de las acciones).
+4. Recorte o congelación del dividendo, o abandono explícito de la política de dividendo progresivo.
+5. La guía anual de BPA *business* se anuncia con caída a tipo constante para 2027 o 2028 (fuera del efecto contable de la desinversión en Cheplapharm).
+6. Una medida de precios en EE. UU. (extensión de la "nación más favorecida" al mercado comercial, aranceles sectoriales tras el periodo de gracia) que la propia compañía cuantifique como impacto negativo superior al 10% de su beneficio operativo.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio SAN.PA`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_SAN.PA.md

@@ -1,0 +1,68 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: Teleperformance (TEP.PA, PARIS)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** Teleperformance es el mayor operador mundial de centros de atención al cliente y servicios de back-office externalizados (casi 100 países, ~500.000 empleados). El mercado la trata como una víctima terminal de la IA generativa: si los agentes de IA resuelven la mayoría de llamadas y chats, el negocio de alquilar horas de personas desaparece. A eso se suman tres decepciones encadenadas (rebajas de objetivos en 2025, margen 2025 por debajo de la guía y, ahora, rebaja de ventas 2026), el desplome de Trust & Safety (moderación de contenido para redes sociales, automatizada a gran velocidad y trasladada a países más baratos), un cambio completo de dirección y la anunciada revisión a la baja de los objetivos 2028. El sector entero (Concentrix, TaskUs, Majorel ya absorbida) cotiza con descuento de "negocio en extinción".
+
+**Qué espera el mercado.** Que las ventas entren en un declive estructural continuado, que la deflación de precios por la IA (los clientes exigen compartir las ganancias de productividad) destruya márgenes y que el flujo de caja actual sea un espejismo que se irá erosionando año a año, con una deuda que entonces pesaría cada vez más.
+
+**Qué espero yo y por qué.** Que el declive sea más lento y parcial de lo que se descuenta, y que la caja siga llegando mientras tanto:
+- El problema está concentrado. Fuera de Trust & Safety el grupo crece de forma orgánica (Core Services ex-T&S en positivo tres trimestres seguidos; Care, el negocio principal, con crecimiento bajo pero positivo y mejorando de trimestre en trimestre). T&S es una línea de negocio menor que se va encogiendo; cuanto más pequeña sea, menos arrastra.
+- Las líneas que la compañía considera de futuro (back-office, actividades por resultado —ventas, cobros, retención—, servicios de datos para entrenar IA, soluciones con TP.ai) crecen a doble dígito y desacoplan ingresos de plantilla. Más de un tercio de los clientes ya usa TP.ai. La tesis no necesita que TP gane la carrera de la IA, solo que siga siendo el integrador "humano + IA" de procesos complejos y regulados (banca, seguros, sanidad, sector público), donde los clientes no quieren delegar todo en un modelo.
+- El margen ha aguantado pese a la caída de ventas gracias a un modelo de costes muy variable (personal ≈ 70% de los costes) y a la reestructuración en curso, cuyos ahorros llegan sobre todo a partir del segundo semestre de 2026 y en 2027.
+- Specialized Services (intérpretes de LanguageLine, visados de TLScontact) es un negocio de márgenes muy altos y menos expuesto; la revisión de cartera puede poner en valor alguno de esos activos y acelerar el desapalancamiento.
+- La generación de caja es real (convertida en efectivo, no solo contable), el dividendo no se ha recortado en diez años y la deuda está refinanciada. A los precios actuales basta con que el negocio no se hunda para que la combinación de dividendo, desapalancamiento y recompras dé una rentabilidad aceptable; una mínima estabilización de las ventas permitiría además una revalorización.
+- La nueva dirección viene precisamente del mundo de la IA aplicada y tiene incentivos para reajustar expectativas a la baja ahora (objetivos 2028 en el S1 2027) y superarlas después.
+
+**Por qué puedo estar equivocado (y lo asumo).** El riesgo de disrupción es real y no binario: la IA puede comprimir volumen y precio en Care a la vez, el traslado a países baratos reduce ingresos por hora aunque mejore márgenes, y la compañía ya ha decepcionado varias veces. Por eso el escenario desastre tiene probabilidad alta.
+
+**Catalizadores.** Resultados FY2026 y primera guía formal 2027 (25/02/2027); nuevos objetivos 2028 (S1 2027); conclusión de la revisión estratégica de cartera (posible venta de un activo de Specialized Services); ritmo de la caída de T&S (base de comparación más fácil desde 2027); materialización de los ahorros anuales de la reestructuración; uso de la caja (recompras frente a adquisiciones).
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. Core Services **excluyendo Trust & Safety** pasa a crecimiento orgánico (LFL) negativo durante dos trimestres consecutivos: significaría que la erosión por IA ha llegado al negocio principal (Care), no solo a la moderación de contenido.
+2. Ventas del grupo con caída LFL peor que −4% en un ejercicio completo, o nuevos objetivos 2028 (S1 2027) que contemplen ventas en descenso orgánico en 2027 y 2028.
+3. Margen EBITA recurrente anual (o la guía anual) por debajo del 13%, señal de que la deflación de precios supera los ahorros.
+4. Cash-flow neto disponible excluidos no recurrentes por debajo de 600 M€ en un ejercicio completo, o recorte del dividendo superior al 30% sin un programa de recompras equivalente.
+5. Deuda neta/EBITDA recurrente por encima de 2,75x, pérdida del grado de inversión o una adquisición de más de 1.000 M€ financiada con deuda.
+6. Pérdida o internalización/automatización masiva anunciada por alguno de los cinco mayores clientes fuera de Trust & Safety.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio TEP.PA`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_TEP.PA.md
