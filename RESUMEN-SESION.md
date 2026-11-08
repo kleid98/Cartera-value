@@ -1,7 +1,7 @@
 # RESUMEN DE SESIÓN — Cartera VALUE ex-USA
 
 > **Qué es este archivo:** el documento de traspaso para que una sesión nueva de Claude Code, que no ha visto nada de lo
-> hablado, pueda seguir el proyecto donde se dejó. Generado el **08/11/2026 a las 14:11 (Madrid)**. Se sobrescribe en cada
+> hablado, pueda seguir el proyecto donde se dejó. Actualizado el **09/11/2026 (pausa por límite de uso)**. Se sobrescribe en cada
 > limpieza; solo vale la última versión. Para continuar, basta con decirle a Claude: *"lee RESUMEN-SESION.md y sigue"*.
 
 ---
@@ -125,73 +125,63 @@ Todas las reglas numéricas están en `config/reglas.json` y el manual de operac
 
 No hay credenciales propias. Yahoo, el BCE/Frankfurter, Equiduct e IBKR son públicos. GitHub va con la integración de la sesión.
 
-## 5. Estado de las tesis y del comité
+## 5. Estado de las tesis y del comité (actualizado)
 
-TIR propia / TIR del comité (si ya está registrado):
+**Opción B aprobada por Ale:** universo ampliado a mid caps (`config/universo.csv`, 575 empresas; `reglas.json` sin cambios).
+Cribado nuevo en `plan/cribado.csv`/`candidatos.md`. 8 tesis nuevas de mid caps (HBR, FGR, AYV, SCR, UMI, AZM, FNTN, VK)
+escritas por agentes analistas con `comite/analista.md` (prompt reutilizable). Ninguna llega al 15%.
 
-| Ticker | Sector | País | TIR propia | TIR comité | Desastre | Asimetría | Estado |
-|---|---|---|---|---|---|---|---|
-| NWG.L | Bancos | GB | 9,9% | **9,4%** | −46% | 7,1 | ✅ comité |
-| TEP.PA | Servicios | FR | 8,5% | — | −46% | 3,5 | comité pendiente |
-| JD.L | Distribución | GB | 8,6% | — | −48% | 4,2 | comité pendiente |
-| FR.PA (Valeo) | Automóvil | FR | 8,3% | — | **−49,8%** | 4,6 | comité pendiente |
-| IMB.L | Tabaco | GB | 8,2% | **8,3%** | −38% | 7,9 | ✅ comité |
-| NOVO-B.CO | Salud | DK | 7,2% | **7,8%** | −43% | 3,8 | ✅ comité |
-| NN.AS | Seguros | NL | 6,7% | **7,1%** | −38% | 5,6 | ✅ comité |
-| EN.PA (Bouygues) | Construcción | FR | 7,1% | — | −41% | 4,5 | comité pendiente |
-| CNA.L | Utilities | GB | 7,7% | **6,6%** | −46% | 4,3 | ✅ comité |
-| BNP.PA | Bancos | FR | 8,5% | **6,6%** | −45% | 6,1 | ✅ comité |
-| ISP.MI | Bancos | IT | 6,7% | — | −48% | 5,2 | comité pendiente |
-| MG.TO (Magna) | Automóvil | CA | 6,7% | — | −43% | 3,5 | comité pendiente |
-| SAN.PA (Sanofi) | Salud | FR | 6,6% | — | −34% | 6,1 | comité pendiente |
-| 7261.T (Mazda) | Automóvil | JP | 5,9% | — | −46% | 2,9 | comité pendiente; lote ≈ 640 € |
-| MAP.MC | Seguros | ES | 4,6% | **5,6%** | −38% | 3,6 | ✅ comité |
-| LNR.TO (Linamar) | Automóvil | CA | 4,9% | — | −46% | 2,35 | comité pendiente |
-| AD.AS (Ahold) | Distribución alimentaria | NL | 4,0% | — | −43% | 2,8 | comité pendiente |
-| BP.L | Energía | GB | 4,0% | — | −37% | 2,6 | comité pendiente |
-| GALP.LS | Energía | PT | 2,6% | — | −47% | **1,8** | comité pendiente |
-| NHY.OL | Materias primas | NO | 2,3% | — | −41% | **1,6** | comité pendiente |
+TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más alta, que casi siempre es la del bajista (13–30%):
 
-**Excluidas (innegociable):**
-- SU.TO: desastre −50,9%.
-- OMV.VI: desastre −50,2%.
-- VOE.VI: desastre −54,9%.
-- ACA.PA: CET1 de la cotizada 11,2% < 12%. El grupo tiene 17,3%, pero se aplicó el filtro literal.
+| Ticker | País | TIR propia | TIR comité | Desastre | Estado |
+|---|---|---|---|---|---|
+| NWG.L | GB | 9,9% | 9,4% | −46% | ✅ comité |
+| IMB.L | GB | 8,2% | 8,3% | −38% | ✅ |
+| AYV.PA | FR | 9,5% | 8,1% | −49% | ✅ (CET1 12,8%; 9,4 años en bolsa como ALD, el negocio tiene >10) |
+| NOVO-B.CO | DK | 7,1% | 7,8% | −43% | ✅ |
+| SAN.PA | FR | 6,6% | 7,3% | −34% | ✅ |
+| NN.AS | NL | 6,7% | 7,1% | −38% | ✅ |
+| CNA.L | GB | 7,7% | 6,6% | −46% | ✅ |
+| BNP.PA | FR | 8,5% | 6,6% | −45% | ✅ |
+| EN.PA | FR | 7,1% | 6,2% | −41% | ✅ |
+| ISP.MI | IT | 6,7% | 6,2% | −48% | ✅ |
+| MAP.MC | ES | 4,6% | 5,6% | −38% | ✅ |
+| TEP.PA | FR | 8,5% | 4,9% | −46% | ✅ |
+| FNTN.DE | DE | 7,5% | 4,8% | −41% | ✅ (resultados 9M el 11/11: no lanzar orden antes) |
+| JD.L | GB | 8,6% | 4,8% | −48% | ✅ (trading statement 19/11) |
+| MG.TO | CA | 6,7% | 4,5% | −43% | ✅ (arancel 50% piezas CA desde 01/01/2027 anunciado) |
+| HBR.L | GB | 7,8% | 3,9% | −47% | ✅ |
+| 7261.T | JP | 5,9% | — | −46% | comité pendiente |
+| AZM.MI | IT | 5,7% | — | −48% | comité pendiente |
+| SCR.PA | FR | 5,6% | — | −47% | comité pendiente |
+| LNR.TO | CA | 4,9% | — | −46% | comité pendiente |
+| Reservas | | AD.AS 4,0 · BP.L 4,0 · FGR.PA 4,0 | — | | sin comité |
 
-**Límites de la Fase 0 con estas 20:**
-- Ninguna pasa el umbral de TIR, así que **todas entrarían como 🟡 provisionales**.
-- Las 20 caben justo en los límites: Francia 5, Reino Unido 5, automóvil 4, fuera de Europa 3 (15%).
-- Galp y Norsk Hydro tienen asimetría < 2. La asimetría no está entre las reglas innegociables de la Fase 0, pero son las peores candidatas.
-- Si el comité veta alguna o sube su desastre por debajo de −50%, quedarían < 20 y habría que analizar reservas. Posibles reservas del cribado: Shell, TotalEnergies, GSK, Saint-Gobain, Kingfisher, Tesco y Arkema.
+**Excluidas:** SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%); ACA.PA (CET1 11,2%); VK.PA (beneficio operativo 4/10);
+**FR.PA (Valeo): excluida por el comité** — los dos miembros ponen el desastre < −50% (−54%/−55%) frente al −49,8% propio.
+Criterio adoptado (decisión mía, comunicada a Ale): se excluye solo si **ambos** miembros del comité sitúan el desastre
+(retorno total) por debajo de −50%. GALP.LS y NHY.OL (asimetría < 2) quedan fuera por TIR. Aegon no se analizó (traslada sede a EE. UU.).
+
+**20 de la Fase 0 (provisional):** las 16 con comité + 7261, AZM, SCR, LNR. Límites: FR 6 (AYV, SAN, BNP, EN, TEP, SCR),
+GB 5, automóvil 3 (MG, 7261, LNR), fuera de Europa 3 (15%). Todas 🟡 provisionales.
 
 ## 6. Pendiente, en este orden
 
-1. **Comité de las 13 que faltan:** TEP, JD, FR, EN, ISP, MG, SAN, 7261, LNR, AD, BP, GALP y NHY.
-   - Lánzalo **DE UNO EN UNO o como mucho de dos en dos**: un bajista y un valorador de la misma empresa, y esperar.
-   - Por cada empresa:
-     - `python3 scripts/comite.py tesis/X.md <dir_scratch>`
-     - lanzar 2 agentes `general-purpose` con el prompt "Lee tus instrucciones en <dir>/bajista_X.txt…" / ".../valorador_X.txt…", más "no leas tesis ni otros ficheros del comité"
-     - `python3 scripts/comite_registrar.py tesis/X.md <dir>/informe_bajista_X.md <dir>/informe_valorador_X.md`
-   - Los prompts ya piden al agente que guarde su informe en `<dir>/informe_{rol}_X.md`.
-   - Los agentes de la sesión anterior que se cortaron por el límite **no se pueden reanudar** desde una sesión nueva: hay que relanzarlos.
-2. **Escribir `plan/fase0.md`:**
-   - Las 20 ordenadas por TIR del comité (o propia si no hay comité), todas `--provisional`.
-   - Reparto de unas 4 compras al día, de lunes a viernes, entre APERTURA_UE y APERTURA_US.
-   - ISIN, mercado, país emisor y sector de cada una (en cada tesis).
-   - Mazda, como orden `--tipo APERTURA` decidida en un CIERRE.
-   - Regla del 3er día: AGRESIVA.
-3. **Actualizar cada tesis** a 🟡 provisional en "Estado" y "Decisión".
-4. Commit y push a la rama. El PR se actualiza solo. Pedir a Ale que **fusione el PR**.
-5. **⏸️ LAS 4 TAREAS PROGRAMADAS ESTÁN PAUSADAS** (Ale lo pidió el 08/11/2026 a las 14:18) hasta que el comité y el plan estén listos y el PR fusionado.
-   - IDs: `trig_01CEGapUaBpMEvxHmy3HZAt8`, `trig_01AikUWcNyEwnr1XY35S6jAY`, `trig_01Q31HxP6FUV3dPWk9v1Rt2a` y `trig_01UnKHPrvh2AaPgsFJfzg9PC`.
-   - **Para reanudar:** `update_trigger` con `enabled=true` en las cuatro, **solo después** de que Ale fusione el PR.
-   - Como la Fase 0 ya no empieza el lunes 09/11, hay que **mover las fechas de la Fase 0** a la semana real de arranque: `config/reglas.json` → `fase0.inicio`/`fin` y `fecha_inicio`, y las menciones de "09–13/11/2026" en `CLAUDE.md`. Es un cambio de calendario, no de reglas, pero confírmalo con Ale al proponer la fecha.
-6. ✅ **Tarea programada antigua borrada** (`trig_01UJiwFhup6i55z79wxW5PFz`, "Cartera value: revisión diaria 16:00", del proyecto anterior de 100.000 €), por orden de Ale.
-7. **Pregunta abierta a Ale:**
-   - **Hallazgo importante:** ninguno de los 24 candidatos (todos large caps) llega a la TIR del 15%. El rango es −3% a 10%.
-     - La Fase 0 será 100% provisional.
-     - Comentar a Ale si quiere mantener el umbral, ampliar el universo a mid caps de 2.000–10.000 M€ (más probable encontrar un 15%), o dejarlo así y que la rotación mejore la cartera con el tiempo.
-     - **No cambiar `reglas.json` sin su acuerdo.**
+1. **Comité de 7261.T, AZM.MI, SCR.PA y LNR.TO** (de uno en uno). Prompts ya generados en `plan/comite_informes/`
+   (los de 7261 y AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
+   nuevo si cambian las rutas: el prompt indica dónde guardar el informe. Registrar con `scripts/comite_registrar.py`.
+   Si alguna cae por debajo de AD/BP/FGR (4,0% propia), hacer comité de la reserva antes de sustituirla.
+2. **`plan/fase0.md`:** las 20 ordenadas por TIR comité, ~4 compras/día; FNTN después del 11/11 y JD después del 19/11 si
+   cae en esa semana; Mazda como orden APERTURA desde un CIERRE.
+3. Tesis → 🟡 provisional en Estado y Decisión.
+4. **Mover fechas de la Fase 0** (`reglas.json` fase0.inicio/fin y fecha_inicio; menciones en CLAUDE.md): proponer fecha a Ale.
+5. Commit/push, pedir a Ale que fusione https://github.com/kleid98/Cartera-value/pull/1, y solo después reanudar las 4 tareas
+   (`update_trigger enabled=true`: trig_01CEGapUaBpMEvxHmy3HZAt8, trig_01AikUWcNyEwnr1XY35S6jAY, trig_01Q31HxP6FUV3dPWk9v1Rt2a,
+   trig_01UnKHPrvh2AaPgsFJfzg9PC). **Siguen PAUSADAS.**
+6. **Uso:** Ale pide parar al ~80% del límite de 5 horas. Cada comité ≈ 240k tokens; cada tesis ≈ 145k. No hay forma de
+   leer el % de uso: estimar y quedarse corto.
+7. **Observación para Ale:** con este método ninguna empresa grande o mediana llega al 15%; el bajista sube la P(desastre) a
+   13–30% y la reconciliación deja TIR de 4–9%. Ale decidió mantener el umbral (Fase 0 100% provisional).
 
 ## 7. Cosas a tener en cuenta
 
