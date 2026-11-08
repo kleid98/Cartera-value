@@ -181,7 +181,7 @@ GB 5, automóvil 3 (MG, 7261, LNR), fuera de Europa 3 (15%). Todas 🟡 provisio
 6. **Uso:** Ale pide parar al ~80% del límite de 5 horas. Cada comité ≈ 240k tokens; cada tesis ≈ 145k. No hay forma de
    leer el % de uso: estimar y quedarse corto.
 7. **Observación para Ale:** con este método ninguna empresa grande o mediana llega al 15%; el bajista sube la P(desastre) a
-   13–30% y la reconciliación deja TIR de 4–9%. Ale decidió mantener el umbral (Fase 0 100% provisional).
+   13–30% y la reconciliación deja TIR de 4–9%. Ale eligió la opción B (ampliar universo); el umbral no se ha tocado y la Fase 0 sería 100% provisional. Pendiente comentarlo con datos.
 
 ## 7. Cosas a tener en cuenta
 
