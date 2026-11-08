@@ -67,7 +67,7 @@ Base de cálculo: el BPA ajustado de 2025 fue ~5,0 NOK, con un LME medio de ~2.6
   }
 }
 ```
-Resultado `python3 scripts/ev.py tesis/NHY.OL.md`: RESULTADO_EV
+Resultado `python3 scripts/ev.py tesis/NHY.OL.md`: TIR propia **2,3%** anual (retorno esperado a 3 años +7,2%, con un coste de ida y vuelta del 1,19% y retención en Noruega del 25% sobre dividendos). Retornos a 3 años: desastre −40,9% · bajista −23,0% · base +18,4% · alcista +59,8%. Asimetría **1,63**. Cumple: TIR ≥ 17% ❌ · desastre ≥ −50% ✅ · asimetría ≥ 2 ❌ → `compra_ok: false`. TIR del comité: pendiente.
 
 ## Comité
 ### 🔴 Bajista
@@ -76,9 +76,9 @@ Resultado `python3 scripts/ev.py tesis/NHY.OL.md`: RESULTADO_EV
 Regla aplicada, TIR final, decisión.
 
 ## Decisión
-DECISION_TXT
+**NO COMPRAR** (provisional, a la espera del comité). Es una buena empresa con un balance sólido y cumple todos los filtros duros, pero a 68 NOK el precio ya descuenta un aluminio de mitad de ciclo. Los beneficios récord de 2026 vienen de una perturbación de oferta (Golfo/Ormuz) que se está deshaciendo, y el escenario base a 3 años apenas supera el precio actual más los dividendos. La TIR (2,3%) está muy lejos del 17% exigido fuera del euro y la asimetría (1,6) no llega a 2. Revisaría la tesis si cae por debajo de ~50 NOK (≈ 1x VC con BPA normalizado de 6) o si el Investor Day (25/11) anuncia un retorno extraordinario al accionista.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
-| 2026-11-07 | Tesis inicial (cribado Fase 0) | — → TIR_TXT | — | Candidata, sin comité |
+| 2026-11-07 | Tesis inicial (cribado Fase 0) | — → 2,3% (asim. 1,63) | — | Candidata, sin comité |
