@@ -91,7 +91,7 @@ Métrica: BPA normalizado de 2029 (año 3; precio a nov-2029), neto de cupones d
   }
 }
 ```
-Resultado `python3 scripts/ev.py tesis/ACA.PA.md`: (pendiente)
+Resultado `python3 scripts/ev.py tesis/ACA.PA.md`: TIR propia **7,4%** (umbral 15%) · retorno esperado 3a +23,8% · retornos por escenario: desastre −45,9%, bajista +3,2%, base +32,5%, alcista +65,0% · asimetría 6,19 · coste ida/vuelta 0,93% (incluye TTF 0,4%) · cumple: TIR ≥ 15% ❌, desastre ≥ −50% ✅, asimetría ≥ 2 ✅ → `compra_ok: false`. TIR comité: pendiente.
 
 ## Comité
 ### 🔴 Bajista
@@ -100,11 +100,11 @@ Resultado `python3 scripts/ev.py tesis/ACA.PA.md`: (pendiente)
 Regla aplicada, TIR final, decisión.
 
 ## Decisión
-(pendiente)
+**NO COMPRAR** (provisional, a la espera del comité) — TIR esperada del 7,4%, muy por debajo del 15%, y además incumple literalmente el filtro duro de capital (CET1 de CASA 11,2% < 12%; solo lo cumpliría si el gestor acepta el 17,3% del Grupo como métrica). El perfil de riesgo es razonable (asimetría 6,2, desastre −46% dentro del límite, ≈ 7% de dividendo bruto recurrente), pero a ≈ 7x beneficios y ≈ 0,9x valor tangible el escenario base solo rinde ≈ 10% anual: el castigo por el riesgo soberano francés no es lo bastante profundo para compensar un crecimiento modesto y un capital justo en la filial. Precio a partir del cual la TIR alcanzaría el 15% con estos mismos escenarios: ≈ 12,9 €. Como 🟡 provisional de relleno en la Fase 0 solo si el gestor resuelve a favor el filtro de CET1; en ese caso BNP.PA (TIR 8,5%, CET1 12,9%) es preferible dentro de la banca francesa.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
-| 2026-11-07 | Tesis inicial (tras resultados 3T26) | — → (pendiente) | Desastre 0,10 / Bajista 0,25 / Base 0,45 / Alcista 0,20 | Candidata, pendiente de comité |
+| 2026-11-07 | Tesis inicial (tras resultados 3T26) | — → 7,4% | Desastre 0,10 / Bajista 0,25 / Base 0,45 / Alcista 0,20 | Candidata, pendiente de comité |
 
 Fuentes: credit-agricole.com — presentación de resultados 2T/S1-26 (pdfPreview/211048, 31/07/2026) y comptes consolidés intermédiaires de Crédit Agricole S.A. au 30/06/2026 (pdfPreview/211079: cuenta de resultados, BPA, dividendos, Banco BPM, recargo IS); comunicado 1T26 vía mfn.se (30/04/2026); comunicado de reducción de capital (14/10/2026); ideal-investisseur.fr, tradingsat.com/Zonebourse (KBW), boersen-zeitung.de (exposición soberana, comentarios de Gavalda) y globalcapital.com sobre el 3T26 (30/10/2026); ideal-investisseur.fr y paperjam.lu (FY2025); optionfinance.fr y allnews.ch (plan ACT 2028, 18/11/2025); abcbourse.com y optionfinance.fr (Banco BPM 29,3%, 03-06/07/2026); abcbourse.com (análisis "risque France", 15/10/2026); easybourse.com/Reuters (Moody's mantiene Aa3 perspectiva negativa, 23/10/2026); divaltis.com (a cuenta 0,57 €); Yahoo Finance (precio, volumen, dividendos). Tweenvest no consultado (sin acceso en esta sesión). El comunicado oficial del 3T26 no se pudo descargar; las cifras del 3T26 proceden de prensa y conviene verificarlas.
