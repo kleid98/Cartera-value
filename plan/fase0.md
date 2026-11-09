@@ -32,7 +32,7 @@ filtros duros y desastre ≥ −50%. Límites: máx. 6 por país y 4 por sector.
 | 15 | MG.TO | Magna International | CA5592224011 | TORONTO | CA | Automóvil | 4,5% | 87,38 CAD | 8 |
 | 16 | HBR.L | Harbour Energy | GB00BMBVGQ36 | LONDRES | GB | Energía | 3,9% | 263,4p | 158 |
 | 17 | AZM.MI | Azimut Holding | IT0003261697 | MILAN | IT | Gestión de activos | 4,0% | 35,82 € | 13 |
-| 18 | SCR.PA | SCOR | FR0010411983 | PARIS | FR | Seguros | (propia 5,6%) | 34,68 € | 14 |
+| 18 | SCR.PA | SCOR | FR0010411983 | PARIS | FR | Seguros | 5,1% | 34,68 € | 14 |
 | 19 | LNR.TO | Linamar | CA53278L1076 | TORONTO | CA | Automóvil | (propia 4,9%) | 86,29 CAD | 9 |
 | 20 | reserva | AD.AS (Ahold, NL) o BP.L (BP, GB) | — | — | — | — | (propia 4,0%) | — | — |
 
