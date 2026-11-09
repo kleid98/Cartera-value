@@ -222,14 +222,14 @@ PRECIO_ACTUAL: 587.4
 - Historial de 2016–2022 de memoria (informes anuales de RBS/NatWest), sin verificar en esta sesión.
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.17 · valorador 0.07 → **usada 0.17**
-- TIR propia ajustada 0.0782 · TIR valorador ciego 0.11 → **TIR final 0.0941** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.17 · valorador 0.07 → **usada 0.1133** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.095 · TIR valorador ciego 0.11 → **TIR final 0.1025** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 1 de 20)** — TIR del comité 9,4%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 1 de 20)** — TIR del comité 10,2% (TIR propia ajustada 9,5%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)**. El negocio es de calidad: cumple todos los filtros duros, con un CET1 del 13,5% y RoTE del 20%, y la asimetría es buena. Pero a 587 GBX el mercado ya descuenta buena parte de la normalización: PER ≈ 7,7x y 1,64x TNAV tras el *re-rating* de 2023–2026. La TIR esperada (≈ 10%) queda muy lejos del 17% exigido fuera del euro. No es de las mejores candidatas por TIR, así que tampoco encaja como PROVISIONAL. Vigilar: zona de interés ≈ 490 GBX o menos, o una mejora clara de la guía de RoTE 2027–2028 en los resultados de febrero de 2027.
 

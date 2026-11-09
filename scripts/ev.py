@@ -48,10 +48,10 @@ def calcular(ev, prob_desastre_override=None):
     if fuera_euro:
         fx = C.coste_fx_eur(ce["valor"], m["divisa"]); coste_pct += 2 * (fx["comision_eur"] + fx["diferencial_eur"]) / fx["eur_base"]
     esc = {k: dict(v) for k, v in ev["escenarios"].items()}
-    if prob_desastre_override is not None and prob_desastre_override > esc["desastre"]["prob"]:
-        extra = prob_desastre_override - esc["desastre"]["prob"]
+    if prob_desastre_override is not None and abs(prob_desastre_override - esc["desastre"]["prob"]) > 1e-9:
+        extra = prob_desastre_override - esc["desastre"]["prob"]  # puede ser negativo (media < propia)
         esc["desastre"]["prob"] = prob_desastre_override
-        # se resta proporcionalmente de los escenarios favorables
+        # la diferencia se resta (o se suma) proporcionalmente a los escenarios favorables
         fav = esc["base"]["prob"] + esc["alcista"]["prob"]
         for k in ("base", "alcista"): esc[k]["prob"] -= extra * esc[k]["prob"] / fav
     tot = sum(v["prob"] for v in esc.values())
@@ -83,7 +83,9 @@ def main():
     com = ev.get("comite") or {}
     vc = com.get("valorador_ciego") or {}; bj = com.get("bajista") or {}
     if vc.get("tir") is not None or vc.get("prob_desastre") is not None or bj.get("prob_desastre") is not None:
-        pd = max(ev["escenarios"]["desastre"]["prob"], vc.get("prob_desastre") or 0, bj.get("prob_desastre") or 0)
+        pds = [ev["escenarios"]["desastre"]["prob"]] + [x for x in (vc.get("prob_desastre"), bj.get("prob_desastre")) if x is not None]
+        # Regla acordada con Ale el 09/11/2026: media de las tres (antes: la más alta)
+        pd = round(sum(pds) / len(pds), 4) if C.REGLAS["comite"].get("prob_desastre_modo", "max") == "media" else max(pds)
         ajust = calcular(ev, pd)
         tir_vc = vc.get("tir")
         if tir_vc is None: tir_final = ajust["tir"]; regla = "sin valorador ciego"

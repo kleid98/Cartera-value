@@ -254,14 +254,14 @@ PRECIO_ACTUAL: 91.93
 - Precio: `scripts/cartera.py precio BNP.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.17 · valorador 0.07 → **usada 0.17**
-- TIR propia ajustada 0.0655 · TIR valorador ciego 0.12 → **TIR final 0.0655** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.1 · bajista 0.17 · valorador 0.07 → **usada 0.1133** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0813 · TIR valorador ciego 0.12 → **TIR final 0.1006** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ✅, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 8 de 20)** — TIR del comité 6,6%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 2 de 20)** — TIR del comité 10,1% (TIR propia ajustada 8,1%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — TIR esperada del 8,5%, muy por debajo del 15%. El perfil de riesgo es bueno (asimetría 6, desastre −45% dentro del límite, filtros duros cumplidos y ≈ 6% de rentabilidad por dividendo bruto), pero a 7,5x beneficios el escenario base solo da ≈ 12% anual: el mercado ya descuenta buena parte de la mejora de rentabilidad. Solo tendría sentido como 🟡 provisional de relleno en la Fase 0 si faltan candidatas que cumplan. Precio a partir del cual la TIR alcanzaría el 15% con estos mismos escenarios: ≈ 77 €.
 

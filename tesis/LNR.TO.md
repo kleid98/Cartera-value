@@ -1,6 +1,6 @@
 # Linamar Corporation (LNR.TO · TORONTO) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** CA53278L1076 · **País emisor:** CA (Guelph, Ontario) · **Sector:** Automóvil (componentes de motor/transmisión/chasis, Mobility ~76% de ventas) + Industrial (plataformas elevadoras Skyjack, maquinaria agrícola MacDon/Salford/Bourgault, ~24%) · **Divisa/unidad:** CAD
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-03-03 (Q4 y año 2026)
 
@@ -251,14 +251,16 @@ PRECIO_ACTUAL: 86.29
 - Precio: `scripts/cartera.py precio LNR.TO` (86,29 CAD, 06/11/2026)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.25 · valorador 0.1 → **usada 0.25**
-- TIR propia ajustada 0.0123 · TIR valorador ciego 0.05 → **TIR final 0.0312** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.25 · valorador 0.1 → **usada 0.1567** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0385 · TIR valorador ciego 0.05 → **TIR final 0.0442** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ❌, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ❌, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y el balance es excelente, pero la TIR propia del 4,9% queda muy lejos del 17% exigido fuera del euro. Está barata porque es cíclica y depende del T-MEC: con un BPA prácticamente plano y un múltiplo histórico de 8–9x, la rentabilidad sale del dividendo y de las recompras, no de una revalorización. Solo me plantearía revisarla con el precio cerca de 60 CAD (≈ 0,8x el valor contable tangible) o si un acuerdo sectorial EE. UU.–Canadá despeja los aranceles.
+**PROVISIONAL 🟡 (Fase 0, puesto 20 de 20)** — TIR del comité 4,4% (TIR propia ajustada 3,9%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y el balance es excelente, pero la TIR propia del 4,9% queda muy lejos del 17% exigido fuera del euro. Está barata porque es cíclica y depende del T-MEC: con un BPA prácticamente plano y un múltiplo histórico de 8–9x, la rentabilidad sale del dividendo y de las recompras, no de una revalorización. Solo me plantearía revisarla con el precio cerca de 60 CAD (≈ 0,8x el valor contable tangible) o si un acuerdo sectorial EE. UU.–Canadá despeja los aranceles.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

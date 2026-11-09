@@ -250,14 +250,14 @@ PRECIO_ACTUAL: 68.44
 - Precio: `scripts/cartera.py precio TEP.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.2 · bajista 0.3 · valorador 0.15 → **usada 0.3**
-- TIR propia ajustada 0.0487 · TIR valorador ciego 0.13 → **TIR final 0.0487** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.2 · bajista 0.3 · valorador 0.15 → **usada 0.2167** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0789 · TIR valorador ciego 0.13 → **TIR final 0.0789** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ❌, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 14 de 20)** — TIR del comité 4,9%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 9 de 20)** — TIR del comité 7,9% (TIR propia ajustada 7,9%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **PROVISIONAL** (a la espera del comité) — no llega al umbral (TIR 8,5% < 15%), pero cumple filtros duros, desastre (−45,6%) y asimetría (3,5), y su TIR está entre las más altas de las tesis escritas hasta ahora. El precio descuenta un declive severo, pero la probabilidad de desastre (20%) es alta y está a pocos puntos del límite de −50%: no se compra como definitiva. Solo entraría como 🟡 provisional si en la Fase 0 faltan candidatas con TIR ≥ 15%, y siempre que el comité no suba la probabilidad de desastre ni vete. Reevaluar con la guía 2027 (25/02/2027).
 

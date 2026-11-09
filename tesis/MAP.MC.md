@@ -298,14 +298,14 @@ PRECIO_ACTUAL: 4.13
 - Precio: `scripts/cartera.py precio MAP.MC` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.12**
-- TIR propia ajustada 0.0419 · TIR valorador ciego 0.07 → **TIR final 0.0559** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.0967** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0468 · TIR valorador ciego 0.07 → **TIR final 0.0584** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 11 de 20)** — TIR del comité 5,6%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 17 de 20)** — TIR del comité 5,8% (TIR propia ajustada 4,7%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — Mapfre pasa todos los filtros duros con holgura (Solvencia II ≈ 209 %, 10/10 años con beneficio, sin dilución) y el riesgo de pérdida está acotado (asimetría 3,6; desastre −38 %), pero la TIR esperada del 4,6 % queda muy lejos del 15 %: cotiza a ≈ 1,35x valor contable y ≈ 11x beneficio con un beneficio récord apoyado en el resultado financiero y plusvalías mientras el técnico No Vida cae, y Safety se financia con deuda. Es una aseguradora correcta a precio justo, no una oportunidad value. Revisar si cae por debajo de ≈ 3,0 € sin deterioro de fundamentales o si el Plan 2027-29 (marzo 2027) eleva de forma creíble ROE y payout.
 

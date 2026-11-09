@@ -232,14 +232,14 @@ PRECIO_ACTUAL: 6.177
 - `python3 scripts/cartera.py precio ISP.MI` (6,177 €, 06/11/2026 17:39)
 
 ### Reconciliación
-- Prob. desastre: propia 0.08 · bajista 0.17 · valorador 0.07 → **usada 0.17**
-- TIR propia ajustada 0.0434 · TIR valorador ciego 0.08 → **TIR final 0.0617** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.08 · bajista 0.17 · valorador 0.07 → **usada 0.1067** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0602 · TIR valorador ciego 0.08 → **TIR final 0.0701** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 10 de 20)** — TIR del comité 6,2%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 14 de 20)** — TIR del comité 7,0% (TIR propia ajustada 6,0%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y la asimetría es buena (5,2), pero la TIR propia del 6,7% queda a más de 8 pp del umbral del 15%: a 6,18 € el mercado ya paga un negocio excelente a un múltiplo justo, y el retorno depende casi solo del dividendo (que además soporta un 26% de retención italiana). El desastre (−48%) roza el límite del −50% por la exposición a riesgo soberano italiano. Nivel de reentrada orientativo: por debajo de ≈ 4,9 € con la tesis intacta (precio al que estos mismos escenarios darían TIR ≈ 15%), o una mejora clara de BPA tras cerrar la integración de MPS.
 

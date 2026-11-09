@@ -231,14 +231,14 @@ PRECIO_ACTUAL: 23.34
 - Precio: `python3 scripts/cartera.py precio FNTN.DE` (23,34 €, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.22**
-- TIR propia ajustada 0.0484 · TIR valorador ciego 0.12 → **TIR final 0.0484** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.1467** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0678 · TIR valorador ciego 0.12 → **TIR final 0.0678** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 15 de 20)** — TIR del comité 4,8%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 15 de 20)** — TIR del comité 6,8% (TIR propia ajustada 6,8%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,5%, la mitad del 15% exigido. Es un valor de rentas: el dividendo mínimo de 2 € sostiene el suelo (desastre −41%, asimetría 5,9), pero sin crecimiento el retorno depende de que el múltiplo suba, y la retención alemana del 26,4% se come una cuarta parte del dividendo. Para llegar al 15% haría falta un precio de ~17–18 € con la tesis intacta, o un acuerdo con el operador que elimine la carga de ~50 M€/año y una guía 2027 que haga creíble la ambición 2028.
 

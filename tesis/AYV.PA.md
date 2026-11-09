@@ -236,14 +236,14 @@ PRECIO_ACTUAL: 9.615
 - Precio: `python3 scripts/cartera.py precio AYV.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.22**
-- TIR propia ajustada 0.062 · TIR valorador ciego 0.1 → **TIR final 0.081** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.1467** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0861 · TIR valorador ciego 0.1 → **TIR final 0.093** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 3 de 20)** — TIR del comité 8,1%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 3 de 20)** — TIR del comité 9,3% (TIR propia ajustada 8,6%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)**. TIR propia del 9,5%, lejos del 15%. Si el plan 2029 se cumple, el escenario base rinde ~15% anual solo con el reparto de capital, sin necesidad de que suba el múltiplo. Pero el bajista (usado en cero, ROTE del 11–12%) deja el capital plano a 3 años, y el desastre (−49%) roza el límite por el apalancamiento sobre el valor residual de la flota. La asimetría es buena (5,8) y el filtro de CET1 va justo (12,8% frente al 12%). Se reconsideraría por debajo de ~7,5 € con la guía 2026 cumplida, o si los resultados FY2026 (04/02/2027) traen una guía de usado 2027 positiva, un dividendo ordinario ≥ 0,65 € y un CET1 ≥ 12,8%.
 

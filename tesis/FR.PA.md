@@ -251,10 +251,10 @@ PRECIO_ACTUAL: 10.96
 - Precio: `python3 scripts/cartera.py precio FR.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.12 → **usada 0.27**
-- TIR propia ajustada 0.0436 · TIR valorador ciego 0.05 → **TIR final 0.0468** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.12 → **usada 0.18** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0736 · TIR valorador ciego 0.05 → **TIR final 0.0618** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión

@@ -1,53 +1,55 @@
 # Plan de la Fase 0 (16–20/11/2026)
 
 > Fechas confirmadas por Ale el 09/11/2026 (la Fase 0 iba a ser el 09–13/11 y se retrasó una semana para terminar el comité).
-> `config/reglas.json` y `CLAUDE.md` ya están actualizados. Requiere PR fusionado y tareas reanudadas antes del lunes 16/11.
+> `config/reglas.json` y `CLAUDE.md` ya están actualizados.
 
 ## Situación
-Ninguna candidata alcanza la TIR mínima (15% euro / 17% fuera del euro), así que las 20 entran como **🟡 provisionales**
-(`--provisional`): se pueden rotar con +5 pp de mejora durante sus primeras 8 semanas. Innegociables cumplidos en todas:
-filtros duros y desastre ≥ −50%. Límites: máx. 6 por país y 4 por sector.
+**Reglas revisadas con Ale el 09/11/2026:** umbral de TIR 10% (zona euro) / 12% (fuera del euro), antes 15%/17%; y
+P(desastre) del comité = media de las tres (propia, bajista, valorador), antes la más alta. Ninguna candidata cumple aún
+todas las reglas de compra (`compra_ok`): BNP llega al 10,1% en TIR del comité pero su TIR propia ajustada (8,1%) queda
+por debajo. Por tanto las 20 entran como **🟡 provisionales** (`--provisional`): rotables con +5 pp de mejora durante sus
+primeras 8 semanas. Innegociables cumplidos en todas: filtros duros y desastre ≥ −50%. Límites: máx. 6 por país y 4 por sector.
 
 ## Las 20 (orden de prioridad = TIR del comité). Todas con comité completo.
 
-| # | Ticker | Empresa | ISIN | Mercado | País | Sector | TIR comité | Precio ref. | ~Acciones (500 €) |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | NWG.L | NatWest Group | GB00BM8PJY71 | LONDRES | GB | Bancos | 9,4% | 587,4p | 71 |
-| 2 | IMB.L | Imperial Brands | GB0004544929 | LONDRES | GB | Tabaco | 8,3% | 2.973p | 14 |
-| 3 | AYV.PA | Ayvens | FR0013258662 | PARIS | FR | Financieras | 8,1% | 9,62 € | 52 |
-| 4 | NOVO-B.CO | Novo Nordisk | DK0062498333 | COPENHAGUE | DK | Salud | 7,8% | 269,45 DKK | 13 |
-| 5 | SAN.PA | Sanofi | FR0000120578 | PARIS | FR | Salud | 7,3% | 83,74 € | 5 |
-| 6 | NN.AS | NN Group | NL0010773842 | AMSTERDAM | NL | Seguros | 7,1% | 79,18 € | 6 |
-| 7 | CNA.L | Centrica | GB00B033F229 | LONDRES | GB | Utilities | 6,6% | 151,5p | 275 |
-| 8 | BNP.PA | BNP Paribas | FR0000131104 | PARIS | FR | Bancos | 6,6% | 91,93 € | 5 |
-| 9 | EN.PA | Bouygues | FR0000120503 | PARIS | FR | Construcción | 6,2% | 42,29 € | 11 |
-| 10 | ISP.MI | Intesa Sanpaolo | IT0000072618 | MILAN | IT | Bancos | 6,2% | 6,18 € | 80 |
-| 11 | MAP.MC | Mapfre | ES0124244E34 | MADRID | ES | Seguros | 5,6% | 4,13 € | 121 |
-| 12 | SCR.PA | SCOR | FR0010411983 | PARIS | FR | Seguros | 5,1% | 34,68 € | 14 |
-| 13 | AD.AS | Ahold Delhaize | NL0011794037 | AMSTERDAM | NL | Distribución alimentaria | 5,0% | 34,22 € | 14 |
-| 14 | TEP.PA | Teleperformance | FR0000051807 | PARIS | FR | Servicios | 4,9% | 68,44 € | 7 |
-| 15 | FNTN.DE | freenet | DE000A0Z2ZZ5 | XETRA | DE | Telecomunicaciones | 4,8% | 23,34 € | 21 |
-| 16 | JD.L | JD Sports Fashion | GB00BM8Q5M07 | LONDRES | GB | Distribución | 4,8% | 95,34p | 437 |
-| 17 | MG.TO | Magna International | CA5592224011 | TORONTO | CA | Automóvil | 4,5% | 87,38 CAD | 8 |
-| 18 | AZM.MI | Azimut Holding | IT0003261697 | MILAN | IT | Gestión de activos | 4,0% | 35,82 € | 13 |
-| 19 | HBR.L | Harbour Energy | GB00BMBVGQ36 | LONDRES | GB | Energía | 3,9% | 263,4p | 158 |
-| 20 | BP.L | BP | GB0007980591 | LONDRES | GB | Energía | 3,7% | 559,4p | 74 |
+| # | Ticker | Empresa | ISIN | Mercado | País | Sector | TIR comité | TIR propia ajust. | Umbral | Precio ref. | ~Acciones (500 €) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | NWG.L | NatWest Group | GB00BM8PJY71 | LONDRES | GB | Bancos | 10,2% | 9,5% | 12,0% | 587,4p | 71 |
+| 2 | BNP.PA | BNP Paribas | FR0000131104 | PARIS | FR | Bancos | 10,1% | 8,1% | 10,0% | 91,93 € | 5 |
+| 3 | AYV.PA | Ayvens | FR0013258662 | PARIS | FR | Financieras | 9,3% | 8,6% | 10,0% | 9,62 € | 52 |
+| 4 | JD.L | JD Sports Fashion | GB00BM8Q5M07 | LONDRES | GB | Distribución | 9,2% | 7,4% | 12,0% | 95,34p | 437 |
+| 5 | IMB.L | Imperial Brands | GB0004544929 | LONDRES | GB | Tabaco | 8,5% | 8,0% | 12,0% | 2.973p | 14 |
+| 6 | NOVO-B.CO | Novo Nordisk | DK0062498333 | COPENHAGUE | DK | Salud | 8,2% | 7,4% | 12,0% | 269,45 DKK | 13 |
+| 7 | MG.TO | Magna International | CA5592224011 | TORONTO | CA | Automóvil | 8,1% | 6,2% | 12,0% | 87,38 CAD | 8 |
+| 8 | HBR.L | Harbour Energy | GB00BMBVGQ36 | LONDRES | GB | Energía | 8,0% | 7,0% | 12,0% | 263,4p | 158 |
+| 9 | TEP.PA | Teleperformance | FR0000051807 | PARIS | FR | Servicios | 7,9% | 7,9% | 10,0% | 68,44 € | 7 |
+| 10 | NN.AS | NN Group | NL0010773842 | AMSTERDAM | NL | Seguros | 7,4% | 6,8% | 10,0% | 79,18 € | 6 |
+| 11 | SAN.PA | Sanofi | FR0000120578 | PARIS | FR | Salud | 7,3% | 6,7% | 10,0% | 83,74 € | 5 |
+| 12 | AZM.MI | Azimut Holding | IT0003261697 | MILAN | IT | Gestión de activos | 7,1% | 5,3% | 10,0% | 35,82 € | 13 |
+| 13 | CNA.L | Centrica | GB00B033F229 | LONDRES | GB | Utilities | 7,1% | 7,2% | 12,0% | 151,5p | 275 |
+| 14 | ISP.MI | Intesa Sanpaolo | IT0000072618 | MILAN | IT | Bancos | 7,0% | 6,0% | 10,0% | 6,18 € | 80 |
+| 15 | FNTN.DE | freenet | DE000A0Z2ZZ5 | XETRA | DE | Telecomunicaciones | 6,8% | 6,8% | 10,0% | 23,34 € | 21 |
+| 16 | EN.PA | Bouygues | FR0000120503 | PARIS | FR | Construcción | 6,6% | 7,1% | 10,0% | 42,29 € | 11 |
+| 17 | MAP.MC | Mapfre | ES0124244E34 | MADRID | ES | Seguros | 5,8% | 4,7% | 10,0% | 4,13 € | 121 |
+| 18 | SCR.PA | SCOR | FR0010411983 | PARIS | FR | Seguros | 5,7% | 5,3% | 10,0% | 34,68 € | 14 |
+| 19 | AD.AS | Ahold Delhaize | NL0011794037 | AMSTERDAM | NL | Distribución alimentaria | 5,2% | 4,4% | 10,0% | 34,22 € | 14 |
+| 20 | LNR.TO | Linamar | CA53278L1076 | TORONTO | CA | Automóvil | 4,4% | 3,9% | 12,0% | 86,29 CAD | 9 |
 
-- **Reserva:** LNR.TO (Linamar, 3,1% tras comité, asimetría < 2). FGR.PA no cabe (7.ª francesa).
-- Conteo: FR 6 · GB 6 · IT 2 · NL 2 · DK, ES, DE, CA 1. Sectores: bancos 3, seguros 3, energía 2, salud 2, resto 1.
-  Fuera de Europa: 1 de 20 (5%).
+- **Reserva:** BP.L (TIR comité 3,9%; sería la 6.ª británica). FGR.PA no cabe (7.ª francesa).
+- Conteo: FR 6 · GB 5 · IT 2 · NL 2 · CA 2 · DK, ES, DE 1. Sectores: bancos 3, seguros 3, automóvil 2, salud 2, distribución 2
+  (JD y AD si se cuentan juntas), resto 1. Fuera de Europa: 2 de 20 (10%).
 - Excluidas: Mazda (veto del bajista), Valeo (desastre del comité < −50%), SU, OMV, VOE, UMI (desastre < −50%),
   ACA (CET1), VK (beneficio operativo 4/10). GALP y NHY quedan por detrás por TIR y asimetría < 2.
 - Las cantidades se recalculan al lanzar la orden (`--importe 500`); los precios de referencia son del 06/11/2026.
 
-## Calendario propuesto (5 compras/día lunes–jueves; viernes solo reintentos)
+## Calendario (5 compras/día lunes–jueves; viernes solo reintentos)
 
 | Día | APERTURA_UE (09:30) | APERTURA_US (~16:00) |
 |---|---|---|
-| Lun 16/11 | NWG.L, IMB.L, AYV.PA, NOVO-B.CO | SAN.PA |
-| Mar 17/11 | NN.AS, CNA.L, BNP.PA, EN.PA | ISP.MI |
-| Mié 18/11 | MAP.MC, SCR.PA, AD.AS, TEP.PA | MG.TO (Toronto) |
-| Jue 19/11 | FNTN.DE, AZM.MI, HBR.L, BP.L | JD.L (tras su trading statement del 19/11) |
+| Lun 16/11 | NWG.L, BNP.PA, AYV.PA, IMB.L | NOVO-B.CO |
+| Mar 17/11 | HBR.L, TEP.PA, NN.AS, SAN.PA | MG.TO (Toronto) |
+| Mié 18/11 | AZM.MI, CNA.L, ISP.MI, FNTN.DE | EN.PA |
+| Jue 19/11 | MAP.MC, SCR.PA, AD.AS | JD.L (tras su trading statement del 19/11), LNR.TO (Toronto) |
 | Vie 20/11 | Reintentos | Reintentos; lo que quede sin ejecutar va AGRESIVA para cerrar las 20 |
 
 Reglas de ejecución:
@@ -57,7 +59,6 @@ Reglas de ejecución:
   (último día de la Fase 0).
 - Antes de cada orden: revisar noticias y las condiciones de invalidación de la tesis. Fechas sensibles:
   **FNTN** resultados 9M el 11/11; **JD** trading statement Q3 el 19/11 (si recorta la guía FY27 se cumple la condición 1:
-  no se compra y entra la reserva); **MG** arancel del 50% a piezas canadienses anunciado para el 01/01/2027;
-  **SCR** plan estratégico 03/12; **BP** plan estratégico 15/12; **AZM** respuesta a Banca d'Italia (fin de noviembre) y
-  exclusividad de TNB (20/12).
+  no se compra y entra la reserva BP.L); **MG y LNR** arancel del 50% a piezas canadienses anunciado para el 01/01/2027;
+  **SCR** plan estratégico 03/12; **AZM** respuesta a Banca d'Italia (fin de noviembre) y exclusividad de TNB (20/12).
 - Todas con `--provisional` y motivo "Fase 0 provisional: TIR comité X%".

@@ -286,14 +286,14 @@ PRECIO_ACTUAL: 34.22
 - Precio: `scripts/cartera.py precio AD.AS` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.08 · valorador 0.07 → **usada 0.1**
-- TIR propia ajustada 0.0403 · TIR valorador ciego 0.06 → **TIR final 0.0502** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.08 · valorador 0.07 → **usada 0.0833** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0441 · TIR valorador ciego 0.06 → **TIR final 0.052** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 13 de 20)** — TIR del comité 5,0%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 19 de 20)** — TIR del comité 5,2% (TIR propia ajustada 4,4%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — negocio defensivo, con caja abundante y retorno al accionista
 fiable, pero a 34 € cotiza en la media de su rango histórico de múltiplos (≈ 13x BPA 2026e) y el retorno esperado (≈ 4% anual

@@ -229,14 +229,14 @@ PRECIO_ACTUAL: 87.38
 - Las cifras del BPA histórico de 2016–2024 son aproximadas, de memoria (informes anuales de Magna). No las he podido verificar línea a línea en esta sesión.
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.2 · valorador 0.1 → **usada 0.2**
-- TIR propia ajustada 0.0452 · TIR valorador ciego 0.1 → **TIR final 0.0452** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.12 · bajista 0.2 · valorador 0.1 → **usada 0.14** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0616 · TIR valorador ciego 0.1 → **TIR final 0.0808** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 17 de 20)** — TIR del comité 4,5%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 7 de 20)** — TIR del comité 8,1% (TIR propia ajustada 6,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). La TIR propia del 6,7% está muy lejos del 17% exigido fuera del euro. Es una empresa barata (PER ≈ 8,8x sobre el ajustado de 2026, rentabilidad de caja libre ≈ 11%, recompras agresivas), con buena asimetría (3,47) y un desastre acotado (−43%), pero el retorno esperado depende de un múltiplo que ya es razonable para un proveedor de margen fino y de un beneficio ajustado que siempre supera al reportado. Para llegar al umbral haría falta comprar por debajo de ≈ 66 CAD (con los mismos escenarios, TIR 17,3% a 66 CAD) o que el Investor Day del 11/11 aporte objetivos creíbles que suban el caso base. Si en la Fase 0 faltaran candidatas, como provisional tiene una TIR claramente peor que la de otras del repo; la dejo en observación.
 

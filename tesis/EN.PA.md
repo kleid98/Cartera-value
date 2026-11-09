@@ -257,14 +257,14 @@ PRECIO_ACTUAL: 42.29
 - `python3 scripts/cartera.py precio EN.PA` (precio 42,29 €)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.13 · valorador 0.07 → **usada 0.13**
-- TIR propia ajustada 0.0635 · TIR valorador ciego 0.06 → **TIR final 0.0617** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.13 · valorador 0.07 → **usada 0.1** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.071 · TIR valorador ciego 0.06 → **TIR final 0.0655** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 9 de 20)** — TIR del comité 6,2%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 16 de 20)** — TIR del comité 6,6% (TIR propia ajustada 7,1%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — la asimetría es buena (4,5) y el desastre está acotado (−41%), pero la TIR esperada del 7,1% queda a menos de la mitad del umbral del 15%: el descuento actual paga el riesgo SFR/TF1/Francia, no lo sobrepaga. Revisar si el precio baja de ~33 € (≈ PER 10x BPA 2026e) o tras el CMD de Equans (25/02/2027) si eleva objetivos a medio plazo.
 

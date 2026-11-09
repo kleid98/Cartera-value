@@ -275,14 +275,14 @@ El retorno esperado a 3 años es de 0,10×(−47,0%) + 0,25×(−10,2%) + 0,45×
 - Precio: `scripts/cartera.py precio JD.L` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.22 · valorador 0.1 → **usada 0.22**
-- TIR propia ajustada 0.0479 · TIR valorador ciego 0.11 → **TIR final 0.0479** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.1 · bajista 0.22 · valorador 0.1 → **usada 0.14** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0739 · TIR valorador ciego 0.11 → **TIR final 0.092** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 16 de 20)** — TIR del comité 4,8%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 4 de 20)** — TIR del comité 9,2% (TIR propia ajustada 7,4%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — TIR propia 8,6%, a más de 8 pp del umbral del 17% para valores en GBP; no es candidata a 🟡 provisional porque está lejos de las mejores TIR del cribado. El negocio cumple todos los filtros duros y tiene buena asimetría, pero tras el rebote de ~+20% desde finales de septiembre el precio (≈ 8,5x BPA FY27e) ya descuenta una recuperación parcial, y el desastre (−48%) queda al borde del límite. Revisar si el trading statement del 19-nov-2026 provoca una caída hacia 70–75p (con la misma tesis, la TIR subiría a ≈ 17,5–20%) o si confirma vuelta a LFL positivo.
 

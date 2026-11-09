@@ -280,14 +280,14 @@ PRECIO_ACTUAL: 263.4
 - Yahoo Finance mediante `scripts/cartera.py precio`: HBR.L 263,4p; Brent (BZ=F) 98,3 $; BZZ27 80,6 $; BZZ28 74,5 $; GBPUSD 1,3356; TTF 85,6 €/MWh
 
 ### Reconciliación
-- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.1 → **usada 0.27**
-- TIR propia ajustada 0.0389 · TIR valorador ciego 0.09 → **TIR final 0.0389** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.1 → **usada 0.1733** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0702 · TIR valorador ciego 0.09 → **TIR final 0.0801** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ❌, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 19 de 20)** — TIR del comité 3,9%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 8 de 20)** — TIR del comité 8,0% (TIR propia ajustada 7,0%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,8%, muy lejos del 17% exigido fuera del euro. La acción parece barata con los precios de hoy (PER ~5x, retribución ~19% en 2026), pero esa caja es extraordinaria, el 78% de fiscalidad en UK/Noruega se lleva la mayor parte de las subidas y, con la curva de futuros (Brent 74,5 $ en dic-2028) y reservas para ~6 años, el valor normalizado no está muy por encima del precio actual. Hay asimetría (≈ 4) y el desastre (−47%) queda dentro del límite, pero el retorno esperado no paga el riesgo. Se reconsideraría por debajo de ~205p con el balance intacto, o si los resultados FY2026 (~04/03/2027) muestran reposición de reservas 2P > 100% y una guía de FCF 2027 de al menos 1,0 mil M$ con Brent a 70 $.
 

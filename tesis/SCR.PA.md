@@ -248,14 +248,14 @@ PRECIO_ACTUAL: 34.68
 - Precio: `scripts/cartera.py precio SCR.PA` (34,68 €, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.17 · valorador 0.1 → **usada 0.17**
-- TIR propia ajustada 0.0423 · TIR valorador ciego 0.06 → **TIR final 0.0512** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.17 · valorador 0.1 → **usada 0.13** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0533 · TIR valorador ciego 0.06 → **TIR final 0.0566** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 12 de 20)** — TIR del comité 5,1%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 18 de 20)** — TIR del comité 5,7% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — pasa los 6 filtros duros, pero la TIR propia (5,6%) queda muy lejos del 15%. La acción no está castigada: ya ha subido ~26% en 2026 y cotiza cerca de máximos; el descuento sobre el valor económico (0,70x) es real pero tiene motivos (historial de cargos, ciclo de precios a la baja, colas de catástrofe) y el consenso ya espera beneficio plano. Para llegar al umbral haría falta un precio de ~26–27 € con el mismo análisis, o que el plan del 03/12/2026 comprometa recompras grandes y recurrentes con el exceso de solvencia (lo que subiría la probabilidad del alcista). Revisar tras el Investor Day y las renovaciones de enero de 2027.
 

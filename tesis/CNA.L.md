@@ -282,14 +282,14 @@ PRECIO_ACTUAL: 151.5
 - Precio: `python3 scripts/cartera.py precio CNA.L` → 151,5 GBX (06/11/2026 17:48)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.15 · valorador 0.1 → **usada 0.15**
-- TIR propia ajustada 0.0626 · TIR valorador ciego 0.07 → **TIR final 0.0663** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.15 · valorador 0.1 → **usada 0.1167** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.072 · TIR valorador ciego 0.07 → **TIR final 0.071** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 7 de 20)** — TIR del comité 6,6%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 13 de 20)** — TIR del comité 7,1% (TIR propia ajustada 7,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité).** TIR propia 7,7%, muy por debajo del 17% exigido fuera del euro. El balance es sólido y el riesgo de desastre está acotado (−46%), pero la acción no está tan barata como sugiere el cribado: el EV/EBITDA real ronda 4,5-5,5x (no 1,4x) y el FCF es negativo por el ciclo de inversión, no del 31%. Además, el escenario base, donde los objetivos de 2028 se quedan algo cortos y el cierre nuclear de 2030 limita el múltiplo, solo da ≈ +34% en 3 años con dividendos incluidos. No la marco PROVISIONAL porque está lejos del umbral (−9 pp). Revisar si cae hacia ≈100-110p o si en los resultados de feb-2027 la guía de 2027 y la de trading mejoran claramente.
 

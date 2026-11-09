@@ -89,7 +89,7 @@ Canadá ≤ 30%; sin HK/China; sin exclusiones sectoriales. Japón cotiza en lot
 caben en el tope por compra.
 **Filtros duros:** capitalización ≥ 2.000 M€, volumen ≥ 2 M€/día, ≥ 10 años, beneficio operativo + en ≥ 7/10,
 DN/EBITDA ≤ 3x (financieras CET1 ≥ 12%), sin insolvencia. Fallen angels: pueden fallar solo el de beneficios.
-**Compra:** 4 escenarios a 3 años; TIR ≥ 15% (≥ 17% fuera del euro); desastre ≥ −50%; asimetría ≥ 2.
+**Compra:** 4 escenarios a 3 años; TIR ≥ 10% (≥ 12% fuera del euro; antes 15%/17%, cambiado con Ale el 09/11/2026); desastre ≥ −50%; asimetría ≥ 2.
 `python3 scripts/ev.py tesis/X.md` es el juez. Probabilidades y precios se escriben antes y no se retocan.
 **Comité (obligatorio en toda compra, recompra y venta por tesis rota o rotación):** ver sección 3.1.
 **Venta (solo 4 motivos):** TIR residual < 5%; tesis rota (AGRESIVA); algo mejor ≥ +10 pp (≥ +5 pp si la
@@ -112,7 +112,7 @@ sector y 6 por país. Tras la Fase 0: máx. 2 compras nuevas por día. La caja o
    (`valorador_ciego.tir`, `valorador_ciego.prob_desastre`, `bajista.prob_desastre`, `bajista.veto`).
 4. `python3 scripts/ev.py tesis/X.md` aplica la reconciliación: diferencia < 5 pp → media; ≥ 5 pp → la más
    baja (salvo error concreto documentado con `"error_documentado_valorador": "..."`); prob. de desastre = la
-   más alta de las tres; veto del bajista si se cumple una condición de invalidación. **El comité puede frenar
+   media de las tres (desde el 09/11/2026; antes la más alta); veto del bajista si se cumple una condición de invalidación. **El comité puede frenar
    una compra, nunca forzarla.**
 5. No se convoca para el seguimiento diario ni en la ejecución de cierre.
 

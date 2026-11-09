@@ -29,8 +29,9 @@
   "ev": {
     "escenarios": ["desastre", "bajista", "base", "alcista"],
     "horizonte_anos": 3,
-    "tir_min_zona_euro": 0.15,
-    "tir_min_fuera_euro": 0.17,
+    "tir_min_zona_euro": 0.10,
+    "tir_min_fuera_euro": 0.12,
+    "_cambio_2026_11_09": "Umbral rebajado de 15%/17% a 10%/12% con acuerdo de Ale: ningún valorador independiente pasó del 13% en 23 comités",
     "desastre_min_retorno": -0.50,
     "asimetria_min": 2.0
   },
@@ -38,7 +39,8 @@
     "agentes": ["bajista", "valorador_ciego"],
     "si_diferencia_tir_menor_5pp": "media",
     "si_diferencia_tir_mayor_5pp": "la más baja salvo error concreto documentado",
-    "prob_desastre": "la más alta de las tres",
+    "prob_desastre": "media de las tres (propia, bajista y valorador ciego); antes la más alta, cambiado con acuerdo de Ale el 09/11/2026",
+    "prob_desastre_modo": "media",
     "veto": "riesgo del bajista que cumple condición de invalidación"
   },
   "venta": {

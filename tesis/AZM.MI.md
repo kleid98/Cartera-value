@@ -273,14 +273,14 @@ PRECIO_ACTUAL: 35.82
 - Precio: `python3 scripts/cartera.py precio AZM.MI` (Yahoo, 35,82 €, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.18 · valorador 0.1 → **usada 0.18**
-- TIR propia ajustada 0.0395 · TIR valorador ciego 0.09 → **TIR final 0.0395** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.12 · bajista 0.18 · valorador 0.1 → **usada 0.1333** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0529 · TIR valorador ciego 0.09 → **TIR final 0.0714** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 18 de 20)** — TIR del comité 4,0%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 12 de 20)** — TIR del comité 7,1% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 5,7%, lejísimos del 15%. Es un buen negocio (caja neta, ROE ~25%, retribución muy alta) a un múltiplo bajo, pero el múltiplo bajo está justificado en buena parte: beneficio muy sensible a la bolsa, recurrente desacelerándose, costes creciendo al 20%, riesgo regulatorio abierto (Banco de Italia, TNB) y una retención del 26% que se come parte del dividendo. Incluso con TNB cerrada (escenario base) el retorno es ~9%/año. Se reconsideraría por debajo de ~25 € sin deterioro del negocio, o si TNB se autoriza y el beneficio recurrente 2027 supera los 550 M€ con la cotización por debajo de ~32 €.
 

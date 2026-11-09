@@ -261,14 +261,14 @@ PRECIO_ACTUAL: 83.74
 - Nota: Tweenvest no devolvió datos (404); el historial de BPA business es de memoria de informes anuales de Sanofi y debe tomarse como aproximado.
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.09 · valorador 0.1 → **usada 0.1**
-- TIR propia ajustada 0.0661 · TIR valorador ciego 0.08 → **TIR final 0.0731** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.09 · valorador 0.1 → **usada 0.0967** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0668 · TIR valorador ciego 0.08 → **TIR final 0.0734** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 15% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 15% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 5 de 20)** — TIR del comité 7,3%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 11 de 20)** — TIR del comité 7,3% (TIR propia ajustada 6,7%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). La TIR propia es del 6,6%, muy por debajo del umbral del 15%. El riesgo de pérdida está acotado: el desastre se queda en −34%, la asimetría es alta y el balance es sólido. Pero el precio actual (~9x el BPA *business* 2026e) ya recoge un crecimiento del beneficio de un dígito medio. Sin expansión de múltiplo, y con el vencimiento de Dupixent cada vez más cerca, el retorno se queda en el dividendo (~4,9%) más un crecimiento moderado del BPA. La revisaría si el precio cae por debajo de ~65 € (unos 7x el BPA 2026e) o si hay una lectura de fase 3 que haga creíble un sucesor de Dupixent.
 

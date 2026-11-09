@@ -1,6 +1,6 @@
 # BP p.l.c. (BP.L · LONDRES) — Tesis
 
-- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
+- **Estado:** ⚪ candidata — reserva de la Fase 0 
 - **ISIN:** GB0007980591 · **País emisor:** GB · **Sector:** Energía (petrolera integrada) · **Divisa/unidad:** GBP / GBX (peniques); reporta en USD
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-10 (4T/FY 2026, fecha estimada; antes, actualización estratégica de la nueva CEO en diciembre de 2026, sin día confirmado)
 
@@ -219,14 +219,14 @@ PRECIO_ACTUAL: 559.4
 - Historial de 10 años del beneficio subyacente, del ROACE y del dividendo: informes anuales de BP 2016-2025 (cifras de memoria y de los resultados del 4T 2025, sin verificar una a una en esta sesión)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.15 · valorador 0.1 → **usada 0.15**
-- TIR propia ajustada 0.0332 · TIR valorador ciego 0.04 → **TIR final 0.0366** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.15 · valorador 0.1 → **usada 0.1233** (media de las tres, regla del 09/11/2026)
+- TIR propia ajustada 0.0389 · TIR valorador ciego 0.04 → **TIR final 0.0394** (diferencia < 5 pp → media)
 - Veto del bajista: no
-- Cumple: TIR ≥ 17% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 17% ❌, sin veto del bajista ✅
+- Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 20 de 20)** — TIR del comité 3,7%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**RESERVA de la Fase 0** — TIR del comité 3,9% con las reglas del 09/11/2026; queda la 21.ª. Entra si alguna de las 20 no se compra (p. ej. JD por su trading statement del 19/11).
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — la TIR propia (≈ 4 %) queda a 13 pp del umbral del 17 %. Los filtros duros y el riesgo de desastre están bien, pero al precio actual el mercado ya descuenta la normalización del crudo y del refino que marca la curva de futuros; solo ganaría claramente con Brent alto sostenido o un recorte del descuento frente a Shell. Revisar tras la actualización estratégica de diciembre de 2026 o si el precio cae hacia ~400 GBX.
 
