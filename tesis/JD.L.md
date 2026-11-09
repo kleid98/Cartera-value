@@ -1,6 +1,6 @@
 # JD Sports Fashion (JD.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** GB00BM8Q5M07 · **País emisor:** GB · **Sector:** Distribución (minorista de calzado y ropa deportiva) · **Divisa/unidad:** GBP / GBX (peniques)
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** 2026-11-19 (trading statement Q3 2026/27); resultados anuales FY27 ≈ mayo 2027
 
@@ -282,7 +282,9 @@ El retorno esperado a 3 años es de 0,10×(−47,0%) + 0,25×(−10,2%) + 0,45×
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR** (provisional, a la espera del comité) — TIR propia 8,6%, a más de 8 pp del umbral del 17% para valores en GBP; no es candidata a 🟡 provisional porque está lejos de las mejores TIR del cribado. El negocio cumple todos los filtros duros y tiene buena asimetría, pero tras el rebote de ~+20% desde finales de septiembre el precio (≈ 8,5x BPA FY27e) ya descuenta una recuperación parcial, y el desastre (−48%) queda al borde del límite. Revisar si el trading statement del 19-nov-2026 provoca una caída hacia 70–75p (con la misma tesis, la TIR subiría a ≈ 17,5–20%) o si confirma vuelta a LFL positivo.
+**PROVISIONAL 🟡 (Fase 0, puesto 16 de 20)** — TIR del comité 4,8%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — TIR propia 8,6%, a más de 8 pp del umbral del 17% para valores en GBP; no es candidata a 🟡 provisional porque está lejos de las mejores TIR del cribado. El negocio cumple todos los filtros duros y tiene buena asimetría, pero tras el rebote de ~+20% desde finales de septiembre el precio (≈ 8,5x BPA FY27e) ya descuenta una recuperación parcial, y el desastre (−48%) queda al borde del límite. Revisar si el trading statement del 19-nov-2026 provoca una caída hacia 70–75p (con la misma tesis, la TIR subiría a ≈ 17,5–20%) o si confirma vuelta a LFL positivo.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

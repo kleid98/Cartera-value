@@ -1,6 +1,6 @@
 # NN Group N.V. (NN.AS · AMSTERDAM) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** NL0010773842 · **País emisor:** NL · **Sector:** Seguros (vida, pensiones, no vida, banca minorista) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-10 (FY26; NN publica solo resultados semestrales, no hay 9M/Q3)
 
@@ -285,7 +285,9 @@ PRECIO_ACTUAL: 79.18
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — negocio de calidad, balance holgado y riesgo de desastre acotado
+**PROVISIONAL 🟡 (Fase 0, puesto 6 de 20)** — TIR del comité 7,1%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — negocio de calidad, balance holgado y riesgo de desastre acotado
 (asimetría 5,6 y desastre −38%), pero tras la revalorización de 2024–26 el retorno esperado (≈ 6–7% anual) es casi todo
 dividendo y recompra, muy lejos del umbral del 15%. No parece estar entre las mejores TIR del cribado, así que tampoco la marco
 como relleno provisional. Volvería a mirarla si cae a la zona de 55–60 € sin que se rompa ninguna condición de invalidación.

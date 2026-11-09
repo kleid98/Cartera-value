@@ -1,6 +1,6 @@
 # Azimut Holding (AZM.MI · MILAN) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** IT0003261697 · **País emisor:** IT · **Sector:** Gestión de activos (gestora + red de asesores financieros, seguros de vida-inversión, mercados privados) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** ≈ 2027-03-05 (FY 2026; estimada, el FY 2025 se publicó el 05/03/2026). Antes: captación mensual (primeros días de cada mes) y fin de la exclusiva con FSI sobre TNB el 20/12/2026.
 
@@ -280,7 +280,9 @@ PRECIO_ACTUAL: 35.82
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — TIR propia 5,7%, lejísimos del 15%. Es un buen negocio (caja neta, ROE ~25%, retribución muy alta) a un múltiplo bajo, pero el múltiplo bajo está justificado en buena parte: beneficio muy sensible a la bolsa, recurrente desacelerándose, costes creciendo al 20%, riesgo regulatorio abierto (Banco de Italia, TNB) y una retención del 26% que se come parte del dividendo. Incluso con TNB cerrada (escenario base) el retorno es ~9%/año. Se reconsideraría por debajo de ~25 € sin deterioro del negocio, o si TNB se autoriza y el beneficio recurrente 2027 supera los 550 M€ con la cotización por debajo de ~32 €.
+**PROVISIONAL 🟡 (Fase 0, puesto 18 de 20)** — TIR del comité 4,0%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 5,7%, lejísimos del 15%. Es un buen negocio (caja neta, ROE ~25%, retribución muy alta) a un múltiplo bajo, pero el múltiplo bajo está justificado en buena parte: beneficio muy sensible a la bolsa, recurrente desacelerándose, costes creciendo al 20%, riesgo regulatorio abierto (Banco de Italia, TNB) y una retención del 26% que se come parte del dividendo. Incluso con TNB cerrada (escenario base) el retorno es ~9%/año. Se reconsideraría por debajo de ~25 € sin deterioro del negocio, o si TNB se autoriza y el beneficio recurrente 2027 supera los 550 M€ con la cotización por debajo de ~32 €.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

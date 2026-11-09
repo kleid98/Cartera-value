@@ -1,6 +1,6 @@
 # Intesa Sanpaolo (ISP.MI · MILAN) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** IT0000072618 · **País emisor:** IT · **Sector:** Bancos · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-02 (estimada: resultados FY2026 a principios de febrero; el calendario 2027 aún no se ha publicado)
 
@@ -239,7 +239,9 @@ PRECIO_ACTUAL: 6.177
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y la asimetría es buena (5,2), pero la TIR propia del 6,7% queda a más de 8 pp del umbral del 15%: a 6,18 € el mercado ya paga un negocio excelente a un múltiplo justo, y el retorno depende casi solo del dividendo (que además soporta un 26% de retención italiana). El desastre (−48%) roza el límite del −50% por la exposición a riesgo soberano italiano. Nivel de reentrada orientativo: por debajo de ≈ 4,9 € con la tesis intacta (precio al que estos mismos escenarios darían TIR ≈ 15%), o una mejora clara de BPA tras cerrar la integración de MPS.
+**PROVISIONAL 🟡 (Fase 0, puesto 10 de 20)** — TIR del comité 6,2%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y la asimetría es buena (5,2), pero la TIR propia del 6,7% queda a más de 8 pp del umbral del 15%: a 6,18 € el mercado ya paga un negocio excelente a un múltiplo justo, y el retorno depende casi solo del dividendo (que además soporta un 26% de retención italiana). El desastre (−48%) roza el límite del −50% por la exposición a riesgo soberano italiano. Nivel de reentrada orientativo: por debajo de ≈ 4,9 € con la tesis intacta (precio al que estos mismos escenarios darían TIR ≈ 15%), o una mejora clara de BPA tras cerrar la integración de MPS.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

@@ -1,6 +1,6 @@
 # Novo Nordisk (NOVO-B.CO · COPENHAGUE) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** DK0062498333 (acción B) · **País emisor:** DK · **Sector:** Salud (farmacia: diabetes y obesidad) · **Divisa/unidad:** DKK
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** ≈ 2027-02-03 (cuentas anuales 2026 y primera guía 2027; fecha por confirmar en el calendario financiero)
 
@@ -271,7 +271,9 @@ PRECIO_ACTUAL: 269.45
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, pendiente del comité).** La empresa es de gran calidad, con un balance sólido, y cumple todos los filtros duros. A 269 DKK (≈ 11x el BPA ajustado) cotiza a un precio razonable, pero no a uno de ganga. La TIR esperada del 7,2% queda muy lejos del 17% exigido a un valor en DKK. El mercado ya descuenta un estancamiento, y la combinación de la rebaja de precios de 2027, la competencia de Lilly y la caducidad de la semaglutida en EE. UU. en 2031-32 limita el múltiplo al final del horizonte. Habría que revisarlo si el precio baja hacia ≈ 190 DKK o si la guía de 2027 (febrero) muestra que el volumen compensa el precio (BPA 2027 ≥ 25 DKK).
+**PROVISIONAL 🟡 (Fase 0, puesto 4 de 20)** — TIR del comité 7,8%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, pendiente del comité).** La empresa es de gran calidad, con un balance sólido, y cumple todos los filtros duros. A 269 DKK (≈ 11x el BPA ajustado) cotiza a un precio razonable, pero no a uno de ganga. La TIR esperada del 7,2% queda muy lejos del 17% exigido a un valor en DKK. El mercado ya descuenta un estancamiento, y la combinación de la rebaja de precios de 2027, la competencia de Lilly y la caducidad de la semaglutida en EE. UU. en 2031-32 limita el múltiplo al final del horizonte. Habría que revisarlo si el precio baja hacia ≈ 190 DKK o si la guía de 2027 (febrero) muestra que el volumen compensa el precio (BPA 2027 ≥ 25 DKK).
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

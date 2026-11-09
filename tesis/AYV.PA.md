@@ -1,6 +1,6 @@
 # Ayvens (AYV.PA · PARIS) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** FR0013258662 · **País emisor:** FR · **Sector:** Financieras (renting y gestión de flotas de vehículos; *financial holding* supervisada por el BCE) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** 2027-02-04 (4T y FY 2026, con la guía de vehículo usado 2027)
 
@@ -243,7 +243,9 @@ PRECIO_ACTUAL: 9.615
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)**. TIR propia del 9,5%, lejos del 15%. Si el plan 2029 se cumple, el escenario base rinde ~15% anual solo con el reparto de capital, sin necesidad de que suba el múltiplo. Pero el bajista (usado en cero, ROTE del 11–12%) deja el capital plano a 3 años, y el desastre (−49%) roza el límite por el apalancamiento sobre el valor residual de la flota. La asimetría es buena (5,8) y el filtro de CET1 va justo (12,8% frente al 12%). Se reconsideraría por debajo de ~7,5 € con la guía 2026 cumplida, o si los resultados FY2026 (04/02/2027) traen una guía de usado 2027 positiva, un dividendo ordinario ≥ 0,65 € y un CET1 ≥ 12,8%.
+**PROVISIONAL 🟡 (Fase 0, puesto 3 de 20)** — TIR del comité 8,1%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)**. TIR propia del 9,5%, lejos del 15%. Si el plan 2029 se cumple, el escenario base rinde ~15% anual solo con el reparto de capital, sin necesidad de que suba el múltiplo. Pero el bajista (usado en cero, ROTE del 11–12%) deja el capital plano a 3 años, y el desastre (−49%) roza el límite por el apalancamiento sobre el valor residual de la flota. La asimetría es buena (5,8) y el filtro de CET1 va justo (12,8% frente al 12%). Se reconsideraría por debajo de ~7,5 € con la guía 2026 cumplida, o si los resultados FY2026 (04/02/2027) traen una guía de usado 2027 positiva, un dividendo ordinario ≥ 0,65 € y un CET1 ≥ 12,8%.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

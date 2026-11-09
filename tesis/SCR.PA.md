@@ -1,6 +1,6 @@
 # SCOR SE (SCR.PA · PARIS) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** FR0010411983 · **País emisor:** FR · **Sector:** Seguros (reaseguro global: P&C y Vida y Salud) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** 2027-02-26 (FY 2026, según MarketScreener; AJ Bell da 05/03/2027, sin confirmar en el calendario oficial). **Antes: Investor Day con el nuevo plan estratégico el 2026-12-03.**
 
@@ -255,7 +255,9 @@ PRECIO_ACTUAL: 34.68
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — pasa los 6 filtros duros, pero la TIR propia (5,6%) queda muy lejos del 15%. La acción no está castigada: ya ha subido ~26% en 2026 y cotiza cerca de máximos; el descuento sobre el valor económico (0,70x) es real pero tiene motivos (historial de cargos, ciclo de precios a la baja, colas de catástrofe) y el consenso ya espera beneficio plano. Para llegar al umbral haría falta un precio de ~26–27 € con el mismo análisis, o que el plan del 03/12/2026 comprometa recompras grandes y recurrentes con el exceso de solvencia (lo que subiría la probabilidad del alcista). Revisar tras el Investor Day y las renovaciones de enero de 2027.
+**PROVISIONAL 🟡 (Fase 0, puesto 12 de 20)** — TIR del comité 5,1%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — pasa los 6 filtros duros, pero la TIR propia (5,6%) queda muy lejos del 15%. La acción no está castigada: ya ha subido ~26% en 2026 y cotiza cerca de máximos; el descuento sobre el valor económico (0,70x) es real pero tiene motivos (historial de cargos, ciclo de precios a la baja, colas de catástrofe) y el consenso ya espera beneficio plano. Para llegar al umbral haría falta un precio de ~26–27 € con el mismo análisis, o que el plan del 03/12/2026 comprometa recompras grandes y recurrentes con el exceso de solvencia (lo que subiría la probabilidad del alcista). Revisar tras el Investor Day y las renovaciones de enero de 2027.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

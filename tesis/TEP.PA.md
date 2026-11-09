@@ -1,6 +1,6 @@
 # Teleperformance (TEP.PA · PARIS) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** FR0000051807 · **País emisor:** FR · **Sector:** Servicios (externalización de procesos / experiencia de cliente, BPO) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-25 (FY 2026 y guía formal 2027)
 
@@ -257,7 +257,9 @@ PRECIO_ACTUAL: 68.44
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**PROVISIONAL** (a la espera del comité) — no llega al umbral (TIR 8,5% < 15%), pero cumple filtros duros, desastre (−45,6%) y asimetría (3,5), y su TIR está entre las más altas de las tesis escritas hasta ahora. El precio descuenta un declive severo, pero la probabilidad de desastre (20%) es alta y está a pocos puntos del límite de −50%: no se compra como definitiva. Solo entraría como 🟡 provisional si en la Fase 0 faltan candidatas con TIR ≥ 15%, y siempre que el comité no suba la probabilidad de desastre ni vete. Reevaluar con la guía 2027 (25/02/2027).
+**PROVISIONAL 🟡 (Fase 0, puesto 14 de 20)** — TIR del comité 4,9%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **PROVISIONAL** (a la espera del comité) — no llega al umbral (TIR 8,5% < 15%), pero cumple filtros duros, desastre (−45,6%) y asimetría (3,5), y su TIR está entre las más altas de las tesis escritas hasta ahora. El precio descuenta un declive severo, pero la probabilidad de desastre (20%) es alta y está a pocos puntos del límite de −50%: no se compra como definitiva. Solo entraría como 🟡 provisional si en la Fase 0 faltan candidatas con TIR ≥ 15%, y siempre que el comité no suba la probabilidad de desastre ni vete. Reevaluar con la guía 2027 (25/02/2027).
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

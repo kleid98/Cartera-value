@@ -1,6 +1,6 @@
 # Bouygues (EN.PA · PARIS) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** FR0000120503 · **País emisor:** FR · **Sector:** Construcción (conglomerado: Colas, Bouygues Construction, Bouygues Immobilier, Equans, Bouygues Telecom, TF1) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-25 (anuales 2026 + Capital Markets Day de Equans)
 
@@ -264,7 +264,9 @@ PRECIO_ACTUAL: 42.29
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR** (provisional, a la espera del comité) — la asimetría es buena (4,5) y el desastre está acotado (−41%), pero la TIR esperada del 7,1% queda a menos de la mitad del umbral del 15%: el descuento actual paga el riesgo SFR/TF1/Francia, no lo sobrepaga. Revisar si el precio baja de ~33 € (≈ PER 10x BPA 2026e) o tras el CMD de Equans (25/02/2027) si eleva objetivos a medio plazo.
+**PROVISIONAL 🟡 (Fase 0, puesto 9 de 20)** — TIR del comité 6,2%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — la asimetría es buena (4,5) y el desastre está acotado (−41%), pero la TIR esperada del 7,1% queda a menos de la mitad del umbral del 15%: el descuento actual paga el riesgo SFR/TF1/Francia, no lo sobrepaga. Revisar si el precio baja de ~33 € (≈ PER 10x BPA 2026e) o tras el CMD de Equans (25/02/2027) si eleva objetivos a medio plazo.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

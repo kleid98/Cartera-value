@@ -1,6 +1,6 @@
 # freenet (FNTN.DE · XETRA) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** DE000A0Z2ZZ5 · **País emisor:** DE · **Sector:** Telecomunicaciones (operador móvil virtual / *service provider* + TV por internet waipu.tv) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** ~2026-11-11/12 (9M 2026; fecha de AJ Bell, sin confirmar en freenet.ag; en 2025 fue el 05/11)
 
@@ -238,7 +238,9 @@ PRECIO_ACTUAL: 23.34
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,5%, la mitad del 15% exigido. Es un valor de rentas: el dividendo mínimo de 2 € sostiene el suelo (desastre −41%, asimetría 5,9), pero sin crecimiento el retorno depende de que el múltiplo suba, y la retención alemana del 26,4% se come una cuarta parte del dividendo. Para llegar al 15% haría falta un precio de ~17–18 € con la tesis intacta, o un acuerdo con el operador que elimine la carga de ~50 M€/año y una guía 2027 que haga creíble la ambición 2028.
+**PROVISIONAL 🟡 (Fase 0, puesto 15 de 20)** — TIR del comité 4,8%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,5%, la mitad del 15% exigido. Es un valor de rentas: el dividendo mínimo de 2 € sostiene el suelo (desastre −41%, asimetría 5,9), pero sin crecimiento el retorno depende de que el múltiplo suba, y la retención alemana del 26,4% se come una cuarta parte del dividendo. Para llegar al 15% haría falta un precio de ~17–18 € con la tesis intacta, o un acuerdo con el operador que elimine la carga de ~50 M€/año y una guía 2027 que haga creíble la ambición 2028.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

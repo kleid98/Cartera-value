@@ -1,6 +1,6 @@
 # Mapfre (MAP.MC · MADRID) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** ES0124244E34 · **País emisor:** ES · **Sector:** Seguros (multirramo No Vida/Vida + reaseguro) · **Divisa/unidad:** EUR / euros por acción
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-11 (12M 2026; Junta General 2027-03-12, presentación previsible del Plan Estratégico 2027-29)
 
@@ -305,7 +305,9 @@ PRECIO_ACTUAL: 4.13
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — Mapfre pasa todos los filtros duros con holgura (Solvencia II ≈ 209 %, 10/10 años con beneficio, sin dilución) y el riesgo de pérdida está acotado (asimetría 3,6; desastre −38 %), pero la TIR esperada del 4,6 % queda muy lejos del 15 %: cotiza a ≈ 1,35x valor contable y ≈ 11x beneficio con un beneficio récord apoyado en el resultado financiero y plusvalías mientras el técnico No Vida cae, y Safety se financia con deuda. Es una aseguradora correcta a precio justo, no una oportunidad value. Revisar si cae por debajo de ≈ 3,0 € sin deterioro de fundamentales o si el Plan 2027-29 (marzo 2027) eleva de forma creíble ROE y payout.
+**PROVISIONAL 🟡 (Fase 0, puesto 11 de 20)** — TIR del comité 5,6%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — Mapfre pasa todos los filtros duros con holgura (Solvencia II ≈ 209 %, 10/10 años con beneficio, sin dilución) y el riesgo de pérdida está acotado (asimetría 3,6; desastre −38 %), pero la TIR esperada del 4,6 % queda muy lejos del 15 %: cotiza a ≈ 1,35x valor contable y ≈ 11x beneficio con un beneficio récord apoyado en el resultado financiero y plusvalías mientras el técnico No Vida cae, y Safety se financia con deuda. Es una aseguradora correcta a precio justo, no una oportunidad value. Revisar si cae por debajo de ≈ 3,0 € sin deterioro de fundamentales o si el Plan 2027-29 (marzo 2027) eleva de forma creíble ROE y payout.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

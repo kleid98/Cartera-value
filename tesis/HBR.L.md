@@ -1,6 +1,6 @@
 # Harbour Energy (HBR.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** GB00BMBVGQ36 · **País emisor:** GB · **Sector:** Energía (exploración y producción de petróleo y gas) · **Divisa/unidad:** GBP / GBX (peniques); la compañía publica en USD
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** actualización operativa ~22/01/2027 y resultados FY2026 ~04/03/2027 (estimado: las de 2026 fueron el 22/01 y el 05/03; sin fecha oficial publicada)
 
@@ -287,7 +287,9 @@ PRECIO_ACTUAL: 263.4
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,8%, muy lejos del 17% exigido fuera del euro. La acción parece barata con los precios de hoy (PER ~5x, retribución ~19% en 2026), pero esa caja es extraordinaria, el 78% de fiscalidad en UK/Noruega se lleva la mayor parte de las subidas y, con la curva de futuros (Brent 74,5 $ en dic-2028) y reservas para ~6 años, el valor normalizado no está muy por encima del precio actual. Hay asimetría (≈ 4) y el desastre (−47%) queda dentro del límite, pero el retorno esperado no paga el riesgo. Se reconsideraría por debajo de ~205p con el balance intacto, o si los resultados FY2026 (~04/03/2027) muestran reposición de reservas 2P > 100% y una guía de FCF 2027 de al menos 1,0 mil M$ con Brent a 70 $.
+**PROVISIONAL 🟡 (Fase 0, puesto 19 de 20)** — TIR del comité 3,9%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,8%, muy lejos del 17% exigido fuera del euro. La acción parece barata con los precios de hoy (PER ~5x, retribución ~19% en 2026), pero esa caja es extraordinaria, el 78% de fiscalidad en UK/Noruega se lleva la mayor parte de las subidas y, con la curva de futuros (Brent 74,5 $ en dic-2028) y reservas para ~6 años, el valor normalizado no está muy por encima del precio actual. Hay asimetría (≈ 4) y el desastre (−47%) queda dentro del límite, pero el retorno esperado no paga el riesgo. Se reconsideraría por debajo de ~205p con el balance intacto, o si los resultados FY2026 (~04/03/2027) muestran reposición de reservas 2P > 100% y una guía de FCF 2027 de al menos 1,0 mil M$ con Brent a 70 $.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

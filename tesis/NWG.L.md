@@ -1,6 +1,6 @@
 # NatWest Group (NWG.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** GB00BM8PJY71 · **País emisor:** GB · **Sector:** Bancos · **Divisa/unidad:** GBP / GBX (peniques)
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-12 (FY 2026; fecha estimada, sin confirmar por la compañía)
 
@@ -229,7 +229,9 @@ PRECIO_ACTUAL: 587.4
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)**. El negocio es de calidad: cumple todos los filtros duros, con un CET1 del 13,5% y RoTE del 20%, y la asimetría es buena. Pero a 587 GBX el mercado ya descuenta buena parte de la normalización: PER ≈ 7,7x y 1,64x TNAV tras el *re-rating* de 2023–2026. La TIR esperada (≈ 10%) queda muy lejos del 17% exigido fuera del euro. No es de las mejores candidatas por TIR, así que tampoco encaja como PROVISIONAL. Vigilar: zona de interés ≈ 490 GBX o menos, o una mejora clara de la guía de RoTE 2027–2028 en los resultados de febrero de 2027.
+**PROVISIONAL 🟡 (Fase 0, puesto 1 de 20)** — TIR del comité 9,4%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)**. El negocio es de calidad: cumple todos los filtros duros, con un CET1 del 13,5% y RoTE del 20%, y la asimetría es buena. Pero a 587 GBX el mercado ya descuenta buena parte de la normalización: PER ≈ 7,7x y 1,64x TNAV tras el *re-rating* de 2023–2026. La TIR esperada (≈ 10%) queda muy lejos del 17% exigido fuera del euro. No es de las mejores candidatas por TIR, así que tampoco encaja como PROVISIONAL. Vigilar: zona de interés ≈ 490 GBX o menos, o una mejora clara de la guía de RoTE 2027–2028 en los resultados de febrero de 2027.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

@@ -154,34 +154,31 @@ TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más a
 | 7261.T | JP | 5,9% | 2,9% | −46% | ❌ **VETO del bajista** (condición 5: CX-5 < predecesor en EE. UU. 2 trimestres) |
 | AZM.MI | IT | 5,7% | 4,0% | −48% | ✅ (Banca d'Italia/TNB: vigilar) |
 | SCR.PA | FR | 5,6% | 5,1% | −47% | ✅ (plan estratégico 03/12) |
-| LNR.TO | CA | 4,9% | 3,1% | −46% | ✅ (arancel piezas CA 01/01/2027) |
-| Reservas | | AD.AS 4,0 · BP.L 4,0 (FGR.PA no cabe: 7.ª francesa) | — | | sin comité |
+| LNR.TO | CA | 4,9% | 3,1% | −46% | ✅ comité; **reserva** (asimetría < 2) |
+| AD.AS | NL | 4,0% | 5,0% | −43% | ✅ entra por Mazda |
+| BP.L | GB | 4,0% | 3,7% | −37% | ✅ entra por Linamar (6.ª británica, máximo) |
 
 **Excluidas:** SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%); ACA.PA (CET1 11,2%); VK.PA (beneficio operativo 4/10);
 **FR.PA (Valeo): excluida por el comité** — los dos miembros ponen el desastre < −50% (−54%/−55%) frente al −49,8% propio.
 Criterio adoptado (decisión mía, comunicada a Ale): se excluye solo si **ambos** miembros del comité sitúan el desastre
 (retorno total) por debajo de −50%. GALP.LS y NHY.OL (asimetría < 2) quedan fuera por TIR. Aegon no se analizó (traslada sede a EE. UU.).
 
-**20 de la Fase 0 (provisional):** las 16 con comité + AZM, SCR, LNR + 1 reserva (AD.AS, BP.L o FGR.PA, tras comité). Mazda vetada. Límites: FR 6 (AYV, SAN, BNP, EN, TEP, SCR),
-GB 5, automóvil 2 (MG, LNR), fuera de Europa 2 (10%). Todas 🟡 provisionales.
+**20 de la Fase 0 (definitivas, todas con comité y marcadas 🟡 en su tesis):** ver `plan/fase0.md`. FR 6, GB 6, fuera de Europa 1 (MG). Reserva: LNR.TO.
 
 ## 6. Pendiente, en este orden
 
-1. **Comité de las reservas AD.AS y BP.L** (Linamar quedó en 3,1% y asimetría < 2 tras el comité: si alguna reserva supera 3,1%, la sustituye) (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
-   (el de AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
-   nuevo si cambian las rutas: el prompt indica dónde guardar el informe. Registrar con `scripts/comite_registrar.py`.
-   Si alguna cae por debajo de AD/BP/FGR (4,0% propia), hacer comité de la reserva antes de sustituirla.
-2. **`plan/fase0.md` (BORRADOR ya escrito, fechas propuestas 16–20/11):** completar con los comités que faltan; las 20 ordenadas por TIR comité, ~4 compras/día; FNTN después del 11/11 y JD después del 19/11 si
-   cae en esa semana; Mazda como orden APERTURA desde un CIERRE.
-3. Tesis → 🟡 provisional en Estado y Decisión.
-4. **Mover fechas de la Fase 0** (`reglas.json` fase0.inicio/fin y fecha_inicio; menciones en CLAUDE.md): proponer fecha a Ale.
-5. Commit/push, pedir a Ale que fusione https://github.com/kleid98/Cartera-value/pull/1, y solo después reanudar las 4 tareas
-   (`update_trigger enabled=true`: trig_01CEGapUaBpMEvxHmy3HZAt8, trig_01AikUWcNyEwnr1XY35S6jAY, trig_01Q31HxP6FUV3dPWk9v1Rt2a,
-   trig_01UnKHPrvh2AaPgsFJfzg9PC). **Siguen PAUSADAS.**
-6. **Uso:** Ale pide parar al ~80% del límite de 5 horas. Cada comité ≈ 240k tokens; cada tesis ≈ 145k. No hay forma de
-   leer el % de uso: estimar y quedarse corto.
-7. **Observación para Ale:** con este método ninguna empresa grande o mediana llega al 15%; el bajista sube la P(desastre) a
-   13–30% y la reconciliación deja TIR de 4–9%. Ale eligió la opción B (ampliar universo); el umbral no se ha tocado y la Fase 0 sería 100% provisional. Pendiente comentarlo con datos.
+1. ✅ Comités completos (las 20 + reservas). ✅ `plan/fase0.md` escrito. ✅ Las 20 tesis marcadas 🟡 provisional.
+2. **Confirmar con Ale la fecha de arranque** (propuesta: lunes 16/11 – viernes 20/11/2026). Después actualizar
+   `config/reglas.json` (`fecha_inicio`, `fase0.inicio`, `fase0.fin`), las menciones de "09–13/11/2026" en `CLAUDE.md` y
+   quitar "BORRADOR" de `plan/fase0.md`.
+3. Commit/push y pedir a Ale que fusione https://github.com/kleid98/Cartera-value/pull/1.
+4. Solo después de la fusión, reanudar las 4 tareas (`update_trigger enabled=true`: trig_01CEGapUaBpMEvxHmy3HZAt8,
+   trig_01AikUWcNyEwnr1XY35S6jAY, trig_01Q31HxP6FUV3dPWk9v1Rt2a, trig_01UnKHPrvh2AaPgsFJfzg9PC). **Siguen PAUSADAS.**
+   Comprobar que el prompt de las tareas lee `plan/fase0.md`.
+5. **Uso:** Ale pide parar al ~80% del límite de 5 horas. Cada comité ≈ 240k tokens; cada tesis ≈ 145k.
+6. **Pregunta abierta para Ale (con datos):** con este método ninguna empresa llega al 15%. El bajista sube la P(desastre)
+   a 8–30% y la reconciliación deja TIR finales de 3–9%. La Fase 0 será 100% provisional. Ale eligió la opción B (ampliar
+   universo); el umbral no se ha tocado. Plantear si mantenerlo.
 
 ## 7. Cosas a tener en cuenta
 

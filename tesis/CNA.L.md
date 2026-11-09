@@ -1,6 +1,6 @@
 # Centrica plc (CNA.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** GB00B033F229 (acción ordinaria 6 14/81p, LSE) · **País emisor:** GB · **Sector:** Utilities (comercializadora energía + trading + generación/infraestructura) · **Divisa/unidad:** GBP / GBX (peniques)
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-02-18 (resultados anuales 2026; fecha estimada por MarketScreener, no confirmada por la compañía)
 
@@ -289,7 +289,9 @@ PRECIO_ACTUAL: 151.5
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité).** TIR propia 7,7%, muy por debajo del 17% exigido fuera del euro. El balance es sólido y el riesgo de desastre está acotado (−46%), pero la acción no está tan barata como sugiere el cribado: el EV/EBITDA real ronda 4,5-5,5x (no 1,4x) y el FCF es negativo por el ciclo de inversión, no del 31%. Además, el escenario base, donde los objetivos de 2028 se quedan algo cortos y el cierre nuclear de 2030 limita el múltiplo, solo da ≈ +34% en 3 años con dividendos incluidos. No la marco PROVISIONAL porque está lejos del umbral (−9 pp). Revisar si cae hacia ≈100-110p o si en los resultados de feb-2027 la guía de 2027 y la de trading mejoran claramente.
+**PROVISIONAL 🟡 (Fase 0, puesto 7 de 20)** — TIR del comité 6,6%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité).** TIR propia 7,7%, muy por debajo del 17% exigido fuera del euro. El balance es sólido y el riesgo de desastre está acotado (−46%), pero la acción no está tan barata como sugiere el cribado: el EV/EBITDA real ronda 4,5-5,5x (no 1,4x) y el FCF es negativo por el ciclo de inversión, no del 31%. Además, el escenario base, donde los objetivos de 2028 se quedan algo cortos y el cierre nuclear de 2030 limita el múltiplo, solo da ≈ +34% en 3 años con dividendos incluidos. No la marco PROVISIONAL porque está lejos del umbral (−9 pp). Revisar si cae hacia ≈100-110p o si en los resultados de feb-2027 la guía de 2027 y la de trading mejoran claramente.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

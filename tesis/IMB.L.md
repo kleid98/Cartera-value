@@ -1,6 +1,6 @@
 # Imperial Brands (IMB.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** GB0004544929 · **País emisor:** GB · **Sector:** Tabaco · **Divisa/unidad:** GBP / GBX (peniques)
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2026-11-17 (resultados anuales FY26, ejercicio cerrado a 30-sep-2026)
 
@@ -283,7 +283,9 @@ PRECIO_ACTUAL: 2973
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR** (provisional, a la espera del comité) — cumple todos los filtros duros, el desastre es tolerable (−38%) y la asimetría es muy buena (7,9), pero la TIR esperada (≈ 8%) queda a 9 pp del umbral del 17% para valores fuera del euro: incluso en el escenario base (sin re-rating) el retorno anual ronda el 12%. Es una máquina de caja barata, no una oportunidad de dos dígitos altos. Revisar tras los resultados del 17-nov-2026; solo se reconsideraría con el precio por debajo de ~2.300 GBX sin deterioro de las condiciones de invalidación, o si la guía FY27 eleva de forma creíble el crecimiento del BPA.
+**PROVISIONAL 🟡 (Fase 0, puesto 2 de 20)** — TIR del comité 8,3%, por debajo del umbral (17,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — cumple todos los filtros duros, el desastre es tolerable (−38%) y la asimetría es muy buena (7,9), pero la TIR esperada (≈ 8%) queda a 9 pp del umbral del 17% para valores fuera del euro: incluso en el escenario base (sin re-rating) el retorno anual ronda el 12%. Es una máquina de caja barata, no una oportunidad de dos dígitos altos. Revisar tras los resultados del 17-nov-2026; solo se reconsideraría con el precio por debajo de ~2.300 GBX sin deterioro de las condiciones de invalidación, o si la guía FY27 eleva de forma creíble el crecimiento del BPA.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |

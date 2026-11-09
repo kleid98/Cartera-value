@@ -1,6 +1,6 @@
 # Koninklijke Ahold Delhaize N.V. (AD.AS · AMSTERDAM) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
 - **ISIN:** NL0011794037 · **País emisor:** NL · **Sector:** Distribución alimentaria · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-08 · **Próximos resultados:** ≈ 2027-02-10 (Q4/FY26; fecha estimada por el calendario habitual de febrero, sin confirmar)
 
@@ -293,7 +293,9 @@ PRECIO_ACTUAL: 34.22
 - **compra_ok (reglas completas): False**
 
 ## Decisión
-**NO COMPRAR (provisional, a la espera del comité)** — negocio defensivo, con caja abundante y retorno al accionista
+**PROVISIONAL 🟡 (Fase 0, puesto 13 de 20)** — TIR del comité 5,0%, por debajo del umbral (15,0%). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+
+*Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — negocio defensivo, con caja abundante y retorno al accionista
 fiable, pero a 34 € cotiza en la media de su rango histórico de múltiplos (≈ 13x BPA 2026e) y el retorno esperado (≈ 4% anual
 en mi EV, ≈ 7–8% en el escenario base) es casi todo dividendo y recompra, muy lejos del 15%. Tampoco la marco PROVISIONAL: la
 TIR no está entre las mejores del cribado. Volvería a mirarla por debajo de ≈ 25 € (≈ 9x BPA) sin condición de invalidación rota.
