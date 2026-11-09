@@ -63,7 +63,7 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
 3. Revisa pesos: posición > 10% → recorte al 7% (orden PASIVA).
 4. Decide compras/ventas según el plan y las reglas (sección 3). Cada orden nueva requiere tesis con comité.
 5. Lanza órdenes con `cartera.py orden` (ver sección 4). Por defecto PASIVA (bid de Equiduct).
-6. Fase 0 (09–13/11/2026): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
+6. Fase 0 (16–20/11/2026): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
 7. Escribe/actualiza `diario/AAAA-MM-DD.md` (sección de la ejecución), commit y push (sección 6).
 8. `python3 scripts/cartera.py investing`. Si hubo operaciones ejecutadas o nuevas órdenes → **PushNotification**.
 
@@ -98,7 +98,7 @@ posición es 🟡 provisional en sus primeras 8 semanas); peso > 10% → recorte
 prob. de desastre ≥ la anterior, TIR +5 pp sobre la compra anterior, máx. 3 compras y 10% a coste, 30 días.
 Promediar al alza permitido si cumple las reglas de compra, con el mismo tope.
 **Tamaño:** ~500 € por compra (acciones enteras, a la baja); si 1 acción > 600 € se compra 1; si > 750 €, no.
-**Máximo 20 valores.** Fase 0: 20 posiciones al cierre del 13/11/2026; si no hay 20 con TIR ≥ umbral, completar
+**Máximo 20 valores.** Fase 0: 20 posiciones al cierre del 20/11/2026; si no hay 20 con TIR ≥ umbral, completar
 con las mejores TIR (nunca saltarse filtros duros ni desastre ≥ −50%) marcadas `--provisional`; máx. 4 por
 sector y 6 por país. Tras la Fase 0: máx. 2 compras nuevas por día. La caja ociosa es aceptable.
 

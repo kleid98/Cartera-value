@@ -1,7 +1,7 @@
 {
   "_doc": "Reglas acordadas con Ale (sesión de grill-me, 07/11/2026). NO modificar sin acuerdo explícito.",
   "capital_inicial_eur": 10000,
-  "fecha_inicio": "2026-11-09",
+  "fecha_inicio": "2026-11-16",
   "importe_objetivo_compra_eur": 500,
   "max_valores": 20,
   "precio_unitario": {"max_eur_compra_1_accion": 750},
@@ -57,8 +57,8 @@
     "promediar_al_alza": "permitido si cumple reglas de compra, mismo tope 10%"
   },
   "fase0": {
-    "inicio": "2026-11-09",
-    "fin": "2026-11-13",
+    "inicio": "2026-11-16",
+    "fin": "2026-11-20",
     "objetivo_posiciones": 20,
     "provisionales_rotacion_mejora_min_pp": 5,
     "provisionales_semanas": 8,

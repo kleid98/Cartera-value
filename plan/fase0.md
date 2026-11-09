@@ -1,10 +1,7 @@
-# Plan de la Fase 0 — BORRADOR (09/11/2026)
+# Plan de la Fase 0 (16–20/11/2026)
 
-> **Borrador.** Comités completos. Las fechas son una **propuesta
-> pendiente de confirmar con Ale** (la Fase 0 ya no empieza el 09/11). Cuando se confirmen hay que actualizar
-> `config/reglas.json` (`fecha_inicio`, `fase0.inicio`, `fase0.fin`) y las menciones de "09–13/11/2026" en `CLAUDE.md`.
-
-**Fechas propuestas:** lunes 16/11 – viernes 20/11/2026 (requiere PR fusionado y tareas reanudadas antes del lunes).
+> Fechas confirmadas por Ale el 09/11/2026 (la Fase 0 iba a ser el 09–13/11 y se retrasó una semana para terminar el comité).
+> `config/reglas.json` y `CLAUDE.md` ya están actualizados. Requiere PR fusionado y tareas reanudadas antes del lunes 16/11.
 
 ## Situación
 Ninguna candidata alcanza la TIR mínima (15% euro / 17% fuera del euro), así que las 20 entran como **🟡 provisionales**
