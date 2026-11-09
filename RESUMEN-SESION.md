@@ -151,7 +151,7 @@ TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más a
 | JD.L | GB | 8,6% | 4,8% | −48% | ✅ (trading statement 19/11) |
 | MG.TO | CA | 6,7% | 4,5% | −43% | ✅ (arancel 50% piezas CA desde 01/01/2027 anunciado) |
 | HBR.L | GB | 7,8% | 3,9% | −47% | ✅ |
-| 7261.T | JP | 5,9% | — | −46% | comité pendiente |
+| 7261.T | JP | 5,9% | 2,9% | −46% | ❌ **VETO del bajista** (condición 5: CX-5 < predecesor en EE. UU. 2 trimestres) |
 | AZM.MI | IT | 5,7% | — | −48% | comité pendiente |
 | SCR.PA | FR | 5,6% | — | −47% | comité pendiente |
 | LNR.TO | CA | 4,9% | — | −46% | comité pendiente |
@@ -162,13 +162,13 @@ TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más a
 Criterio adoptado (decisión mía, comunicada a Ale): se excluye solo si **ambos** miembros del comité sitúan el desastre
 (retorno total) por debajo de −50%. GALP.LS y NHY.OL (asimetría < 2) quedan fuera por TIR. Aegon no se analizó (traslada sede a EE. UU.).
 
-**20 de la Fase 0 (provisional):** las 16 con comité + 7261, AZM, SCR, LNR. Límites: FR 6 (AYV, SAN, BNP, EN, TEP, SCR),
-GB 5, automóvil 3 (MG, 7261, LNR), fuera de Europa 3 (15%). Todas 🟡 provisionales.
+**20 de la Fase 0 (provisional):** las 16 con comité + AZM, SCR, LNR + 1 reserva (AD.AS, BP.L o FGR.PA, tras comité). Mazda vetada. Límites: FR 6 (AYV, SAN, BNP, EN, TEP, SCR),
+GB 5, automóvil 2 (MG, LNR), fuera de Europa 2 (10%). Todas 🟡 provisionales.
 
 ## 6. Pendiente, en este orden
 
-1. **Comité de 7261.T, AZM.MI, SCR.PA y LNR.TO** (de uno en uno). Prompts ya generados en `plan/comite_informes/`
-   (los de 7261 y AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
+1. **Comité de AZM.MI, SCR.PA y LNR.TO y de una reserva** (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
+   (el de AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
    nuevo si cambian las rutas: el prompt indica dónde guardar el informe. Registrar con `scripts/comite_registrar.py`.
    Si alguna cae por debajo de AD/BP/FGR (4,0% propia), hacer comité de la reserva antes de sustituirla.
 2. **`plan/fase0.md`:** las 20 ordenadas por TIR comité, ~4 compras/día; FNTN después del 11/11 y JD después del 19/11 si
