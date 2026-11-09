@@ -18,8 +18,9 @@ las operaciones en Investing.
 - 33 tesis escritas; **comité completo** en las 20 de la Fase 0 y en las reservas.
 - **Plan de la Fase 0 escrito** (`plan/fase0.md`): del **lunes 16/11 al viernes 20/11/2026** (fecha confirmada por Ale).
 - Las 20 tesis están marcadas **🟡 provisional**.
-- **Reglas revisadas con Ale hoy** (umbral y reconciliación, ver 2). Ese cambio está en la rama, **todavía no en `main`**.
-- Las **4 tareas programadas siguen PAUSADAS**.
+- **Reglas revisadas con Ale hoy** (umbral y reconciliación, ver 2). **Ya en `main`** (push directo autorizado por Ale el 09/11).
+- Tarea **DOMINGO activa** (primera: 15/11 18:04). Las 3 de entre semana siguen **pausadas** hasta el domingo 15/11 por la noche
+  (aviso programado a esta sesión, `trig_011kX84TnoPyCTLQZhcETF4c`, 15/11 21:00 Madrid, para activarlas).
 - Cartera aún sin operaciones: solo la aportación T-0001 de 10.000 €.
 
 ## 2. Decisiones clave y por qué (no reabrirlas)
@@ -68,9 +69,8 @@ Las reglas numéricas están en `config/reglas.json` y el manual de operación e
 ## 3. Qué se ha creado (rutas exactas)
 
 **Repositorio y ramas**
-- Repo: `kleid98/Cartera-value`. `main` tiene todo hasta el merge del PR #1 (commit `38f83bd`).
-- Rama de trabajo: `claude/sharp-ritchie-qqyy9n`. Se recreó desde `main` tras el merge y tiene **1 commit más**
-  (`1082b3c`: cambio de reglas, comités recalculados y plan actualizado) que **aún no está en `main`**.
+- Repo: `kleid98/Cartera-value`. `main` está al día (incluye `1082b3c`, el cambio de reglas, subido el 09/11).
+- Rama de trabajo: `claude/sharp-ritchie-qqyy9n`, igual que `main`. Las ejecuciones programadas trabajan en `main`.
 - PR #1 (fusionado): https://github.com/kleid98/Cartera-value/pull/1
 
 **Configuración**
@@ -134,7 +134,7 @@ Las reglas numéricas están en `config/reglas.json` y el manual de operación e
 - 6 datasets que leen un único asset `panel.json`. El asset actual es `/_blob/aa12e649d3bbd59b5b05ec01fd2f0414`.
 - Copia de la página en `panel/index.html`. No tocar `files/index.html` salvo cambios de diseño.
 
-**Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`). **PAUSADAS.**
+**Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`). DOMINGO activa; las otras 3 pausadas hasta el 15/11.
 
 | Ejecución | ID | Horario |
 |---|---|---|
@@ -150,12 +150,10 @@ la sesión.
 
 ## 5. Pendiente, en este orden
 
-1. **Llevar el commit `1082b3c` (reglas nuevas) a `main`.** Preguntar a Ale si prefiere que abras un PR nuevo desde
-   `claude/sharp-ritchie-qqyy9n` (él lo fusiona como el #1) o que lo subas directamente a `main` (necesita su permiso
-   explícito). Tiene que estar en `main` **antes del domingo 15/11 a las 18:04**.
-2. **Reanudar las 4 tareas** (`update_trigger` con `enabled=true` en los cuatro IDs de arriba), solo cuando el paso 1 esté
-   en `main`. Antes, comprobar con `get_trigger` que el prompt de cada tarea dice que lea `CLAUDE.md` y `plan/`
-   (`CLAUDE.md` sección 0 ya pide leer `plan/`).
+1. ✅ Reglas nuevas en `main` (09/11, push directo con permiso de Ale).
+2. ✅ DOMINGO reanudada. **Domingo 15/11 a las 21:00 (Madrid)**: activar APERTURA_UE, APERTURA_US y CIERRE
+   (`update_trigger` con `enabled=true`). Hay un aviso programado a la sesión original; si no llega, hacerlo a mano
+   y comprobar que la primera APERTURA_UE cae el 16/11 a las 08:34 UTC. Los prompts ya mandan leer `CLAUDE.md` y `plan/fase0.md`.
 3. **Lunes 16/11, primera ejecución:** comprobar el libro de Equiduct **en vivo** (solo se probó en modo replay).
 4. Vigilar las fechas sensibles del plan:
    - FNTN: resultados de 9 meses el 11/11.
