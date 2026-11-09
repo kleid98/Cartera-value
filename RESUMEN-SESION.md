@@ -154,7 +154,7 @@ TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más a
 | 7261.T | JP | 5,9% | 2,9% | −46% | ❌ **VETO del bajista** (condición 5: CX-5 < predecesor en EE. UU. 2 trimestres) |
 | AZM.MI | IT | 5,7% | 4,0% | −48% | ✅ (Banca d'Italia/TNB: vigilar) |
 | SCR.PA | FR | 5,6% | 5,1% | −47% | ✅ (plan estratégico 03/12) |
-| LNR.TO | CA | 4,9% | — | −46% | comité pendiente |
+| LNR.TO | CA | 4,9% | 3,1% | −46% | ✅ (arancel piezas CA 01/01/2027) |
 | Reservas | | AD.AS 4,0 · BP.L 4,0 (FGR.PA no cabe: 7.ª francesa) | — | | sin comité |
 
 **Excluidas:** SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%); ACA.PA (CET1 11,2%); VK.PA (beneficio operativo 4/10);
@@ -167,7 +167,7 @@ GB 5, automóvil 2 (MG, LNR), fuera de Europa 2 (10%). Todas 🟡 provisionales.
 
 ## 6. Pendiente, en este orden
 
-1. **Comité de LNR.TO y de una reserva** (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
+1. **Comité de las reservas AD.AS y BP.L** (Linamar quedó en 3,1% y asimetría < 2 tras el comité: si alguna reserva supera 3,1%, la sustituye) (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
    (el de AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
    nuevo si cambian las rutas: el prompt indica dónde guardar el informe. Registrar con `scripts/comite_registrar.py`.
    Si alguna cae por debajo de AD/BP/FGR (4,0% propia), hacer comité de la reserva antes de sustituirla.
