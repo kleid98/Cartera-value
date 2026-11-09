@@ -152,10 +152,10 @@ TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más a
 | MG.TO | CA | 6,7% | 4,5% | −43% | ✅ (arancel 50% piezas CA desde 01/01/2027 anunciado) |
 | HBR.L | GB | 7,8% | 3,9% | −47% | ✅ |
 | 7261.T | JP | 5,9% | 2,9% | −46% | ❌ **VETO del bajista** (condición 5: CX-5 < predecesor en EE. UU. 2 trimestres) |
-| AZM.MI | IT | 5,7% | — | −48% | comité pendiente |
+| AZM.MI | IT | 5,7% | 4,0% | −48% | ✅ (Banca d'Italia/TNB: vigilar) |
 | SCR.PA | FR | 5,6% | — | −47% | comité pendiente |
 | LNR.TO | CA | 4,9% | — | −46% | comité pendiente |
-| Reservas | | AD.AS 4,0 · BP.L 4,0 · FGR.PA 4,0 | — | | sin comité |
+| Reservas | | AD.AS 4,0 · BP.L 4,0 (FGR.PA no cabe: 7.ª francesa) | — | | sin comité |
 
 **Excluidas:** SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%); ACA.PA (CET1 11,2%); VK.PA (beneficio operativo 4/10);
 **FR.PA (Valeo): excluida por el comité** — los dos miembros ponen el desastre < −50% (−54%/−55%) frente al −49,8% propio.
@@ -167,11 +167,11 @@ GB 5, automóvil 2 (MG, LNR), fuera de Europa 2 (10%). Todas 🟡 provisionales.
 
 ## 6. Pendiente, en este orden
 
-1. **Comité de AZM.MI, SCR.PA y LNR.TO y de una reserva** (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
+1. **Comité de SCR.PA y LNR.TO y de una reserva** (AD.AS, BP.L o FGR.PA; de uno en uno). Prompts en `plan/comite_informes/`
    (el de AZM; para SCR y LNR, `python3 scripts/comite.py tesis/X.md <scratch>`). Copiar los prompts a un scratch
    nuevo si cambian las rutas: el prompt indica dónde guardar el informe. Registrar con `scripts/comite_registrar.py`.
    Si alguna cae por debajo de AD/BP/FGR (4,0% propia), hacer comité de la reserva antes de sustituirla.
-2. **`plan/fase0.md`:** las 20 ordenadas por TIR comité, ~4 compras/día; FNTN después del 11/11 y JD después del 19/11 si
+2. **`plan/fase0.md` (BORRADOR ya escrito, fechas propuestas 16–20/11):** completar con los comités que faltan; las 20 ordenadas por TIR comité, ~4 compras/día; FNTN después del 11/11 y JD después del 19/11 si
    cae en esa semana; Mazda como orden APERTURA desde un CIERRE.
 3. Tesis → 🟡 provisional en Estado y Decisión.
 4. **Mover fechas de la Fase 0** (`reglas.json` fase0.inicio/fin y fecha_inicio; menciones en CLAUDE.md): proponer fecha a Ale.
