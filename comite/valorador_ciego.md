@@ -34,7 +34,7 @@ precio actual, capitalización, deuda neta, PER, EV/EBIT, FCF yield, rentabilida
 |---|---|---|---|---|---|---|
 
 ## Resultado
-TIR_ANUAL: 0.XX
+TIR_ANUAL: 0.XXX   (con tres decimales, p. ej. 0.128; no redondees al punto entero)
 PROB_DESASTRE: 0.XX
 PRECIO_ACTUAL: xxx
 

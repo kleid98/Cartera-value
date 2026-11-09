@@ -154,6 +154,8 @@ la sesión.
 2. ✅ DOMINGO reanudada. **Domingo 15/11 a las 21:00 (Madrid)**: activar APERTURA_UE, APERTURA_US y CIERRE
    (`update_trigger` con `enabled=true`). Hay un aviso programado a la sesión original; si no llega, hacerlo a mano
    y comprobar que la primera APERTURA_UE cae el 16/11 a las 08:34 UTC. Los prompts ya mandan leer `CLAUDE.md` y `plan/fase0.md`.
+2b. **Revisión del 09/11** (`informes/revision-2026-11-09.md`): corregidos el salto de precio de Londres y el control de
+   caja (en la rama; **falta subirlos a `main`** con permiso de Ale). Pendiente de que Ale decida los puntos 4–8 de ese informe.
 3. **Lunes 16/11, primera ejecución:** comprobar el libro de Equiduct **en vivo** (solo se probó en modo replay).
 4. Vigilar las fechas sensibles del plan:
    - FNTN: resultados de 9 meses el 11/11.

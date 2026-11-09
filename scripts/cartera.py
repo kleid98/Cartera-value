@@ -212,6 +212,33 @@ def lotes_fifo_a_cerrar(ticker, cantidad, ops=None):
     return out
 
 # ---------------------------------------------------------------- órdenes
+def tick_size(precio, unidad):
+    """Salto mínimo de precio. Europa: tabla MiFID II (RTS 11), banda de liquidez 5 (valores grandes),
+    sobre el precio en la unidad de cotización (peniques en Londres). Antes se usaba 0,5 para todo GBX,
+    que en valores de menos de 200p desplazaba el límite hasta un 0,5%."""
+    if unidad == "JPY": return 1.0
+    if unidad == "CAD": return 0.01 if precio >= 0.5 else 0.005
+    for tope, t in ((0.5, 0.0001), (1, 0.0002), (2, 0.0005), (5, 0.001), (10, 0.002), (20, 0.005), (50, 0.01),
+                    (100, 0.02), (200, 0.05), (500, 0.1), (1000, 0.2), (2000, 0.5), (5000, 1.0), (10000, 2.0)):
+        if precio < tope: return t
+    return 5.0
+
+def caja_libre_eur(ords=None, ops=None):
+    """Caja total en EUR menos lo comprometido en órdenes de compra pendientes (valor + costes + FX)."""
+    _, caja, _, _ = derivar(ops)
+    libre = sum(v * eur_por(d) for d, v in caja.items())
+    for o in (ords if ords is not None else ordenes()):
+        if o["estado"] == "PENDIENTE" and o["lado"] == "COMPRA":
+            libre -= coste_compra_eur(o["mercado"], float(o["cantidad"]), float(o["limite"]), o["pais_emisor"])
+    return libre
+
+def coste_compra_eur(mercado, q, limite, pais):
+    m = MERCADOS[mercado]; c = costes("COMPRA", mercado, q, limite, pais)
+    eur = (c["valor"] + c["total"]) * eur_por(m["divisa"])
+    if m["divisa"] != "EUR":
+        fx = coste_fx_eur(c["valor"] + c["total"], m["divisa"]); eur += fx["diferencial_eur"] + fx["comision_eur"]
+    return eur
+
 def cmd_orden(a):
     m = MERCADOS[a.mercado]; ops = operaciones()
     cot = cotizacion(a.ticker); ultimo = cot["precio"]
@@ -239,8 +266,8 @@ def cmd_orden(a):
             else:
                 limite = min(ultimo * (1 - k), lib["bid"] if ok_lib else 1e18)
             fuente = f"agresiva último {ultimo} ±0,25%" + (f"; Equiduct bid {lib['bid']} / ask {lib['ask']}" if ok_lib else "")
-    tick = 0.5 if m["unidad_precio"] in ("GBX", "JPY") else 0.001 if limite < 10 else 0.01
-    limite = (math.floor if a.lado == "COMPRA" else math.ceil)(limite / tick) * tick
+    tick = tick_size(limite, m["unidad_precio"])
+    limite = (math.floor if a.lado == "COMPRA" else math.ceil)(round(limite / tick, 6)) * tick
     limite = round(limite, 4)
     if a.lado == "COMPRA":
         precio_eur = limite * eur_por(m["unidad_precio"])
@@ -254,6 +281,11 @@ def cmd_orden(a):
             q = max((q // lote) * lote, lote)
         if q == 0 or q * precio_eur > max(maxe, a.importe * 1.0001) and (q == lote or q == 1):
             sys.exit(f"No se puede comprar: el mínimo ({lote} acc.) cuesta {lote * precio_eur:.2f} € (> {maxe} €)")
+        # Cuenta de contado: no se compra con caja que no existe (ni con la ya comprometida en órdenes pendientes)
+        necesita = coste_compra_eur(a.mercado, q, limite, a.pais); libre = caja_libre_eur(ops=ops)
+        if necesita > libre + 0.005:
+            sys.exit(f"No hay caja suficiente: la orden necesita {necesita:.2f} € y quedan {libre:.2f} € libres "
+                     f"(caja menos órdenes de compra pendientes). Usa --cantidad con menos acciones o libera caja.")
     else:
         q = a.cantidad or tenidas
         if q > tenidas: sys.exit(f"Solo hay {tenidas} acciones")
