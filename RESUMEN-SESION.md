@@ -1,221 +1,206 @@
 # RESUMEN DE SESIÓN — Cartera VALUE ex-USA
 
 > **Qué es este archivo:** el documento de traspaso para que una sesión nueva de Claude Code, que no ha visto nada de lo
-> hablado, pueda seguir el proyecto donde se dejó. Actualizado el **09/11/2026 (pausa por límite de uso)**. Se sobrescribe en cada
-> limpieza; solo vale la última versión. Para continuar, basta con decirle a Claude: *"lee RESUMEN-SESION.md y sigue"*.
+> hablado, pueda seguir el proyecto donde se dejó. Generado el **09/11/2026 (Madrid)**. Se sobrescribe en cada limpieza;
+> solo vale la última versión. Para continuar, basta con decirle a Claude: *"lee RESUMEN-SESION.md y sigue"*.
 
 ---
 
 ## 1. Qué es el proyecto y en qué punto está
 
-Una **cartera value simulada de 10.000 €** que gestiona Claude como si operase en IBKR durante al menos un año:
-- compras de ~500 €, máximo 20 valores, sin empresas de EE. UU.;
-- cada decisión se toma por **EV con 4 escenarios** y pasa por un **comité de dos agentes independientes**;
-- se ejecuta sola con 4 tareas programadas y Ale copia las operaciones en Investing.
+Una **cartera value simulada de 10.000 €** que gestiona Claude como si operase en IBKR durante al menos un año
+(compras de ~500 €, máximo 20 valores, sin empresas de EE. UU.). Cada decisión se toma por **EV con 4 escenarios a
+3 años** y pasa por un **comité de dos agentes independientes**. Se ejecuta sola con 4 tareas programadas y Ale copia
+las operaciones en Investing.
 
-**Estado:**
-- El sistema está **construido y probado**: reglas, motor IBKR, Equiduct, EV, comité, panel, tareas programadas y PR abierto.
-- Las **24 tesis de candidatos están escritas**.
-- El **comité está registrado en 7 de las 20 elegibles**; faltan 13.
-- Falta escribir el **plan de la Fase 0** (`plan/fase0.md`).
-- La primera compra automática es el **lunes 09/11/2026 a las 9:34**.
+**Estado (09/11/2026):** la preparación está **terminada**.
+- Sistema construido y probado; **PR #1 fusionado en `main`** (lo fusionó Ale el 09/11 a las 11:46 UTC).
+- 33 tesis escritas; **comité completo** en las 20 de la Fase 0 y en las reservas.
+- **Plan de la Fase 0 escrito** (`plan/fase0.md`): del **lunes 16/11 al viernes 20/11/2026** (fecha confirmada por Ale).
+- Las 20 tesis están marcadas **🟡 provisional**.
+- **Reglas revisadas con Ale hoy** (umbral y reconciliación, ver 2). Ese cambio está en la rama, **todavía no en `main`**.
+- Las **4 tareas programadas siguen PAUSADAS**.
+- Cartera aún sin operaciones: solo la aportación T-0001 de 10.000 €.
 
-## 2. Decisiones clave, acordadas con Ale en un "grill-me" de 21 preguntas (no reabrirlas)
+## 2. Decisiones clave y por qué (no reabrirlas)
 
-Todas las reglas numéricas están en `config/reglas.json` y el manual de operación en `CLAUDE.md`. Resumen y porqués:
+Las reglas numéricas están en `config/reglas.json` y el manual de operación en `CLAUDE.md`.
 
-**Horizonte y cálculo**
-- **1 año mínimo 100% virtual**, con disciplina de cartera real, antes de plantear dinero real.
-- **El repo es la fuente de verdad.** Investing es un espejo manual de Ale porque Claude no puede escribir en Investing.
+**Del grill-me de 21 preguntas (07/11/2026)**
+- 1 año mínimo 100% virtual. El repo es la fuente de verdad; Investing es un espejo manual de Ale.
+- IBKR Tiered, cuenta en EUR (Madrid en Fixed 0,05%, mínimo 3 €). Stamp duty, TTF, ITF y FX incluidos. Sin IRPF.
+  Dividendos netos de retención en origen (Ale es residente fiscal en España).
+- Universo: sin empresas con sede en EE. UU., bolsa de origen, nunca ADR; Europa + Japón y Canadá (≤ 30%); sin HK/China;
+  sin exclusiones sectoriales.
+- Filtros duros: capitalización ≥ 2.000 M€, volumen ≥ 2 M€/día, ≥ 10 años, beneficio operativo + en ≥ 7/10,
+  DN/EBITDA ≤ 3x (financieras CET1 ≥ 12%), sin insolvencia.
+- Venta: TIR residual < 5%, tesis rota, algo mejor (+10 pp), peso > 10% → recorte al 7%. Sin stop-loss.
+- Recompra: ≥ −20%, tesis revisada, +5 pp de TIR, máximo 3 compras / 10%, 30 días.
+- Fase 0: invertir los 10.000 € en una semana. Si no hay 20 que pasen el umbral, se completa con las mejores TIR como
+  🟡 provisionales (rotables con +5 pp durante 8 semanas). Máximo 4 por sector y 6 por país.
+  **Innegociables:** filtros duros y desastre ≥ −50%.
+- Ejecución: límite al bid de Equiduct (fila Retail); fallback último −0,10%; velas de 1 minuto con mínimo
+  estrictamente < límite; órdenes DAY; 3.er día AGRESIVA. Japón: lote de 100 ≤ 750 €, orden APERTURA decidida en CIERRE.
+- Avisos push solo cuando haya operaciones. Benchmarks: CEMS.DE (principal), EXUS.DE e IWDA.AS.
 
-**Costes e impuestos**
-- **IBKR Tiered** con cuenta en EUR. Madrid no tiene Tiered, así que usa Fixed 0,05% con mínimo 3 €.
-- Se incluyen **stamp duty, TTF francesa (0,4%), ITF española e italiana** y conversión de divisa en cada compra (mínimo 2 USD).
-- **Sin IRPF**: las plusvalías se reinvierten íntegras.
-- **Dividendos netos de la retención en origen** según el convenio con España (Ale es residente fiscal en España).
-
-**Universo y filtros**
-- Excluida cualquier empresa con **sede en EE. UU.**; siempre la bolsa de origen, nunca ADR.
-- Universo: Europa más Japón y Canadá, con un máximo del 30% fuera de Europa. Sin Hong Kong ni China. **Sin exclusiones sectoriales.**
-- **Filtros duros:** capitalización ≥ 2.000 M€, volumen ≥ 2 M€/día, ≥ 10 años de historia, beneficio operativo positivo en ≥ 7 de 10 años, DN/EBITDA ≤ 3x (financieras: CET1 ≥ 12%), sin insolvencia.
-
-**Reglas de compra, venta y recompra**
-- **Compra:** TIR ≥ 15% (≥ 17% fuera del euro), escenario desastre ≥ −50% y asimetría ≥ 2, con horizonte de 3 años.
-- **Comité:** un agente 🔴 bajista, que ve solo la tesis cualitativa, y un 🔵 valorador ciego, que ve solo el ticker. Reconciliación:
-  - diferencia < 5 pp → media de las TIR; ≥ 5 pp → la más baja;
-  - probabilidad de desastre = la más alta de las tres;
-  - el bajista puede vetar si se cumple una condición de invalidación.
-  - El comité **puede frenar una compra, nunca forzarla**.
-- **Venta:** TIR residual < 5%, tesis rota, algo mejor con +10 pp, o peso > 10% (se recorta al 7%). **Sin stop-loss.**
-- **Recompra:** tras una caída ≥ 20%, revisando la tesis, con +5 pp de TIR, máximo 3 compras / 10% de la cartera, y 30 días entre compras. Se puede promediar al alza.
-
-**Fase 0 (09–13/11/2026)**
-- Ale quiere los 10.000 € **invertidos esa semana** para ver cómo se gestionan los cambios.
-- Si no hay 20 valores con TIR ≥ umbral, se completa con las mejores TIR como **🟡 provisionales**, que se pueden rotar con +5 pp durante 8 semanas.
-- Límites: máximo 4 por sector y 6 por país.
-- **Innegociables incluso en la Fase 0:** filtros duros y desastre ≥ −50%.
-
-**Ejecución**
-- Órdenes limitadas al **bid de Equiduct** (fila Retail, VBB/VBO). Si Equiduct no cubre el valor: último precio −0,10%.
-- Se validan con velas de 1 minuto: el mínimo tiene que quedar estrictamente por debajo del límite. Las órdenes son DAY.
-- **Japón:** se decide a las 23:00 y se ejecuta a la apertura de Tokio, en lotes de 100 acciones (lote ≤ 750 €).
-
-**Calendario y avisos**
-- **Lunes a viernes:** 9:34 Madrid, 10:04 Nueva York y 17:04 Nueva York (revisión y panel).
-- **Domingos:** 18:04 Madrid.
-- **Avisos push solo cuando haya operaciones.**
-
-**Seguimiento**
-- **Benchmarks:** CEMS.DE (MSCI Europe Value, el principal), EXUS.DE e IWDA.AS, comparados con carteras fantasma.
-- **Investing:** el formato sigue el formulario de Ale (Buscar → Tipo → Fecha → Cantidad → Precio → Comisión).
-  - Londres: precio en **GBX** y comisión en **GBP**.
-  - Las ventas se hacen con "Cerrar posición" **por lote FIFO**.
-  - Investing no registra dividendos ni FX.
-- **Git:** opción B. Se monta en la rama `claude/sharp-ritchie-qqyy9n`, se abre un PR y se fusiona una vez; después las tareas programadas trabajan sobre `main`.
+**De esta sesión (08–09/11/2026)**
+- **Opción B (Ale):** ampliar el universo a empresas medianas (2.000–10.000 M€). Se añadieron 378 empresas:
+  `config/universo.csv` pasa a 575. El filtro de capitalización ya permitía ≥ 2.000 M€, así que no hizo falta tocar reglas.
+- **Fechas de la Fase 0 (Ale):** 16–20/11/2026. Ya actualizadas en `reglas.json` (`fecha_inicio`, `fase0.inicio/fin`),
+  `CLAUDE.md` y `plan/fase0.md`.
+- **Cambio de reglas (Ale, 09/11):**
+  - **Umbral de TIR: 10% en la zona euro y 12% fuera del euro** (antes 15%/17%). Motivo: en 23 comités, ningún valorador
+    independiente pasó del 13%; el 15% equivalía a pedir el doble que el mercado.
+  - **P(desastre) del comité = media de las tres** (propia, bajista y valorador; antes la más alta). Motivo: con la más
+    alta, en 16 de 23 casos la TIR final quedaba por debajo de la propia y de la del valorador, un sesgo sistemático a la baja.
+  - Se mantienen: veto del bajista, diferencia < 5 pp → media de TIR, ≥ 5 pp → la más baja, desastre ≥ −50%, asimetría ≥ 2.
+  - En código: `config/reglas.json` (`ev.tir_min_*` y `comite.prob_desastre_modo: "media"`) y `scripts/ev.py`. La media
+    puede **bajar** la P(desastre) por debajo de la propia; el código lo aplica en los dos sentidos.
+  - `compra_ok` exige que la TIR del comité **y** la TIR propia ajustada superen el umbral (el comité puede frenar, no forzar).
+- **Criterios aplicados en los comités (míos, comunicados a Ale; no los ha objetado):**
+  - **Valeo (FR.PA) excluida:** los dos miembros del comité ponen el desastre por debajo de −50% (−54% y −55%), frente al
+    −49,8% propio. Criterio: se excluye solo si **ambos** miembros lo sitúan por debajo de −50% en retorno total.
+  - **Mazda (7261.T) excluida:** veto del bajista por la condición 5 en lectura literal (el CX-5 vendió menos que el modelo
+    anterior en EE. UU. dos trimestres seguidos). Ale puede pedir la lectura alternativa ("lanzamiento completo").
+  - **Ayvens:** solo 9,4 años en bolsa (como ALD), pero el negocio tiene más de 10 años de cuentas: se dio por bueno el filtro.
+  - **Aegon no se analizó:** traslada su sede a EE. UU.
 
 ## 3. Qué se ha creado (rutas exactas)
 
-**Repositorio y PR**
-- Repo: `kleid98/Cartera-value`. Rama de trabajo: `claude/sharp-ritchie-qqyy9n`.
-- `main` se creó desde el primer commit, que solo tiene README y .gitignore.
-- **PR abierto, aún sin fusionar:** https://github.com/kleid98/Cartera-value/pull/1
+**Repositorio y ramas**
+- Repo: `kleid98/Cartera-value`. `main` tiene todo hasta el merge del PR #1 (commit `38f83bd`).
+- Rama de trabajo: `claude/sharp-ritchie-qqyy9n`. Se recreó desde `main` tras el merge y tiene **1 commit más**
+  (`1082b3c`: cambio de reglas, comités recalculados y plan actualizado) que **aún no está en `main`**.
+- PR #1 (fusionado): https://github.com/kleid98/Cartera-value/pull/1
 
 **Configuración**
-- `config/reglas.json`, `config/mercados.json`, `config/fiscalidad.json`
-- `config/universo.csv`: 197 empresas.
-- `config/panel.json`: URL del panel y pasos para actualizarlo.
-- `config/tareas.json`: IDs de las tareas programadas.
+- `config/reglas.json` (umbral 10%/12% y P(desastre) media en la rama), `config/mercados.json`, `config/fiscalidad.json`.
+- `config/universo.csv`: 575 empresas.
+- `config/panel.json`: URL del panel y pasos para actualizarlo. `config/tareas.json`: IDs de las tareas programadas.
 
 **Scripts**
 - `scripts/cartera.py`: motor de órdenes, validación, costes, FX, FIFO, dividendos, estado, benchmarks e Investing.
-- `scripts/equiduct.js`: libro de Equiduct con Playwright. Uso: `node scripts/equiduct.js ISIN MIC [YYYYMMDD]`, con `NODE_PATH=$(npm root -g)`.
-- `scripts/ev.py`: EV, TIR y reconciliación del comité.
-- `scripts/cribado.py`: cribado con quoteSummary de Yahoo (con crumb).
-- `scripts/comite.py`: genera los prompts ciegos del comité.
-- `scripts/comite_registrar.py`: escribe los informes del comité en la tesis y aplica `ev.py`.
+- `scripts/equiduct.js`: libro de Equiduct (`NODE_PATH=$(npm root -g) node scripts/equiduct.js ISIN MIC [YYYYMMDD]`).
+- `scripts/ev.py`: EV, TIR y reconciliación del comité (regla de la media desde el 09/11).
+- `scripts/cribado.py`: cribado con Yahoo quoteSummary (cookie + crumb). Tarda ~10 minutos con 575 empresas.
+- `scripts/comite.py tesis/X.md <dir>`: genera los prompts ciegos del bajista y del valorador; el prompt dice al agente
+  que guarde su informe en `<dir>/informe_{bajista|valorador}_X.md`.
+- `scripts/comite_registrar.py tesis/X.md <informe_bajista> <informe_valorador>`: escribe los informes en la tesis,
+  rellena el bloque ev y la reconciliación.
 - `scripts/panel.py`: genera `panel/panel.json`.
 
-**Documentación y plantillas**
-- `CLAUDE.md`: manual de operación de las ejecuciones programadas.
-- `comite/bajista.md`, `comite/valorador_ciego.md`, `plantillas/tesis.md`.
+**Documentación, prompts y plantillas**
+- `CLAUDE.md`: manual de operación de las ejecuciones programadas (ya con fechas 16–20/11 y reglas nuevas en la rama).
+- `comite/bajista.md`, `comite/valorador_ciego.md`, **`comite/analista.md`** (nuevo: prompt del agente que redacta una
+  tesis nueva), `plantillas/tesis.md`.
 
 **Datos y análisis**
-- `ledger/operaciones.csv`: solo tiene la aportación T-0001 de 10.000 €.
-- `ledger/ordenes.csv` (vacío), `ledger/cartera.json`, `ledger/historico.csv`.
-- `tesis/*.md`: 24 tesis.
-- `plan/cribado.csv` y `plan/candidatos.md`: resultado del cribado.
-- `plan/comite_informes/`: informes del comité ya recibidos y copia de los prompts. Los prompts tienen una ruta de guardado de la sesión anterior; regenerarlos con `comite.py`.
+- `tesis/*.md`: 33 tesis. 23 con comité.
+- `plan/fase0.md`: **plan definitivo de la Fase 0** (las 20, ISIN, mercado, TIR, calendario por día y ejecución).
+- `plan/cribado.csv`, `plan/candidatos.md`: cribado del universo ampliado.
+- `plan/comite_informes/`: todos los informes del comité y copias de los prompts.
+- `ledger/operaciones.csv` (solo T-0001), `ledger/ordenes.csv` (vacío), `ledger/cartera.json`, `ledger/historico.csv`.
 - `investing/pendiente.md`, `investing/estado.json`, `investing/historico.md`.
 
+**Las 20 de la Fase 0** (TIR del comité con las reglas nuevas; todas 🟡 provisionales). Ver la tabla completa en `plan/fase0.md`.
+
+| # | Ticker | TIR comité | # | Ticker | TIR comité |
+|---|---|---|---|---|---|
+| 1 | NWG.L | 10,2% (umbral 12%) | 11 | SAN.PA | 7,3% |
+| 2 | BNP.PA | 10,1% (propia ajustada 8,1%) | 12 | AZM.MI | 7,1% |
+| 3 | AYV.PA | 9,3% | 13 | CNA.L | 7,1% |
+| 4 | JD.L | 9,2% | 14 | ISP.MI | 7,0% |
+| 5 | IMB.L | 8,5% | 15 | FNTN.DE | 6,8% |
+| 6 | NOVO-B.CO | 8,2% | 16 | EN.PA | 6,6% |
+| 7 | MG.TO | 8,1% | 17 | MAP.MC | 5,8% |
+| 8 | HBR.L | 8,0% | 18 | SCR.PA | 5,7% |
+| 9 | TEP.PA | 7,9% | 19 | AD.AS | 5,2% |
+| 10 | NN.AS | 7,4% | 20 | LNR.TO | 4,4% |
+
+- Reserva: **BP.L** (3,9%; sería la 6.ª británica). FGR.PA no cabe (sería la 7.ª francesa).
+- Excluidas: 7261.T (veto), FR.PA (desastre del comité), SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%),
+  ACA.PA (CET1 11,2%), VK.PA (beneficio operativo 4/10). GALP.LS y NHY.OL quedan detrás por TIR y asimetría < 2.
+- Límites: FR 6, GB 5, IT 2, NL 2, CA 2; fuera de Europa 10%; ningún sector pasa de 3.
+
+**Calendario** (en `plan/fase0.md`):
+- Lunes 16/11: NWG, BNP, AYV, IMB (apertura europea) y NOVO (apertura de EE. UU.).
+- Martes 17/11: HBR, TEP, NN, SAN y MG (Toronto).
+- Miércoles 18/11: AZM, CNA, ISP, FNTN y EN.
+- Jueves 19/11: MAP, SCR, AD; JD después de su trading statement; LNR (Toronto).
+- Viernes 20/11: reintentos; lo que quede sin ejecutar va AGRESIVA.
+
 **Panel (Artifact de tipo Dashboard)**
-- URL: https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR
-- 6 datasets (`resumen`, `historico`, `posiciones`, `operaciones`, `ordenes`, `investing`) que leen un único asset `panel.json`. El asset actual es `/_blob/aa12e649d3bbd59b5b05ec01fd2f0414`.
-- La copia de la página está en `panel/index.html`. No tocar `files/index.html` salvo que haya cambios de diseño.
+- URL: https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR.
+- 6 datasets que leen un único asset `panel.json`. El asset actual es `/_blob/aa12e649d3bbd59b5b05ec01fd2f0414`.
+- Copia de la página en `panel/index.html`. No tocar `files/index.html` salvo cambios de diseño.
 
-**Tareas programadas** (sesión nueva en cada disparo; clonan el repo con `add_repo` y siguen `CLAUDE.md` sobre `main`). **Ahora mismo las 4 están PAUSADAS**; ver la sección 6.
+**Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`). **PAUSADAS.**
 
-| Ejecución | ID | Horario | Push |
-|---|---|---|---|
-| APERTURA_UE | `trig_01CEGapUaBpMEvxHmy3HZAt8` | `CRON_TZ=Europe/Madrid 34 9 * * 1-5` | sí |
-| APERTURA_US | `trig_01AikUWcNyEwnr1XY35S6jAY` | `CRON_TZ=America/New_York 4 10 * * 1-5` | sí |
-| CIERRE | `trig_01Q31HxP6FUV3dPWk9v1Rt2a` | `CRON_TZ=America/New_York 4 17 * * 1-5` | sí |
-| DOMINGO | `trig_01UnKHPrvh2AaPgsFJfzg9PC` | `CRON_TZ=Europe/Madrid 4 18 * * 0` | no |
+| Ejecución | ID | Horario |
+|---|---|---|
+| APERTURA_UE | `trig_01CEGapUaBpMEvxHmy3HZAt8` | `CRON_TZ=Europe/Madrid 34 9 * * 1-5` |
+| APERTURA_US | `trig_01AikUWcNyEwnr1XY35S6jAY` | `CRON_TZ=America/New_York 4 10 * * 1-5` |
+| CIERRE | `trig_01Q31HxP6FUV3dPWk9v1Rt2a` | `CRON_TZ=America/New_York 4 17 * * 1-5` |
+| DOMINGO | `trig_01UnKHPrvh2AaPgsFJfzg9PC` | `CRON_TZ=Europe/Madrid 4 18 * * 0` |
 
 ## 4. Credenciales
 
-No hay credenciales propias. Yahoo, el BCE/Frankfurter, Equiduct e IBKR son públicos. GitHub va con la integración de la sesión.
+No hay credenciales propias. Yahoo, el BCE/Frankfurter, Equiduct e IBKR son públicos. GitHub va con la integración de
+la sesión.
 
-## 5. Estado de las tesis y del comité (actualizado)
+## 5. Pendiente, en este orden
 
-**Opción B aprobada por Ale:** universo ampliado a mid caps (`config/universo.csv`, 575 empresas; `reglas.json` sin cambios).
-Cribado nuevo en `plan/cribado.csv`/`candidatos.md`. 8 tesis nuevas de mid caps (HBR, FGR, AYV, SCR, UMI, AZM, FNTN, VK)
-escritas por agentes analistas con `comite/analista.md` (prompt reutilizable). Ninguna llega al 15%.
+1. **Llevar el commit `1082b3c` (reglas nuevas) a `main`.** Preguntar a Ale si prefiere que abras un PR nuevo desde
+   `claude/sharp-ritchie-qqyy9n` (él lo fusiona como el #1) o que lo subas directamente a `main` (necesita su permiso
+   explícito). Tiene que estar en `main` **antes del domingo 15/11 a las 18:04**.
+2. **Reanudar las 4 tareas** (`update_trigger` con `enabled=true` en los cuatro IDs de arriba), solo cuando el paso 1 esté
+   en `main`. Antes, comprobar con `get_trigger` que el prompt de cada tarea dice que lea `CLAUDE.md` y `plan/`
+   (`CLAUDE.md` sección 0 ya pide leer `plan/`).
+3. **Lunes 16/11, primera ejecución:** comprobar el libro de Equiduct **en vivo** (solo se probó en modo replay).
+4. Vigilar las fechas sensibles del plan:
+   - FNTN: resultados de 9 meses el 11/11.
+   - JD: trading statement el 19/11. Si recorta la guía, no se compra y entra BP.
+   - MG y LNR: arancel del 50% a piezas canadienses anunciado para el 01/01/2027.
+   - SCR: plan estratégico el 03/12.
+   - AZM: respuesta a Banca d'Italia a finales de noviembre y exclusividad de TNB hasta el 20/12.
+   - BP: plan estratégico el 15/12.
+   - Mazda: resultados del semestre el 09/11.
 
-TIR comité (o propia si falta) — la reconciliación usa la P(desastre) más alta, que casi siempre es la del bajista (13–30%):
-
-| Ticker | País | TIR propia | TIR comité | Desastre | Estado |
-|---|---|---|---|---|---|
-| NWG.L | GB | 9,9% | 9,4% | −46% | ✅ comité |
-| IMB.L | GB | 8,2% | 8,3% | −38% | ✅ |
-| AYV.PA | FR | 9,5% | 8,1% | −49% | ✅ (CET1 12,8%; 9,4 años en bolsa como ALD, el negocio tiene >10) |
-| NOVO-B.CO | DK | 7,1% | 7,8% | −43% | ✅ |
-| SAN.PA | FR | 6,6% | 7,3% | −34% | ✅ |
-| NN.AS | NL | 6,7% | 7,1% | −38% | ✅ |
-| CNA.L | GB | 7,7% | 6,6% | −46% | ✅ |
-| BNP.PA | FR | 8,5% | 6,6% | −45% | ✅ |
-| EN.PA | FR | 7,1% | 6,2% | −41% | ✅ |
-| ISP.MI | IT | 6,7% | 6,2% | −48% | ✅ |
-| MAP.MC | ES | 4,6% | 5,6% | −38% | ✅ |
-| TEP.PA | FR | 8,5% | 4,9% | −46% | ✅ |
-| FNTN.DE | DE | 7,5% | 4,8% | −41% | ✅ (resultados 9M el 11/11: no lanzar orden antes) |
-| JD.L | GB | 8,6% | 4,8% | −48% | ✅ (trading statement 19/11) |
-| MG.TO | CA | 6,7% | 4,5% | −43% | ✅ (arancel 50% piezas CA desde 01/01/2027 anunciado) |
-| HBR.L | GB | 7,8% | 3,9% | −47% | ✅ |
-| 7261.T | JP | 5,9% | 2,9% | −46% | ❌ **VETO del bajista** (condición 5: CX-5 < predecesor en EE. UU. 2 trimestres) |
-| AZM.MI | IT | 5,7% | 4,0% | −48% | ✅ (Banca d'Italia/TNB: vigilar) |
-| SCR.PA | FR | 5,6% | 5,1% | −47% | ✅ (plan estratégico 03/12) |
-| LNR.TO | CA | 4,9% | 3,1% | −46% | ✅ comité; **reserva** (asimetría < 2) |
-| AD.AS | NL | 4,0% | 5,0% | −43% | ✅ entra por Mazda |
-| BP.L | GB | 4,0% | 3,7% | −37% | ✅ entra por Linamar (6.ª británica, máximo) |
-
-**Excluidas:** SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%); ACA.PA (CET1 11,2%); VK.PA (beneficio operativo 4/10);
-**FR.PA (Valeo): excluida por el comité** — los dos miembros ponen el desastre < −50% (−54%/−55%) frente al −49,8% propio.
-Criterio adoptado (decisión mía, comunicada a Ale): se excluye solo si **ambos** miembros del comité sitúan el desastre
-(retorno total) por debajo de −50%. GALP.LS y NHY.OL (asimetría < 2) quedan fuera por TIR. Aegon no se analizó (traslada sede a EE. UU.).
-
-**20 de la Fase 0 (definitivas, todas con comité y marcadas 🟡 en su tesis):** ver `plan/fase0.md`. FR 6, GB 6, fuera de Europa 1 (MG). Reserva: LNR.TO.
-
-## 6. Pendiente, en este orden
-
-1. ✅ Comités completos (las 20 + reservas). ✅ `plan/fase0.md` escrito. ✅ Las 20 tesis marcadas 🟡 provisional.
-2. **Confirmar con Ale la fecha de arranque** (propuesta: lunes 16/11 – viernes 20/11/2026). Después actualizar
-   `config/reglas.json` (`fecha_inicio`, `fase0.inicio`, `fase0.fin`), las menciones de "09–13/11/2026" en `CLAUDE.md` y
-   quitar "BORRADOR" de `plan/fase0.md`.
-3. Commit/push y pedir a Ale que fusione https://github.com/kleid98/Cartera-value/pull/1.
-4. Solo después de la fusión, reanudar las 4 tareas (`update_trigger enabled=true`: trig_01CEGapUaBpMEvxHmy3HZAt8,
-   trig_01AikUWcNyEwnr1XY35S6jAY, trig_01Q31HxP6FUV3dPWk9v1Rt2a, trig_01UnKHPrvh2AaPgsFJfzg9PC). **Siguen PAUSADAS.**
-   Comprobar que el prompt de las tareas lee `plan/fase0.md`.
-5. **Uso:** Ale pide parar al ~80% del límite de 5 horas. Cada comité ≈ 240k tokens; cada tesis ≈ 145k.
-6. **Pregunta abierta para Ale (con datos):** con este método ninguna empresa llega al 15%. El bajista sube la P(desastre)
-   a 8–30% y la reconciliación deja TIR finales de 3–9%. La Fase 0 será 100% provisional. Ale eligió la opción B (ampliar
-   universo); el umbral no se ha tocado. Plantear si mantenerlo.
-
-## 7. Cosas a tener en cuenta
+## 6. Cosas a tener en cuenta
 
 **Límite de uso (lo más importante)**
-- **Lanzar 20 agentes a la vez agota el límite de 5 horas** y se cortan todos a mitad.
-- Ale ha pedido expresamente **lanzarlos despacio, de uno en uno**. Cada agente consume unos 100–150k tokens.
-- Aunque haya varios lanzados, lo que cuenta es el consumo total, no la concurrencia.
+- Ale pide **parar cuando el límite de 5 horas llegue al ~80%**. No hay forma de leer el porcentaje desde la sesión: estimar
+  y quedarse corto. Él avisa de su porcentaje si se le pregunta.
+- Costes medidos: cada comité (bajista + valorador) ≈ 220–270k tokens, unos 11–12% de una ventana. Cada tesis nueva con
+  el agente analista ≈ 140–155k. Lanzar agentes **de uno en uno** (como mucho el par de un comité).
+- Si un agente se corta por el límite, en la misma sesión se reanuda con SendMessage a su ID; en una sesión nueva hay que
+  relanzarlo.
+
+**Patrón observado en los comités**
+- El bajista pone una P(desastre) del 8–30% (media 18%), mucho más alta que la tesis propia (12%) y el valorador (9%).
+- Ningún valorador ha pasado del 13% de TIR. Las TIR finales con las reglas nuevas están entre el 3,9% y el 10,2%.
 
 **Yahoo y datos de mercado**
-- Con un user-agent largo de navegador devuelve 429. Funciona con `User-Agent: Mozilla/5.0`, ya puesto en `cartera.py`.
-- Para los fundamentales hace falta cookie + crumb (`fc.yahoo.com` + `getcrumb`), hecho en `cribado.py`.
-- **Los datos de Yahoo tienen errores frecuentes:**
-  - En Londres, el P/VC sale en peniques (×100).
-  - El FCF yield y el EV/EBITDA se inflan por partidas extraordinarias.
-  - Los analistas lo detectaron y lo corrigieron en las tesis. No fiarse del cribado más que para ordenar.
-- Londres cotiza en **GBp/GBX** (peniques): el motor lo convierte. Japón compra en lotes de 100.
+- Con un user-agent largo devuelve 429; funciona `User-Agent: Mozilla/5.0` (ya puesto). Los fundamentales necesitan
+  cookie + crumb (`cribado.py`).
+- Errores frecuentes: el P/VC de Londres sale ×100 (peniques); el FCF yield y el EV/EBITDA se inflan por extraordinarios
+  (p. ej. Harbour con un FCF yield del 91%); en Vallourec el dividendo sale a 0 y las acciones mal contadas. El cribado
+  solo sirve para ordenar.
+- Londres cotiza en GBp/GBX: el motor lo convierte.
 
 **Otras fuentes**
-- **Equiduct:** `api.equiduct.com/mdwebapi/instrument` da el mapa ISIN→símbolo. El viewer acepta `?symbol=X&date=YYYYMMDD` (modo replay).
-  - Se lee la fila "Retail" (VBB/VBO).
-  - En replay de cierre algunos libros salen raros (spread ancho); el motor descarta spreads > 1% y usa el último −0,10%.
-  - El libro en vivo **aún no se ha probado en horario de mercado**: comprobarlo el lunes.
-- **Investing.com** bloquea el acceso automatizado (403).
-- **Tweenvest** devolvió 404 a los agentes.
-- **IBKR web** responde con curl, pero no con WebFetch (403).
+- Equiduct: `api.equiduct.com/mdwebapi/instrument` da el mapa ISIN → símbolo; el viewer acepta `?symbol=X&date=YYYYMMDD`.
+  Se usa la fila "Retail". Spread > 1% → último −0,10%.
+- Investing.com da 403 a peticiones automáticas, Tweenvest da 404 e IBKR web solo responde con curl.
 
-**Herramientas y fallos ya corregidos**
-- **Fallos corregidos:**
-  - `ev.py` se rompía con el comité en null.
-  - `comite.py` redactaba palabras que contenían "ev" (ahora usa `\b`).
-- `comite_registrar.py` toma la **TIR redondeada** que escribe el valorador (`TIR_ANUAL: 0.07`).
-- Los hooks del repo exigen **commit y push** antes de terminar cada turno: hacerlo siempre en `claude/sharp-ritchie-qqyy9n`.
+**Herramientas**
+- `comite_registrar.py` toma la TIR **redondeada** del valorador (`TIR_ANUAL: 0.07`).
+- `ev.py` necesita `NODE_PATH` solo para Equiduct; para la EV basta con python.
+- Los hooks del repo exigen **commit y push** antes de terminar cada turno.
 
-## 8. Preferencias de Ale para este proyecto
+## 7. Preferencias de Ale para este proyecto
 
-- Todo en español, en lenguaje llano.
-- Quiere **ver cómo se gestionan los cambios**: explicar el porqué en diario y tesis.
-- No le importa que el montaje tarde más si así se evita quemar el límite de uso.
-- Las decisiones de reglas son suyas: plantearlas y esperar su respuesta.
+- Todo en español, en lenguaje llano. Quiere ver **cómo y por qué** se gestionan los cambios.
+- Prefiere ir despacio antes que quemar el límite de uso.
+- Las decisiones de reglas son suyas: plantearlas con datos y esperar su respuesta. No cambiar `reglas.json` sin su acuerdo.
 - El resto, ver `CLAUDE.md`.
