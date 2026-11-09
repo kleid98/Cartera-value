@@ -1,0 +1,59 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 09/11/2026.
+
+Empresa: SCOR SE (SCR.PA, PARIS)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** SCOR es la cuarta o quinta reaseguradora del mundo (daños y responsabilidad civil, especialidades, y vida y salud). El mercado le aplica un descuento grande frente a Munich Re, Swiss Re y Hannover Re por su historial: en los últimos diez años ha tenido varios "accidentes" que borraron un año entero de beneficios (huracanes de 2017, la pérdida de 2022 por catástrofes, inflación y guerra, y en 2024 una revisión de hipótesis de mortalidad y caídas de pólizas en su cartera de vida de EE. UU. que dejó el beneficio anual prácticamente en cero). Añadió una pelea larga con su accionista Covéa (OPA fallida de 2018, arbitrajes) que todavía no está cerrada del todo. A eso se suma el ciclo: tras tres años de precios muy altos en reaseguro de catástrofes, el mercado se está ablandando (bajadas de precio en las renovaciones de enero y abril de 2026) y los inversores temen que los márgenes de daños vayan a ir a menos justo cuando la compañía presume de resultados récord. Los analistas modelan beneficio plano para 2026–2028, y el mercado no se cree que la generación de valor económico que publica la empresa se convierta en dinero para el accionista.
+
+**Qué espera el mercado.** Que el beneficio se estanque en torno al nivel actual o baje cuando el ciclo de precios gire de verdad, que la cartera de vida vuelva a dar algún disgusto de reservas y que el exceso de capital se quede dentro de la compañía en lugar de devolverse. Por eso cotiza muy por debajo de su valor económico declarado y a un múltiplo de beneficios más propio de un negocio en declive que de una aseguradora con un ROE de doble dígito.
+
+**Qué espero yo y por qué podría tener razón.** (1) El negocio de daños se ha saneado: la compañía ha subido los precios y endurecido las condiciones desde 2023, ha reducido exposición a catástrofes de baja rentabilidad y está acumulando colchones de reservas incluso en trimestres con catástrofes; el ratio combinado está varios puntos por debajo del objetivo. Un ablandamiento moderado de precios desde niveles muy rentables reduce márgenes, pero no los elimina. (2) La cartera de vida ya pasó una limpieza profunda en 2024 y desde entonces los resultados se ajustan a lo esperado trimestre tras trimestre. (3) Las inversiones aportan un viento a favor que todavía no ha terminado: la cartera se reinvierte a tipos claramente superiores a su rentabilidad media actual. (4) El capital sobra: la solvencia está por encima del rango objetivo y la deuda ha bajado, lo que abre la puerta a recompras de acciones o dividendos extraordinarios además de un dividendo ordinario ya alto y creciente. (5) El nuevo plan estratégico de diciembre de 2026 puede fijar una política explícita de devolución de capital, que es lo que falta para que el mercado reduzca el descuento. Ahora bien: el reaseguro vende protección contra colas, así que un año malo (gran terremoto, huracán o pandemia) puede borrar uno o dos años de beneficio, y la compañía tiene un historial real de sorpresas negativas; la tesis no es "no puede pasar nada", sino que el precio actual ya descuenta bastante de eso.
+
+**Catalizadores.** Investor Day y nuevo plan estratégico (03/12/2026): objetivos de rentabilidad, rango de solvencia y política de recompras; renovaciones de enero de 2027 (volumen y precios, publicación a principios de febrero); resultados anuales 2026 y propuesta de dividendo (finales de febrero o principios de marzo de 2027); cierre definitivo del segundo arbitraje con Covéa; temporada de huracanes de 2027.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. SCOR anuncia un nuevo cargo por revisión de hipótesis o refuerzo de reservas (Vida y Salud o daños de años anteriores) superior a 300 M€ antes de impuestos en un ejercicio, o un trimestre con pérdida neta por causas distintas de una catástrofe natural concreta.
+2. El ratio de solvencia publicado cae por debajo del 185% (límite inferior del rango óptimo) o la compañía recorta o suspende el dividendo ordinario.
+3. El ratio combinado de daños (P&C) de un ejercicio completo supera el 92% con un ratio de catástrofes dentro del presupuesto anual (≤ 10%), es decir, por deterioro del negocio corriente y no por un año de catástrofes.
+4. El nuevo plan estratégico (03/12/2026) o una revisión posterior fija un objetivo de ROE o de crecimiento del valor económico inferior al 10% anual, o anuncia una ampliación de capital o una adquisición grande pagada con acciones.
+5. Rebaja del rating de solidez financiera de S&P o de AM Best por debajo de A (dos escalones o más desde el nivel actual).
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio SCR.PA`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_SCR.PA.md

@@ -1,0 +1,86 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: NN Group N.V. (NN.AS, AMSTERDAM)
+
+Tesis alcista (cualitativa) del gestor:
+NN Group es la mayor aseguradora de vida y pensiones de Países Bajos, con un negocio de no vida doméstico rentable, una filial
+de seguros de vida y pensiones en Europa central y del este (Polonia, Rumanía, Eslovaquia, Grecia, etc.), un negocio de seguros
+para empresas en Japón (COLI) y un banco hipotecario minorista (NN Bank). Su métrica clave no es el beneficio contable sino la
+generación operativa de capital y el flujo de caja libre que llega a la holding, y casi todo ese flujo se devuelve al accionista
+vía dividendo progresivo y recompra anual de acciones.
+
+**Por qué está "barata" según el cribado y qué espera el mercado.** La acción ya ha recorrido mucho: casi se ha duplicado en dos
+años y cotiza cerca de máximos de 52 semanas. El mercado ya no la descuenta como un "zombi" de vida en liquidación; descuenta
+que la compañía cumpla sus objetivos 2028 y siga entregando un retorno de caja creciente. Lo que el mercado sigue penalizando es:
+(a) la madurez del libro de vida neerlandés, que es la mayor fuente de capital y crece poco; (b) la sensibilidad del ratio de
+solvencia a diferenciales de deuda pública e hipotecas, a la renta variable y al inmobiliario; (c) el historial de litigios
+masivos en Países Bajos (pólizas unit-linked, "woekerpolis"), cerrado con un acuerdo colectivo en 2024; (d) la dependencia de
+la reforma de pensiones neerlandesa (Wtp), que es a la vez oportunidad (más flujos a planes de aportación definida y operaciones
+de compra de pensiones) y riesgo (márgenes, competencia, cambios regulatorios).
+
+**Qué espero yo.** Una máquina de capital estable y algo creciente: Seguros Europa crece a doble dígito (nuevo negocio de
+riesgo y pensiones con fuerte distribución propia y bancaseguros), no vida neerlandesa opera dentro o mejor de su rango de ratio
+combinado, el programa de eficiencia "Future Ready" entrega los ahorros prometidos, y la holding sigue convirtiendo la mayor parte
+de la generación de capital en caja remitida. Con ese flujo, la compañía puede subir el dividendo por acción cada año y recomprar
+en torno a un 2% del capital anual, de modo que el flujo por acción crece más rápido que el flujo total. El balance (solvencia
+holgada, apalancamiento moderado, ratings altos) permite aguantar un mal año de mercados sin recortar el dividendo.
+
+**Por qué no espero más.** La tesis es de "rentista": la mayor parte del retorno vendrá del dividendo y de las recompras, no de
+una revalorización del múltiplo, que ya se ha producido. El crecimiento del flujo total es de un dígito medio; el libro neerlandés
+de vida se va consumiendo; Japón no acaba de recuperar ventas; parte del crecimiento de Seguros Europa (bancaseguros en Grecia)
+se moderará en 2027 según la propia compañía; y el consejero delegado que ha liderado la transformación (David Knibbe) se marcha
+a Euronext en mayo de 2027, sustituido por Tjeerd Bosklopper. El cambio de CEO no rompe la tesis, pero añade incertidumbre sobre
+la política de capital a partir de 2027.
+
+**Catalizadores.** Resultados FY26 (10/02/2027) con anuncio del nuevo dividendo final y del programa de recompra 2027 (el consenso
+espera un aumento de la recompra); llegada del nuevo CEO (marzo–mayo 2027) y posible actualización estratégica; aceleración de
+las operaciones de compra de pensiones con la transición a la Wtp (fecha límite de transición 2028); cumplimiento de los
+objetivos de 2028 (generación operativa de capital de 2.200 M€ y FCF > 1.800 M€).
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. El ratio de Solvencia II del grupo publicado cae por debajo del 170% en un cierre semestral o anual.
+2. NN recorta o congela el dividendo ordinario por acción anual (frente al año anterior), o suspende/reduce por debajo de 350 M€ el programa anual de recompra.
+3. La compañía rebaja o retira sus objetivos 2028 de generación operativa de capital (2.200 M€) o de FCF (> 1.800 M€), o el FCF de la holding cae interanualmente en dos semestres consecutivos.
+4. Nuevo litigio o regulación con provisión o coste estimado > 1.000 M€ (por ejemplo, reapertura del caso unit-linked por una sentencia del Tribunal Supremo neerlandés o un cambio de la Wtp que imponga compensaciones a los contratos de pensiones asegurados).
+5. Ampliación de capital, o adquisición grande (> 2.000 M€) pagada con acciones o que obligue a pausar el retorno de capital.
+6. Rebaja del rating de fortaleza financiera de S&P por debajo de A.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio NN.AS`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_NN.AS.md

@@ -1,0 +1,34 @@
+{
+ "actualizado": "2026-11-07 19:32:38",
+ "valor_total_eur": 10000.0,
+ "invertido_eur": 0.0,
+ "caja_eur": 10000.0,
+ "caja_por_divisa": {
+  "EUR": 10000.0
+ },
+ "aportado_eur": 10000.0,
+ "rentabilidad": 0.0,
+ "n_posiciones": 0,
+ "posiciones": [],
+ "realizado_eur": 0.0,
+ "benchmarks": {
+  "principal": {
+   "nombre": "MSCI Europe Value",
+   "ticker": "CEMS.DE",
+   "valor_eur": 10000.0,
+   "rent": 0.0
+  },
+  "secundario": {
+   "nombre": "MSCI World ex USA",
+   "ticker": "EXUS.DE",
+   "valor_eur": 10000.0,
+   "rent": 0.0
+  },
+  "control": {
+   "nombre": "MSCI World",
+   "ticker": "IWDA.AS",
+   "valor_eur": 10000.0,
+   "rent": 0.0
+  }
+ }
+}

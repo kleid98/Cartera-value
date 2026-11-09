@@ -1,0 +1,13 @@
+{
+  "url": "https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR",
+  "tipo": "Dashboard (Artifact type)",
+  "datasets": ["resumen", "historico", "posiciones", "operaciones", "ordenes", "investing"],
+  "fichero_datos": "panel/panel.json",
+  "como_actualizar": [
+    "python3 scripts/cartera.py estado --cierre && python3 scripts/panel.py",
+    "Artifact publish con url=<url>, asset=true, file_path=panel/panel.json  → devuelve /_blob/<id>",
+    "ArtifactData get de cada datasets/<id> (para el version) y batch 'update' de los 6 con source.url=/_blob/<id>, updated={at: UTC ISO, by: 'Claude (ejecución nocturna)'}, edit={via:'claude', at: UTC ISO}, pasando if_version",
+    "Opcional: borrar el asset anterior (Artifact action=delete, url, path=<id antiguo>) si ya no lo usa ningún dataset"
+  ],
+  "pagina": "panel/index.html (documento files/index.html del dashboard; solo cambiar si Ale pide cambios de diseño)"
+}

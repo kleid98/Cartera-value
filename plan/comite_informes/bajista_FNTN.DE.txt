@@ -1,0 +1,59 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: freenet (FNTN.DE, XETRA)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** freenet es el mayor revendedor independiente de telefonía móvil de Alemania: no tiene red propia, alquila capacidad a Telekom, Vodafone y Telefónica y vende contratos con sus marcas (mobilcom-debitel, klarmobil) en ~1.000 tiendas propias, en las tiendas de MediaMarkt/Saturn (acuerdo exclusivo ampliado cinco años más) y por internet. Además es dueña de waipu.tv, el mayor servicio de televisión por internet del país. El mercado la ve como un negocio intermediario en declive lento: depende por completo de las condiciones que le den los operadores; el precio medio por cliente cae año tras año; un acuerdo comercial con un operador se ha torcido (no alcanzó los volúmenes pactados y pierde comisiones) y la empresa supone, por prudencia, que el coste sigue hasta 2028; la compra de mobilezone hinchó las ventas con venta de terminales de poco margen, pero el beneficio de explotación del negocio móvil cae. A eso se suman miedos estructurales: que una consolidación del mercado alemán (Telefónica y 1&1) reduzca los canales de distribución independientes, que la venta por internet o asistentes de inteligencia artificial salten las tiendas, y que waipu.tv crezca más despacio frente a la televisión de los propios operadores. Varios bancos tenían recomendación de venta, la guía de 2026 decepcionó y la acción ha perdido un tercio desde febrero.
+
+**Qué espera el mercado.** Una "renta en extinción": caja libre plana o decreciente, el dividendo mínimo garantizado hasta 2028 y luego un recorte; que el coste del acuerdo con el operador no se recupere y que la ambición de 2028 se quede corta (los analistas ya modelan un beneficio de explotación de 2028 claramente por debajo del objetivo de la empresa).
+
+**Qué espero yo y por qué podría tener razón.** (1) La caja es real, estable y poco intensiva en inversión: lleva más de diez años generando caja libre todos los años, con inversiones muy bajas y una conversión de beneficio en caja alta, y la mayor parte se reparte. Al precio actual, solo el dividendo garantizado de tres años devuelve más de una cuarta parte de la inversión. (2) El problema con el operador está acotado y ya descontado en la guía: cualquier acuerdo que lo sustituya —la empresa negocia y el análisis independiente apunta a una renegociación en el segundo semestre de 2026— sería una mejora sobre lo previsto. (3) waipu.tv es un activo en crecimiento con márgenes crecientes, que la empresa ha preferido comprar entera en lugar de sacarla a bolsa, y cuyo valor no se ve en el múltiplo actual del grupo. (4) La base de clientes de contrato sigue creciendo ligeramente y los precios de alta nueva están mejorando, con estabilización del precio medio prevista para 2027. (5) La venta de la participación en Ceconomy financia recompras de acciones, y el balance tiene poca deuda. (6) Una consolidación del mercado a tres operadores tiende a subir precios, lo que también beneficia al revendedor. Pero hay que ser escéptico: el negocio móvil lleva años sin crecer, los objetivos se han incumplido en 2025 y el poder de negociación lo tienen los operadores.
+
+**Catalizadores.** Resultados de los nueve meses (~11/11/2026) y anuales (febrero 2027) con la guía 2027; anuncio de un acuerdo nuevo con el operador de red; evolución de los abonados de waipu.tv; ejecución de la recompra; movimientos de consolidación en el móvil alemán; confirmación del dividendo mínimo.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. freenet rebaja su guía anual de EBITDA ajustado o de FCF ajustado, o abandona/rebaja la ambición 2028 (EBITDA ≥ 620 M€, FCF ≥ 340 M€).
+2. Recorte o suspensión del dividendo mínimo de 2,00 €/acción comprometido para 2026–2028, o ampliación de capital.
+3. La empresa comunica la terminación, no renovación o empeoramiento material de un contrato mayorista/de distribución con uno de los tres operadores de red (o con MediaMarktSaturn), o una nueva carga de EBITDA adicional a los ~50 M€/año ya previstos.
+4. La base de clientes de contrato (*postpaid*) cae en dos trimestres consecutivos, o los abonados de waipu.tv caen en un año completo.
+5. Deuda financiera neta / EBITDA ajustado (con arrendamientos) por encima de 2,5x, por adquisiciones o por caída del EBITDA.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio FNTN.DE`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_FNTN.DE.md

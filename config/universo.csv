@@ -1,0 +1,576 @@
+ticker,mercado,pais,sector,nombre
+SHEL.L,LONDRES,GB,Energía,Shell
+BP.L,LONDRES,GB,Energía,BP
+BATS.L,LONDRES,GB,Tabaco,British American Tobacco
+IMB.L,LONDRES,GB,Tabaco,Imperial Brands
+LLOY.L,LONDRES,GB,Bancos,Lloyds Banking Group
+NWG.L,LONDRES,GB,Bancos,NatWest
+BARC.L,LONDRES,GB,Bancos,Barclays
+AV.L,LONDRES,GB,Seguros,Aviva
+LGEN.L,LONDRES,GB,Seguros,Legal & General
+MNG.L,LONDRES,GB,Gestión de activos,M&G
+WPP.L,LONDRES,JE,Medios,WPP
+KGF.L,LONDRES,GB,Distribución,Kingfisher
+TSCO.L,LONDRES,GB,Distribución alimentaria,Tesco
+SBRY.L,LONDRES,GB,Distribución alimentaria,J Sainsbury
+RKT.L,LONDRES,GB,Consumo básico,Reckitt Benckiser
+ULVR.L,LONDRES,GB,Consumo básico,Unilever
+DGE.L,LONDRES,GB,Bebidas,Diageo
+TW.L,LONDRES,GB,Construcción residencial,Taylor Wimpey
+PSN.L,LONDRES,GB,Construcción residencial,Persimmon
+BTRW.L,LONDRES,GB,Construcción residencial,Barratt Redrow
+VOD.L,LONDRES,GB,Telecomunicaciones,Vodafone
+BT-A.L,LONDRES,GB,Telecomunicaciones,BT Group
+GLEN.L,LONDRES,JE,Materias primas,Glencore
+RIO.L,LONDRES,GB,Materias primas,Rio Tinto
+AAL.L,LONDRES,GB,Materias primas,Anglo American
+CNA.L,LONDRES,GB,Utilities,Centrica
+SN.L,LONDRES,GB,Salud,Smith & Nephew
+BNZL.L,LONDRES,GB,Industria,Bunzl
+RTO.L,LONDRES,GB,Servicios,Rentokil Initial
+JD.L,LONDRES,GB,Distribución,JD Sports Fashion
+ABF.L,LONDRES,GB,Consumo básico,Associated British Foods
+PSON.L,LONDRES,GB,Medios,Pearson
+GSK.L,LONDRES,GB,Salud,GSK
+BKG.L,LONDRES,GB,Construcción residencial,Berkeley Group
+ITV.L,LONDRES,GB,Medios,ITV
+MBG.DE,XETRA,DE,Automóvil,Mercedes-Benz Group
+BMW.DE,XETRA,DE,Automóvil,BMW
+VOW3.DE,XETRA,DE,Automóvil,Volkswagen (pref.)
+PAH3.DE,XETRA,DE,Automóvil,Porsche Automobil Holding
+CON.DE,XETRA,DE,Automóvil,Continental
+BAS.DE,XETRA,DE,Químicas,BASF
+BAYN.DE,XETRA,DE,Salud,Bayer
+HEN3.DE,XETRA,DE,Consumo básico,Henkel (pref.)
+FRE.DE,XETRA,DE,Salud,Fresenius
+DHL.DE,XETRA,DE,Transporte,DHL Group
+ALV.DE,XETRA,DE,Seguros,Allianz
+MUV2.DE,XETRA,DE,Seguros,Munich Re
+EVK.DE,XETRA,DE,Químicas,Evonik
+BNR.DE,XETRA,DE,Químicas,Brenntag
+DTG.DE,XETRA,DE,Industria,Daimler Truck
+PUM.DE,XETRA,DE,Consumo discrecional,Puma
+MRK.DE,XETRA,DE,Salud,Merck KGaA
+SHL.DE,XETRA,DE,Salud,Siemens Healthineers
+KGX.DE,XETRA,DE,Industria,KION Group
+8TRA.DE,XETRA,DE,Industria,Traton
+TLX.DE,XETRA,DE,Seguros,Talanx
+DTE.DE,XETRA,DE,Telecomunicaciones,Deutsche Telekom
+TTE.PA,PARIS,FR,Energía,TotalEnergies
+RNO.PA,PARIS,FR,Automóvil,Renault
+BNP.PA,PARIS,FR,Bancos,BNP Paribas
+GLE.PA,PARIS,FR,Bancos,Société Générale
+ACA.PA,PARIS,FR,Bancos,Crédit Agricole
+CS.PA,PARIS,FR,Seguros,AXA
+ORA.PA,PARIS,FR,Telecomunicaciones,Orange
+CA.PA,PARIS,FR,Distribución alimentaria,Carrefour
+PUB.PA,PARIS,FR,Medios,Publicis
+KER.PA,PARIS,FR,Lujo,Kering
+SAN.PA,PARIS,FR,Salud,Sanofi
+EN.PA,PARIS,FR,Construcción,Bouygues
+SGO.PA,PARIS,FR,Materiales de construcción,Saint-Gobain
+ML.PA,PARIS,FR,Automóvil,Michelin
+RXL.PA,PARIS,FR,Industria,Rexel
+TEP.PA,PARIS,FR,Servicios,Teleperformance
+SW.PA,PARIS,FR,Servicios,Sodexo
+EDEN.PA,PARIS,FR,Servicios,Edenred
+RI.PA,PARIS,FR,Bebidas,Pernod Ricard
+BN.PA,PARIS,FR,Consumo básico,Danone
+BVI.PA,PARIS,FR,Servicios,Bureau Veritas
+FR.PA,PARIS,FR,Automóvil,Valeo
+AKE.PA,PARIS,FR,Químicas,Arkema
+IPS.PA,PARIS,FR,Medios,Ipsos
+STLAM.MI,MILAN,NL,Automóvil,Stellantis
+INGA.AS,AMSTERDAM,NL,Bancos,ING Groep
+ABN.AS,AMSTERDAM,NL,Bancos,ABN AMRO
+NN.AS,AMSTERDAM,NL,Seguros,NN Group
+RAND.AS,AMSTERDAM,NL,Servicios,Randstad
+WKL.AS,AMSTERDAM,NL,Medios,Wolters Kluwer
+HEIA.AS,AMSTERDAM,NL,Bebidas,Heineken
+AD.AS,AMSTERDAM,NL,Distribución alimentaria,Ahold Delhaize
+LIGHT.AS,AMSTERDAM,NL,Industria,Signify
+AKZA.AS,AMSTERDAM,NL,Químicas,Akzo Nobel
+PHIA.AS,AMSTERDAM,NL,Salud,Philips
+REP.MC,MADRID,ES,Energía,Repsol
+SAN.MC,MADRID,ES,Bancos,Banco Santander
+BBVA.MC,MADRID,ES,Bancos,BBVA
+CABK.MC,MADRID,ES,Bancos,CaixaBank
+TEF.MC,MADRID,ES,Telecomunicaciones,Telefónica
+MAP.MC,MADRID,ES,Seguros,Mapfre
+ACX.MC,MADRID,ES,Materias primas,Acerinox
+LOG.MC,MADRID,ES,Distribución,Logista
+EBRO.MC,MADRID,ES,Consumo básico,Ebro Foods
+VIS.MC,MADRID,ES,Consumo básico,Viscofan
+CIE.MC,MADRID,ES,Automóvil,CIE Automotive
+ENG.MC,MADRID,ES,Utilities,Enagás
+NTGY.MC,MADRID,ES,Utilities,Naturgy
+ELE.MC,MADRID,ES,Utilities,Endesa
+ENI.MI,MILAN,IT,Energía,Eni
+ISP.MI,MILAN,IT,Bancos,Intesa Sanpaolo
+UCG.MI,MILAN,IT,Bancos,UniCredit
+G.MI,MILAN,IT,Seguros,Generali
+PST.MI,MILAN,IT,Seguros,Poste Italiane
+PIRC.MI,MILAN,IT,Automóvil,Pirelli
+CPR.MI,MILAN,IT,Bebidas,Campari
+IVG.MI,MILAN,IT,Industria,Iveco Group
+BZU.MI,MILAN,IT,Materiales de construcción,Buzzi
+TEN.MI,MILAN,LU,Energía,Tenaris
+NESN.SW,ZURICH,CH,Consumo básico,Nestlé
+ROG.SW,ZURICH,CH,Salud,Roche
+NOVN.SW,ZURICH,CH,Salud,Novartis
+UHR.SW,ZURICH,CH,Lujo,Swatch Group
+UBSG.SW,ZURICH,CH,Bancos,UBS
+ZURN.SW,ZURICH,CH,Seguros,Zurich Insurance
+SREN.SW,ZURICH,CH,Seguros,Swiss Re
+HOLN.SW,ZURICH,CH,Materiales de construcción,Holcim
+SDZ.SW,ZURICH,CH,Salud,Sandoz
+ADEN.SW,ZURICH,CH,Servicios,Adecco
+BARN.SW,ZURICH,CH,Consumo básico,Barry Callebaut
+EQNR.OL,OSLO,NO,Energía,Equinor
+NHY.OL,OSLO,NO,Materias primas,Norsk Hydro
+YAR.OL,OSLO,NO,Químicas,Yara
+DNB.OL,OSLO,NO,Bancos,DNB Bank
+ORK.OL,OSLO,NO,Consumo básico,Orkla
+TEL.OL,OSLO,NO,Telecomunicaciones,Telenor
+VOLV-B.ST,ESTOCOLMO,SE,Industria,Volvo
+SKF-B.ST,ESTOCOLMO,SE,Industria,SKF
+ERIC-B.ST,ESTOCOLMO,SE,Tecnología,Ericsson
+HM-B.ST,ESTOCOLMO,SE,Distribución,H&M
+SCA-B.ST,ESTOCOLMO,SE,Materias primas,SCA
+SECU-B.ST,ESTOCOLMO,SE,Servicios,Securitas
+ESSITY-B.ST,ESTOCOLMO,SE,Consumo básico,Essity
+TEL2-B.ST,ESTOCOLMO,SE,Telecomunicaciones,Tele2
+NOKIA.HE,HELSINKI,FI,Tecnología,Nokia
+UPM.HE,HELSINKI,FI,Materias primas,UPM-Kymmene
+STERV.HE,HELSINKI,FI,Materias primas,Stora Enso
+NESTE.HE,HELSINKI,FI,Energía,Neste
+NDA-FI.HE,HELSINKI,FI,Bancos,Nordea
+CARL-B.CO,COPENHAGUE,DK,Bebidas,Carlsberg
+NOVO-B.CO,COPENHAGUE,DK,Salud,Novo Nordisk
+PNDORA.CO,COPENHAGUE,DK,Consumo discrecional,Pandora
+DANSKE.CO,COPENHAGUE,DK,Bancos,Danske Bank
+ISS.CO,COPENHAGUE,DK,Servicios,ISS
+DEMANT.CO,COPENHAGUE,DK,Salud,Demant
+ABI.BR,BRUSELAS,BE,Bebidas,AB InBev
+KBC.BR,BRUSELAS,BE,Bancos,KBC Group
+AGS.BR,BRUSELAS,BE,Seguros,Ageas
+UCB.BR,BRUSELAS,BE,Salud,UCB
+GBLB.BR,BRUSELAS,BE,Holding,GBL
+OMV.VI,VIENA,AT,Energía,OMV
+EBS.VI,VIENA,AT,Bancos,Erste Group
+VOE.VI,VIENA,AT,Materias primas,voestalpine
+WIE.VI,VIENA,AT,Materiales de construcción,Wienerberger
+GALP.LS,LISBOA,PT,Energía,Galp Energia
+JMT.LS,LISBOA,PT,Distribución alimentaria,Jerónimo Martins
+NVG.LS,LISBOA,PT,Materias primas,The Navigator Company
+EDP.LS,LISBOA,PT,Utilities,EDP
+A5G.IR,DUBLIN,IE,Bancos,AIB Group
+BIRG.IR,DUBLIN,IE,Bancos,Bank of Ireland
+KRZ.IR,DUBLIN,IE,Consumo básico,Kerry Group
+GL9.IR,DUBLIN,IE,Consumo básico,Glanbia
+7267.T,TOKIO,JP,Automóvil,Honda Motor
+7261.T,TOKIO,JP,Automóvil,Mazda Motor
+5020.T,TOKIO,JP,Energía,ENEOS Holdings
+7186.T,TOKIO,JP,Bancos,Concordia Financial
+8308.T,TOKIO,JP,Bancos,Resona Holdings
+4188.T,TOKIO,JP,Químicas,Mitsubishi Chemical
+5401.T,TOKIO,JP,Materias primas,Nippon Steel
+6178.T,TOKIO,JP,Seguros,Japan Post Holdings
+7751.T,TOKIO,JP,Tecnología,Canon
+4005.T,TOKIO,JP,Químicas,Sumitomo Chemical
+8053.T,TOKIO,JP,Conglomerado,Sumitomo Corp
+9432.T,TOKIO,JP,Telecomunicaciones,NTT
+8411.T,TOKIO,JP,Bancos,Mizuho Financial
+6752.T,TOKIO,JP,Tecnología,Panasonic
+8591.T,TOKIO,JP,Financieras,ORIX
+MG.TO,TORONTO,CA,Automóvil,Magna International
+NTR.TO,TORONTO,CA,Químicas,Nutrien
+SU.TO,TORONTO,CA,Energía,Suncor Energy
+CNQ.TO,TORONTO,CA,Energía,Canadian Natural Resources
+MFC.TO,TORONTO,CA,Seguros,Manulife
+BNS.TO,TORONTO,CA,Bancos,Bank of Nova Scotia
+GIL.TO,TORONTO,CA,Consumo discrecional,Gildan Activewear
+OTEX.TO,TORONTO,CA,Tecnología,Open Text
+LNR.TO,TORONTO,CA,Automóvil,Linamar
+WFG.TO,TORONTO,CA,Materias primas,West Fraser
+POW.TO,TORONTO,CA,Seguros,Power Corporation
+BCE.TO,TORONTO,CA,Telecomunicaciones,BCE
+TECK-B.TO,TORONTO,CA,Materias primas,Teck Resources
+INCH.L,LONDRES,GB,Distribución,Inchcape
+VTY.L,LONDRES,GB,Construcción residencial,Vistry Group
+BWY.L,LONDRES,GB,Construcción residencial,Bellway
+HWDN.L,LONDRES,GB,Distribución,Howden Joinery
+MKS.L,LONDRES,GB,Distribución,Marks and Spencer
+EZJ.L,LONDRES,GB,Transporte,easyJet
+BRBY.L,LONDRES,GB,Lujo,Burberry
+DRX.L,LONDRES,GB,Utilities,Drax Group
+HSX.L,LONDRES,GB,Seguros,Hiscox
+BEZ.L,LONDRES,GB,Seguros,Beazley
+PHNX.L,LONDRES,GB,Seguros,Phoenix Group
+ABDN.L,LONDRES,GB,Gestión de activos,Aberdeen Group
+INVP.L,LONDRES,GB,Bancos,Investec
+OSB.L,LONDRES,GB,Bancos,OSB Group
+PAG.L,LONDRES,GB,Bancos,Paragon Banking
+PLUS.L,LONDRES,GB,Financieras,Plus500
+IGG.L,LONDRES,GB,Financieras,IG Group
+BAB.L,LONDRES,GB,Industria,Babcock International
+QQ.L,LONDRES,GB,Industria,QinetiQ
+SRP.L,LONDRES,GB,Servicios,Serco
+MTO.L,LONDRES,GB,Servicios,Mitie
+BBY.L,LONDRES,GB,Construcción,Balfour Beatty
+MGNS.L,LONDRES,GB,Construcción,Morgan Sindall
+DNLM.L,LONDRES,GB,Distribución,Dunelm
+FRAS.L,LONDRES,GB,Distribución,Frasers Group
+BME.L,LONDRES,GB,Distribución,B&M European Value Retail
+GRG.L,LONDRES,GB,Consumo discrecional,Greggs
+WTB.L,LONDRES,GB,Consumo discrecional,Whitbread
+MNDI.L,LONDRES,GB,Materias primas,Mondi
+HBR.L,LONDRES,GB,Energía,Harbour Energy
+ENOG.L,LONDRES,GB,Energía,Energean
+JMAT.L,LONDRES,GB,Químicas,Johnson Matthey
+TATE.L,LONDRES,GB,Consumo básico,Tate & Lyle
+GFTU.L,LONDRES,GB,Distribución,Grafton Group
+COA.L,LONDRES,GB,Industria,Coats Group
+TCAP.L,LONDRES,GB,Financieras,TP ICAP
+LRE.L,LONDRES,GB,Seguros,Lancashire Holdings
+VSVS.L,LONDRES,GB,Industria,Vesuvius
+IMI.L,LONDRES,GB,Industria,IMI
+WEIR.L,LONDRES,GB,Industria,Weir Group
+SMIN.L,LONDRES,GB,Industria,Smiths Group
+CTEC.L,LONDRES,GB,Salud,ConvaTec
+HIK.L,LONDRES,GB,Salud,Hikma Pharmaceuticals
+CURY.L,LONDRES,GB,Distribución,Currys
+AAF.L,LONDRES,GB,Telecomunicaciones,Airtel Africa
+EDV.L,LONDRES,GB,Materias primas,Endeavour Mining
+FRES.L,LONDRES,GB,Materias primas,Fresnillo
+SDR.L,LONDRES,GB,Gestión de activos,Schroders
+EMG.L,LONDRES,GB,Gestión de activos,Man Group
+STJ.L,LONDRES,GB,Gestión de activos,St James's Place
+QLT.L,LONDRES,GB,Gestión de activos,Quilter
+DCC.L,LONDRES,GB,Distribución,DCC
+CCC.L,LONDRES,GB,Tecnología,Computacenter
+MRO.L,LONDRES,GB,Industria,Melrose Industries
+RS1.L,LONDRES,GB,Distribución,RS Group
+ENT.L,LONDRES,GB,Consumo discrecional,Entain
+PTEC.L,LONDRES,GB,Consumo discrecional,Playtech
+INF.L,LONDRES,GB,Medios,Informa
+LAND.L,LONDRES,GB,Inmobiliario,Land Securities
+BLND.L,LONDRES,GB,Inmobiliario,British Land
+WIZZ.L,LONDRES,GB,Transporte,Wizz Air
+CAN.L,LONDRES,GB,Medios,Canal+
+ROR.L,LONDRES,GB,Industria,Rotork
+NDA.DE,XETRA,DE,Materias primas,Aurubis
+SZG.DE,XETRA,DE,Materias primas,Salzgitter
+TKA.DE,XETRA,DE,Industria,thyssenkrupp
+LXS.DE,XETRA,DE,Químicas,Lanxess
+WCH.DE,XETRA,DE,Químicas,Wacker Chemie
+SDF.DE,XETRA,DE,Químicas,K+S
+BOSS.DE,XETRA,DE,Lujo,Hugo Boss
+ZAL.DE,XETRA,DE,Distribución,Zalando
+LHA.DE,XETRA,DE,Transporte,Deutsche Lufthansa
+HLAG.DE,XETRA,DE,Transporte,Hapag-Lloyd
+FRA.DE,XETRA,DE,Transporte,Fraport
+HOT.DE,XETRA,DE,Construcción,Hochtief
+FNTN.DE,XETRA,DE,Telecomunicaciones,freenet
+UTDI.DE,XETRA,DE,Telecomunicaciones,United Internet
+1U1.DE,XETRA,DE,Telecomunicaciones,1&1
+SAX.DE,XETRA,DE,Medios,Ströer
+DWS.DE,XETRA,DE,Gestión de activos,DWS Group
+JUN3.DE,XETRA,DE,Industria,Jungheinrich
+KRN.DE,XETRA,DE,Industria,Krones
+DUE.DE,XETRA,DE,Industria,Dürr
+G1A.DE,XETRA,DE,Industria,GEA Group
+KBX.DE,XETRA,DE,Industria,Knorr-Bremse
+SHA0.DE,XETRA,DE,Automóvil,Schaeffler
+SIX2.DE,XETRA,DE,Transporte,Sixt
+BC8.DE,XETRA,DE,Tecnología,Bechtle
+FME.DE,XETRA,DE,Salud,Fresenius Medical Care
+GXI.DE,XETRA,DE,Salud,Gerresheimer
+WAF.DE,XETRA,DE,Tecnología,Siltronic
+AIXA.DE,XETRA,DE,Tecnología,Aixtron
+LEG.DE,XETRA,DE,Inmobiliario,LEG Immobilien
+TEG.DE,XETRA,DE,Inmobiliario,TAG Immobilien
+SZU.DE,XETRA,DE,Consumo básico,Südzucker
+GBF.DE,XETRA,DE,Servicios,Bilfinger
+TUI1.DE,XETRA,DE,Consumo discrecional,TUI
+P911.DE,XETRA,DE,Automóvil,Porsche AG
+NDX1.DE,XETRA,DE,Industria,Nordex
+FIE.DE,XETRA,DE,Distribución,Fielmann
+DOU.DE,XETRA,DE,Distribución,Douglas
+CBK.DE,XETRA,DE,Bancos,Commerzbank
+UN01.DE,XETRA,DE,Utilities,Uniper
+HNR1.DE,XETRA,DE,Seguros,Hannover Rück
+HAG.DE,XETRA,DE,Industria,Hensoldt
+AFX.DE,XETRA,DE,Salud,Carl Zeiss Meditec
+FGR.PA,PARIS,FR,Construcción,Eiffage
+SPIE.PA,PARIS,FR,Servicios,SPIE
+NEX.PA,PARIS,FR,Industria,Nexans
+ALO.PA,PARIS,FR,Industria,Alstom
+ELIS.PA,PARIS,FR,Servicios,Elis
+FRVIA.PA,PARIS,FR,Automóvil,Forvia
+OPM.PA,PARIS,FR,Automóvil,OPmobility
+ERA.PA,PARIS,FR,Materias primas,Eramet
+VK.PA,PARIS,FR,Energía,Vallourec
+NK.PA,PARIS,FR,Materiales de construcción,Imerys
+VRLA.PA,PARIS,FR,Materias primas,Verallia
+COFA.PA,PARIS,FR,Seguros,Coface
+SCR.PA,PARIS,FR,Seguros,SCOR
+AMUN.PA,PARIS,FR,Gestión de activos,Amundi
+RUI.PA,PARIS,FR,Energía,Rubis
+VCT.PA,PARIS,FR,Materiales de construcción,Vicat
+AYV.PA,PARIS,FR,Financieras,Ayvens
+AF.PA,PARIS,FR,Transporte,Air France-KLM
+AC.PA,PARIS,FR,Consumo discrecional,Accor
+SK.PA,PARIS,FR,Consumo discrecional,SEB
+SOP.PA,PARIS,FR,Tecnología,Sopra Steria
+CAP.PA,PARIS,FR,Tecnología,Capgemini
+DEC.PA,PARIS,FR,Medios,JCDecaux
+VIV.PA,PARIS,FR,Medios,Vivendi
+MF.PA,PARIS,FR,Holding,Wendel
+RF.PA,PARIS,FR,Gestión de activos,Eurazeo
+LI.PA,PARIS,FR,Inmobiliario,Klépierre
+GFC.PA,PARIS,FR,Inmobiliario,Gecina
+COV.PA,PARIS,FR,Inmobiliario,Covivio
+URW.PA,PARIS,FR,Inmobiliario,Unibail-Rodamco-Westfield
+TE.PA,PARIS,FR,Energía,Technip Energies
+BB.PA,PARIS,FR,Consumo discrecional,Société BIC
+RCO.PA,PARIS,FR,Bebidas,Rémy Cointreau
+IPN.PA,PARIS,FR,Salud,Ipsen
+BIM.PA,PARIS,FR,Salud,bioMérieux
+ERF.PA,PARIS,FR,Salud,Eurofins Scientific
+GET.PA,PARIS,FR,Transporte,Getlink
+ADP.PA,PARIS,FR,Transporte,Aéroports de Paris
+ATE.PA,PARIS,FR,Tecnología,Alten
+AM.PA,PARIS,FR,Industria,Dassault Aviation
+WLN.PA,PARIS,FR,Tecnología,Worldline
+UBI.PA,PARIS,FR,Medios,Ubisoft
+AGN.AS,AMSTERDAM,NL,Seguros,Aegon
+ASRNL.AS,AMSTERDAM,NL,Seguros,ASR Nederland
+SBMO.AS,AMSTERDAM,NL,Energía,SBM Offshore
+VPK.AS,AMSTERDAM,NL,Transporte,Vopak
+AALB.AS,AMSTERDAM,NL,Industria,Aalberts
+ARCAD.AS,AMSTERDAM,NL,Servicios,Arcadis
+IMCD.AS,AMSTERDAM,NL,Distribución,IMCD
+HAVAS.AS,AMSTERDAM,NL,Medios,Havas
+KPN.AS,AMSTERDAM,NL,Telecomunicaciones,KPN
+FUR.AS,AMSTERDAM,NL,Energía,Fugro
+CTPNV.AS,AMSTERDAM,NL,Inmobiliario,CTP
+SOLB.BR,BRUSELAS,BE,Químicas,Solvay
+SYENS.BR,BRUSELAS,BE,Químicas,Syensqo
+UMI.BR,BRUSELAS,BE,Químicas,Umicore
+BEKB.BR,BRUSELAS,BE,Industria,Bekaert
+DIE.BR,BRUSELAS,BE,Holding,D'Ieteren
+SOF.BR,BRUSELAS,BE,Holding,Sofina
+ACKB.BR,BRUSELAS,BE,Holding,Ackermans & van Haaren
+COLR.BR,BRUSELAS,BE,Distribución alimentaria,Colruyt
+PROX.BR,BRUSELAS,BE,Telecomunicaciones,Proximus
+ELI.BR,BRUSELAS,BE,Utilities,Elia Group
+AZE.BR,BRUSELAS,BE,Distribución,Azelis
+SCYR.MC,MADRID,ES,Construcción,Sacyr
+ANA.MC,MADRID,ES,Construcción,Acciona
+ANE.MC,MADRID,ES,Utilities,Acciona Energía
+IDR.MC,MADRID,ES,Industria,Indra
+BKT.MC,MADRID,ES,Bancos,Bankinter
+UNI.MC,MADRID,ES,Bancos,Unicaja
+SAB.MC,MADRID,ES,Bancos,Banco Sabadell
+MRL.MC,MADRID,ES,Inmobiliario,Merlin Properties
+COL.MC,MADRID,ES,Inmobiliario,Inmobiliaria Colonial
+RED.MC,MADRID,ES,Utilities,Redeia
+SLR.MC,MADRID,ES,Utilities,Solaria
+GRF.MC,MADRID,ES,Salud,Grifols
+ROVI.MC,MADRID,ES,Salud,Laboratorios Rovi
+ALM.MC,MADRID,ES,Salud,Almirall
+FDR.MC,MADRID,ES,Industria,Fluidra
+PUIG.MC,MADRID,ES,Consumo discrecional,Puig Brands
+MEL.MC,MADRID,ES,Consumo discrecional,Meliá Hotels
+VID.MC,MADRID,ES,Materias primas,Vidrala
+CAF.MC,MADRID,ES,Industria,CAF
+GEST.MC,MADRID,ES,Automóvil,Gestamp
+A2A.MI,MILAN,IT,Utilities,A2A
+HER.MI,MILAN,IT,Utilities,Hera
+IRE.MI,MILAN,IT,Utilities,Iren
+IG.MI,MILAN,IT,Utilities,Italgas
+SPM.MI,MILAN,IT,Energía,Saipem
+BMED.MI,MILAN,IT,Bancos,Banca Mediolanum
+BAMI.MI,MILAN,IT,Bancos,Banco BPM
+BPE.MI,MILAN,IT,Bancos,BPER Banca
+BMPS.MI,MILAN,IT,Bancos,Banca Monte dei Paschi
+BGN.MI,MILAN,IT,Bancos,Banca Generali
+FBK.MI,MILAN,IT,Bancos,FinecoBank
+CE.MI,MILAN,IT,Bancos,Credito Emiliano
+UNI.MI,MILAN,IT,Seguros,Unipol
+AZM.MI,MILAN,IT,Gestión de activos,Azimut
+IP.MI,MILAN,IT,Industria,Interpump
+REC.MI,MILAN,IT,Salud,Recordati
+BRE.MI,MILAN,IT,Automóvil,Brembo
+TIT.MI,MILAN,IT,Telecomunicaciones,Telecom Italia
+INW.MI,MILAN,IT,Telecomunicaciones,Inwit
+MFEB.MI,MILAN,IT,Medios,MFE-MediaForEurope
+WBD.MI,MILAN,IT,Construcción,Webuild
+MAIRE.MI,MILAN,IT,Construcción,Maire
+ERG.MI,MILAN,IT,Utilities,ERG
+DLG.MI,MILAN,IT,Consumo discrecional,De'Longhi
+LTMC.MI,MILAN,IT,Consumo discrecional,Lottomatica
+LDO.MI,MILAN,IT,Industria,Leonardo
+BAER.SW,ZURICH,CH,Bancos,Julius Baer
+HBAN.SW,ZURICH,CH,Seguros,Helvetia Baloise
+SLHN.SW,ZURICH,CH,Seguros,Swiss Life
+GF.SW,ZURICH,CH,Industria,Georg Fischer
+SIGN.SW,ZURICH,CH,Materias primas,SIG Group
+SUN.SW,ZURICH,CH,Industria,Sulzer
+CLN.SW,ZURICH,CH,Químicas,Clariant
+AVOL.SW,ZURICH,CH,Distribución,Avolta
+FHZN.SW,ZURICH,CH,Transporte,Flughafen Zürich
+SUNN.SW,ZURICH,CH,Telecomunicaciones,Sunrise Communications
+GALE.SW,ZURICH,CH,Salud,Galenica
+TEMN.SW,ZURICH,CH,Tecnología,Temenos
+OERL.SW,ZURICH,CH,Industria,OC Oerlikon
+DKSH.SW,ZURICH,CH,Distribución,DKSH
+BUCN.SW,ZURICH,CH,Industria,Bucher Industries
+VONN.SW,ZURICH,CH,Gestión de activos,Vontobel
+SPSN.SW,ZURICH,CH,Inmobiliario,Swiss Prime Site
+EMMN.SW,ZURICH,CH,Consumo básico,Emmi
+SOON.SW,ZURICH,CH,Salud,Sonova
+TECN.SW,ZURICH,CH,Salud,Tecan
+BOL.ST,ESTOCOLMO,SE,Materias primas,Boliden
+SSAB-B.ST,ESTOCOLMO,SE,Materias primas,SSAB
+HOLM-B.ST,ESTOCOLMO,SE,Materias primas,Holmen
+BILL.ST,ESTOCOLMO,SE,Materias primas,Billerud
+ELUX-B.ST,ESTOCOLMO,SE,Consumo discrecional,Electrolux
+HUSQ-B.ST,ESTOCOLMO,SE,Consumo discrecional,Husqvarna
+GETI-B.ST,ESTOCOLMO,SE,Salud,Getinge
+EKTA-B.ST,ESTOCOLMO,SE,Salud,Elekta
+TELIA.ST,ESTOCOLMO,SE,Telecomunicaciones,Telia Company
+SKA-B.ST,ESTOCOLMO,SE,Construcción,Skanska
+PEAB-B.ST,ESTOCOLMO,SE,Construcción,Peab
+TREL-B.ST,ESTOCOLMO,SE,Industria,Trelleborg
+KINV-B.ST,ESTOCOLMO,SE,Holding,Kinnevik
+VOLCAR-B.ST,ESTOCOLMO,SE,Automóvil,Volvo Car
+LOOMIS.ST,ESTOCOLMO,SE,Servicios,Loomis
+HPOL-B.ST,ESTOCOLMO,SE,Químicas,Hexpol
+AAK.ST,ESTOCOLMO,SE,Consumo básico,AAK
+AXFO.ST,ESTOCOLMO,SE,Distribución alimentaria,Axfood
+CAST.ST,ESTOCOLMO,SE,Inmobiliario,Castellum
+BALD-B.ST,ESTOCOLMO,SE,Inmobiliario,Fastighets Balder
+BETS-B.ST,ESTOCOLMO,SE,Consumo discrecional,Betsson
+SWED-A.ST,ESTOCOLMO,SE,Bancos,Swedbank
+SEB-A.ST,ESTOCOLMO,SE,Bancos,SEB
+SHB-A.ST,ESTOCOLMO,SE,Bancos,Svenska Handelsbanken
+AKRBP.OL,OSLO,NO,Energía,Aker BP
+VAR.OL,OSLO,NO,Energía,Vår Energi
+STB.OL,OSLO,NO,Seguros,Storebrand
+GJF.OL,OSLO,NO,Seguros,Gjensidige
+MOWI.OL,OSLO,NO,Consumo básico,Mowi
+SALM.OL,OSLO,NO,Consumo básico,SalMar
+LSG.OL,OSLO,NO,Consumo básico,Lerøy Seafood
+WAWI.OL,OSLO,NO,Transporte,Wallenius Wilhelmsen
+FRO.OL,OSLO,NO,Transporte,Frontline
+SUBC.OL,OSLO,NO,Energía,Subsea 7
+TGS.OL,OSLO,NO,Energía,TGS
+AKER.OL,OSLO,NO,Holding,Aker
+MING.OL,OSLO,NO,Bancos,SpareBank 1 SMN
+SB1NO.OL,OSLO,NO,Bancos,SpareBank 1 Sør-Norge
+HAFNI.OL,OSLO,NO,Transporte,Hafnia
+MAERSK-B.CO,COPENHAGUE,DK,Transporte,A.P. Møller-Mærsk
+JYSK.CO,COPENHAGUE,DK,Bancos,Jyske Bank
+SYDB.CO,COPENHAGUE,DK,Bancos,Sydbank
+TRYG.CO,COPENHAGUE,DK,Seguros,Tryg
+GN.CO,COPENHAGUE,DK,Salud,GN Store Nord
+FLS.CO,COPENHAGUE,DK,Industria,FLSmidth
+ROCK-B.CO,COPENHAGUE,DK,Materiales de construcción,Rockwool
+RBREW.CO,COPENHAGUE,DK,Bebidas,Royal Unibrew
+ORSTED.CO,COPENHAGUE,DK,Utilities,Ørsted
+NKT.CO,COPENHAGUE,DK,Industria,NKT
+FORTUM.HE,HELSINKI,FI,Utilities,Fortum
+KESKOB.HE,HELSINKI,FI,Distribución alimentaria,Kesko
+METSO.HE,HELSINKI,FI,Industria,Metso
+VALMT.HE,HELSINKI,FI,Industria,Valmet
+WRT1V.HE,HELSINKI,FI,Industria,Wärtsilä
+ELISA.HE,HELSINKI,FI,Telecomunicaciones,Elisa
+HUH1V.HE,HELSINKI,FI,Materias primas,Huhtamäki
+KCR.HE,HELSINKI,FI,Industria,Konecranes
+OUT1V.HE,HELSINKI,FI,Materias primas,Outokumpu
+KEMIRA.HE,HELSINKI,FI,Químicas,Kemira
+ORNBV.HE,HELSINKI,FI,Salud,Orion
+MANTA.HE,HELSINKI,FI,Seguros,Mandatum
+CGCBV.HE,HELSINKI,FI,Industria,Cargotec
+ANDR.VI,VIENA,AT,Industria,Andritz
+RBI.VI,VIENA,AT,Bancos,Raiffeisen Bank International
+BG.VI,VIENA,AT,Bancos,BAWAG Group
+VER.VI,VIENA,AT,Utilities,Verbund
+UQA.VI,VIENA,AT,Seguros,Uniqa
+VIG.VI,VIENA,AT,Seguros,Vienna Insurance Group
+TKA.VI,VIENA,AT,Telecomunicaciones,Telekom Austria
+STR.VI,VIENA,AT,Construcción,Strabag
+BCP.LS,LISBOA,PT,Bancos,Banco Comercial Português
+SON.LS,LISBOA,PT,Distribución alimentaria,Sonae
+NOS.LS,LISBOA,PT,Telecomunicaciones,NOS
+EDPR.LS,LISBOA,PT,Utilities,EDP Renováveis
+KRX.IR,DUBLIN,IE,Materiales de construcción,Kingspan
+RYA.IR,DUBLIN,IE,Transporte,Ryanair
+ICG.IR,DUBLIN,IE,Transporte,Irish Continental
+7211.T,TOKIO,JP,Automóvil,Mitsubishi Motors
+7202.T,TOKIO,JP,Automóvil,Isuzu Motors
+7272.T,TOKIO,JP,Automóvil,Yamaha Motor
+6473.T,TOKIO,JP,Automóvil,JTEKT
+6471.T,TOKIO,JP,Automóvil,NSK
+7259.T,TOKIO,JP,Automóvil,Aisin
+5110.T,TOKIO,JP,Automóvil,Sumitomo Rubber
+7167.T,TOKIO,JP,Bancos,Mebuki Financial
+8331.T,TOKIO,JP,Bancos,Chiba Bank
+8359.T,TOKIO,JP,Bancos,Hachijuni Bank
+7180.T,TOKIO,JP,Bancos,Kyushu Financial
+8418.T,TOKIO,JP,Bancos,Yamaguchi Financial
+8304.T,TOKIO,JP,Bancos,Aozora Bank
+7182.T,TOKIO,JP,Bancos,Japan Post Bank
+7181.T,TOKIO,JP,Seguros,Japan Post Insurance
+8601.T,TOKIO,JP,Financieras,Daiwa Securities
+8604.T,TOKIO,JP,Financieras,Nomura Holdings
+9508.T,TOKIO,JP,Utilities,Kyushu Electric
+9506.T,TOKIO,JP,Utilities,Tohoku Electric
+9504.T,TOKIO,JP,Utilities,Chugoku Electric
+5019.T,TOKIO,JP,Energía,Idemitsu Kosan
+1605.T,TOKIO,JP,Energía,Inpex
+3407.T,TOKIO,JP,Químicas,Asahi Kasei
+3401.T,TOKIO,JP,Químicas,Teijin
+3402.T,TOKIO,JP,Químicas,Toray
+4042.T,TOKIO,JP,Químicas,Tosoh
+3861.T,TOKIO,JP,Materias primas,Oji Holdings
+5411.T,TOKIO,JP,Materias primas,JFE Holdings
+5406.T,TOKIO,JP,Materias primas,Kobe Steel
+7752.T,TOKIO,JP,Tecnología,Ricoh
+6724.T,TOKIO,JP,Tecnología,Seiko Epson
+1893.T,TOKIO,JP,Construcción,Penta-Ocean Construction
+1803.T,TOKIO,JP,Construcción,Shimizu
+1808.T,TOKIO,JP,Construcción residencial,Haseko
+2503.T,TOKIO,JP,Bebidas,Kirin Holdings
+9107.T,TOKIO,JP,Transporte,Kawasaki Kisen
+2768.T,TOKIO,JP,Conglomerado,Sojitz
+CTC-A.TO,TORONTO,CA,Distribución,Canadian Tire
+EMP-A.TO,TORONTO,CA,Distribución alimentaria,Empire Company
+SAP.TO,TORONTO,CA,Consumo básico,Saputo
+TOU.TO,TORONTO,CA,Energía,Tourmaline Oil
+ARX.TO,TORONTO,CA,Energía,ARC Resources
+WCP.TO,TORONTO,CA,Energía,Whitecap Resources
+BTE.TO,TORONTO,CA,Energía,Baytex Energy
+CVE.TO,TORONTO,CA,Energía,Cenovus Energy
+KEY.TO,TORONTO,CA,Energía,Keyera
+ALA.TO,TORONTO,CA,Utilities,AltaGas
+CPX.TO,TORONTO,CA,Utilities,Capital Power
+TA.TO,TORONTO,CA,Utilities,TransAlta
+ACO-X.TO,TORONTO,CA,Utilities,ATCO
+IAG.TO,TORONTO,CA,Seguros,iA Financial
+EQB.TO,TORONTO,CA,Bancos,EQB
+ONEX.TO,TORONTO,CA,Holding,Onex
+FTT.TO,TORONTO,CA,Industria,Finning International
+BBD-B.TO,TORONTO,CA,Industria,Bombardier
+AC.TO,TORONTO,CA,Transporte,Air Canada
+QBR-B.TO,TORONTO,CA,Telecomunicaciones,Quebecor
+CCA.TO,TORONTO,CA,Telecomunicaciones,Cogeco Communications
+DOO.TO,TORONTO,CA,Consumo discrecional,BRP
+LUN.TO,TORONTO,CA,Materias primas,Lundin Mining
+MX.TO,TORONTO,CA,Químicas,Methanex
+SJ.TO,TORONTO,CA,Materias primas,Stella-Jones
+EFN.TO,TORONTO,CA,Financieras,Element Fleet
+NPI.TO,TORONTO,CA,Utilities,Northland Power
+CFP.TO,TORONTO,CA,Materias primas,Canfor

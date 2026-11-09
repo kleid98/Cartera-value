@@ -1,0 +1,2 @@
+id,fecha_hora,tipo,orden_id,ticker,nombre,isin,mercado,pais_emisor,sector,divisa,cantidad,precio,unidad_precio,importe_divisa,comision_ibkr,tasas_terceros,impuesto_transaccion,costes_total_divisa,fx_eur_por_unidad,importe_eur,provisional,nota
+T-0001,2026-11-07 19:32:38,APORTACION,,,,,,,,EUR,,,,10000,,,,0,1,10000,,Capital inicial simulado

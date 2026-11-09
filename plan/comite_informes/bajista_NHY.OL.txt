@@ -1,0 +1,63 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 08/11/2026.
+
+Empresa: Norsk Hydro ASA (NHY.OL, OSLO)
+
+Tesis alcista (cualitativa) del gestor:
+**Qué es:** el mayor productor integrado de aluminio de Europa fuera de Rusia. Tiene bauxita y alúmina en Brasil (Paragominas, Alunorte), fundiciones de primario sobre todo en Noruega, alimentadas con hidroelectricidad propia y contratos a largo plazo hasta 2035, y además extrusión, reciclado y energía renovable. Es un productor de bajo coste y baja huella de carbono en un mercado europeo que va a gravar el carbono importado (CBAM).
+
+**Por qué está barata:** el mercado la ve como una apuesta por el precio del aluminio que ya ha pasado su pico. En 2026 la guerra del Golfo dañó fundiciones en Oriente Medio y cortó el paso de alúmina por Ormuz. El aluminio se disparó y los beneficios de Hydro se multiplicaron. Tras el acuerdo de junio y la reapertura del estrecho, el mercado descuenta que las fundiciones del Golfo volverán, que 2027 pasará de déficit a superávit y que las primas regionales (en Europa, en niveles récord) se normalizarán. A esto se suman problemas propios: el corte de gas en Alunorte obligó a comprar GNL al contado y la alúmina sufre por la caída de precios en China. También pesan un flujo de caja débil por el circulante, el negocio de extrusión con demanda floja en Europa y el riesgo de electricidad cara en Noruega por los embalses bajos. La acción ha devuelto casi toda la subida del año.
+
+**Qué espera el mercado:** que los beneficios de 2026 son de pico y que en 2027-2028 vuelven a niveles de 2024-2025. Lo que se valora es el ciclo de las materias primas, no la franquicia.
+
+**Qué espero yo:** que el mercado tiene buena parte de razón en lo cíclico. Los beneficios de 2026 no son normalizables y hay que valorar a Hydro con un aluminio de mitad de ciclo, no con el actual. Mi tesis de compra se basaría en tres factores. (1) El suelo de precio está más alto que en el ciclo anterior: China tiene un techo de capacidad de unos 45 Mt, Occidente casi no tiene capacidad nueva y la demanda crece por la transición energética. (2) Hydro tiene una ventaja de coste y de carbono en Europa: energía renovable propia hasta 2035, el CBAM y el reciclado con primas verdes. (3) El balance está muy saneado y la política de dividendo y recompras es disciplinada, así que el dividendo de 2027 será alto aunque baje el aluminio. La valoración a precio de mitad de ciclo es razonable, pero no es un chollo evidente.
+
+**Catalizadores:** Investor Day del 25/11/2026 (capex, retorno al accionista, objetivos para 2030), dividendo de 2026 (se paga en mayo de 2027 y será generoso por el año récord), posibles recompras, reinicio de Slovalco (75 kt a principios de 2027), recuperación total de Alunorte, entrada en vigor del CBAM, y normalización del circulante, que libera caja cuando bajan los precios.
+
+**Riesgos principales:** aluminio por debajo del coste marginal de reposición si llega una recesión global o si el exceso de China se exporta; corona noruega fuerte frente al USD; costes de energía y carbono en Noruega; problemas operativos o regulatorios en Brasil (Alunorte ya tuvo un embargo de producción en 2018); negocio de extrusión estructuralmente débil en Europa; capex de crecimiento (renovables, reciclado, HalZero) con retorno incierto.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. Recorte del dividendo por debajo del suelo de la política (1,50 NOK) o abandono de la política del 50% del beneficio neto ajustado a lo largo del ciclo.
+2. Deuda neta ajustada / EBITDA ajustado de 12 meses por encima de 2x o rebaja del rating por debajo del grado de inversión.
+3. Nueva parada o restricción regulatoria, judicial o de suministro en Alunorte que deje la refinería por debajo del 70% de capacidad durante más de 2 trimestres seguidos.
+4. Pérdida de los contratos de energía a largo plazo de las fundiciones noruegas, o cierre/reducción permanente de capacidad de primario en Noruega por el coste de la electricidad.
+5. Adquisición transformadora (> 20% de la capitalización) pagada con deuda o con ampliación de capital.
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio NHY.OL`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/c9b4cc8c-d82f-5861-b20c-c6ae8b640bfc/scratchpad/comite/informe_bajista_NHY.OL.md

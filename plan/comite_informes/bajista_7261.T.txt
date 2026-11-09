@@ -1,0 +1,67 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 09/11/2026.
+
+Empresa: Mazda Motor (7261.T, TOKIO)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está barata.** Mazda es un fabricante pequeño (~1,2-1,3 millones de coches al año) con mucha dependencia de Estados Unidos, que es su primer mercado. Buena parte de lo que vende allí lo exporta desde Japón y México. Los aranceles estadounidenses de 2025 hundieron su beneficio operativo en el ejercicio cerrado en marzo de 2026, con pérdidas en el primer semestre. El flujo de caja operativo de ese ejercicio fue prácticamente nulo. Además, el mercado la ve como un actor sin escala para la transición eléctrica, atrapado entre los grandes japoneses y la competencia china en Asia y Australia. Sufre en mercados como Australia y Canadá, donde ya pierde cuota frente a eléctricos e híbridos baratos. Por eso cotiza muy por debajo de su valor contable y con una capitalización que es poco más que el doble de su caja neta.
+
+**Qué espera el mercado.** Un negocio estructuralmente de bajo margen cuyo beneficio "bueno" de 2023-2024 fue un pico irrepetible, debido al yen débil y a la escasez de coches tras el COVID. Espera también que la caja se consuma en inversión eléctrica y en sostener la red comercial, sin llegar nunca al accionista.
+
+**Qué espero yo y por qué.** Una recuperación parcial, no un regreso al pico. Tres palancas ya visibles:
+1. **El arancel ya está en la cuenta de resultados.** El primer trimestre del ejercicio en curso volvió a beneficio operativo con el arancel plenamente aplicado. Ventas récord para un primer trimestre.
+2. **Ciclo de producto.** El nuevo CX-5, su modelo más vendido, se lanzó en 2026 con pedidos por encima del plan en Europa y Japón y la máxima nota de seguridad en EE. UU., Europa y Australia. Se suman el CX-50 híbrido con tecnología Toyota en EE. UU. y los eléctricos desarrollados con Changan (Mazda6e, CX-6e). La estrategia de activos ligeros reduce la inversión propia en eléctricos.
+3. **Programa de reducción de costes** y bajas voluntarias ya ejecutados en el ejercicio anterior.
+
+La caja neta y los activos (terrenos, participaciones, superávit de pensiones) dan un suelo contable que limita la pérdida en el escenario malo. Su origen es la presión de la Bolsa de Tokio sobre las empresas que cotizan por debajo de su valor en libros. Esto podría forzar con el tiempo más retribución (recompras o un dividendo mayor), aunque Mazda nunca ha hecho recompras significativas y eso no se puede dar por hecho.
+
+**Por qué puedo tener razón y por qué no.** El negocio ha sido rentable a nivel operativo en cada uno de los últimos diez ejercicios, incluidos COVID y aranceles. Eso sugiere que el margen normalizado está entre los mínimos recientes y el pico. Pero Mazda es un tomador de precios, muy sensible al yen (el yen débil actual infla los resultados), y su escala es una desventaja real en la transición tecnológica. La parte más débil de mi tesis es la conversión del beneficio en caja: el último ejercicio y el primer trimestre del actual consumieron caja.
+
+**Catalizadores.** Resultados semestrales del 9 de noviembre de 2026, con posible revisión de la guía (el yen va más débil que lo presupuestado). Llegada del CX-5 a todos los mercados durante el segundo semestre. Cualquier acuerdo arancelario más favorable entre EE. UU. y Japón/México. Anuncio de una política de retribución con recompras. Nuevo plan a medio plazo y llegada del primer eléctrico propio en 2027.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. Mazda vuelve a pérdidas operativas en dos semestres fiscales consecutivos, o rebaja la guía de beneficio operativo anual a menos de la mitad de la inicial.
+2. La caja neta (definición de la compañía: efectivo menos deuda con coste) pasa a deuda neta, o Mazda anuncia una ampliación de capital o un aumento de deuda para financiar pérdidas o la inversión eléctrica.
+3. El dividendo se suspende o se recorta más de un tercio sin un plan creíble de recompras que lo compense.
+4. Estados Unidos sube el arancel a los coches japoneses o mexicanos por encima del nivel vigente en noviembre de 2026 y Mazda no anuncia en un semestre un plan de mitigación (producción local, precios).
+5. El nuevo CX-5 se queda por debajo del volumen de su predecesor en EE. UU. dos trimestres seguidos tras su lanzamiento completo, o hay una llamada a revisión masiva con provisiones extraordinarias materiales.
+6. Toyota vende su participación o se rompe la alianza tecnológica (híbridos y planta de Alabama).
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio 7261.T`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_7261.T.md

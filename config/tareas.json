@@ -1,0 +1,20 @@
+{
+ "_doc": "Tareas programadas (claude.ai) que ejecutan la cartera. Cada disparo abre una sesión nueva que clona el repo y sigue CLAUDE.md.",
+ "APERTURA_UE": {
+  "id": "trig_01CEGapUaBpMEvxHmy3HZAt8",
+  "cron": "CRON_TZ=Europe/Madrid 34 9 * * 1-5"
+ },
+ "APERTURA_US": {
+  "id": "trig_01AikUWcNyEwnr1XY35S6jAY",
+  "cron": "CRON_TZ=America/New_York 4 10 * * 1-5"
+ },
+ "CIERRE": {
+  "id": "trig_01Q31HxP6FUV3dPWk9v1Rt2a",
+  "cron": "CRON_TZ=America/New_York 4 17 * * 1-5"
+ },
+ "DOMINGO": {
+  "id": "trig_01UnKHPrvh2AaPgsFJfzg9PC",
+  "cron": "CRON_TZ=Europe/Madrid 4 18 * * 0"
+ },
+ "_estado": "PAUSADAS el 08/11/2026 por petición de Ale hasta tener comité + plan/fase0.md y el PR fusionado. Reanudar con update_trigger enabled=true."
+}

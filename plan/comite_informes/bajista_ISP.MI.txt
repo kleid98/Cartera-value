@@ -1,0 +1,65 @@
+Eres un analista bajista (short-seller) con 20 años de experiencia en renta variable europea, japonesa y canadiense.
+Tu trabajo es DESTRUIR la tesis alcista que te paso. No eres equilibrado: buscas activamente por qué esta inversión
+es un error. Fecha de hoy: 09/11/2026.
+
+Empresa: Intesa Sanpaolo (ISP.MI, MILAN)
+
+Tesis alcista (cualitativa) del gestor:
+**Por qué está «barata».** Intesa es el mayor banco de Italia y uno de los más rentables y eficientes de Europa: gran franquicia de depósitos minoristas de bajo coste, fábricas propias de gestión de activos, seguros y banca privada que generan casi la mitad de los ingresos en forma de comisiones y primas poco intensivas en capital, y un balance que ya ha limpiado la morosidad heredada. Aun así cotiza a un múltiplo de beneficio modesto porque el mercado descuenta tres cosas: (1) que el ciclo de tipos ya ha hecho pico y el margen de intereses dejará de crecer; (2) el «riesgo Italia» (deuda pública, fiscalidad oportunista sobre la banca, interferencia política en las operaciones corporativas); y (3) el riesgo de ejecución de la compra de MPS, una integración grande y políticamente sensible.
+
+**Qué espera el mercado.** Un beneficio que se estanca en los niveles actuales y un retorno para el accionista que procede casi solo del dividendo y la recompra, sin revalorización del múltiplo. En otras palabras, se paga a Intesa como un «bono de alto cupón» con riesgo de cola italiano.
+
+**Qué espero yo.** Que la empresa siga haciendo lo que lleva una década haciendo: cumplir o superar su plan. El plan 2026-2029 está construido con supuestos de tipos conservadores (por debajo de la curva de mercado), el peso creciente de comisiones y seguros reduce la dependencia de los tipos, la base de costes baja en términos absolutos gracias a la digitalización (Isybank) y a las salidas voluntarias, y el coste del riesgo es bajo con colchones de provisiones sin usar. La compra de MPS, si se ejecuta con la disciplina de la integración de UBI, añade escala en Italia con sinergias mayoritariamente de costes, y la venta de la red sobrante a Unipol limita los problemas de competencia. El dividendo es casi la totalidad del beneficio y está respaldado por un capital holgado.
+
+**Por qué puedo tener razón (y dónde no).** El historial de ejecución del equipo de Messina es de los mejores del sector europeo (UBI se integró en plazo y con las sinergias prometidas). Pero no veo un catalizador claro de recalificación: el atractivo es la renta, no la revalorización, y el retorno total depende de que no aparezca un shock soberano italiano ni un deterioro político/regulatorio. Esto es un negocio de calidad a precio razonable, no una ganga.
+
+**Catalizadores.** Resultado de la OPAS sobre MPS (diciembre 2026) y nivel de aceptación; dividendo a cuenta de noviembre 2026; resultados FY2026 (febrero 2027) con la confirmación de la guía 2027 y del dividendo extraordinario; evolución de los tipos del BCE; actualización del plan combinado tras el cierre de la operación; ejecución de la venta a Unipol (H2 2027).
+
+**Riesgos principales.** Crisis de deuda soberana italiana (el banco tiene una exposición relevante a bonos del Estado y a la economía doméstica); recortes de tipos del BCE más profundos que lo supuesto; nuevos impuestos extraordinarios a la banca italiana; integración de MPS más costosa o lenta (sistemas informáticos, conflictos sindicales y políticos en Siena); que el BCE prohíba dividendos en una crisis, como en 2020; capital más ajustado tras la operación si no se reconoce el *Danish Compromise*.
+
+Condiciones de invalidación declaradas por el gestor:
+Hechos concretos y verificables que, si ocurren, obligan a vender sin mirar el precio.
+1. El CET1 publicado cae por debajo del 12% en cualquier trimestre, o la compañía rebaja su objetivo de CET1 por debajo del 12,5% del plan.
+2. Intesa suspende, recorta o aplaza el dividendo en efectivo (o el BCE se lo prohíbe), o reduce el payout objetivo en efectivo por debajo del 70% del beneficio.
+3. La compañía rebaja por escrito su guía de beneficio neto para 2027 o el objetivo de 2029 (standalone o combinado con MPS) en más de un 10%.
+4. Tras cerrar la OPAS, Intesa anuncia una ampliación de capital adicional, un aumento de los costes de integración superior al 50% del previsto o un retraso de más de un año en la migración informática de MPS.
+5. El coste del riesgo anual supera los 60 pb o la ratio de morosidad neta (NPL neto) supera el 2%.
+6. Se aprueba un nuevo impuesto extraordinario/recurrente sobre la banca italiana cuyo impacto anual estimado por la propia compañía supere el 15% de su beneficio neto.
+7. Cambio de consejero delegado no planificado acompañado de un giro estratégico (p. ej., otra gran adquisición transfronteriza o abandono de la política de distribución).
+
+Investiga con búsquedas web y fuentes primarias (informes anuales, presentaciones de resultados, Tweenvest
+https://tweenvest.com, noticias recientes, reguladores). Céntrate en:
+1. ¿Es una trampa value? ¿Por qué está barata y por qué podría seguir barata o abaratarse?
+2. Contabilidad: calidad del beneficio, conversión a caja, provisiones, fondos de comercio, ajustes "underlying",
+   arrendamientos, pensiones, factoring, capitalización de gastos.
+3. Balance: vencimientos de deuda, covenants, pensiones, deuda fuera de balance, necesidad de ampliación.
+4. Competencia y moat: disrupción, pérdida de cuota, poder de fijación de precios, China, sustitutos.
+5. Regulación, litigios, política, impuestos especiales, ESG que afecte al coste de capital.
+6. Gobierno corporativo: accionista de control, asignación de capital, remuneración, historial de la dirección.
+7. Ciclo: ¿estamos en el pico de márgenes/beneficios?
+8. Eventos próximos (resultados, juntas, vencimientos) que puedan detonar caídas.
+
+Entrega EXACTAMENTE este formato (en español):
+
+## Riesgos principales (los 3 más graves, ordenados)
+1. ... (con datos y fuente)
+2. ...
+3. ...
+
+## Lo que el gestor no ha tenido en cuenta
+- ...
+
+## Escenario desastre según el bajista
+Descripción concreta y precio/caída estimada a 3 años.
+
+## Probabilidad de desastre
+PROB_DESASTRE: 0.XX   (tu estimación, número entre 0 y 1)
+
+## ¿Se cumple ya alguna condición de invalidación del gestor?
+VETO: SI|NO — justificación con hechos verificables (solo SI si hay evidencia concreta, no especulación).
+
+## Fuentes
+- URLs consultadas
+
+No modifiques ni crees ficheros en /home/user/Cartera-value. Puedes consultar el precio con `cd /home/user/Cartera-value && python3 scripts/cartera.py precio ISP.MI`. Tu respuesta final es tu informe completo.
+Antes de terminar, guarda tu informe completo (idéntico a tu respuesta final) con la herramienta Write en /tmp/claude-0/-home-user-Cartera-value/51c68345-9deb-41a6-9391-681446c68265/scratchpad/comite/informe_bajista_ISP.MI.md
