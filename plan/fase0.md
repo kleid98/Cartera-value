@@ -1,7 +1,8 @@
-# Plan de la Fase 0 (16–20/11/2026)
+# Plan de la Fase 0 (11–20/11/2026)
 
-> Fechas confirmadas por Ale el 09/11/2026 (la Fase 0 iba a ser el 09–13/11 y se retrasó una semana para terminar el comité).
-> `config/reglas.json` y `CLAUDE.md` ya están actualizados.
+> **Inicio adelantado al miércoles 11/11/2026 por decisión de Ale (10/11/2026).** Estaba previsto para el lunes 16; el motivo
+> del retraso (terminar el comité) ya no existía y Equiduct se probó en vivo el 10/11 (funciona en NWG, BNP y JD). El final no
+> cambia: 20 posiciones al cierre del viernes 20/11. `config/reglas.json`, `CLAUDE.md` y `plan/calendario.md` actualizados.
 
 ## Situación
 **Reglas revisadas con Ale el 09/11/2026:** umbral de TIR 10% (zona euro) / 12% (fuera del euro), antes 15%/17%; y
@@ -53,15 +54,27 @@ por TIR residual < 5% (Linamar y Ahold están por debajo). Innegociables cumplid
 - Las cantidades se recalculan al lanzar la orden (`--importe 500`); los precios de referencia son del 06/11/2026.
 - El orden de la tabla cambió con el recálculo del 10/11; el calendario de abajo se mantiene (todas se compran en la semana).
 
-## Calendario (5 compras/día lunes–jueves; viernes solo reintentos)
+## Calendario (rehecho el 10/11/2026 al adelantar el inicio; fechas de resultados en `plan/calendario.md`)
 
 | Día | APERTURA_UE (09:30) | APERTURA_US (~16:00) |
 |---|---|---|
-| Lun 16/11 | NWG.L, BNP.PA, AYV.PA, IMB.L | NOVO-B.CO |
-| Mar 17/11 | HBR.L, TEP.PA, NN.AS, SAN.PA | MG.TO (Toronto) |
-| Mié 18/11 | AZM.MI, CNA.L, ISP.MI, FNTN.DE | EN.PA |
-| Jue 19/11 | MAP.MC, SCR.PA, AD.AS | JD.L (tras su trading statement del 19/11), LNR.TO (Toronto) |
+| Mié 11/11 | NWG.L, BNP.PA, AYV.PA, HBR.L | NOVO-B.CO |
+| Jue 12/11 | TEP.PA, NN.AS, SAN.PA, AZM.MI | MG.TO (Toronto; tras su Investor Day del 11/11) |
+| Vie 13/11 | CNA.L, ISP.MI, EN.PA, FNTN.DE (solo si ya publicó los 9M y no tocan una condición de invalidación) | LNR.TO (Toronto) |
+| Lun 16/11 | MAP.MC, SCR.PA, AD.AS; FNTN.DE si no se pudo el viernes | Reintentos |
+| Mar 17/11 | Reintentos | Reintentos (Imperial publica resultados anuales: no se compra hoy) |
+| Mié 18/11 | IMB.L (tras leer sus resultados anuales del 17/11) | Reintentos |
+| Jue 19/11 | Reintentos | JD.L (tras su trading statement del 19/11) |
 | Vie 20/11 | Reintentos | Reintentos; lo que quede sin ejecutar va AGRESIVA para cerrar las 20 |
+
+Cambios respecto al calendario anterior (decisiones del gestor, 10/11/2026):
+- Mismo orden, tres sesiones antes. **Imperial Brands pasa al 18/11**: el plan anterior la compraba el 16, la víspera de sus
+  resultados anuales del 17/11 (con guía de 2027, que puede tocar las condiciones 1 y 2). Mismo criterio que con JD: se
+  compra después de leerlos. Harbour ocupa su hueco del primer día.
+- **freenet** no se compra el día de sus resultados (11/11 o 12/11, fecha sin confirmar): va el 13/11 o, si aún no ha
+  publicado, el primer día hábil después de que publique.
+- **Magna**: Investor Day el 11/11 con objetivos a medio plazo; se compra el 12/11 después de leerlo.
+- Con Ayvens fuera (si el desastre no cumple al precio del día) entra BP.L ese mismo día.
 
 Reglas de ejecución:
 - **Antes de cada orden: `python3 scripts/ev.py tesis/X.md --precio-hoy`.** Recalcula la TIR con el precio del día (escenarios
@@ -71,10 +84,9 @@ Reglas de ejecución:
   al precio de la tesis: con una subida de ~2% deja de cumplir). La TIR recalculada va en el motivo de la orden.
 - Por defecto PASIVA (bid de Equiduct; si no hay libro o el spread > 1%: último −0,10%). Toronto: último −0,10%.
 - Si una compra lleva **2 días** caducando, el 3.er día va **AGRESIVA** (`dias_sin_ejecutar_antes_de_ask: 2`).
-- Las órdenes del jueves que caduquen el viernes en APERTURA_UE se relanzan AGRESIVAS en APERTURA_US del viernes
-  (último día de la Fase 0).
+- El viernes 20/11 es el último día: todo lo que siga sin ejecutar (incluida JD si caducó el 19) se relanza AGRESIVA.
 - Antes de cada orden: revisar noticias y las condiciones de invalidación de la tesis. Fechas sensibles:
-  **FNTN** resultados 9M el 11/11; **JD** trading statement Q3 el 19/11 (si recorta la guía FY27 se cumple la condición 1:
+  **FNTN** resultados 9M el 11/11 o 12/11; **MG** Investor Day el 11/11; **IMB** resultados anuales el 17/11; **JD** trading statement Q3 el 19/11 (si recorta la guía FY27 se cumple la condición 1:
   no se compra y entra la reserva BP.L); **MG y LNR** arancel del 50% a piezas canadienses anunciado para el 01/01/2027;
   **SCR** plan estratégico 03/12; **AZM** respuesta a Banca d'Italia (fin de noviembre) y exclusividad de TNB (20/12).
 - Todas con `--provisional` y motivo "Fase 0 provisional: TIR comité X%".

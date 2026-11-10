@@ -43,7 +43,7 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `scripts/comite_registrar.py` | Escribe los informes del comité en la tesis; `--recalcular` si cambian las reglas |
 | `scripts/test_motor.py` | Pruebas del motor con datos fijos: ejecutar tras cualquier cambio en `scripts/` |
 | `ledger/predicciones.csv` | Automático: lo que predecían tesis, valorador y bajista en cada compra (para medir aciertos) |
-| `ledger/descartadas.csv` | Empresas analizadas y no compradas; `estado --cierre` las sigue en papel desde el 16/11/2026 |
+| `ledger/descartadas.csv` | Empresas analizadas y no compradas; `estado --cierre` las sigue en papel desde el 11/11/2026 |
 | `scripts/panel.py` | Genera `panel/panel.json` (datos del panel) |
 | `scripts/cribado.py` | Cribado del universo `config/universo.csv` → `plan/cribado.csv` y `plan/candidatos.md` |
 | `scripts/comite.py` | Genera los prompts ciegos del comité para una tesis |
@@ -73,7 +73,7 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
    y pon la TIR recalculada en el motivo de la orden.
    Lanza órdenes con `cartera.py orden` (ver sección 4). Por defecto PASIVA (bid de Equiduct).
    Cada orden imprime su **ficha** (por qué y precio objetivo, sección 4.1): pégala en el diario.
-6. Fase 0 (16–20/11/2026): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
+6. Fase 0 (11–20/11/2026; adelantada del 16 al 11 por Ale el 10/11): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
 7. Escribe/actualiza `diario/AAAA-MM-DD.md` (sección de la ejecución), commit y push (sección 6).
 8. `python3 scripts/cartera.py investing`. Si hubo operaciones ejecutadas o nuevas órdenes → **PushNotification**
    (con el objetivo de cada compra y el motivo de cada venta, sección 8).

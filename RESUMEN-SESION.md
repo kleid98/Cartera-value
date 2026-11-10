@@ -13,11 +13,13 @@ Una **cartera value simulada de 10.000 €** que gestiona Claude como si operase
 3 años** y pasa por un **comité de dos agentes independientes** (bajista y valorador ciego). Se ejecuta sola con 4 tareas
 programadas y Ale copia las operaciones en Investing.
 
-**Estado (10/11/2026):** todo listo para la **Fase 0 (lunes 16 a viernes 20/11/2026)**, en la que se compran 20 valores.
+**Estado (10/11/2026, tarde):** **la cartera empieza el miércoles 11/11/2026** (Ale adelantó el inicio el 10/11; antes era
+el lunes 16). La **Fase 0 va del 11 al 20/11/2026** y en ella se compran 20 valores.
 - Sistema construido, auditado y con pruebas automáticas. **Todo está en `main`** (último commit de trabajo: `4fe6169`).
 - 33 tesis escritas; 23 con comité completo. Las 20 de la Fase 0 elegidas y marcadas **🟡 provisional**.
 - Cartera sin operaciones todavía: solo la aportación T-0001 de 10.000 €.
-- Tarea programada **DOMINGO activa** (primera: 15/11 a las 18:04). Las 3 de entre semana siguen **pausadas** a propósito.
+- **Las cuatro tareas programadas están activas** desde el 10/11. Primera APERTURA_UE: miércoles 11/11 a las 09:34 (Madrid).
+- Equiduct probado **en vivo** el 10/11 (NatWest, BNP y JD Sports dan libro).
 
 ## 2. Decisiones clave y por qué (no reabrirlas)
 
@@ -41,7 +43,7 @@ Las reglas numéricas están en `config/reglas.json` y el manual de operación e
 
 **Del 08–09/11/2026**
 - **Universo ampliado a empresas medianas** (2.000–10.000 M€): `config/universo.csv` tiene 575 empresas.
-- **Fase 0 el 16–20/11/2026** (confirmado por Ale).
+- **Fase 0 el 11–20/11/2026** (Ale la adelantó del 16 al 11 el 10/11/2026; el final no cambia).
 - **Umbral de TIR: 10% en la zona euro y 12% fuera** (antes 15%/17%). Motivo: en 23 comités ningún valorador pasó del 13%.
 - **P(desastre) del comité = media de las tres** (propia, bajista, valorador; antes la más alta). Motivo: la más alta
   sesgaba la TIR a la baja en 16 de 23 casos.
@@ -120,7 +122,7 @@ se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
 - `plan/cribado.csv`, `plan/candidatos.md`, `plan/comite_informes/` (informes y prompts del comité).
 - `ledger/operaciones.csv` (solo T-0001), `ledger/ordenes.csv` (vacío), `ledger/cartera.json`, `ledger/historico.csv`.
 - `ledger/descartadas.csv`: 12 empresas analizadas y no compradas (Mazda, Valeo, BP, Suncor, OMV, voestalpine, Umicore,
-  Crédit Agricole, Vallourec, Galp, Norsk Hydro, Eiffage). `estado --cierre` fija su precio el 16/11 y las sigue en papel.
+  Crédit Agricole, Vallourec, Galp, Norsk Hydro, Eiffage). `estado --cierre` fija su precio el 11/11 y las sigue en papel.
 - `ledger/predicciones.csv`: se crea solo con la primera compra ejecutada.
 - `informes/revision-2026-11-09.md`: la auditoría, las 10 propuestas y su resultado.
 - `investing/pendiente.md`, `investing/estado.json`, `investing/historico.md`.
@@ -144,12 +146,13 @@ se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
 - Límites: FR 6, GB 5, IT 2, NL 2, CA 2; fuera de Europa 10%; ningún sector pasa de 3.
 - Compra de las 20 a precios del 06/11: 9.684 € (67 € de costes); quedan ~315 € de caja.
 
-**Calendario** (en `plan/fase0.md`; no cambió con el recálculo)
-- Lunes 16/11: NWG, BNP, AYV, IMB (apertura europea) y NOVO (apertura de EE. UU.).
-- Martes 17/11: HBR, TEP, NN, SAN y MG (Toronto).
-- Miércoles 18/11: AZM, CNA, ISP, FNTN y EN.
-- Jueves 19/11: MAP, SCR, AD; JD después de su trading statement; LNR (Toronto).
-- Viernes 20/11: reintentos; lo que quede sin ejecutar va AGRESIVA.
+**Calendario** (en `plan/fase0.md`, rehecho el 10/11; fechas de resultados en `plan/calendario.md`)
+- Miércoles 11/11: NWG, BNP, AYV, HBR (apertura europea) y NOVO (apertura de EE. UU.).
+- Jueves 12/11: TEP, NN, SAN, AZM y MG (Toronto, tras su Investor Day del 11/11).
+- Viernes 13/11: CNA, ISP, EN, FNTN (solo si ya publicó sus 9 meses) y LNR (Toronto).
+- Lunes 16/11: MAP, SCR, AD. Martes 17/11: reintentos.
+- Miércoles 18/11: IMB (tras sus resultados anuales del 17/11). Jueves 19/11: JD (tras su trading statement).
+- Viernes 20/11: lo que quede sin ejecutar va AGRESIVA.
 
 **Panel (Artifact de tipo Dashboard)**
 - URL: https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR. 6 datasets que leen un único asset `panel.json`.
@@ -159,13 +162,13 @@ se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
 
 | Ejecución | ID | Horario | Estado |
 |---|---|---|---|
-| DOMINGO | `trig_01UnKHPrvh2AaPgsFJfzg9PC` | `CRON_TZ=Europe/Madrid 4 18 * * 0` | **Activa** (próxima: 15/11 18:04) |
-| APERTURA_UE | `trig_01CEGapUaBpMEvxHmy3HZAt8` | `CRON_TZ=Europe/Madrid 34 9 * * 1-5` | Pausada |
-| APERTURA_US | `trig_01AikUWcNyEwnr1XY35S6jAY` | `CRON_TZ=America/New_York 4 10 * * 1-5` | Pausada |
-| CIERRE | `trig_01Q31HxP6FUV3dPWk9v1Rt2a` | `CRON_TZ=America/New_York 4 17 * * 1-5` | Pausada |
+| DOMINGO | `trig_01UnKHPrvh2AaPgsFJfzg9PC` | `CRON_TZ=Europe/Madrid 4 18 * * 0` | Activa (próxima: 15/11 18:04) |
+| APERTURA_UE | `trig_01CEGapUaBpMEvxHmy3HZAt8` | `CRON_TZ=Europe/Madrid 34 9 * * 1-5` | Activa desde el 10/11 |
+| APERTURA_US | `trig_01AikUWcNyEwnr1XY35S6jAY` | `CRON_TZ=America/New_York 4 10 * * 1-5` | Activa desde el 10/11 |
+| CIERRE | `trig_01Q31HxP6FUV3dPWk9v1Rt2a` | `CRON_TZ=America/New_York 4 17 * * 1-5` | Activa desde el 10/11 |
 
-- Aviso programado: `trig_011kX84TnoPyCTLQZhcETF4c`, **domingo 15/11 a las 21:00 (Madrid)**, entrega un mensaje a la
-  sesión `session_01DhaypvdpjUKCrjEvJWasDk` para que active las tres pausadas. Si Ale sigue en esa misma sesión, llega solo.
+- El aviso programado `trig_011kX84TnoPyCTLQZhcETF4c` (domingo 15/11 a las 21:00, para activar las tres pausadas) ya no
+  hace falta y está **desactivado**.
 
 ## 4. Credenciales
 
@@ -174,22 +177,22 @@ la sesión.
 
 ## 5. Pendiente, en este orden
 
-1. **Domingo 15/11, 21:00 (Madrid): activar APERTURA_UE, APERTURA_US y CIERRE** (`update_trigger` con `enabled=true` en
-   los tres IDs). Antes, comprobar que la ejecución DOMINGO de las 18:04 hizo commit en `main`. Después, verificar que
-   la primera APERTURA_UE cae el lunes 16/11 a las 08:34 UTC y avisar a Ale. No activarlas antes: gastarían uso sin
-   nada que hacer. Si el aviso programado no llega (sesión nueva), hacerlo a mano.
-2. **Lunes 16/11, primera ejecución.** Comprobar el libro de Equiduct **en vivo** (solo se ha probado en modo replay).
-   **Ayvens:** con los precios del 09/11 su desastre es −50,2% (no cumple). Azimut (−49,0%) e Intesa (−49,4%) están al
+1. **Miércoles 11/11: primera ejecución real.** Ninguna tarea programada había corrido antes: revisar que APERTURA_UE
+   (09:34), APERTURA_US (~16:04) y CIERRE (~23:04) han dejado commit en `main`, diario y, si hubo órdenes, aviso al móvil.
+   Si alguna falla, la siguiente retoma; nunca registrar operaciones con fecha pasada.
+2. **Ayvens:** con los precios del 09/11 su desastre es −50,2% (no cumple). Azimut (−49,0%) e Intesa (−49,4%) están al
    límite. Se decide con `ev.py --precio-hoy` en el momento de comprar; si Ayvens no cumple, entra BP.L.
 3. **Lundbeck: cerrado (10/11/2026).** Ale aclaró que solo era un ejemplo de tamaño de empresa; añadirla o no es
    decisión del gestor. No se añade ahora: no salió del cribado, cotiza en máximos de 52 semanas y necesitaría una TIR
    del 12%. Si algún domingo aparece en el cribado, se trata como cualquier otra candidata.
-4. Fechas sensibles del plan:
-   - FNTN: resultados de 9 meses el 11/11.
-   - JD: trading statement el 19/11. Si recorta la guía, no se compra y entra BP.
+4. Fechas sensibles del plan (detalle en `plan/calendario.md`):
+   - MG: Investor Day el 11/11 (se compra el 12). FNTN: resultados de 9 meses el 11/11 o 12/11 (se compra después).
+   - IMB: resultados anuales el 17/11 (se compra el 18). JD: trading statement el 19/11 (se compra después).
+     En los tres casos, si se toca una condición de invalidación no se compra y entra BP. Solo hay una reserva: si
+     fallan dos, la cartera se queda en 19.
    - MG y LNR: arancel del 50% a piezas canadienses anunciado para el 01/01/2027.
    - SCR: plan estratégico el 03/12. AZM: respuesta a Banca d'Italia a finales de noviembre; exclusividad de TNB hasta el 20/12.
-   - BP: plan estratégico el 15/12.
+   - BP: actualización estratégica en diciembre.
 5. A vigilar sin acción ahora (lista completa en `informes/revision-2026-11-09.md`):
    - **Retención francesa:** el sistema usa 12,8%; no se pudo confirmar que IBKR no aplique el 25%. Hay 6 francesas.
    - **Dividendos de Yahoo:** Magna y Harbour declaran en USD; revisar a mano el primer dividendo de cada valor.
