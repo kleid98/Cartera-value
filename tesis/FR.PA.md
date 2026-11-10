@@ -85,8 +85,11 @@ Año 3 = ejercicio 2029 (precio a nov-2029). Métrica principal: BPA normalizado
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.05,
-      "prob_desastre": 0.12
+      "tir": 0.0475,
+      "prob_desastre": 0.12,
+      "precio": 10.96,
+      "dividendos_esperados_3a": 1.3275,
+      "tir_declarada": 0.05
     },
     "bajista": {
       "prob_desastre": 0.27,
@@ -251,11 +254,12 @@ PRECIO_ACTUAL: 10.96
 - Precio: `python3 scripts/cartera.py precio FR.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.12 → **usada 0.18** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0736 · TIR valorador ciego 0.05 → **TIR final 0.0618** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.12 → **usada 0.18** (media de las tres)
+- TIR propia ajustada 7,4% · TIR valorador ciego 4,8% bruta → 4,0% neta (mismos costes y retención que la propia) → **TIR final 5,7%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
 **NO COMPRAR — excluida de la Fase 0 por el comité (08/11/2026).** TIR final del comité 4,7% (propia 8,3%). Además, los dos miembros del comité sitúan el escenario desastre por debajo del límite innegociable de −50% (valorador ciego −54,4%; bajista ~−55%, rango −50%/−63%), frente al −49,8% propio, que ya estaba a 0,2 pp del límite. No se retocan los escenarios propios (se escribieron antes), pero el comité puede frenar una compra: con dos estimaciones independientes por debajo de −50%, no se cumple con margen la regla del desastre. Se reconsideraría por debajo de ~8 € o si los resultados FY2026 (25/02/2027) confirman el crecimiento de 2027 y una caja libre de al menos 450 M€.

@@ -232,6 +232,20 @@ def caja_libre_eur(ords=None, ops=None):
             libre -= coste_compra_eur(o["mercado"], float(o["cantidad"]), float(o["limite"]), o["pais_emisor"])
     return libre
 
+def grupo_saturado(ticker, sector, ops=None):
+    """Tras la Fase 0 no entra un valor NUEVO de un grupo de riesgo cuyo peso a coste supere su máximo (reglas.json)."""
+    if now().strftime("%Y-%m-%d") <= REGLAS["fase0"]["fin"]: return None
+    lotes, caja, info, _ = derivar(ops)
+    if ticker in lotes: return None
+    total = sum(l["coste_eur"] for ls in lotes.values() for l in ls) + sum(v * eur_por(d) for d, v in caja.items())
+    for nombre, g in REGLAS.get("grupos_de_riesgo", {}).items():
+        if not isinstance(g, dict) or "max_peso_para_nuevas" not in g or sector not in g.get("sectores", []): continue
+        peso = sum(l["coste_eur"] for t, ls in lotes.items() if info[t]["sector"] in g["sectores"] for l in ls) / total if total else 0
+        if peso > g["max_peso_para_nuevas"]:
+            return (f"No entra: el grupo '{nombre}' pesa {peso:.0%} a coste (máximo {g['max_peso_para_nuevas']:.0%} para valores nuevos). "
+                    f"Regla acordada con Ale el 09/11/2026.")
+    return None
+
 def coste_compra_eur(mercado, q, limite, pais):
     m = MERCADOS[mercado]; c = costes("COMPRA", mercado, q, limite, pais)
     eur = (c["valor"] + c["total"]) * eur_por(m["divisa"])
@@ -281,6 +295,8 @@ def cmd_orden(a):
             q = max((q // lote) * lote, lote)
         if q == 0 or q * precio_eur > max(maxe, a.importe * 1.0001) and (q == lote or q == 1):
             sys.exit(f"No se puede comprar: el mínimo ({lote} acc.) cuesta {lote * precio_eur:.2f} € (> {maxe} €)")
+        aviso_grupo = grupo_saturado(a.ticker, a.sector, ops)
+        if aviso_grupo and not a.forzar_grupo: sys.exit(aviso_grupo)
         # Cuenta de contado: no se compra con caja que no existe (ni con la ya comprometida en órdenes pendientes)
         necesita = coste_compra_eur(a.mercado, q, limite, a.pais); libre = caja_libre_eur(ops=ops)
         if necesita > libre + 0.005:
@@ -334,7 +350,46 @@ def registrar_ejecucion(o, precio, cuando):
     for n in nuevas:
         ops = operaciones(); n["id"] = next_id(ops, "T-"); n["fecha_hora"] = iso(cuando)
         append_csv("ledger/operaciones.csv", OP_F, n)
+        if n["tipo"] == "COMPRA": registrar_prediccion(o, n)
     return nuevas
+
+PRED_F = ["op_id", "fecha", "ticker", "precio", "unidad_precio", "provisional", "tir_propia", "tir_propia_ajustada",
+          "tir_valorador_bruta", "tir_valorador_neta", "tir_comite", "pd_propia", "pd_bajista", "pd_valorador", "pd_usada",
+          "ret_desastre", "ret_bajista", "ret_base", "ret_alcista", "prob_desastre", "prob_bajista", "prob_base",
+          "prob_alcista", "precio_3a_desastre", "precio_3a_bajista", "precio_3a_base", "precio_3a_alcista", "asimetria"]
+
+def registrar_prediccion(o, op):
+    """Guarda lo que predecían la tesis, el valorador y el bajista en el momento de la compra (ledger/predicciones.csv),
+    al precio de ejecución, para medir dentro de un año quién acertó más. Nunca bloquea una ejecución."""
+    try:
+        import ev as E
+        path = P(o.get("tesis") or f"tesis/{o['ticker']}.md")
+        ev = E.extraer(path); r = E.evaluar(ev, float(op["precio"])); c = r.get("comite") or {}; pr = r["propio"]
+        com = ev.get("comite") or {}; vc = com.get("valorador_ciego") or {}; bj = com.get("bajista") or {}
+        rets = c.get("retornos_3a") or pr["retornos_3a"]; probs = c.get("probs") or pr["probs"]
+        row = {"op_id": op["id"], "fecha": op["fecha_hora"][:10], "ticker": o["ticker"], "precio": op["precio"],
+               "unidad_precio": op["unidad_precio"], "provisional": o["provisional"], "tir_propia": pr["tir"],
+               "tir_propia_ajustada": c.get("tir_ajustada_propia"), "tir_valorador_bruta": vc.get("tir"),
+               "tir_valorador_neta": c.get("tir_valorador_neta"), "tir_comite": c.get("tir_final"),
+               "pd_propia": ev["escenarios"]["desastre"]["prob"], "pd_bajista": bj.get("prob_desastre"),
+               "pd_valorador": vc.get("prob_desastre"), "pd_usada": c.get("prob_desastre_usada"),
+               "asimetria": c.get("asimetria", pr["asimetria"])}
+        for k in ("desastre", "bajista", "base", "alcista"):
+            row[f"ret_{k}"] = rets[k]; row[f"prob_{k}"] = probs[k]; row[f"precio_3a_{k}"] = ev["escenarios"][k]["precio_3a"]
+        append_csv("ledger/predicciones.csv", PRED_F, {k: ("" if v is None else v) for k, v in row.items()})
+    except BaseException as e:  # incluye SystemExit de ev.py: la compra ya está registrada y no debe fallar por esto
+        print(f"⚠️ No se pudo registrar la predicción de {o['ticker']}: {e}", file=sys.stderr)
+
+def cruce(tipo, lado, lim, velas, desde, cierre):
+    """Primera vela de 1 minuto (hora, apertura, máximo, mínimo) entre desde y cierre que ejecuta la orden.
+    Compra: mínimo ESTRICTAMENTE < límite. Venta: máximo ESTRICTAMENTE > límite. Precio = límite.
+    APERTURA: primera vela con datos, al precio de apertura. Devuelve (precio, hora) o None."""
+    for bt, op, hi, lo in velas:
+        if bt < desde or bt > cierre or lo is None: continue
+        if tipo == "APERTURA": return (op, bt)
+        if lado == "COMPRA" and lo < lim: return (lim, bt)
+        if lado == "VENTA" and hi > lim: return (lim, bt)
+    return None
 
 def cmd_validar(a):
     rows = ordenes(); cambios = []
@@ -357,16 +412,9 @@ def cmd_validar(a):
         except Exception as e:
             print(f"{o['id']}: sin datos ({e})"); continue
         ts = ch.get("timestamp") or []; qd = ch["indicators"]["quote"][0]
-        lim = float(o["limite"]); ejec = None
-        for i, t in enumerate(ts):
-            bt = datetime.fromtimestamp(t, tz)
-            if bt < desde or bt > cierre: continue
-            lo, hi, op = qd["low"][i], qd["high"][i], qd["open"][i]
-            if lo is None: continue
-            if o["tipo"] == "APERTURA":
-                ejec = (op, bt); break
-            if o["lado"] == "COMPRA" and lo < lim: ejec = (lim, bt); break
-            if o["lado"] == "VENTA" and hi > lim: ejec = (lim, bt); break
+        lim = float(o["limite"])
+        velas = [(datetime.fromtimestamp(t, tz), qd["open"][i], qd["high"][i], qd["low"][i]) for i, t in enumerate(ts)]
+        ejec = cruce(o["tipo"], o["lado"], lim, velas, desde, cierre)
         if ejec:
             precio, cuando = ejec
             o["estado"], o["resuelta"], o["precio_ejec"] = "EJECUTADA", iso(cuando), precio
@@ -450,6 +498,46 @@ def benchmarks(ops):
         out[clave] = {"nombre": b["nombre"], "ticker": b["ticker"], "valor_eur": r2(valor), "rent": round(valor / aport - 1, 5)}
     return out
 
+# ---------------------------------------------------------------- descartadas (cartera fantasma del comité)
+DESC_F = ["ticker", "nombre", "mercado", "motivo", "fecha_ref", "precio_ref", "eur_por_unidad_ref"]
+
+def fx_eur_fecha(dia):
+    """Unidades de divisa por 1 EUR en una fecha pasada (BCE vía Frankfurter)."""
+    d = http_json(f"https://api.frankfurter.dev/v1/{dia}?base=EUR"); r = d["rates"]; r["EUR"] = 1.0
+    return r
+
+def seguir_descartadas(en_cartera=()):
+    """Sigue en papel las empresas analizadas y NO compradas (veto, desastre, reserva…), como si se hubieran comprado
+    el día fecha_ref, para medir si las exclusiones del comité y de las reglas aportan valor.
+    Rentabilidad en EUR con dividendos brutos, sin costes. Fija precio_ref la primera vez que pasa fecha_ref."""
+    if not os.path.exists(P("ledger/descartadas.csv")): return []
+    rows = read_csv("ledger/descartadas.csv", DESC_F); hoy = now().strftime("%Y-%m-%d"); out = []; cambiado = False
+    for r in rows:
+        if hoy < r["fecha_ref"]:
+            out.append({"ticker": r["ticker"], "nombre": r["nombre"], "motivo": r["motivo"], "desde": r["fecha_ref"], "rent_eur": None}); continue
+        try:
+            unidad = MERCADOS[r["mercado"]]["unidad_precio"]
+            t0 = datetime.strptime(r["fecha_ref"], "%Y-%m-%d").replace(tzinfo=MAD).timestamp()
+            ch = yahoo_chart_period(r["ticker"], t0 - 7 * 86400, time.time(), "1d", events=True)
+            serie = {datetime.fromtimestamp(t, MAD).strftime("%Y-%m-%d"): c
+                     for t, c in zip(ch.get("timestamp") or [], ch["indicators"]["quote"][0]["close"]) if c is not None}
+            if not r["precio_ref"]:
+                r["precio_ref"] = round(precio_en(serie, r["fecha_ref"]), 4)
+                fx = fx_eur() if hoy == r["fecha_ref"] else fx_eur_fecha(r["fecha_ref"])
+                div = MERCADOS[r["mercado"]]["divisa"]
+                r["eur_por_unidad_ref"] = round((1.0 / fx[div]) / (100.0 if unidad == "GBX" else 1.0), 8); cambiado = True
+            px = ch["meta"].get("regularMarketPrice") or serie[max(serie)]
+            divs = sum(d["amount"] for d in ((ch.get("events") or {}).get("dividends") or {}).values()
+                       if datetime.fromtimestamp(d["date"], MAD).strftime("%Y-%m-%d") > r["fecha_ref"])
+            rent = (px + divs) * eur_por(unidad) / (float(r["precio_ref"]) * float(r["eur_por_unidad_ref"])) - 1
+            out.append({"ticker": r["ticker"], "nombre": r["nombre"], "motivo": r["motivo"], "desde": r["fecha_ref"],
+                        "precio_ref": float(r["precio_ref"]), "precio": px, "dividendos": round(divs, 4),
+                        "rent_eur": round(rent, 4), "en_cartera": r["ticker"] in en_cartera})
+        except Exception as e:
+            out.append({"ticker": r["ticker"], "nombre": r["nombre"], "motivo": r["motivo"], "desde": r["fecha_ref"], "rent_eur": None, "error": str(e)[:80]})
+    if cambiado: rewrite_csv("ledger/descartadas.csv", DESC_F, rows)
+    return out
+
 def cmd_estado(a):
     ops = operaciones()
     lotes, caja, info, realizado = derivar(ops)
@@ -475,6 +563,10 @@ def cmd_estado(a):
            "caja_por_divisa": {k: r2(v) for k, v in caja.items()}, "aportado_eur": r2(aport),
            "rentabilidad": round(total / aport - 1, 5) if aport else 0, "n_posiciones": len(pos), "posiciones": pos,
            "realizado_eur": r2(sum(realizado.values())), "benchmarks": benchmarks(ops) if ops else {}}
+    if a.cierre: est["descartadas"] = seguir_descartadas(set(lotes))
+    else:
+        try: est["descartadas"] = json.load(open(P("ledger/cartera.json"), encoding="utf-8")).get("descartadas", [])
+        except Exception: est["descartadas"] = []
     json.dump(est, open(P("ledger/cartera.json"), "w"), ensure_ascii=False, indent=1)
     if a.cierre:
         H = ["fecha", "valor_total_eur", "invertido_eur", "caja_eur", "aportado_eur", "rentabilidad", "n_posiciones"] + \
@@ -485,7 +577,12 @@ def cmd_estado(a):
         row = {"fecha": hoy, **{k: est[k] for k in ("valor_total_eur", "invertido_eur", "caja_eur", "aportado_eur", "rentabilidad", "n_posiciones")}}
         for k in REGLAS["benchmarks"]: row[f"bench_{k}"] = est["benchmarks"].get(k, {}).get("valor_eur", "")
         rewrite_csv("ledger/historico.csv", H, hist + [row])
-    print(json.dumps({k: v for k, v in est.items() if k != "posiciones"}, ensure_ascii=False, indent=1))
+    print(json.dumps({k: v for k, v in est.items() if k not in ("posiciones", "descartadas")}, ensure_ascii=False, indent=1))
+    con = [d for d in est["descartadas"] if d.get("rent_eur") is not None]
+    if con:
+        print(f"Descartadas (en papel desde {con[0]['desde']}): media {sum(d['rent_eur'] for d in con) / len(con) * 100:+.1f}%"
+              + (f" · posiciones de la cartera: media {sum(p['pyg_pct'] for p in pos) / len(pos) * 100:+.1f}%" if pos else ""))
+        for d in sorted(con, key=lambda d: -d["rent_eur"]): print(f"  {d['ticker']:10} {d['rent_eur'] * 100:+6.1f}%  {d['motivo']}")
     for p in pos:
         print(f"{p['ticker']:10} {p['cantidad']:>6} {p['valor_eur']:>9.2f}€ {p['pyg_pct']*100:>6.1f}% peso {p['peso']*100:4.1f}% {'🟡' if p['provisional'] else '🟢'}")
 
@@ -573,6 +670,7 @@ def main():
     s.add_argument("--importe", type=float, default=REGLAS["importe_objetivo_compra_eur"]); s.add_argument("--cantidad", type=float)
     s.add_argument("--tipo", default="PASIVA", choices=["PASIVA", "AGRESIVA", "APERTURA"]); s.add_argument("--provisional", action="store_true")
     s.add_argument("--motivo", required=True); s.add_argument("--tesis"); s.add_argument("--sin-libro", action="store_true")
+    s.add_argument("--forzar-grupo", action="store_true", help="solo con acuerdo explícito de Ale")
     s.set_defaults(f=cmd_orden)
     s = sp.add_parser("anular"); s.add_argument("id"); s.add_argument("--motivo", required=True); s.set_defaults(f=cmd_anular)
     s = sp.add_parser("validar"); s.set_defaults(f=cmd_validar)

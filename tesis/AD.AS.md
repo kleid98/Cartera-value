@@ -129,8 +129,11 @@ dígito medio (≈ 1,30 €).
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.06,
-      "prob_desastre": 0.07
+      "tir": 0.0593,
+      "prob_desastre": 0.07,
+      "precio": 34.22,
+      "dividendos_esperados_3a": 4.1125,
+      "tir_declarada": 0.06
     },
     "bajista": {
       "prob_desastre": 0.08,
@@ -286,14 +289,15 @@ PRECIO_ACTUAL: 34.22
 - Precio: `scripts/cartera.py precio AD.AS` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.08 · valorador 0.07 → **usada 0.0833** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0441 · TIR valorador ciego 0.06 → **TIR final 0.052** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.08 · valorador 0.07 → **usada 0.0833** (media de las tres)
+- TIR propia ajustada 4,4% · TIR valorador ciego 5,9% bruta → 5,2% neta (mismos costes y retención que la propia) → **TIR final 4,8%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 19 de 20)** — TIR del comité 5,2% (TIR propia ajustada 4,4%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 19 de 20)** — TIR del comité 4,8% (TIR propia ajustada 4,4%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — negocio defensivo, con caja abundante y retorno al accionista
 fiable, pero a 34 € cotiza en la media de su rango histórico de múltiplos (≈ 13x BPA 2026e) y el retorno esperado (≈ 4% anual
@@ -304,3 +308,4 @@ TIR no está entre las mejores del cribado. Volvería a mirarla por debajo de �
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (datos Q2 2026 completos, Q3 2026 de prensa, rebaja de guía por ciberincidente) | — → 4,03% | Desastre 0,10 / bajista 0,25 / base 0,45 / alcista 0,20 | Ninguna (candidata) |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 5,2% → 4,8% | Sin cambios | Sin cambio de decisión; puesto 19 de 20 |

@@ -12,10 +12,16 @@ en `/home/user/Cartera-value/tesis/{TICKER}.md`.
 
 Datos del cribado automático (Yahoo; tienen errores frecuentes, verifícalos): {DATOS_CRIBADO}
 
-Antes de empezar lee:
-1. `/home/user/Cartera-value/config/reglas.json` (filtros duros, umbrales de EV).
-2. `/home/user/Cartera-value/plantillas/tesis.md` (estructura obligatoria).
-3. `/home/user/Cartera-value/tesis/FR.PA.md` como ejemplo del nivel de detalle y del formato esperados.
+Antes de empezar lee solo `/home/user/Cartera-value/plantillas/tesis.md` (estructura obligatoria).
+
+**Trabajas a ciegas respecto a los umbrales de compra** (desde el 09/11/2026, acordado con Ale): no leas
+`config/reglas.json`, `CLAUDE.md`, `plan/` ni otras tesis del repo. En las primeras tesis, 6 de 20 escenarios de desastre
+quedaron entre −47% y −49%, pegados a un límite que el analista conocía. Tu trabajo es estimar bien, no llegar a un número:
+el gestor aplica los umbrales después.
+
+Filtros duros (lo único de las reglas que necesitas): capitalización ≥ 2.000 M€; volumen medio ≥ 2 M€/día; ≥ 10 años de
+historia; beneficio operativo positivo en ≥ 7 de los últimos 10 años; deuda neta/EBITDA ≤ 3x (financieras: CET1 ≥ 12%);
+sin insolvencia ni dudas de empresa en funcionamiento. Sede fuera de EE. UU. y cotización en su bolsa de origen.
 
 Proceso:
 1. Precio actual: `cd /home/user/Cartera-value && python3 scripts/cartera.py precio {TICKER}` (Londres en peniques/GBX).
@@ -29,15 +35,16 @@ Proceso:
 5. Escribe 3–5 condiciones de invalidación concretas y verificables.
 6. Escribe los 4 escenarios a 3 años (desastre, bajista, base, alcista) con probabilidades que sumen 1, relato, métrica
    del año 3 × múltiplo, precio a 3 años (en la unidad de cotización: GBX en Londres) y dividendos brutos acumulados.
-   Sé honesto: estima primero y calcula después; no ajustes las probabilidades para llegar a un umbral.
-   El desastre debe ser un desastre de verdad (lo que pasa si la tesis sale mal, no una corrección leve).
+   Sé honesto: estima primero y calcula después. El desastre debe ser un desastre de verdad (lo que pasa si la tesis
+   sale mal, no una corrección leve): fija su precio a partir del negocio (beneficio deprimido × múltiplo deprimido,
+   valor de liquidación, mínimos de crisis anteriores), no como un porcentaje de caída desde el precio de hoy.
 7. Rellena el bloque ```ev``` (deja `comite` con valores null) y ejecuta
-   `cd /home/user/Cartera-value && python3 scripts/ev.py tesis/{TICKER}.md`. Pega el resultado (TIR, retornos por
-   escenario, asimetría, cumple) bajo el bloque. **No cambies las probabilidades ni los precios después de ver la TIR.**
-8. Estado "⚪ candidata (no comprada)"; Decisión según el resultado (el comité está pendiente). Historial con la fila inicial.
-   Fuentes con enlaces al final.
+   `cd /home/user/Cartera-value && python3 scripts/ev.py tesis/{TICKER}.md --ciego` (solo da retornos y TIR, sin
+   umbrales). Pega el resultado bajo el bloque. **No cambies las probabilidades ni los precios después de ver la TIR.**
+8. Estado "⚪ candidata (no comprada)"; Decisión: "Pendiente del gestor y del comité" (no la decides tú). Historial con
+   la fila inicial. Fuentes con enlaces al final.
 
 Reglas:
-- Todo en español, llano y con números. Mismo nivel de rigor que FR.PA.md.
+- Todo en español, llano y con números. Cada cifra clave con su fuente.
 - Solo puedes crear o modificar `tesis/{TICKER}.md`. No toques ningún otro fichero del repo ni hagas commits.
-- Tu respuesta final: 5 líneas como máximo, con filtros (✅/❌), TIR propia, desastre, asimetría y una frase de tesis.
+- Tu respuesta final: 5 líneas como máximo, con filtros (✅/❌), TIR propia, retorno del desastre, asimetría y una frase de tesis.

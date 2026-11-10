@@ -86,8 +86,11 @@ Año 3 = ejercicio 2029 (precio a nov-2029). Métrica principal: BPA (beneficio 
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.1,
-      "prob_desastre": 0.1
+      "tir": 0.0974,
+      "prob_desastre": 0.1,
+      "precio": 9.615,
+      "dividendos_esperados_3a": 1.9605,
+      "tir_declarada": 0.1
     },
     "bajista": {
       "prob_desastre": 0.22,
@@ -236,14 +239,15 @@ PRECIO_ACTUAL: 9.615
 - Precio: `python3 scripts/cartera.py precio AYV.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.1467** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0861 · TIR valorador ciego 0.1 → **TIR final 0.093** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.22 · valorador 0.1 → **usada 0.1467** (media de las tres)
+- TIR propia ajustada 8,6% · TIR valorador ciego 9,7% bruta → 8,8% neta (mismos costes y retención que la propia) → **TIR final 8,7%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 3 de 20)** — TIR del comité 9,3% (TIR propia ajustada 8,6%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 5 de 20)** — TIR del comité 8,7% (TIR propia ajustada 8,6%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)**. TIR propia del 9,5%, lejos del 15%. Si el plan 2029 se cumple, el escenario base rinde ~15% anual solo con el reparto de capital, sin necesidad de que suba el múltiplo. Pero el bajista (usado en cero, ROTE del 11–12%) deja el capital plano a 3 años, y el desastre (−49%) roza el límite por el apalancamiento sobre el valor residual de la flota. La asimetría es buena (5,8) y el filtro de CET1 va justo (12,8% frente al 12%). Se reconsideraría por debajo de ~7,5 € con la guía 2026 cumplida, o si los resultados FY2026 (04/02/2027) traen una guía de usado 2027 positiva, un dividendo ordinario ≥ 0,65 € y un CET1 ≥ 12,8%.
 
@@ -251,5 +255,6 @@ PRECIO_ACTUAL: 9.615
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (candidata) | — | — | — |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 9,3% → 8,7% | Sin cambios | Sin cambio de decisión; puesto 5 de 20 |
 
 **Fuentes:** [Ayvens Q3 2026 results (ayvens.com, 29/10/2026)](https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q3-2026-financial-results) · [Ayvens Q2 2026 results (ayvens.com, 30/07/2026)](https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/ayvens-q2-2026-financial-results/) · [Ayvens Q4 and FY 2025 results (ayvens.com, 06/02/2026)](https://www.ayvens.com/en-cp/news/newsroom/press-releases-2026/q4-and-fy0-2025-strong-financial-results/) · [Ayvens 2029 strategic plan (webdisclosure, 21/09/2026)](https://www.webdisclosure.com/press-release/ayvens-2029-strategic-plan-aim-for-excellence-execute-better-every-day-TXE5MFQxZLV) · [Autocar Pro, objetivos 2029](https://www.autocarpro.in/news/ayvens-targets-14-to-16-percent-rote-in-2029-strategic-roadmap-135102) · [Quartr, resumen 3T 2026](https://quartr.com/events/ayvens-ayv-q3-2026_FGkyLsYJ) · [Quartr, resumen 1S 2026](https://quartr.com/events/ayvens-ayv-h1-2026_FGky9xy1) · [Quartr, CMD 2026](https://quartr.com/events/ayvens-ayv-cmd-2026_FGky9q3w) · [Idéal Investisseur, 3T 2026](https://www.ideal-investisseur.fr/en/stock-news/ayvens-profit-down-11-9-in-third-quarter-weighed-down-by-used-vehicle-resales/28144.html) · [Idéal Investisseur, rebote tras mínimos](https://www.ideal-investisseur.fr/en/stock-news/ayvens-shares-rebound-6-5-over-the-week-after-hitting-a-record-low/28649.html) · [ABC Bourse, 3T 2026](https://www.abcbourse.com/marches/ayvens-voit-ses-resultats-fondre-au-troisieme-trimestre-mais-maintient-ses-objec_705166) · [Ayvens, recompra y dividendo extraordinario 2026](https://www.ayvens.com/en-cp/news/newsroom/corporate-news/ayvens-share-buyback-program-and-exceptional-interim-dividend/) · [Ayvens, amortización de acciones (dic-2025)](https://rss.globenewswire.com/news-release/2025/12/17/3207224/0/en/Capital-reduction-by-cancellation-of-treasury-shares.html) · [Bloomberg, colocación del consorcio (nov-2025)](https://www.bloomberg.com/news/articles/2025-11-03/ayvens-backers-offer-stake-worth-1-1-billion-in-leasing-firm) · [BNN Bloomberg, interés de Blackstone (nov-2024)](https://bnnbloomberg.ca/business/2024/11/07/socgen-leasing-arm-ayvens-said-to-draw-blackstone-interest) · [MarketScreener, propuesta de distribución 2025](https://www.marketscreener.com/news/ayvens-proposes-distribution-for-year-2025-ce7e5ad9df80fe2d) · [StockAnalysis, histórico](https://stockanalysis.com/quote/epa/AYV/financials/) · [Fintel, cambios de recomendación](https://fintel.io/s/fr/ayv) · Yahoo Finance (precio, histórico mensual y dividendos).

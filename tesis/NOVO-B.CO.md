@@ -81,8 +81,11 @@ Métrica base: BPA ajustado 2026E ≈ 24 DKK (BPA diluido ajustado 9M 2026: 18,6
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.09,
-      "prob_desastre": 0.1
+      "tir": 0.0861,
+      "prob_desastre": 0.1,
+      "precio": 269.45,
+      "dividendos_esperados_3a": 35.7,
+      "tir_declarada": 0.09
     },
     "bajista": {
       "prob_desastre": 0.17,
@@ -264,14 +267,15 @@ PRECIO_ACTUAL: 269.45
 - El historial de beneficios de 2016 a 2024 sale de los informes anuales de Novo Nordisk, citado de memoria. No lo he verificado en esta sesión.
 
 ### Reconciliación
-- Prob. desastre: propia 0.15 · bajista 0.17 · valorador 0.1 → **usada 0.14** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0744 · TIR valorador ciego 0.09 → **TIR final 0.0822** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.15 · bajista 0.17 · valorador 0.1 → **usada 0.14** (media de las tres)
+- TIR propia ajustada 7,4% · TIR valorador ciego 8,6% bruta → 7,2% neta (mismos costes y retención que la propia) → **TIR final 7,3%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 6 de 20)** — TIR del comité 8,2% (TIR propia ajustada 7,4%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 10 de 20)** — TIR del comité 7,3% (TIR propia ajustada 7,4%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, pendiente del comité).** La empresa es de gran calidad, con un balance sólido, y cumple todos los filtros duros. A 269 DKK (≈ 11x el BPA ajustado) cotiza a un precio razonable, pero no a uno de ganga. La TIR esperada del 7,2% queda muy lejos del 17% exigido a un valor en DKK. El mercado ya descuenta un estancamiento, y la combinación de la rebaja de precios de 2027, la competencia de Lilly y la caducidad de la semaglutida en EE. UU. en 2031-32 limita el múltiplo al final del horizonte. Habría que revisarlo si el precio baja hacia ≈ 190 DKK o si la guía de 2027 (febrero) muestra que el volumen compensa el precio (BPA 2027 ≥ 25 DKK).
 
@@ -279,5 +283,6 @@ PRECIO_ACTUAL: 269.45
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial tras los resultados 9M 2026 (4/11/2026) | — → 7,15% | desastre 0,15 / bajista 0,30 / base 0,40 / alcista 0,15 | Candidata, no comprar |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,2% → 7,3% | Sin cambios | Sin cambio de decisión; puesto 10 de 20 |
 
 **Fuentes:** informe 9M/Q3 2026 de Novo Nordisk (6-K SEC, 4/11/2026: https://www.sec.gov/Archives/edgar/data/0000353278/000162828026069805/caq32026.htm); nota de prensa del Q3 2026 (https://via.ritzau.dk/pressemeddelelse/15268956/novo-nordisk-as?publisherId=90446); informe FY2025 (6-K SEC: https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm); informe del Q2 2026 (dividendo a cuenta de 3,75 DKK: https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm); Finviz/Jefferies sobre la guía y la rebaja de precios de lista de 2027 (https://finviz.com/news/415434/novo-nordisk-raises-2026-guidance-as-obesity-drug-sales-rise-22-and-quarterly-earnings-beat-forecasts); Fierce Pharma/Reuters sobre la competencia y los vientos en contra de 2027 (https://www.fiercepharma.com/pharma/novo-catches-wegovy-pill-tailwind-q3-ceo-eyes-new-launch-horizons-2027); precio y volumen de Yahoo Finance (`scripts/cartera.py precio`, cierre del 6/11/2026: 269,45 DKK; rango de 52 semanas 228,5–401,35 DKK). Tweenvest no se consultó.

@@ -37,6 +37,7 @@ precio actual, capitalización, deuda neta, PER, EV/EBIT, FCF yield, rentabilida
 TIR_ANUAL: 0.XXX   (con tres decimales, p. ej. 0.128; no redondees al punto entero)
 PROB_DESASTRE: 0.XX
 PRECIO_ACTUAL: xxx
+DIVIDENDOS_ESPERADOS_3A: xxx   (Σ prob × dividendos brutos de cada escenario, en {UNIDAD})
 
 ## Lo que más incertidumbre te genera
 - ...

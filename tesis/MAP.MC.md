@@ -98,8 +98,11 @@ Base de cálculo: BPA 2025 0,350 € (1.079 M€ / 3.079,6 M acc.); BPA 2026e �
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.07,
-      "prob_desastre": 0.07
+      "tir": 0.0662,
+      "prob_desastre": 0.07,
+      "precio": 4.13,
+      "dividendos_esperados_3a": 0.6489,
+      "tir_declarada": 0.07
     },
     "bajista": {
       "prob_desastre": 0.12,
@@ -298,14 +301,15 @@ PRECIO_ACTUAL: 4.13
 - Precio: `scripts/cartera.py precio MAP.MC` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.0967** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0468 · TIR valorador ciego 0.07 → **TIR final 0.0584** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.0967** (media de las tres)
+- TIR propia ajustada 4,7% · TIR valorador ciego 6,6% bruta → 6,2% neta (mismos costes y retención que la propia) → **TIR final 5,4%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 17 de 20)** — TIR del comité 5,8% (TIR propia ajustada 4,7%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 17 de 20)** — TIR del comité 5,4% (TIR propia ajustada 4,7%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — Mapfre pasa todos los filtros duros con holgura (Solvencia II ≈ 209 %, 10/10 años con beneficio, sin dilución) y el riesgo de pérdida está acotado (asimetría 3,6; desastre −38 %), pero la TIR esperada del 4,6 % queda muy lejos del 15 %: cotiza a ≈ 1,35x valor contable y ≈ 11x beneficio con un beneficio récord apoyado en el resultado financiero y plusvalías mientras el técnico No Vida cae, y Safety se financia con deuda. Es una aseguradora correcta a precio justo, no una oportunidad value. Revisar si cae por debajo de ≈ 3,0 € sin deterioro de fundamentales o si el Plan 2027-29 (marzo 2027) eleva de forma creíble ROE y payout.
 
@@ -313,3 +317,4 @@ PRECIO_ACTUAL: 4.13
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (tras 9M 2026) | — → 4,6 % | Inicial: 0,10 / 0,25 / 0,45 / 0,20 | Candidata, no comprar |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 5,8% → 5,4% | Sin cambios | Sin cambio de decisión; puesto 17 de 20 |

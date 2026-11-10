@@ -38,7 +38,10 @@
   "comite": {
     "agentes": ["bajista", "valorador_ciego"],
     "si_diferencia_tir_menor_5pp": "media",
-    "si_diferencia_tir_mayor_5pp": "la más baja salvo error concreto documentado",
+    "si_diferencia_tir_mayor_5pp": "la más baja + 2,5 pp (tope), salvo error concreto documentado; así no hay escalón en los 5 pp (acordado con Ale el 09/11/2026; antes la más baja a secas)",
+    "tope_sobre_la_mas_baja_pp": 2.5,
+    "tir_valorador_neta": true,
+    "_tir_valorador": "La TIR del valorador se guarda bruta y exacta (3 decimales) y se compara en neto: recalculada al precio del día y descontando costes y retención de dividendos, igual que la propia (acordado con Ale el 09/11/2026)",
     "prob_desastre": "media de las tres (propia, bajista y valorador ciego); antes la más alta, cambiado con acuerdo de Ale el 09/11/2026",
     "prob_desastre_modo": "media",
     "veto": "riesgo del bajista que cumple condición de invalidación"
@@ -48,6 +51,8 @@
     "rotacion_mejora_min_pp": 10,
     "peso_max": 0.10,
     "recorte_hasta": 0.07,
+    "tir_residual_exime_provisionales_semanas": 8,
+    "_tir_residual": "La venta por TIR residual < 5% no se aplica a las provisionales durante sus primeras 8 semanas (tienen su propia regla de rotación +5 pp). Acordado con Ale el 09/11/2026",
     "stop_loss": false
   },
   "recompra": {
@@ -69,6 +74,12 @@
     "dias_sin_ejecutar_antes_de_ask": 2
   },
   "ritmo_post_fase0": {"max_compras_nuevas_dia": 2},
+  "grupos_de_riesgo": {
+    "_doc": "Acordado con Ale el 09/11/2026. En la Fase 0 se acepta la concentración; después no entra ningún valor NUEVO de un grupo mientras su peso (a coste) supere el máximo.",
+    "financiero": {"sectores": ["Bancos", "Seguros", "Financieras", "Gestión de activos"], "max_peso_para_nuevas": 0.30},
+    "autopartes_canada": {"tickers": ["MG.TO", "LNR.TO"], "nota": "mismo riesgo (arancel del 50% anunciado para el 01/01/2027): se revisan y se cuentan juntas"}
+  },
+  "precio_al_ordenar": "Antes de cada orden de compra se recalcula la tesis con el precio del día (ev.py --precio-hoy). Escenarios y probabilidades no se tocan. El desastre ≥ −50% se comprueba a ese precio. Acordado con Ale el 09/11/2026",
   "ejecucion": {
     "fuente_libro": "Equiduct MarketViewer (VBB/VBO para tamaño User Entered)",
     "fallback_compra_bajo_ultimo_pct": 0.0010,

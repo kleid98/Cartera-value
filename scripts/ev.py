@@ -6,7 +6,12 @@ Lee el bloque ```ev ... ``` (JSON) de una tesis (tesis/<TICKER>.md) o un JSON su
   - TIR anual esperada
   - asimetría (ganancia ponderada / pérdida ponderada)
   - si cumple las reglas de compra (config/reglas.json)
-  - con --comite: reconciliación con los otros dos análisis del comité
+  - si la tesis tiene comité: reconciliación con los otros dos análisis
+
+Uso: python3 scripts/ev.py tesis/X.md [--precio P | --precio-hoy] [--ciego]
+  --precio P     recalcula con otro precio de partida (escenarios y probabilidades no se tocan)
+  --precio-hoy   igual, con el último precio de Yahoo (obligatorio justo antes de lanzar una orden)
+  --ciego        solo retornos y TIR, sin umbrales ni veredicto (para el agente analista)
 
 Formato del bloque ev:
 {
@@ -20,7 +25,8 @@ Formato del bloque ev:
      "alcista":  {"prob": 0.20, "precio_3a": 7200, "dividendos_3a": 520, "relato": "..."}
   },
   "comite": {                          # opcional, se rellena tras el comité
-     "valorador_ciego": {"tir": 0.11, "prob_desastre": 0.15},
+     "valorador_ciego": {"tir": 0.112, "prob_desastre": 0.15, "precio": 4930, "dividendos_esperados_3a": 480},
+                                       # tir BRUTA y exacta (3 decimales) al precio que vio el valorador
      "bajista": {"prob_desastre": 0.20, "veto": false}
   }
 }
@@ -70,36 +76,77 @@ def calcular(ev, prob_desastre_override=None):
         f"desastre ≥ {R['desastre_min_retorno']:.0%}": rets["desastre"] >= R["desastre_min_retorno"],
         f"asimetría ≥ {R['asimetria_min']}": asim >= R["asimetria_min"],
     }
+    div_esp = sum(esc[k]["prob"] * esc[k].get("dividendos_3a", 0) for k in esc)  # bruto, en unidad de cotización
     return {"retornos_3a": {k: round(v, 4) for k, v in rets.items()}, "probs": {k: round(v["prob"], 4) for k, v in esc.items()},
             "retorno_esperado_3a": round(er, 4), "tir": round(tir, 4), "asimetria": round(asim, 2) if asim != float("inf") else "inf",
-            "coste_ida_vuelta_pct": round(coste_pct, 4), "umbral_tir": umbral, "cumple": checks, "compra_ok": all(checks.values())}
+            "coste_ida_vuelta_pct": round(coste_pct, 4), "umbral_tir": umbral, "cumple": checks, "compra_ok": all(checks.values()),
+            "_div_esperado_bruto": div_esp, "_retencion_div": ret_div}
 
-def main():
-    if len(sys.argv) < 2: sys.exit(__doc__)
-    path = sys.argv[1]
-    ev = extraer(path) if path.endswith(".md") else json.load(open(path))
+def tir_neta_valorador(vc, ajust, precio, precio_tesis):
+    """TIR del valorador ciego puesta en las mismas condiciones que la propia (regla del 09/11/2026):
+    1) se recalcula al precio de hoy (el valorador la dio BRUTA a su precio: valor final = precio_vc × (1+TIR)^3);
+    2) se restan los costes de ida y vuelta y la retención en origen de los dividendos.
+    Si el informe no trae los dividendos esperados, se usan los de la tesis propia como aproximación."""
+    n = C.REGLAS["ev"]["horizonte_anos"]
+    p_vc = float(vc.get("precio") or precio_tesis)
+    valor_final = p_vc * (1 + vc["tir"]) ** n
+    div = vc.get("dividendos_esperados_3a")
+    if div is None: div = ajust["_div_esperado_bruto"]
+    r = valor_final / precio - 1 - ajust["coste_ida_vuelta_pct"] - ajust["_retencion_div"] * div / precio
+    return (1 + r) ** (1 / n) - 1 if r > -1 else -1
+
+def limpio(d): return {k: v for k, v in d.items() if not k.startswith("_")}
+
+def evaluar(ev, precio=None):
+    """Evaluación completa de una tesis. precio: precio de partida alternativo (p. ej. el de hoy)."""
+    precio_tesis = float(ev["precio_actual"])
+    if precio is not None: ev = dict(ev, precio_actual=float(precio))
+    p0 = float(ev["precio_actual"])
     propio = calcular(ev)
-    out = {"ticker": ev["ticker"], "propio": propio}
+    out = {"ticker": ev["ticker"], "precio_usado": p0, "precio_tesis": precio_tesis, "propio": limpio(propio)}
     com = ev.get("comite") or {}
     vc = com.get("valorador_ciego") or {}; bj = com.get("bajista") or {}
     if vc.get("tir") is not None or vc.get("prob_desastre") is not None or bj.get("prob_desastre") is not None:
+        RC = C.REGLAS["comite"]
         pds = [ev["escenarios"]["desastre"]["prob"]] + [x for x in (vc.get("prob_desastre"), bj.get("prob_desastre")) if x is not None]
         # Regla acordada con Ale el 09/11/2026: media de las tres (antes: la más alta)
-        pd = round(sum(pds) / len(pds), 4) if C.REGLAS["comite"].get("prob_desastre_modo", "max") == "media" else max(pds)
+        pd = round(sum(pds) / len(pds), 4) if RC.get("prob_desastre_modo", "max") == "media" else max(pds)
         ajust = calcular(ev, pd)
-        tir_vc = vc.get("tir")
+        tir_vc = vc.get("tir"); tir_vc_neta = None
         if tir_vc is None: tir_final = ajust["tir"]; regla = "sin valorador ciego"
-        elif abs(ajust["tir"] - tir_vc) < 0.05: tir_final = (ajust["tir"] + tir_vc) / 2; regla = "diferencia < 5 pp → media"
-        else: tir_final = min(ajust["tir"], tir_vc); regla = "diferencia ≥ 5 pp → la más baja (salvo error documentado)"
-        if com.get("error_documentado_valorador") and tir_vc is not None and tir_vc < ajust["tir"]:
-            tir_final = ajust["tir"]; regla += " — se usa la propia por error documentado en el valorador"
+        else:
+            tir_vc_neta = tir_neta_valorador(vc, ajust, p0, precio_tesis) if RC.get("tir_valorador_neta", False) else tir_vc
+            baja, media = min(ajust["tir"], tir_vc_neta), (ajust["tir"] + tir_vc_neta) / 2
+            tope = RC.get("tope_sobre_la_mas_baja_pp")
+            if abs(ajust["tir"] - tir_vc_neta) < 0.05: tir_final = media; regla = "diferencia < 5 pp → media"
+            elif tope is not None: tir_final = baja + tope / 100; regla = f"diferencia ≥ 5 pp → la más baja + {tope} pp (tope)"
+            else: tir_final = baja; regla = "diferencia ≥ 5 pp → la más baja (salvo error documentado)"
+            if com.get("error_documentado_valorador") and tir_vc_neta < ajust["tir"]:
+                tir_final = ajust["tir"]; regla += " — se usa la propia por error documentado en el valorador"
         veto = bool(bj.get("veto"))
         umbral = ajust["umbral_tir"]
         checks = dict(ajust["cumple"]); checks[f"TIR comité ≥ {umbral:.0%}"] = tir_final >= umbral
         checks["sin veto del bajista"] = not veto
         out["comite"] = {"prob_desastre_usada": pd, "tir_ajustada_propia": ajust["tir"], "tir_valorador_ciego": tir_vc,
+                         "tir_valorador_neta": round(tir_vc_neta, 4) if tir_vc_neta is not None else None,
                          "tir_final": round(tir_final, 4), "regla": regla, "cumple": checks, "compra_ok": all(checks.values()),
-                         "retornos_3a": ajust["retornos_3a"]}
+                         "asimetria": ajust["asimetria"], "retornos_3a": ajust["retornos_3a"], "probs": ajust["probs"]}
+    return out
+
+def main():
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]; flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    if not args: sys.exit(__doc__)
+    path = args[0]
+    ev = extraer(path) if path.endswith(".md") else json.load(open(path))
+    precio = None
+    if "--precio-hoy" in flags: precio = C.cotizacion(ev["ticker"])["precio"]
+    elif "--precio" in flags: precio = float(args[1])
+    out = evaluar(ev, precio)
+    if "--ciego" in flags:
+        pr = out["propio"]
+        out = {"ticker": out["ticker"], "retornos_3a": pr["retornos_3a"], "probs": pr["probs"],
+               "retorno_esperado_3a": pr["retorno_esperado_3a"], "tir": pr["tir"], "asimetria": pr["asimetria"],
+               "coste_ida_vuelta_pct": pr["coste_ida_vuelta_pct"]}
     print(json.dumps(out, ensure_ascii=False, indent=1))
 
 if __name__ == "__main__":

@@ -88,8 +88,11 @@ Métrica: BPA ajustado FY29 (ejercicio que cierra en sep-2029 y se publica en no
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.09,
-      "prob_desastre": 0.1
+      "tir": 0.0932,
+      "prob_desastre": 0.1,
+      "precio": 2973.0,
+      "dividendos_esperados_3a": 514.95,
+      "tir_declarada": 0.09
     },
     "bajista": {
       "prob_desastre": 0.12,
@@ -276,14 +279,15 @@ PRECIO_ACTUAL: 2973
 - https://www.boerse-global.de/imperial-brands-aktie-jahresergebnisse-am-17-november/832188
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.1 → **usada 0.1067** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0799 · TIR valorador ciego 0.09 → **TIR final 0.0849** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.1 → **usada 0.1067** (media de las tres)
+- TIR propia ajustada 8,0% · TIR valorador ciego 9,3% bruta → 8,8% neta (mismos costes y retención que la propia) → **TIR final 8,4%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 5 de 20)** — TIR del comité 8,5% (TIR propia ajustada 8,0%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 7 de 20)** — TIR del comité 8,4% (TIR propia ajustada 8,0%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — cumple todos los filtros duros, el desastre es tolerable (−38%) y la asimetría es muy buena (7,9), pero la TIR esperada (≈ 8%) queda a 9 pp del umbral del 17% para valores fuera del euro: incluso en el escenario base (sin re-rating) el retorno anual ronda el 12%. Es una máquina de caja barata, no una oportunidad de dos dígitos altos. Revisar tras los resultados del 17-nov-2026; solo se reconsideraría con el precio por debajo de ~2.300 GBX sin deterioro de las condiciones de invalidación, o si la guía FY27 eleva de forma creíble el crecimiento del BPA.
 
@@ -291,5 +295,6 @@ PRECIO_ACTUAL: 2973
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (pre-resultados FY26 del 17-nov) | — → 8,2% | — | Candidata, sin compra |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,5% → 8,4% | Sin cambios | Sin cambio de decisión; puesto 7 de 20 |
 
 Fuentes: RNS Trading Update 08-oct-2026 (imperialbrandsplc.com / tobaccoinsider.com PDF); Half-year Report 12-may-2026 (lse.co.uk RNS, joshthompson.co.uk resumen); Final Results FY25 18-nov-2025 (lse.co.uk RNS, Stockopedia/Reuters); Trading Update 14-abr-2026 y caída del 8,2% (MarketScreener/Dow Jones); stockanalysis.com (cuenta de resultados FY21–FY25, acciones en circulación); Yahoo Finance (precio, volumen, dividendos); ISIN GB0004544929 (Hargreaves Lansdown, Barclays, OpenSanctions). Tweenvest no accesible (404).

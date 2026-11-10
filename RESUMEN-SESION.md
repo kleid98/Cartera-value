@@ -58,6 +58,16 @@ Las reglas numéricas están en `config/reglas.json` y el manual de operación e
   - En código: `config/reglas.json` (`ev.tir_min_*` y `comite.prob_desastre_modo: "media"`) y `scripts/ev.py`. La media
     puede **bajar** la P(desastre) por debajo de la propia; el código lo aplica en los dos sentidos.
   - `compra_ok` exige que la TIR del comité **y** la TIR propia ajustada superen el umbral (el comité puede frenar, no forzar).
+- **Revisión del sistema (09–10/11, Ale aprobó las 10 propuestas; detalle en `informes/revision-2026-11-09.md`):**
+  - TIR del valorador **exacta** (un redondeo de 12,8% a 13% penalizaba a Teleperformance) y **neta** (mismos costes y
+    retención que la propia, recalculada al precio del día). Si la diferencia con la propia es ≥ 5 pp: **la más baja + 2,5 pp**.
+  - **Precio del día antes de cada orden** (`ev.py --precio-hoy`); el desastre ≥ −50% se comprueba a ese precio.
+  - La venta por **TIR residual < 5% no se aplica a las provisionales** en sus primeras 8 semanas.
+  - **Grupo financiero** (bancos, seguros, financieras, gestoras): aceptado el 40% en la Fase 0; después no entra ninguna
+    financiera nueva mientras pese > 30% (lo bloquea `cartera.py orden`).
+  - El **analista trabaja a ciegas** respecto a los umbrales (`comite/analista.md`, `ev.py --ciego`).
+  - Motor: salto de precio real (MiFID II), control de caja, `ledger/predicciones.csv` (automático en cada compra),
+    `ledger/descartadas.csv` (12 empresas seguidas en papel desde el 16/11) y `scripts/test_motor.py` (10 pruebas).
 - **Criterios aplicados en los comités (míos, comunicados a Ale; no los ha objetado):**
   - **Valeo (FR.PA) excluida:** los dos miembros del comité ponen el desastre por debajo de −50% (−54% y −55%), frente al
     −49,8% propio. Criterio: se excluye solo si **ambos** miembros lo sitúan por debajo de −50% en retorno total.
@@ -102,20 +112,20 @@ Las reglas numéricas están en `config/reglas.json` y el manual de operación e
 - `ledger/operaciones.csv` (solo T-0001), `ledger/ordenes.csv` (vacío), `ledger/cartera.json`, `ledger/historico.csv`.
 - `investing/pendiente.md`, `investing/estado.json`, `investing/historico.md`.
 
-**Las 20 de la Fase 0** (TIR del comité con las reglas nuevas; todas 🟡 provisionales). Ver la tabla completa en `plan/fase0.md`.
+**Las 20 de la Fase 0** (TIR del comité tras el recálculo del 10/11; todas 🟡 provisionales; todas por debajo de su umbral). Ver la tabla completa en `plan/fase0.md`.
 
 | # | Ticker | TIR comité | # | Ticker | TIR comité |
 |---|---|---|---|---|---|
-| 1 | NWG.L | 10,2% (umbral 12%) | 11 | SAN.PA | 7,3% |
-| 2 | BNP.PA | 10,1% (propia ajustada 8,1%) | 12 | AZM.MI | 7,1% |
-| 3 | AYV.PA | 9,3% | 13 | CNA.L | 7,1% |
-| 4 | JD.L | 9,2% | 14 | ISP.MI | 7,0% |
-| 5 | IMB.L | 8,5% | 15 | FNTN.DE | 6,8% |
-| 6 | NOVO-B.CO | 8,2% | 16 | EN.PA | 6,6% |
-| 7 | MG.TO | 8,1% | 17 | MAP.MC | 5,8% |
-| 8 | HBR.L | 8,0% | 18 | SCR.PA | 5,7% |
-| 9 | TEP.PA | 7,9% | 19 | AD.AS | 5,2% |
-| 10 | NN.AS | 7,4% | 20 | LNR.TO | 4,4% |
+| 1 | NWG.L | 9,9% | 11 | NN.AS | 7,2% |
+| 2 | TEP.PA | 9,9% | 12 | SAN.PA | 6,9% |
+| 3 | BNP.PA | 9,8% | 13 | CNA.L | 6,7% |
+| 4 | JD.L | 8,8% | 14 | AZM.MI | 6,4% |
+| 5 | AYV.PA | 8,7% | 15 | ISP.MI | 6,2% |
+| 6 | FNTN.DE | 8,5% | 16 | EN.PA | 6,2% |
+| 7 | IMB.L | 8,4% | 17 | MAP.MC | 5,4% |
+| 8 | MG.TO | 8,0% | 18 | SCR.PA | 5,4% |
+| 9 | HBR.L | 7,9% | 19 | AD.AS | 4,8% |
+| 10 | NOVO-B.CO | 7,3% | 20 | LNR.TO | 4,4% |
 
 - Reserva: **BP.L** (3,9%; sería la 6.ª británica). FGR.PA no cabe (sería la 7.ª francesa).
 - Excluidas: 7261.T (veto), FR.PA (desastre del comité), SU.TO, OMV.VI, VOE.VI, UMI.BR (desastre < −50%),
@@ -154,8 +164,9 @@ la sesión.
 2. ✅ DOMINGO reanudada. **Domingo 15/11 a las 21:00 (Madrid)**: activar APERTURA_UE, APERTURA_US y CIERRE
    (`update_trigger` con `enabled=true`). Hay un aviso programado a la sesión original; si no llega, hacerlo a mano
    y comprobar que la primera APERTURA_UE cae el 16/11 a las 08:34 UTC. Los prompts ya mandan leer `CLAUDE.md` y `plan/fase0.md`.
-2b. **Revisión del 09/11** (`informes/revision-2026-11-09.md`): corregidos el salto de precio de Londres y el control de
-   caja (en la rama; **falta subirlos a `main`** con permiso de Ale). Pendiente de que Ale decida los puntos 4–8 de ese informe.
+2b. ✅ Revisión del 09–10/11 hecha y subida a `main` (10 mejoras). **Aviso para el lunes 16:** con los precios del 09/11,
+   Ayvens ya no cumple el desastre (−50,2%) y Azimut e Intesa están a menos de 1 punto. Se decide con el precio del día
+   (`ev.py --precio-hoy`); si Ayvens no cumple, entra BP.L (sería la 6.ª británica, cabe).
 3. **Lunes 16/11, primera ejecución:** comprobar el libro de Equiduct **en vivo** (solo se probó en modo replay).
 4. Vigilar las fechas sensibles del plan:
    - FNTN: resultados de 9 meses el 11/11.

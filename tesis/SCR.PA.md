@@ -86,8 +86,11 @@ Horizonte: noviembre de 2029 (métrica: BPA 2029 o VC/valor económico a final d
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.06,
-      "prob_desastre": 0.1
+      "tir": 0.0647,
+      "prob_desastre": 0.1,
+      "precio": 34.68,
+      "dividendos_esperados_3a": 5.955,
+      "tir_declarada": 0.06
     },
     "bajista": {
       "prob_desastre": 0.17,
@@ -248,14 +251,15 @@ PRECIO_ACTUAL: 34.68
 - Precio: `scripts/cartera.py precio SCR.PA` (34,68 €, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.17 · valorador 0.1 → **usada 0.13** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0533 · TIR valorador ciego 0.06 → **TIR final 0.0566** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.17 · valorador 0.1 → **usada 0.13** (media de las tres)
+- TIR propia ajustada 5,3% · TIR valorador ciego 6,5% bruta → 5,5% neta (mismos costes y retención que la propia) → **TIR final 5,4%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 18 de 20)** — TIR del comité 5,7% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 18 de 20)** — TIR del comité 5,4% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — pasa los 6 filtros duros, pero la TIR propia (5,6%) queda muy lejos del 15%. La acción no está castigada: ya ha subido ~26% en 2026 y cotiza cerca de máximos; el descuento sobre el valor económico (0,70x) es real pero tiene motivos (historial de cargos, ciclo de precios a la baja, colas de catástrofe) y el consenso ya espera beneficio plano. Para llegar al umbral haría falta un precio de ~26–27 € con el mismo análisis, o que el plan del 03/12/2026 comprometa recompras grandes y recurrentes con el exceso de solvencia (lo que subiría la probabilidad del alcista). Revisar tras el Investor Day y las renovaciones de enero de 2027.
 
@@ -263,5 +267,6 @@ PRECIO_ACTUAL: 34.68
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (candidata) | — | — | — |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 5,7% → 5,4% | Sin cambios | Sin cambio de decisión; puesto 18 de 20 |
 
 **Fuentes:** [SCOR, resultados 3T 2026 (comunicado, 30/10/2026)](https://via.ritzau.dk/pressemeddelelse/15258931/scor?publisherId=90446) · [Reinsurance News, 3T 2026](https://www.reinsurancene.ws/scor-delivers-q326-net-income-of-e206m-and-pc-combined-ratio-of-84-1/) · [Insurance Business, "SCOR beats plan targets ahead of December investor day"](https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/scor-beats-plan-targets-ahead-of-december-investor-day-595613.aspx) · [Idéal Investisseur, 3T 2026 vs consenso](https://www.ideal-investisseur.fr/en/stock-news/scor-net-income-down-4-8-in-the-third-quarter-but-eps-above-consensus/28295.html) · [SCOR, resultados 2T 2026](https://www.scor.com/en/press-release/second-quarter-2026-results) · [Insurance Business, 2T 2026 y cargo Covéa](https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/scor-posts-79-5-combined-ratio-as-covea-hit-weighs-on-q2-income-584335.aspx) · [SCOR, sentencia arbitral Covéa](https://www.scor.com/en/press-release/scor-acknowledges-arbitration-award-confirming-validity-retrocession-treaties-entered) · [Atlas Mag, 488,3 M USD a Covéa](https://atlas-mag.net/en/articles/scor-pay-4883-million-usd-covea) · [SCOR, resultados 4T 2025](https://www.scor.com/en/press-release/fourth-quarter-2025-results) · [Artemis, renovaciones 1/1/2026](https://www.artemis.bm/news/scor-grew-pc-book-7-4-at-jan-renewals-retro-cost-down-amid-improved-market-conditions) · [S&P Global, ablandamiento de precios y renovaciones de abril](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/6/investors-sell-off-large-european-reinsurers-following-q1-p-c-revenue-decline-102441977) · [Easybourse, UBS a vender (18/08/2026)](https://www.easybourse.com/financieres/news/1536307/ubs-passe-vente-sur-scor-action-recule.html) · [Reinsurance News, revisión L&H 2024](https://www.reinsurancene.ws/scor-reports-q224-net-loss-as-lh-assumption-review-more-than-offsets-solid-pc-result/) · [MarketScreener, finanzas y consenso](https://www.marketscreener.com/quote/stock/SCOR-SE-4006694/finances/) · [MarketScreener, agenda](https://uk.marketscreener.com/quote/stock/SCOR-SE-77787/calendar/) · Yahoo Finance (precio, histórico mensual y volumen).

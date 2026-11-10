@@ -91,8 +91,11 @@ Métrica: BPA 2029 (año 3; el precio a nov-2029 descuenta el beneficio de ese a
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.08,
-      "prob_desastre": 0.07
+      "tir": 0.0817,
+      "prob_desastre": 0.07,
+      "precio": 6.177,
+      "dividendos_esperados_3a": 1.3451,
+      "tir_declarada": 0.08
     },
     "bajista": {
       "prob_desastre": 0.17,
@@ -232,14 +235,15 @@ PRECIO_ACTUAL: 6.177
 - `python3 scripts/cartera.py precio ISP.MI` (6,177 €, 06/11/2026 17:39)
 
 ### Reconciliación
-- Prob. desastre: propia 0.08 · bajista 0.17 · valorador 0.07 → **usada 0.1067** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0602 · TIR valorador ciego 0.08 → **TIR final 0.0701** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.08 · bajista 0.17 · valorador 0.07 → **usada 0.1067** (media de las tres)
+- TIR propia ajustada 6,0% · TIR valorador ciego 8,2% bruta → 6,3% neta (mismos costes y retención que la propia) → **TIR final 6,2%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 14 de 20)** — TIR del comité 7,0% (TIR propia ajustada 6,0%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 15 de 20)** — TIR del comité 6,2% (TIR propia ajustada 6,0%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). Cumple todos los filtros duros y la asimetría es buena (5,2), pero la TIR propia del 6,7% queda a más de 8 pp del umbral del 15%: a 6,18 € el mercado ya paga un negocio excelente a un múltiplo justo, y el retorno depende casi solo del dividendo (que además soporta un 26% de retención italiana). El desastre (−48%) roza el límite del −50% por la exposición a riesgo soberano italiano. Nivel de reentrada orientativo: por debajo de ≈ 4,9 € con la tesis intacta (precio al que estos mismos escenarios darían TIR ≈ 15%), o una mejora clara de BPA tras cerrar la integración de MPS.
 
@@ -247,3 +251,4 @@ PRECIO_ACTUAL: 6.177
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (tras resultados 9M26 y antes del periodo de aceptación de la OPAS sobre MPS) | — → 6,7% (propia) | Desastre 8% · bajista 25% · base 47% · alcista 20% | NO COMPRAR provisional; candidata pendiente de comité |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,0% → 6,2% | Sin cambios | Sin cambio de decisión; puesto 15 de 20 |

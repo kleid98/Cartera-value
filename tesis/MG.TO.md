@@ -85,8 +85,11 @@ Métrica: BPA ajustado de 2029 (año 3) en USD × múltiplo → precio en USD, c
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.1,
-      "prob_desastre": 0.1
+      "tir": 0.1047,
+      "prob_desastre": 0.1,
+      "precio": 87.38,
+      "dividendos_esperados_3a": 8.48,
+      "tir_declarada": 0.1
     },
     "bajista": {
       "prob_desastre": 0.2,
@@ -229,14 +232,15 @@ PRECIO_ACTUAL: 87.38
 - Las cifras del BPA histórico de 2016–2024 son aproximadas, de memoria (informes anuales de Magna). No las he podido verificar línea a línea en esta sesión.
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.2 · valorador 0.1 → **usada 0.14** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0616 · TIR valorador ciego 0.1 → **TIR final 0.0808** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.2 · valorador 0.1 → **usada 0.14** (media de las tres)
+- TIR propia ajustada 6,2% · TIR valorador ciego 10,5% bruta → 9,8% neta (mismos costes y retención que la propia) → **TIR final 8,0%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 7 de 20)** — TIR del comité 8,1% (TIR propia ajustada 6,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 8 de 20)** — TIR del comité 8,0% (TIR propia ajustada 6,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité). La TIR propia del 6,7% está muy lejos del 17% exigido fuera del euro. Es una empresa barata (PER ≈ 8,8x sobre el ajustado de 2026, rentabilidad de caja libre ≈ 11%, recompras agresivas), con buena asimetría (3,47) y un desastre acotado (−43%), pero el retorno esperado depende de un múltiplo que ya es razonable para un proveedor de margen fino y de un beneficio ajustado que siempre supera al reportado. Para llegar al umbral haría falta comprar por debajo de ≈ 66 CAD (con los mismos escenarios, TIR 17,3% a 66 CAD) o que el Investor Day del 11/11 aporte objetivos creíbles que suban el caso base. Si en la Fase 0 faltaran candidatas, como provisional tiene una TIR claramente peor que la de otras del repo; la dejo en observación.
 
@@ -244,3 +248,4 @@ PRECIO_ACTUAL: 87.38
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (tras Q3 2026, antes del Investor Day del 11/11) | — → 6,7% (propia) | — | Candidata |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,1% → 8,0% | Sin cambios | Sin cambio de decisión; puesto 8 de 20 |

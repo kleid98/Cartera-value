@@ -38,7 +38,11 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `investing/pendiente.md` | Operaciones que Ale debe copiar en Investing |
 | `panel/` | Panel web (HTML) que se publica cada noche |
 | `scripts/cartera.py` | Motor: precios, libro, órdenes, validación, costes, dividendos, estado, Investing |
-| `scripts/ev.py` | Calculadora de EV/TIR/asimetría y reconciliación del comité |
+| `scripts/ev.py` | Calculadora de EV/TIR/asimetría y reconciliación del comité (`--precio-hoy` antes de cada orden) |
+| `scripts/comite_registrar.py` | Escribe los informes del comité en la tesis; `--recalcular` si cambian las reglas |
+| `scripts/test_motor.py` | Pruebas del motor con datos fijos: ejecutar tras cualquier cambio en `scripts/` |
+| `ledger/predicciones.csv` | Automático: lo que predecían tesis, valorador y bajista en cada compra (para medir aciertos) |
+| `ledger/descartadas.csv` | Empresas analizadas y no compradas; `estado --cierre` las sigue en papel desde el 16/11/2026 |
 | `scripts/panel.py` | Genera `panel/panel.json` (datos del panel) |
 | `scripts/cribado.py` | Cribado del universo `config/universo.csv` → `plan/cribado.csv` y `plan/candidatos.md` |
 | `scripts/comite.py` | Genera los prompts ciegos del comité para una tesis |
@@ -62,7 +66,11 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
    Si algo toca una **condición de invalidación** → venta por tesis rota (orden AGRESIVA) con comité.
 3. Revisa pesos: posición > 10% → recorte al 7% (orden PASIVA).
 4. Decide compras/ventas según el plan y las reglas (sección 3). Cada orden nueva requiere tesis con comité.
-5. Lanza órdenes con `cartera.py orden` (ver sección 4). Por defecto PASIVA (bid de Equiduct).
+5. **Antes de cada compra: `python3 scripts/ev.py tesis/X.md --precio-hoy`** (recalcula con el precio del día; no toques
+   escenarios ni probabilidades). Si el desastre queda < −50% a ese precio, no se compra. En la Fase 0, si no se compra o
+   si la TIR del comité cae por debajo de la de la reserva, entra la reserva (ver `plan/fase0.md`). Anótalo en el diario
+   y pon la TIR recalculada en el motivo de la orden.
+   Lanza órdenes con `cartera.py orden` (ver sección 4). Por defecto PASIVA (bid de Equiduct).
 6. Fase 0 (16–20/11/2026): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
 7. Escribe/actualiza `diario/AAAA-MM-DD.md` (sección de la ejecución), commit y push (sección 6).
 8. `python3 scripts/cartera.py investing`. Si hubo operaciones ejecutadas o nuevas órdenes → **PushNotification**.
@@ -92,7 +100,8 @@ DN/EBITDA ≤ 3x (financieras CET1 ≥ 12%), sin insolvencia. Fallen angels: pue
 **Compra:** 4 escenarios a 3 años; TIR ≥ 10% (≥ 12% fuera del euro; antes 15%/17%, cambiado con Ale el 09/11/2026); desastre ≥ −50%; asimetría ≥ 2.
 `python3 scripts/ev.py tesis/X.md` es el juez. Probabilidades y precios se escriben antes y no se retocan.
 **Comité (obligatorio en toda compra, recompra y venta por tesis rota o rotación):** ver sección 3.1.
-**Venta (solo 4 motivos):** TIR residual < 5%; tesis rota (AGRESIVA); algo mejor ≥ +10 pp (≥ +5 pp si la
+**Venta (solo 4 motivos):** TIR residual < 5% (no se aplica a las 🟡 provisionales en sus primeras 8 semanas: ya tienen
+su regla de rotación; acordado con Ale el 09/11/2026); tesis rota (AGRESIVA); algo mejor ≥ +10 pp (≥ +5 pp si la
 posición es 🟡 provisional en sus primeras 8 semanas); peso > 10% → recorte al 7%. Sin stop-loss.
 **Recompra:** precio ≤ −20% desde la última compra, tesis revisada ANTES (explicar la caída, no-negocio),
 prob. de desastre ≥ la anterior, TIR +5 pp sobre la compra anterior, máx. 3 compras y 10% a coste, 30 días.
@@ -101,6 +110,10 @@ Promediar al alza permitido si cumple las reglas de compra, con el mismo tope.
 **Máximo 20 valores.** Fase 0: 20 posiciones al cierre del 20/11/2026; si no hay 20 con TIR ≥ umbral, completar
 con las mejores TIR (nunca saltarse filtros duros ni desastre ≥ −50%) marcadas `--provisional`; máx. 4 por
 sector y 6 por país. Tras la Fase 0: máx. 2 compras nuevas por día. La caja ociosa es aceptable.
+**Grupos de riesgo** (`grupos_de_riesgo` en `reglas.json`, acordado con Ale el 09/11/2026): bancos, seguros, financieras y
+gestoras cuentan como un solo grupo financiero. En la Fase 0 se acepta su peso (8 de 20); después no entra ningún valor
+financiero NUEVO mientras el grupo pese > 30% a coste (`cartera.py orden` lo bloquea). Magna y Linamar comparten riesgo
+(arancel del 01/01/2027): se revisan juntas. **Caja:** `orden` rechaza una compra que no quepa en la caja libre.
 
 ### 3.1 Comité de inversión (2 subagentes independientes, en paralelo)
 1. Escribe primero tu tesis completa con escenarios y bloque ```ev```.
@@ -108,13 +121,18 @@ sector y 6 por país. Tras la Fase 0: máx. 2 compras nuevas por día. La caja o
    Lanza en paralelo (herramienta Agent, `general-purpose`) un agente con cada prompt:
    - 🔴 **Bajista** (`comite/bajista.md`): recibe SOLO la tesis cualitativa y las condiciones de invalidación.
    - 🔵 **Valorador ciego** (`comite/valorador_ciego.md`): recibe SOLO ticker, nombre y bolsa.
-3. Copia sus respuestas a la sección "Comité" de la tesis y rellena `comite` en el bloque ev
+3. `python3 scripts/comite_registrar.py tesis/X.md <informe_bajista> <informe_valorador>` lo hace todo: copia las
+   respuestas a la sección "Comité" de la tesis y rellena `comite` en el bloque ev
    (`valorador_ciego.tir`, `valorador_ciego.prob_desastre`, `bajista.prob_desastre`, `bajista.veto`).
 4. `python3 scripts/ev.py tesis/X.md` aplica la reconciliación: diferencia < 5 pp → media; ≥ 5 pp → la más
-   baja (salvo error concreto documentado con `"error_documentado_valorador": "..."`); prob. de desastre = la
+   baja + 2,5 pp, para que no haya escalón (salvo error concreto documentado con `"error_documentado_valorador": "..."`).
+   La TIR del valorador se guarda bruta y exacta (3 decimales) y se compara en neto: `ev.py` la recalcula al precio del
+   día y le resta costes y retención, igual que a la propia (todo esto, acordado con Ale el 09/11/2026); prob. de desastre = la
    media de las tres (desde el 09/11/2026; antes la más alta); veto del bajista si se cumple una condición de invalidación. **El comité puede frenar
    una compra, nunca forzarla.**
 5. No se convoca para el seguimiento diario ni en la ejecución de cierre.
+6. Tesis nuevas: las redacta un agente con `comite/analista.md`, que trabaja **a ciegas respecto a los umbrales** (no lee
+   `reglas.json` y usa `ev.py --ciego`). El gestor aplica los umbrales después con `ev.py` completo.
 
 ## 4. Órdenes y ejecución simulada
 
@@ -146,6 +164,8 @@ python3 scripts/cartera.py anular O-0007 --motivo "..."
   (con `if_version`). No toques `files/index.html` salvo que Ale pida cambios de diseño (`panel/index.html` es su copia).
 - Informe semanal (viernes, `informes/semana-AAAA-WW.md`): rentabilidad vs. benchmarks, qué funcionó/qué no,
   tesis que cambiaron, órdenes no ejecutadas (coste/beneficio de ser paciente), plan de la semana siguiente.
+- En el informe semanal y el mensual: comparar la cartera con las **descartadas** (`cartera.json` → `descartadas`: ¿aportan
+  valor los vetos y exclusiones?) y, cuando haya historia, las **predicciones** (`ledger/predicciones.csv`) con lo ocurrido.
 - Métricas a seguir: rentabilidad, volatilidad, drawdown, alfa vs. MSCI Europe Value (CEMS.DE), % aciertos,
   retorno medio ganadoras vs. perdedoras, provisionales vs. definitivas, calibración de escenarios.
 

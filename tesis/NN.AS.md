@@ -117,8 +117,11 @@ Consenso de dividendo por acción: FY26 4,16 €, FY27 4,47 €, FY28 4,81 €.
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.08,
-      "prob_desastre": 0.07
+      "tir": 0.0849,
+      "prob_desastre": 0.07,
+      "precio": 79.18,
+      "dividendos_esperados_3a": 13.56,
+      "tir_declarada": 0.08
     },
     "bajista": {
       "prob_desastre": 0.12,
@@ -278,14 +281,15 @@ PRECIO_ACTUAL: 79.18
 - Precio: `scripts/cartera.py precio NN.AS` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.0967** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0679 · TIR valorador ciego 0.08 → **TIR final 0.074** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.12 · valorador 0.07 → **usada 0.0967** (media de las tres)
+- TIR propia ajustada 6,8% · TIR valorador ciego 8,5% bruta → 7,6% neta (mismos costes y retención que la propia) → **TIR final 7,2%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 10 de 20)** — TIR del comité 7,4% (TIR propia ajustada 6,8%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 11 de 20)** — TIR del comité 7,2% (TIR propia ajustada 6,8%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — negocio de calidad, balance holgado y riesgo de desastre acotado
 (asimetría 5,6 y desastre −38%), pero tras la revalorización de 2024–26 el retorno esperado (≈ 6–7% anual) es casi todo
@@ -296,3 +300,4 @@ como relleno provisional. Volvería a mirarla si cae a la zona de 55–60 € si
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (datos 1H26, consenso 1H26, salida del CEO anunciada el 02/11/2026) | — → 6,72% | Desastre 0,10 / bajista 0,25 / base 0,45 / alcista 0,20 | Ninguna (candidata, NO COMPRAR provisional) |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,4% → 7,2% | Sin cambios | Sin cambio de decisión; puesto 11 de 20 |

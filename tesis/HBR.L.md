@@ -88,8 +88,11 @@ Año 3 = 2029 (precio a nov-2029), FX constante 1,3356 $/£. Métrica principal:
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.09,
-      "prob_desastre": 0.1
+      "tir": 0.092,
+      "prob_desastre": 0.1,
+      "precio": 263.4,
+      "dividendos_esperados_3a": 38.0,
+      "tir_declarada": 0.09
     },
     "bajista": {
       "prob_desastre": 0.27,
@@ -280,14 +283,15 @@ PRECIO_ACTUAL: 263.4
 - Yahoo Finance mediante `scripts/cartera.py precio`: HBR.L 263,4p; Brent (BZ=F) 98,3 $; BZZ27 80,6 $; BZZ28 74,5 $; GBPUSD 1,3356; TTF 85,6 €/MWh
 
 ### Reconciliación
-- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.1 → **usada 0.1733** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0702 · TIR valorador ciego 0.09 → **TIR final 0.0801** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.15 · bajista 0.27 · valorador 0.1 → **usada 0.1733** (media de las tres)
+- TIR propia ajustada 7,0% · TIR valorador ciego 9,2% bruta → 8,7% neta (mismos costes y retención que la propia) → **TIR final 7,9%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 8 de 20)** — TIR del comité 8,0% (TIR propia ajustada 7,0%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 9 de 20)** — TIR del comité 7,9% (TIR propia ajustada 7,0%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 7,8%, muy lejos del 17% exigido fuera del euro. La acción parece barata con los precios de hoy (PER ~5x, retribución ~19% en 2026), pero esa caja es extraordinaria, el 78% de fiscalidad en UK/Noruega se lleva la mayor parte de las subidas y, con la curva de futuros (Brent 74,5 $ en dic-2028) y reservas para ~6 años, el valor normalizado no está muy por encima del precio actual. Hay asimetría (≈ 4) y el desastre (−47%) queda dentro del límite, pero el retorno esperado no paga el riesgo. Se reconsideraría por debajo de ~205p con el balance intacto, o si los resultados FY2026 (~04/03/2027) muestran reposición de reservas 2P > 100% y una guía de FCF 2027 de al menos 1,0 mil M$ con Brent a 70 $.
 
@@ -295,5 +299,6 @@ PRECIO_ACTUAL: 263.4
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (candidata) | — | — | — |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,0% → 7,9% | Sin cambios | Sin cambio de decisión; puesto 9 de 20 |
 
 **Fuentes:** [Trading and Operations Update, 05/11/2026 (Energy-pedia)](https://www.energy-pedia.com/news/general/trading-operations-update-nov-2026-205971) · [Trading and Operations Update (Investegate)](https://www.investegate.co.uk/announcement/rns/harbour-energy--hbr/trading-and-operations-update/9859148) · [Harbour Energy 2026 half-year results](https://www.harbourenergy.com/news-and-media/announcements-and-latest-news/harbour-energy-2026-half-year-results/) · [Harbour Energy FY2025 results (FCA NSM)](https://data.fca.org.uk/artefacts/NSM/RNS/d1abc513-bcc2-473c-babe-6e01494880ab.html) · [Total Voting Rights 02/11/2026](https://www.investegate.co.uk/announcement/rns/harbour-energy--hbr/total-voting-rights/9853588) · [Programa de recompra de 150 M$](https://www.investegate.co.uk/announcement/rns/harbour-energy--hbr/-150-million-share-buyback-programme-/9859329) · [Recompra fuera de mercado a BASF](https://www.investegate.co.uk/announcement/rns/harbour-energy--hbr/update-on-off-market-purchase-alongside-basf-offer/9767540) · [BASF reduce al 16,4% (Traders Union)](https://tradersunion.com/news/financial-news/show/3302791-basf-harbour-energy-share-sale/) · [Peel Hunt a mantener, 270p (Goldesel)](https://goldesel.de/aktien/news/harbour-energy-fallt-nach-basf-ausstieg-peel-hunt-senkt-auf-hold-kursziel-270-gbp) · [Acciones sin voto de LetterOne (Press and Journal)](https://pressandjournal.co.uk/fp/business/6573024/sanctioned-oligarchs-take-stake-in-aberdeen-oil-firm) · [Huelga de Wood Group (OE Digital)](https://www.oedigital.com/news/544102-wood-group-workers-launch-strike-across-harbour-energy-offshore-platforms) · [EPL mantenido en el presupuesto de 2025 (OE Digital)](https://www.oedigital.com/news/533029-harbour-energy-set-to-cut-100-offshore-jobs) · [MarketScreener, consenso](https://www.marketscreener.com/quote/stock/HARBOUR-ENERGY-PLC-120993565/finances/) · [Investing.com, objetivos de analistas](https://uk.investing.com/equities/premier-oil-consensus-estimates) · [MarketBeat, JPMorgan 290p](https://www.marketbeat.com/instant-alerts/harbour-energy-lonhbr-price-target-raised-to-gbx-318-at-jpmorgan-chase-co-2026-04-08/) · [StockAnalysis, histórico IFRS 2021–2025](https://stockanalysis.com/quote/lon/HBR/financials/) · [Premier Oil 2017 Data Book (resultado operativo 2016–2017)](https://api.sambuz.com/doc/2017-data-book-pdf-document-363597) · [Premier Oil resultados 2020 (IFA Magazine)](https://ifamagazine.com/premier-oil-swings-to-loss-ahead-of-chrysaor-merger/) · [Gulf News, Brent y Ormuz (oct. 2026)](https://gulfnews.com/business/energy/brent-crude-oil-surges-past-102-amid-hormuz-tensions-us-iran-conflict-1.500695537) · [justETF (ISIN)](https://www.justetf.com/en/stock-profiles/GB00BMBVGQ36) · Yahoo Finance (precio, volumen, FX y futuros del Brent: dic-2027 80,6 $, dic-2028 74,5 $).

@@ -87,8 +87,11 @@ Año 3 = ejercicio 2029 (precio a nov-2029). Métrica principal: BPA del grupo (
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.09,
-      "prob_desastre": 0.1
+      "tir": 0.0901,
+      "prob_desastre": 0.1,
+      "precio": 35.82,
+      "dividendos_esperados_3a": 6.625,
+      "tir_declarada": 0.09
     },
     "bajista": {
       "prob_desastre": 0.18,
@@ -273,14 +276,15 @@ PRECIO_ACTUAL: 35.82
 - Precio: `python3 scripts/cartera.py precio AZM.MI` (Yahoo, 35,82 €, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.18 · valorador 0.1 → **usada 0.1333** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0529 · TIR valorador ciego 0.09 → **TIR final 0.0714** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.18 · valorador 0.1 → **usada 0.1333** (media de las tres)
+- TIR propia ajustada 5,3% · TIR valorador ciego 9,0% bruta → 7,4% neta (mismos costes y retención que la propia) → **TIR final 6,4%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 12 de 20)** — TIR del comité 7,1% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 14 de 20)** — TIR del comité 6,4% (TIR propia ajustada 5,3%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité)** — TIR propia 5,7%, lejísimos del 15%. Es un buen negocio (caja neta, ROE ~25%, retribución muy alta) a un múltiplo bajo, pero el múltiplo bajo está justificado en buena parte: beneficio muy sensible a la bolsa, recurrente desacelerándose, costes creciendo al 20%, riesgo regulatorio abierto (Banco de Italia, TNB) y una retención del 26% que se come parte del dividendo. Incluso con TNB cerrada (escenario base) el retorno es ~9%/año. Se reconsideraría por debajo de ~25 € sin deterioro del negocio, o si TNB se autoriza y el beneficio recurrente 2027 supera los 550 M€ con la cotización por debajo de ~32 €.
 
@@ -288,5 +292,6 @@ PRECIO_ACTUAL: 35.82
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (candidata) | — | — | — |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,1% → 6,4% | Sin cambios | Sin cambio de decisión; puesto 14 de 20 |
 
 **Fuentes:** [Azimut 1H 2026 results (eMarket Storage, 30/07/2026)](https://www.emarketstorage.it/sites/default/files/comunicati/2026-07/20260730_187491.pdf) · [Azimut FY 2025 results, nota de prensa (05/03/2026)](https://www.emarketstorage.it/sites/default/files/comunicati/2026-03/20260305_178207.pdf) · [Azimut FY 2025 results, presentación (05/03/2026)](https://www.emarketstorage.it/sites/default/files/comunicati/2026-03/20260305_178208.pdf) · [SoldiOnline, 9M 2026](https://www.soldionline.it/notizie/azioni-italia/conti-azimut-holding-nove-mesi-2026) · [Milano Finanza, 05/11/2026](https://www.milanofinanza.it/news/azimut-conferma-la-guidance-e-promette-una-ricca-remunerazione-per-i-soci-il-titolo-corre-a-piazza-202611051631241013) · [We Wealth, 9M 2026 y TNB](https://www.we-wealth.com/news/azimut-utile-ricorrente-382-milioni-progetto-tnb) · [Borse.it, 9M 2026](https://www.borse.it/articolo/ultime-notizie/azimut-utile-netto-ricorrente-a-382-milioni-nei-nove-mesi-4-confermata-la-guidance-2026) · [Teleborsa, fin del primer tramo de recompra (02/11/2026)](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/azimut-conclusa-la-prima-tranche-del-buyback-da-250-milioni-di-euro-133_2026-11-02_TLB.html?lang=it) · [Forbes Italia, compra de Yapı Kredi Portföy (29/07/2026)](https://forbes.it/2026/07/29/azimut-acquisisce-yapi-kredi-portfoy-ora-e-il-secondo-maggiore-asset-manager-in-turchia/) · [Haber7, precio de YKP](https://www.haber7.com/yasam/haber/3647025-yapi-kredi-portfoy-dev-rakama-satildi-iste-yeni-sahibi) · [Websim, acuerdo TNB-FSI (23/05/2025)](https://www.websim.it/azioni/blue-chip/azimut-accordo-sul-8001-di-tnb-a-fsi-cash--in-iniziale-di-Euro240mn-conquota-differita-earn--outs-fino-aEuro12bn-accordo-distributivo-da-Euro200mn-annui-20250523051517/) · [Sky TG24, caída tras la inspección (13/11/2025)](https://tg24.sky.it/economia/2025/11/13/azimut-holding-crollo-borsa-bankitalia-ispezione) · [Il Messaggero, TNB y requerimientos del Banco de Italia](https://www.ilmessaggero.it/pay/economia_pay/tnb_decollo_fine_2026_bankitalia_azimut_fsi_modifiche_dieci_punti-9269837.html) · [Orafinanza, Barclays y consenso (02/11/2026)](https://www.orafinanza.it/it/azimut-verso-i-conti-del-5-novembre-barclays-alza-il-target-price) · [MarketScreener, consenso](https://in.marketscreener.com/quote/stock/AZIMUT-HOLDING-S-P-A-140822/consensus/) · [StockAnalysis, cuenta de resultados y previsiones](https://stockanalysis.com/quote/bit/AZM/financials/income-statement/) · [Azimut resultados 2018 (eMarket Storage)](https://emarketstorage.it/sites/default/files/comunicati/2022-05/20190403_60743.pdf) · Yahoo Finance (precio y volumen).

@@ -101,8 +101,11 @@ Relato de dividendos (base): 2026 total ≈ 6,0p (2,0 + ≈4,0), crecimiento ≈
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.07,
-      "prob_desastre": 0.1
+      "tir": 0.0665,
+      "prob_desastre": 0.1,
+      "precio": 151.5,
+      "dividendos_esperados_3a": 18.0,
+      "tir_declarada": 0.07
     },
     "bajista": {
       "prob_desastre": 0.15,
@@ -282,14 +285,15 @@ PRECIO_ACTUAL: 151.5
 - Precio: `python3 scripts/cartera.py precio CNA.L` → 151,5 GBX (06/11/2026 17:48)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.15 · valorador 0.1 → **usada 0.1167** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.072 · TIR valorador ciego 0.07 → **TIR final 0.071** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.15 · valorador 0.1 → **usada 0.1167** (media de las tres)
+- TIR propia ajustada 7,2% · TIR valorador ciego 6,7% bruta → 6,1% neta (mismos costes y retención que la propia) → **TIR final 6,7%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 13 de 20)** — TIR del comité 7,1% (TIR propia ajustada 7,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 13 de 20)** — TIR del comité 6,7% (TIR propia ajustada 7,2%), por debajo del umbral (12,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR (provisional, a la espera del comité).** TIR propia 7,7%, muy por debajo del 17% exigido fuera del euro. El balance es sólido y el riesgo de desastre está acotado (−46%), pero la acción no está tan barata como sugiere el cribado: el EV/EBITDA real ronda 4,5-5,5x (no 1,4x) y el FCF es negativo por el ciclo de inversión, no del 31%. Además, el escenario base, donde los objetivos de 2028 se quedan algo cortos y el cierre nuclear de 2030 limita el múltiplo, solo da ≈ +34% en 3 años con dividendos incluidos. No la marco PROVISIONAL porque está lejos del umbral (−9 pp). Revisar si cae hacia ≈100-110p o si en los resultados de feb-2027 la guía de 2027 y la de trading mejoran claramente.
 
@@ -297,5 +301,6 @@ PRECIO_ACTUAL: 151.5
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (candidata del cribado) | — → 7,7% | Inicial: 0,10 / 0,25 / 0,45 / 0,20 | Ninguna |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,1% → 6,7% | Sin cambios | Sin cambio de decisión; puesto 13 de 20 |
 
 **Fuentes:** Centrica plc Interim Results H1 2026 (RNS 23/07/2026, PDF); Centrica plc 2025 Preliminary Results (RNS 19/02/2026, PDF); AJ Bell e interactive investor sobre resultados; Asktraders (HSBC upgrade, 31/07/2026); Digital Look (Citi, 28/10/2025); stockanalysis.com (historial de precios y volumen ago-nov 2026; beneficio neto 2021-25); MarketScreener (calendario); Investing.com (precios objetivo). Tweenvest no accesible (404). Historial 2016-2020 de AOP aproximado de informes anuales previos.

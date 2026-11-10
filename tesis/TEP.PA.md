@@ -99,8 +99,11 @@ Métrica del año 3 = **BPA ajustado diluido 2029e** (definición de la compañ�
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.13,
-      "prob_desastre": 0.15
+      "tir": 0.1279,
+      "prob_desastre": 0.15,
+      "precio": 68.44,
+      "dividendos_esperados_3a": 13.0,
+      "tir_declarada": 0.13
     },
     "bajista": {
       "prob_desastre": 0.3,
@@ -250,14 +253,15 @@ PRECIO_ACTUAL: 68.44
 - Precio: `scripts/cartera.py precio TEP.PA` (Yahoo, 06/11/2026 17:35)
 
 ### Reconciliación
-- Prob. desastre: propia 0.2 · bajista 0.3 · valorador 0.15 → **usada 0.2167** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0789 · TIR valorador ciego 0.13 → **TIR final 0.0789** (diferencia ≥ 5 pp → la más baja (salvo error documentado))
+- Prob. desastre: propia 0.2 · bajista 0.3 · valorador 0.15 → **usada 0.2167** (media de las tres)
+- TIR propia ajustada 7,9% · TIR valorador ciego 12,8% bruta → 11,9% neta (mismos costes y retención que la propia) → **TIR final 9,9%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 9 de 20)** — TIR del comité 7,9% (TIR propia ajustada 7,9%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 2 de 20)** — TIR del comité 9,9% (TIR propia ajustada 7,9%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **PROVISIONAL** (a la espera del comité) — no llega al umbral (TIR 8,5% < 15%), pero cumple filtros duros, desastre (−45,6%) y asimetría (3,5), y su TIR está entre las más altas de las tesis escritas hasta ahora. El precio descuenta un declive severo, pero la probabilidad de desastre (20%) es alta y está a pocos puntos del límite de −50%: no se compra como definitiva. Solo entraría como 🟡 provisional si en la Fase 0 faltan candidatas con TIR ≥ 15%, y siempre que el comité no suba la probabilidad de desastre ni vete. Reevaluar con la guía 2027 (25/02/2027).
 
@@ -265,3 +269,4 @@ PRECIO_ACTUAL: 68.44
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial tras el 3T 2026 (rebaja de guía de ventas, caída −15%) | — → 8,48% | Inicial: 0,20 / 0,30 / 0,35 / 0,15 | Candidata |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,9% → 9,9% | Sin cambios | Sin cambio de decisión; puesto 2 de 20 |

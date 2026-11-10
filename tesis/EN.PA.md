@@ -88,8 +88,11 @@ Contraste por FCF: FCF antes de BFR 2025 = 1.808 M€ ≈ 4,7 €/acción (renta
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.06,
-      "prob_desastre": 0.07
+      "tir": 0.0613,
+      "prob_desastre": 0.07,
+      "precio": 42.29,
+      "dividendos_esperados_3a": 6.639,
+      "tir_declarada": 0.06
     },
     "bajista": {
       "prob_desastre": 0.13,
@@ -257,14 +260,15 @@ PRECIO_ACTUAL: 42.29
 - `python3 scripts/cartera.py precio EN.PA` (precio 42,29 €)
 
 ### Reconciliación
-- Prob. desastre: propia 0.1 · bajista 0.13 · valorador 0.07 → **usada 0.1** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.071 · TIR valorador ciego 0.06 → **TIR final 0.0655** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.1 · bajista 0.13 · valorador 0.07 → **usada 0.1** (media de las tres)
+- TIR propia ajustada 7,1% · TIR valorador ciego 6,1% bruta → 5,2% neta (mismos costes y retención que la propia) → **TIR final 6,2%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 10% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 10% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**PROVISIONAL 🟡 (Fase 0, puesto 16 de 20)** — TIR del comité 6,6% (TIR propia ajustada 7,1%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
+**PROVISIONAL 🟡 (Fase 0, puesto 16 de 20)** — TIR del comité 6,2% (TIR propia ajustada 7,1%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — la asimetría es buena (4,5) y el desastre está acotado (−41%), pero la TIR esperada del 7,1% queda a menos de la mitad del umbral del 15%: el descuento actual paga el riesgo SFR/TF1/Francia, no lo sobrepaga. Revisar si el precio baja de ~33 € (≈ PER 10x BPA 2026e) o tras el CMD de Equans (25/02/2027) si eleva objetivos a medio plazo.
 
@@ -272,3 +276,4 @@ PRECIO_ACTUAL: 42.29
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial tras resultados 9M 2026 | — → 7,1% | — (iniciales: 0,10 / 0,25 / 0,45 / 0,20) | ⚪ candidata, NO COMPRAR |
+| 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 6,6% → 6,2% | Sin cambios | Sin cambio de decisión; puesto 16 de 20 |

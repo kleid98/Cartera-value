@@ -82,8 +82,11 @@ Base de cálculo: FCF por acción del año 3 (2029) = flujo operativo − capex 
   },
   "comite": {
     "valorador_ciego": {
-      "tir": 0.04,
-      "prob_desastre": 0.1
+      "tir": 0.0443,
+      "prob_desastre": 0.1,
+      "precio": 559.4,
+      "dividendos_esperados_3a": 79.05,
+      "tir_declarada": 0.04
     },
     "bajista": {
       "prob_desastre": 0.15,
@@ -219,14 +222,15 @@ PRECIO_ACTUAL: 559.4
 - Historial de 10 años del beneficio subyacente, del ROACE y del dividendo: informes anuales de BP 2016-2025 (cifras de memoria y de los resultados del 4T 2025, sin verificar una a una en esta sesión)
 
 ### Reconciliación
-- Prob. desastre: propia 0.12 · bajista 0.15 · valorador 0.1 → **usada 0.1233** (media de las tres, regla del 09/11/2026)
-- TIR propia ajustada 0.0389 · TIR valorador ciego 0.04 → **TIR final 0.0394** (diferencia < 5 pp → media)
+- Prob. desastre: propia 0.12 · bajista 0.15 · valorador 0.1 → **usada 0.1233** (media de las tres)
+- TIR propia ajustada 3,9% · TIR valorador ciego 4,4% bruta → 3,9% neta (mismos costes y retención que la propia) → **TIR final 3,9%** (diferencia < 5 pp → media)
 - Veto del bajista: no
 - Cumple: TIR ≥ 12% ❌, desastre ≥ -50% ✅, asimetría ≥ 2.0 ✅, TIR comité ≥ 12% ❌, sin veto del bajista ✅
 - **compra_ok (reglas completas): False**
+- Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
 ## Decisión
-**RESERVA de la Fase 0** — TIR del comité 3,9% con las reglas del 09/11/2026; queda la 21.ª. Entra si alguna de las 20 no se compra (p. ej. JD por su trading statement del 19/11).
+**RESERVA de la Fase 0** — TIR del comité 3,9% con las reglas del 09/11/2026 (recálculo del 10/11: valorador exacto y neto); queda la 21.ª. Entra si alguna de las 20 no se compra (p. ej. JD por su trading statement del 19/11).
 
 *Decisión previa al comité:* **NO COMPRAR** (provisional, a la espera del comité) — la TIR propia (≈ 4 %) queda a 13 pp del umbral del 17 %. Los filtros duros y el riesgo de desastre están bien, pero al precio actual el mercado ya descuenta la normalización del crudo y del refino que marca la curva de futuros; solo ganaría claramente con Brent alto sostenido o un recorte del descuento frente a Shell. Revisar tras la actualización estratégica de diciembre de 2026 o si el precio cae hacia ~400 GBX.
 
