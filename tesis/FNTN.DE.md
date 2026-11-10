@@ -18,6 +18,12 @@ Datos clave (fuentes al final):
 - **Consenso (MarketScreener, 9 analistas, "mantener"):** BPA 2026e 2,04 € / 2027e 2,33 € / 2028e 2,53 €; EBITDA 2028e 589 M€ (por debajo de la ambición de 620); FCF 2026e 287 M€ / 2028e 335 M€; precio objetivo medio 26,53 €. UBS: subió de vender a neutral (objetivo 25 €, suelo 21 € = 10x BPA), estima EBITDA 2028 de 542 M€. Goldman Sachs: vender (mayo 2026); DZ Bank: comprar (29 €); Deutsche Bank: comprar; Citi: mantener.
 - **Aviso sobre los datos del cribado (Yahoo):** el FCF *yield* del 21,8% no cuadra con la guía: con el FCF ajustado de la compañía (270–300 M€, que ya descuenta arrendamientos) el rendimiento es ≈ **10–11%**. El DN/EBITDA de 1,87x usa el EBITDA IFRS de StockAnalysis/Yahoo (~404 M€); con el EBITDA ajustado (~515 M€) es ≈ 1,5x incluyendo arrendamientos y ≈ 1,0x sin ellos. PER 11,4x y rentabilidad por dividendo 8,6–8,9% sí cuadran.
 
+## En pocas palabras
+- **Qué es:** El mayor revendedor independiente de telefonía móvil de Alemania (sin red propia; marcas mobilcom-debitel y klarmobil) y dueña de waipu.tv, la mayor televisión por internet del país.
+- **Por qué está barata:** El mercado la ve como un intermediario en declive lento, que depende de las condiciones que le den los operadores, y teme un recorte del dividendo después de 2028.
+- **Qué espero:** Que la caja siga siendo estable, como lleva más de diez años: invierte poco y reparte la mayor parte. Solo el dividendo mínimo garantizado de tres años devuelve más de una cuarta parte de lo invertido, y waipu.tv crece.
+- **Qué me haría vender:** Que rebaje sus previsiones anuales o su objetivo de 2028, que recorte el dividendo mínimo de 2 € por acción o que pierda o empeore el contrato con alguno de los tres operadores.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

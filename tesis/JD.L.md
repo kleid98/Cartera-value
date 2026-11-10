@@ -14,6 +14,12 @@ Datos clave (fuentes primarias de la compañía):
 - Estimación propia BPA ajustado FY27 (guía media £750m × (1 − 26% impuestos) − ~£25m minoritarios ≈ £530m / ~4.75 bn acciones) ≈ **11,2p** → PER ≈ 8,5x (Yahoo: 8,7x trailing, 8,2x fwd). FCF FY27 guía media £490m / capitalización £4.480m ≈ **10,9%** (Yahoo 25,8% es FCF antes de pagos de arrendamientos; no es comparable).
 - Capitalización: 4.703 M × 0,9534 £ ≈ £4.480m ≈ **5.370 M€** (EURGBP 0,834).
 
+## En pocas palabras
+- **Qué es:** El mayor minorista multimarca de calzado y ropa deportiva de calle del mundo (unas 4.800 tiendas en 35 países).
+- **Por qué está barata:** Depende mucho de Nike, que lleva dos años renovando su producto; su cliente joven anda justo de dinero y el mercado desconfía de cómo ha invertido la dirección tras años de compras.
+- **Qué espero:** Que el bache sea de ciclo y de producto, no permanente: las marcas necesitan a JD, Nike vuelve a apoyarse en las tiendas multimarca y el negocio genera mucha caja, que se devuelve con un dividendo creciente y una recompra de cerca del 4% de las acciones al año.
+- **Qué me haría vender:** Un nuevo recorte de la previsión de beneficio (sería el tercero en año y medio), que suspenda la recompra o recorte el dividendo, o que Nike o adidas le reduzcan producto en un mercado principal.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

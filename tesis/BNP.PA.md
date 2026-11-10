@@ -25,6 +25,12 @@ Datos clave (fuente primaria: comunicados de resultados 4T25 de 05/02/2026 y 3T2
 - Objetivos: ROTE ≈ 12% en 2026 y > 13% en 2028; eficiencia < 56% en 2028; beneficio neto con crecimiento anual medio > 10% entre 2025 y 2028 (implica ≥ 16.300 M€ en 2028); CET1 13% post-FRTB a cierre 2027 y 2028. Coste del riesgo < 40 pb en 2026.
 - Exposición soberana: ≈ 19.000 M€ en deuda pública francesa; según la entidad, +50 pb de diferencial restan ≈ 2 pb de CET1.
 
+## En pocas palabras
+- **Qué es:** El mayor banco de la zona euro, muy diversificado: banca comercial en Francia, Bélgica, Italia y Luxemburgo, crédito al consumo, renting, gestión de activos, seguros y banca de inversión.
+- **Por qué está barata:** Cotiza con descuento sobre su valor contable por el riesgo de Francia (la deuda pública francesa en máximos de tensión y posibles impuestos a la banca) y porque el mercado duda de que cumpla sus objetivos de 2028.
+- **Qué espero:** Que el negocio recurrente siga mejorando aunque el entorno no ayude: la banca minorista recupera margen, el plan de ahorro de costes avanza, AXA IM añade comisiones y reparte al menos el 60% del beneficio.
+- **Qué me haría vender:** Que el capital (CET1) baje del 12% o amplíe capital, que el litigio de Sudán en EE. UU. se confirme y se extienda, o que rebaje el objetivo de rentabilidad de 2028 por debajo del 11%.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

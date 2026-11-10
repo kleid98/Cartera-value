@@ -14,6 +14,12 @@ Datos clave (fuentes primarias de la compañía):
 - Dividendos pagados (Yahoo): 40,08p ×4 trimestrales por el FY25; 41,68p el 21-may-2026 y el 20-ago-2026 (a cuenta FY26). El complementario FY26 (≈ 83p en dos pagos) se anunciará el 17-nov.
 - Estimación propia BPA ajustado FY26 ≈ 340p (315p × ~1,08) → PER ajustado ≈ 8,7x; PER fwd Yahoo 8,1x (FY27e ≈ 367p). FCF FY26 > £2,2bn / ~770 M acciones ≈ 285p → rentabilidad FCF ≈ 9,6%; Yahoo 11,3%.
 
+## En pocas palabras
+- **Qué es:** La cuarta tabacalera del mundo y la más dependiente del cigarrillo tradicional; gana sobre todo en EE. UU., Alemania, Reino Unido, España y Australia.
+- **Por qué está barata:** El mercado la valora como un negocio en declive terminal, que llega tarde y con poco tamaño a los productos sin humo; en 2026, además, reconoció pérdida de cuota.
+- **Qué espero:** Un negocio que se encoge despacio y devuelve casi toda su caja: el volumen cae poco, los precios suben algo más y, con un dividendo del 5–6% y recompras cada año, el beneficio por acción sigue creciendo.
+- **Qué me haría vender:** Que recorte o congele el dividendo o las recompras, que el beneficio operativo caiga en un año completo, que el volumen caiga más de un 5% o que la deuda supere 3 veces el EBITDA.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

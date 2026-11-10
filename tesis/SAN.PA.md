@@ -15,6 +15,12 @@ Datos clave (fuentes: nota de prensa 3T 2026 del 30/10/2026, nota FY2025 del 29/
 - Dividendo 2025 (pagado mayo 2026): 4,12 €/acción (2024: 3,92; 2023: 3,76; 2022: 3,56; 2021: 3,33). Política de dividendo progresivo reiterada en el 3T 2026. Recompra 2026: 1.000 M€ (completada en abril).
 - Acciones medias en circulación 3T 2026: 1.200,0 M → capitalización ≈ 100.500 M€.
 
+## En pocas palabras
+- **Qué es:** Farmacéutica francesa; su gran producto es Dupixent (más del 40% de las ventas), compartido con Regeneron.
+- **Por qué está barata:** Cotiza como una empresa con fecha de caducidad: las patentes de Dupixent empiezan a vencer a principios de la década de 2030 y casi todos los candidatos a sustituirlo han fracasado en el último año.
+- **Qué espero:** Que el negocio actual siga dando mucho efectivo durante los tres años: Dupixent crece, los lanzamientos en enfermedades raras suben a ritmos del 30%, recompra acciones, sube el dividendo y tiene poca deuda para comprar nuevos medicamentos.
+- **Qué me haría vender:** Que rebaje el objetivo de ventas de Dupixent o este caiga dos trimestres seguidos, que entre antes de lo previsto un competidor biosimilar en EE. UU., que una compra lleve la deuda por encima de 2,5 veces el EBITDA o que recorte el dividendo.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

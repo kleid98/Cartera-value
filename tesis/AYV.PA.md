@@ -17,6 +17,12 @@ Datos clave (fuentes al final):
 - **Consenso:** PER ~7,6x 2026e y ~7,0x 2027e (Idéal Investisseur, nov-2026), lo que implica un BPA de ~1,25 € y ~1,35 €. Precio objetivo medio de ~12,4–12,9 € (13 analistas, datos de verano de 2026). ING pasó a mantener; Oddo BHF a comprar con objetivo de 16 € (10/09/2026). Las cifras de consenso posteriores al 3T no las he podido verificar.
 - **Aviso sobre los datos del cribado (Yahoo):** DN/EBITDA 10,85x y EV/EBITDA 13,2x no sirven aquí, porque la deuda financia la flota alquilada (es un balance bancario) y se juzga por CET1. El ROE del 8,8% es antiguo: el ROTE de 2026 es del 13,6%. P/VC 0,72x es sobre el NAV contable (13,28 €), que incluye ~2,1 mil M€ de fondo de comercio; sobre el NTAV (~8,5 €) cotiza a **~1,1x**. La rentabilidad por dividendo del 6,1% solo cuenta el ordinario (0,59 €); con los extraordinarios, lo cobrado en 12 meses suma 1,33 €.
 
+## En pocas palabras
+- **Qué es:** Empresa de renting: alquila coches y furgonetas a empresas y particulares con contratos de 3–4 años que incluyen mantenimiento y seguros; está integrando LeasePlan.
+- **Por qué está barata:** Ganaba mucho al vender los coches usados cuando volvían del contrato y hoy esa parte pierde dinero; el mercado cree que el beneficio se quedará plano y la paga a menos de ocho veces beneficios.
+- **Qué espero:** Que el negocio principal (los contratos) siga mejorando y los costes bajen con la integración: con el usado en cero ya gana unos 1.000 M€ al año, y el usado parece haber tocado suelo.
+- **Qué me haría vender:** Que el capital (CET1) baje del 12%, que rebaje los objetivos de su plan 2029, que la venta de usados siga en pérdidas en todo 2027 o que recorte el dividendo.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

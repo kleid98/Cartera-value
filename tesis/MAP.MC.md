@@ -6,6 +6,12 @@
 
 **Datos de mercado (verificados 07/11/2026):** precio 4,13 € (cierre 06/11/2026, `scripts/cartera.py precio`), rango 52 semanas 3,52–4,616 € (−10,5 % desde máximos), 3.079,6 M acciones → capitalización ≈ 12.720 M€. PER 2025 11,8x (BPA 0,350 €), PER 2026e ≈ 10,8x (BPA ≈ 0,383 €), P/VC ≈ 1,35x (VC 3,07 €/acción, fondos propios 9.445 M€ a 30/09/2026), ROE 12,8 %, rentabilidad por dividendo 4,6 % (0,19 € pagados en 2026). Accionista de control: Fundación Mapfre (≈ 70 %); free float ≈ 30 %.
 
+## En pocas palabras
+- **Qué es:** La primera aseguradora de España y una de las grandes de Latinoamérica, con reaseguradora propia y negocio en EE. UU. y Brasil; la controla una fundación.
+- **Por qué está barata:** Ha corregido desde máximos por una compra en EE. UU. pagada con deuda, un tercer trimestre con más siniestros (terremotos y tormentas) y un reaseguro con precios a la baja.
+- **Qué espero:** Algo parecido a lo que espera el mercado, con un sesgo algo mejor: el seguro de autos en España ya es rentable, la compra en EE. UU. suma tamaño y el dividendo sigue creciendo. Es un valor razonablemente valorado, no una ganga.
+- **Qué me haría vender:** Que la solvencia baje del 175%, que recorte el dividendo o lo pague en acciones, que amplíe capital o que el negocio asegurador pierda dinero un año completo (ratio combinado por encima del 100%).
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

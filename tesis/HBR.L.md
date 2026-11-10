@@ -19,6 +19,12 @@ Datos clave (fuentes al final):
 - **Ruido reciente:** huelga de técnicos de Wood Group en cinco plataformas operadas por Harbour en el mar del Norte (Britannia, Jasmine, Judy, Lomond, North Everest), con paros de 48 h y otro previsto el 17–18/11; la compañía no ha cuantificado el impacto. Harbour recortó ~700 empleos en UK desde 2023 y congeló >2 mil M£ de inversión en el mar del Norte por el EPL.
 - **Aviso sobre los datos del cribado (Yahoo):** la capitalización de 4,7 mil M€ solo cuenta las acciones con voto (con las sin voto, ≈ 5,6 mil M€). El FCF *yield* del 91% es erróneo (con el FCF guiado de 2,6 mil M$ sale ≈ 41%, y es un año de precios extraordinarios; a 65 $/11 $ sería ≈ 10%). El P/VC de 139 es un error de unidades (peniques frente a dólares): el real es ≈ 1,5x sobre el patrimonio de accionistas. El PER de 21,9x refleja el beneficio neto deprimido de 2025 por impuestos diferidos; el PER *forward* de 4,3x se aproxima al consenso 2026 (4,7x). DN/EBITDA 0,81x frente al 0,6x de la compañía (Yahoo probablemente suma arrendamientos).
 
+## En pocas palabras
+- **Qué es:** Petrolera independiente con casi toda su producción en Noruega y el Reino Unido y una parte creciente en EE. UU., Argentina y México.
+- **Por qué está barata:** El mercado la trata como un negocio en liquidación lenta: en el mar del Norte el Estado se lleva el 78% de cada euro extra de beneficio, las reservas dan para unos seis años y se cree que la caja de 2026 es pasajera.
+- **Qué espero:** El balance ya está saneado (poca deuda y grado de inversión); la caja extraordinaria se usa para amortizar deuda y recomprar acciones baratas (más del 9% del capital en un año), y EE. UU., Argentina y México diversifican el negocio.
+- **Qué me haría vender:** Que pierda el grado de inversión, que recorte el dividendo base, que emita más de un 5% de acciones nuevas, que la producción baje de 430.000 barriles al día o que el Reino Unido endurezca todavía más su impuesto especial.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

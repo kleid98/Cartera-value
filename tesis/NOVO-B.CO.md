@@ -4,6 +4,12 @@
 - **ISIN:** DK0062498333 (acción B) · **País emisor:** DK · **Sector:** Salud (farmacia: diabetes y obesidad) · **Divisa/unidad:** DKK
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** ≈ 2027-02-03 (cuentas anuales 2026 y primera guía 2027; fecha por confirmar en el calendario financiero)
 
+## En pocas palabras
+- **Qué es:** Farmacéutica danesa líder mundial en diabetes y obesidad (Ozempic, Wegovy).
+- **Por qué está barata:** Eli Lilly le ha quitado el liderazgo en obesidad en EE. UU., los precios allí caen con fuerza (rebajas del 50% y del 35% en el precio de lista desde el 01/01/2027) y el mercado teme el vencimiento de la patente de la semaglutida.
+- **Qué espero:** Una situación más matizada, no un rebote fácil: negocio de calidad excepcional (margen operativo cercano al 40%, poca deuda, mucha caja), la pastilla de Wegovy funciona, el volumen crece y puede compensar la bajada de precios, y hay productos nuevos en camino (CagriSema).
+- **Qué me haría vender:** Que anuncie dos años seguidos de caída de ventas con el margen operativo por debajo del 33%, que la FDA rechace CagriSema, que entren genéricos de semaglutida en EE. UU. antes de 2031 o que recorte el dividendo.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

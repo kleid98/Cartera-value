@@ -6,6 +6,12 @@
 
 Precio de referencia: 42,29 € (cierre 06/11/2026, `cartera.py precio EN.PA`). Rango 52 semanas: 39,81 € (06/11/2025) – 53,00 € (06/05/2026); −20% desde máximos. ~385,3 M acciones (31/12/2025) → capitalización ≈ 16,3 bn€.
 
+## En pocas palabras
+- **Qué es:** Conglomerado familiar francés: construcción y carreteras (Colas), servicios de energía (Equans), telecomunicaciones (Bouygues Telecom) y televisión (TF1).
+- **Por qué está barata:** Arrastra un descuento de holding que se ha agravado en 2026: la compra conjunta de SFR es el mayor desembolso de su historia y sube la deuda, la publicidad de TF1 cae y el mercado cree que la caja récord actual es un pico.
+- **Qué espero:** Que Equans siga mejorando márgenes, que la construcción mantenga su cartera récord y que pasar de cuatro a tres operadores en Francia mejore la rentabilidad del sector; el mercado mira la deuda y no esa mejora.
+- **Qué me haría vender:** Que pierda el grado de inversión o amplíe capital para pagar SFR, que recorte el dividendo, que Competencia imponga condiciones que quiten valor a la operación o que la deuda supere 2,5 veces el EBITDA.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

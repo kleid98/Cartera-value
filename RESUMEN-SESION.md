@@ -72,6 +72,17 @@ Detalle en `informes/revision-2026-11-09.md`.
 - Para medir y aprender: registro de predicciones en cada compra, seguimiento en papel de las descartadas y pruebas
   automáticas del motor (ver sección 3).
 
+**Ficha de entrada y de salida (10/11/2026, pedido por Ale).** Quiere que cada vez que se entre o se salga de un valor
+se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
+- **Precio objetivo** = precio a 3 años del escenario central; **precio esperado** = media ponderada de los cuatro
+  escenarios. Los da `ev.py` (`precio_objetivo`). No es una regla nueva: son los precios ya escritos en cada tesis.
+- Cada tesis lleva una sección `## En pocas palabras` (qué es, por qué está barata, qué espero, qué me haría vender).
+  Escrita para las 20 de la Fase 0 y BP.L. Las otras 11 tesis (descartadas) no la tienen: hay que escribirla si algún
+  día se compran, porque **`cartera.py orden` no deja comprar sin ella**.
+- `cartera.py orden` imprime la ficha (se pega en el diario) y añade el objetivo al motivo de la orden (llega al ledger
+  y al panel); `cartera.py investing` pone el porqué bajo cada operación; el aviso al móvil lleva el objetivo.
+  Detalle en `CLAUDE.md` sección 4.1. Ale aún no ha visto una ficha real: preguntarle si el formato le sirve.
+
 ## 3. Qué se ha creado (rutas exactas)
 
 **Repositorio y ramas**
@@ -95,6 +106,7 @@ Detalle en `informes/revision-2026-11-09.md`.
 - `scripts/comite_registrar.py tesis/X.md <informe_bajista> <informe_valorador>`: escribe los informes en la tesis y
   rellena el bloque ev (TIR exacta leída de la tabla del informe). Con `--recalcular tesis/X.md [<informe_valorador>]`
   rehace solo la reconciliación (para cuando cambian las reglas).
+- `scripts/ficha.py`: ficha de entrada/salida (`tesis/X.md [--precio-hoy]`, `--venta --motivo "..."`, `--comprobar`).
 - `scripts/test_motor.py`: 10 pruebas sin red. **Ejecutar tras cualquier cambio en `scripts/`.**
 - `scripts/cribado.py` (~10 minutos con 575 empresas), `scripts/equiduct.js`, `scripts/panel.py`.
 

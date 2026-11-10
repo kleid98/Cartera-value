@@ -102,6 +102,10 @@ class Motor(unittest.TestCase):
         self.assertTrue(r["cumple"]["desastre ≥ -50%"])
         self.assertLess(E.evaluar(EV, 110.0)["propio"]["tir"], r["tir"])            # más caro → menos TIR
         self.assertFalse(E.evaluar(EV, 125.0)["propio"]["cumple"]["desastre ≥ -50%"])  # y el desastre deja de cumplir
+        po = E.evaluar(EV)["precio_objetivo"]                                       # objetivo = escenario base; esperado = media ponderada
+        self.assertEqual(po["base_3a"], EV["escenarios"]["base"]["precio_3a"])
+        self.assertAlmostEqual(po["esperado_3a"], sum(v["prob"] * v["precio_3a"] for v in EV["escenarios"].values()), places=2)
+        self.assertAlmostEqual(E.evaluar(EV, 110.0)["precio_objetivo"]["potencial_base"], po["base_3a"] / 110 - 1, places=4)
 
     def test_reconciliacion(self):
         ev = copy.deepcopy(EV); propia = E.calcular(EV)
@@ -146,6 +150,19 @@ class Motor(unittest.TestCase):
             pred = C.read_csv("ledger/predicciones.csv", C.PRED_F)
             self.assertEqual(len(pred), 1); self.assertEqual(pred[0]["ticker"], "NWG.L")
             self.assertTrue(pred[0]["tir_comite"] and pred[0]["pd_bajista"] and pred[0]["precio_3a_base"])
+            # Ficha de entrada y de salida (por qué y precio objetivo), con el libro y la predicción recién creados
+            import ficha as F
+            ficha, linea = F.ficha_compra(os.path.join(tmp, "tesis/NWG.L.md"), 587.4)
+            self.assertIn("Entrada · NatWest Group (NWG.L)", ficha); self.assertIn("Qué me haría vender", ficha)
+            self.assertIn("748 p (+27,3% desde 587,4 p)", ficha); self.assertEqual(linea, "Objetivo 3 años 748 p (+27,3%)")
+            compra = [n for n in nuevas if n["tipo"] == "COMPRA"][0]
+            self.assertIn("Objetivo 3 años 748 p", C.porque_operacion(compra))
+            salida = F.ficha_venta(os.path.join(tmp, "tesis/NWG.L.md"), "Peso > 10%: recorte", 646.14)
+            self.assertIn("comprada a 587,4 p", salida); self.assertIn("+10,0% en precio", salida)
+            self.assertIn("objetivo de 748 p a 3 años", salida); self.assertIn("Peso > 10%: recorte", salida)
+            sin = os.path.join(tmp, "tesis/SIN.md")
+            open(sin, "w").write(open(os.path.join(tmp, "tesis/NWG.L.md")).read().replace("## En pocas palabras", "## Otra cosa"))
+            self.assertRaises(F.FaltaResumen, F.ficha_compra, sin, 587.4)            # sin resumen no hay compra
         finally:
             C.ROOT = raiz; shutil.rmtree(tmp)
 

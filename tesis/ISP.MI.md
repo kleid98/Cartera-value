@@ -6,6 +6,12 @@
 
 Precio de referencia: 6,177 € (cierre 06/11/2026, `scripts/cartera.py precio ISP.MI`; rango del día 6,12–6,252). Acciones en circulación: 17.332.045.430 tras amortizar 350,4 M de acciones propias el 09/10/2026 ([variación del capital, 12/10/2026](https://group.intesasanpaolo.com/it/investor-relations/comunicati-stampa-price-sensitive/2026/10/20261012-var-cap-it)) → capitalización ≈ 107.100 M€.
 
+## En pocas palabras
+- **Qué es:** El mayor banco de Italia y uno de los más rentables y eficientes de Europa; casi la mitad de sus ingresos son comisiones y seguros.
+- **Por qué está barata:** Solo lo está a medias (múltiplo modesto): el mercado cree que los tipos de interés ya han hecho techo y teme el «riesgo Italia» (deuda pública, impuestos a la banca) y la compra de MPS.
+- **Qué espero:** Que siga cumpliendo su plan, como en la última década: supuestos de tipos prudentes, más comisiones, costes a la baja y morosidad baja; reparte casi todo el beneficio en dividendo y recompras.
+- **Qué me haría vender:** Que el capital (CET1) baje del 12%, que recorte o aplace el dividendo, que rebaje más de un 10% sus previsiones de beneficio o que la integración de MPS exija más capital.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

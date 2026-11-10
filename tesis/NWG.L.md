@@ -6,6 +6,12 @@
 
 Datos de partida (verificados): precio 587,4 GBX (cierre 06/11/2026, `cartera.py precio`); 7.931 M de acciones (30/09/2026, sin autocartera) → capitalización ≈ 46.600 M£ ≈ 55.900 M€ (0,834 £/€). Máximo de cierre a 52 semanas 722,8 GBX (03/08/2026): −18,7% desde ahí (Yahoo da −25,5% sobre máximo intradía). TNAV/acción 359 GBX → P/TNAV 1,64x. BPA 9M 2026 57,4 GBX (Q3: 19,3) → BPA 2026e ≈ 76,7 GBX → PER 2026e ≈ 7,7x. Dividendo 2025: 32,5 GBX (9,5 + 23,0); a cuenta 2026: 12,0 GBX → rentabilidad ≈ 5,5–6,5% según se tome 2025 o 2026e (≈ 38 GBX con payout 50%).
 
+## En pocas palabras
+- **Qué es:** Uno de los tres grandes bancos minoristas del Reino Unido y el mayor banco de pymes; casi 100% doméstico y financiado con depósitos.
+- **Por qué está barata:** Ha caído casi un 20% desde agosto: el Presupuesto británico duplicó durante 15 meses el recargo a los beneficios de la banca, el tercer trimestre no entusiasmó y el mercado cree que la rentabilidad actual es un pico ligado a los tipos altos.
+- **Qué espero:** Que la rentabilidad se mantenga alta varios años: la cobertura de depósitos se sigue renovando a tipos mejores, Evelyn aporta comisiones y casi todo el capital que genera se devuelve en dividendo y recompras. El recargo es temporal.
+- **Qué me haría vender:** Que el capital (CET1) baje del 12% o el regulador frene los dividendos, que el recargo a la banca se haga permanente, o que recorte el dividendo.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

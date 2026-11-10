@@ -97,6 +97,17 @@ def tir_neta_valorador(vc, ajust, precio, precio_tesis):
 
 def limpio(d): return {k: v for k, v in d.items() if not k.startswith("_")}
 
+def precio_objetivo(ev, probs, p0):
+    """Precio objetivo a 3 años (pedido por Ale el 10/11/2026). No es una regla nueva: son los precios de los escenarios
+    de la tesis, sin tocar. base_3a = precio del escenario central (el "objetivo"); esperado_3a = media ponderada de los
+    cuatro escenarios con las probabilidades que se usan para la TIR (las del comité si lo hay)."""
+    esc = ev["escenarios"]; base = float(esc["base"]["precio_3a"])
+    esp = sum(probs[k] * esc[k]["precio_3a"] for k in esc)
+    div = sum(probs[k] * esc[k].get("dividendos_3a", 0) for k in esc)
+    return {"unidad": C.MERCADOS[ev["mercado"]]["unidad_precio"], "base_3a": base, "potencial_base": round(base / p0 - 1, 4),
+            "esperado_3a": round(esp, 2), "potencial_esperado": round(esp / p0 - 1, 4), "dividendos_esperados_3a": round(div, 2),
+            "rango_3a": [esc["desastre"]["precio_3a"], esc["alcista"]["precio_3a"]]}
+
 def evaluar(ev, precio=None):
     """Evaluación completa de una tesis. precio: precio de partida alternativo (p. ej. el de hoy)."""
     precio_tesis = float(ev["precio_actual"])
@@ -131,6 +142,7 @@ def evaluar(ev, precio=None):
                          "tir_valorador_neta": round(tir_vc_neta, 4) if tir_vc_neta is not None else None,
                          "tir_final": round(tir_final, 4), "regla": regla, "cumple": checks, "compra_ok": all(checks.values()),
                          "asimetria": ajust["asimetria"], "retornos_3a": ajust["retornos_3a"], "probs": ajust["probs"]}
+    out["precio_objetivo"] = precio_objetivo(ev, (out.get("comite") or out["propio"])["probs"], p0)
     return out
 
 def main():

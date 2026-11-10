@@ -4,6 +4,13 @@
 - **ISIN:** · **País emisor:** · **Sector:** · **Divisa/unidad:**
 - **Última revisión:** AAAA-MM-DD · **Próximos resultados:** AAAA-MM-DD
 
+## En pocas palabras
+Resumen llano para Ale (sale en la ficha de cada compra y venta). Una o dos frases por punto, sin cifras de TIR ni precios objetivo.
+- **Qué es:**
+- **Por qué está barata:**
+- **Qué espero:**
+- **Qué me haría vender:**
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

@@ -8,6 +8,12 @@ Datos de mercado (Yahoo vía `scripts/cartera.py`, cierre 06/11/2026): precio 55
 
 Verificación del cribado: PER 22,4 (histórico, inflado por deterioros de 5.300 M$ en 9M 2026; el PER subyacente 9M anualizado es ≈ 5x) · PER fwd 7,9 (sobre beneficios con Brent alto) · EV/EBITDA 2,8 · P/VC "187" es un error de unidades de Yahoo (GBp vs GBP): real ≈ 1,9x · ROE 13,4 % · FCF yield 14,7 % (últimos 12 meses, inflado por el pico de precios y márgenes de refino) · RPD 4,4 % · DN/EBITDA 0,56x (Yahoo; con la deuda neta de BP de 13.900 M$ sale ≈ 0,3x).
 
+## En pocas palabras
+- **Qué es:** Una de las grandes petroleras integradas europeas (producción de petróleo y gas, refino y estaciones de servicio).
+- **Por qué está barata:** Cotiza con descuento frente a Shell y TotalEnergies por sus bandazos estratégicos (giro verde en 2020 y marcha atrás en 2025), un balance más cargado y la suspensión de las recompras en febrero de 2026; además, el mercado ve los beneficios actuales como un pico.
+- **Qué espero:** Que el arreglo interno continúe: la deuda ya está por debajo del objetivo, ha cerrado ventas de activos y recorta costes, lo que permitiría volver a recomprar acciones desde 2027. Pero a este precio el mercado ya descuenta buena parte.
+- **Qué me haría vender:** Que recorte el dividendo, que la deuda vuelva a superar los 18.000 M$, una gran adquisición o volver a invertir fuerte en negocios bajos en carbono, o un accidente o litigio de más de 10.000 M$.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

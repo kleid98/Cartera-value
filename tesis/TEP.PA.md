@@ -17,6 +17,12 @@ Datos clave (fuentes: nota de prensa 3T 2026 del 05/11/2026 en tp.com; resultado
 - Múltiplos a 68,44 €: PER ajustado 2025 5,2x (PER IFRS 8,1x); VE/EBITA recurrente ≈ 5,4x; VE/EBITDA ≈ 4,1x; FCF neto guía 2026 (≈ 825 M€) / capitalización ≈ 20%; rentabilidad por dividendo 6,6%.
 - Nueva dirección: Jorge Amar (ex-McKinsey, especialista en IA aplicada a operaciones de cliente) CEO desde el 15/03/2026; el fundador Daniel Julien salió del Consejo. Revisión estratégica de cartera (Specialized Services: LanguageLine, TLScontact, ZP) en curso "según calendario".
 
+## En pocas palabras
+- **Qué es:** El mayor operador mundial de atención al cliente y back-office externalizados (casi 100 países, unos 500.000 empleados).
+- **Por qué está barata:** El mercado la trata como una víctima terminal de la inteligencia artificial y ha encadenado tres rebajas de objetivos; además, su negocio de moderación de contenidos (Trust & Safety) se está desplomando.
+- **Qué espero:** Que el declive sea más lento y parcial de lo que se descuenta: fuera de la moderación de contenidos el negocio principal sigue creciendo, el margen aguanta porque los costes son muy variables y, mientras tanto, sigue entrando mucha caja.
+- **Qué me haría vender:** Que el negocio principal (sin moderación) caiga dos trimestres seguidos, que el margen baje del 13%, que la caja libre baje de 600 M€ o que la deuda supere 2,75 veces el EBITDA.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

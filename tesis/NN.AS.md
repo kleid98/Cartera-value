@@ -11,6 +11,12 @@ Fuentes principales: nota de prensa 1H26 (06/08/2026) y consenso de analistas 1H
 resultados FY25 (12/02/2026); Capital Markets Day (mayo 2025, objetivos 2028); stockanalysis.com (histórico); De Belegger;
 nota de Euronext del 02/11/2026 sobre el nombramiento de David Knibbe. Tweenvest no tenía ficha accesible (404).
 
+## En pocas palabras
+- **Qué es:** La mayor aseguradora de vida y pensiones de Países Bajos, con seguros en Europa central y del este, Japón y un banco hipotecario.
+- **Por qué está barata:** En realidad ya no lo está tanto: casi se ha duplicado en dos años y cotiza cerca de máximos. El mercado sigue penalizando que su negocio de vida neerlandés es maduro y que su solvencia es sensible a los mercados.
+- **Qué espero:** Una tesis de rentista: generación de capital estable y algo creciente, dividendo que sube cada año y recompra de cerca del 2% de las acciones al año. No espero que el mercado la revalorice más.
+- **Qué me haría vender:** Que la solvencia baje del 170%, que recorte o congele el dividendo o baje la recompra de 350 M€, que rebaje sus objetivos de 2028 o que aparezca un litigio nuevo de más de 1.000 M€.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

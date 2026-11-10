@@ -17,6 +17,12 @@ Datos clave (fuentes al final):
 - **Acciones:** ≈ 178,1 M (4.303 / 24,16; 177,4 M en 2025, 184,6 M en 2021) → **capitalización ≈ 6.180 M€**.
 - **Aviso sobre el cribado (Yahoo):** PER 7,7x y P/VC 1,44x cuadran. El FCF *yield* −5,7% no tiene sentido en una reaseguradora (el flujo operativo 9M es +883 M€; las primas se invierten). DN/EBITDA −0,29 tampoco es la métrica: la deuda relevante es la subordinada (apalancamiento 22,8%) y el filtro aplicable es el de solvencia.
 
+## En pocas palabras
+- **Qué es:** La cuarta o quinta reaseguradora del mundo (daños, especialidades, vida y salud).
+- **Por qué está barata:** Cotiza con un descuento grande frente a Munich Re, Swiss Re y Hannover Re por su historial de sustos: en diez años ha tenido varios que borraron un año entero de beneficios (el último, en 2024, en su cartera de vida de EE. UU.).
+- **Qué espero:** Que se note el saneamiento: en daños subió precios y endureció condiciones desde 2023 y acumula colchones de reservas, la cartera de vida ya pasó su limpieza y las inversiones rinden más.
+- **Qué me haría vender:** Un nuevo cargo de reservas de más de 300 M€, que la solvencia baje del 185% o recorte el dividendo, o que el plan estratégico del 03/12/2026 fije objetivos de rentabilidad por debajo del 10%.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

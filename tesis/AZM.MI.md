@@ -18,6 +18,12 @@ Datos clave (fuentes al final):
 - **Consenso:** BPA 2026e 3,14 € / 2027e 3,55 € (5 analistas; implica un beneficio claramente inferior a la guía de 550 M€); precio objetivo medio 41,8 € (7 analistas; rango 35,1–50 €). Barclays 36,1 € (*equal weight*, 02/11/2026).
 - **Aviso sobre los datos del cribado (Yahoo):** capitalización (4,87 mil M€), PER 9,9x (BPA últimos 12 meses ≈ 3,62 €: 513 M€ / ~142 M acciones medias) y rentabilidad por dividendo 5,6% (2,00 €) cuadran. El PER *forward* 10,1x usa el consenso 2027 (3,55 €). La FCF *yield* del 13% está distorsionada por los flujos de activos/pasivos financieros de las filiales de seguros (unit-linked) en el estado de flujos; mejor proxy: beneficio recurrente ≈ caja, ~480–510 M€ (≈ 10% sobre capitalización). El ROE del 27% es real (patrimonio ~2,0 mil M€ con fondo de comercio ~0,7 mil M€). DN/EBITDA −0,31x coherente con la caja neta.
 
+## En pocas palabras
+- **Qué es:** La mayor gestora de fondos independiente de Italia, con red propia de casi 2.000 asesores financieros y filiales en una veintena de países.
+- **Por qué está barata:** Cotiza a uno de los múltiplos más bajos del sector por la desconfianza en su gobierno corporativo (el Banco de Italia señaló deficiencias tras una inspección), la autorización pendiente de su banco TNB y las dudas sobre el objetivo de beneficio de 2026.
+- **Qué espero:** Un negocio que genera mucha caja y apenas necesita capital: tiene caja neta, la mejor captación del sector en Italia y se ha comprometido a devolver cerca de una cuarta parte de su valor en bolsa en dos años.
+- **Qué me haría vender:** Que el regulador imponga una sanción que limite su actividad o su red de asesores, que el beneficio recurrente caiga más de un 15%, que recorte el dividendo o que salga dinero neto dos trimestres seguidos.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

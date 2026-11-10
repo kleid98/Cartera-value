@@ -14,6 +14,12 @@ Datos de partida (precio 87,38 CAD, cierre 06/11/2026, `scripts/cartera.py preci
 - Remuneración: dividendo 0,495 USD/trimestre (1,98/año ≈ 2,80 CAD → 3,2%), subido todos los años desde 2010. Recompras 9M 2026: 22,9 M de acciones por 1.434 M USD (≈ 8% del capital); nueva NCIB desde 09/11/2026 por hasta 25,8 M de acciones (10% del free float). Acciones: ≈ 303 M (2021) → 258,7 M hoy.
 - Fuentes: [nota de prensa Q3 2026 (6-K, SEC)](https://www.sec.gov/Archives/edgar/data/0000749098/000110465926120352/tm2628312d1_ex99-1.htm), [MD&A y estados Q3 2026 (6-K)](https://www.sec.gov/Archives/edgar/data/0000749098/000110465926120352/tm2628312d1_ex99-2.htm), [resultados 2025 (6-K)](https://www.sec.gov/Archives/edgar/data/749098/000110465926014610/tm2530886d15_ex99-1.htm), [MarketBeat, llamada Q4 2025](https://www.marketbeat.com/instant-alerts/magna-international-q4-earnings-call-highlights-2026-02-13/?.tsrc=rss), [Quartr Q4 2025](https://quartr.com/events/magna-international-inc-mg-q4-2025_3gggDG2U), [Quartr, conferencia JPM (aranceles)](https://quartr.com/events/magna-international-inc-mg-j-p-morgan-auto-conference-2025_3gggh0om), [StockAnalysis](https://stockanalysis.com/stocks/mga/financials/?p=annual), Yahoo Finance (precio, volumen, dividendos en CAD). Tweenvest no lo he consultado (la búsqueda web llegó al límite de uso). Los datos de 2016–2020 son de memoria y de los informes anuales; no los he podido volver a comprobar en esta sesión.
 
+## En pocas palabras
+- **Qué es:** El mayor proveedor de piezas de automóvil de Norteamérica y uno de los mayores del mundo (carrocerías, chasis, electrónica, transmisiones, asientos); también ensambla coches para terceros.
+- **Por qué está barata:** Cotiza a un múltiplo de un dígito por los aranceles de EE. UU. y la incertidumbre del tratado comercial con Canadá y México, y porque el mercado la ve como un negocio cíclico y sin crecimiento.
+- **Qué espero:** Que pase a ser una máquina de caja que se recompra a sí misma: ha simplificado el grupo, cierra plantas en Europa, ha bajado la inversión y el margen mejora trimestre a trimestre.
+- **Qué me haría vender:** Que EE. UU. ponga aranceles generales a las piezas canadienses o mexicanas hoy exentas y Magna no pueda repercutirlos a sus clientes (se revisa junto con Linamar), que la deuda supere 1,75 veces el EBITDA, que recorte el dividendo o que la caja libre sea negativa.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

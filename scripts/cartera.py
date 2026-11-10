@@ -305,14 +305,27 @@ def cmd_orden(a):
     else:
         q = a.cantidad or tenidas
         if q > tenidas: sys.exit(f"Solo hay {tenidas} acciones")
+    # Ficha de entrada/salida (pedido por Ale el 10/11/2026): por qué se opera y con qué precio objetivo.
+    # Una compra no sale sin tesis con su resumen; una venta nunca se bloquea por esto.
+    import ficha as F
+    tesis_rel = a.tesis or f"tesis/{a.ticker}.md"; motivo = a.motivo; ficha_txt = ""
+    if a.lado == "COMPRA":
+        if not os.path.exists(P(tesis_rel)): sys.exit(f"No existe {tesis_rel}: toda compra necesita tesis (con comité) antes de la orden.")
+        try: ficha_txt, linea = F.ficha_compra(P(tesis_rel), limite)
+        except F.FaltaResumen as e: sys.exit(str(e))
+        if "bjetivo" not in motivo: motivo += " · " + linea
+    else:
+        try: ficha_txt = F.ficha_venta(P(tesis_rel), a.motivo, limite, ops)
+        except BaseException as e: print(f"⚠️ No se pudo generar la ficha de salida de {a.ticker}: {e}", file=sys.stderr)
     rows = ordenes(); oid = next_id(rows, "O-")
     row = {"id": oid, "creada": iso(now()), "lado": a.lado, "ticker": a.ticker, "nombre": a.nombre, "isin": a.isin,
            "mercado": a.mercado, "pais_emisor": a.pais, "sector": a.sector, "cantidad": q, "limite": limite, "tipo": a.tipo,
            "fuente_precio": fuente, "ultimo_al_crear": ultimo, "provisional": "S" if a.provisional else "N",
-           "motivo": a.motivo, "tesis": a.tesis or f"tesis/{a.ticker}.md", "estado": "PENDIENTE"}
+           "motivo": motivo, "tesis": tesis_rel, "estado": "PENDIENTE"}
     append_csv("ledger/ordenes.csv", ORD_F, row)
     c = costes(a.lado, a.mercado, q, limite, a.pais)
     print(json.dumps({"orden": row, "costes_estimados_divisa": c, "valor_eur_aprox": r2(q * limite * eur_por(m["unidad_precio"]))}, ensure_ascii=False, indent=1))
+    if ficha_txt: print("\n----- FICHA (pégala en el diario; el objetivo va también en el aviso al móvil) -----\n" + ficha_txt)
 
 def cmd_anular(a):
     rows = ordenes()
@@ -590,6 +603,17 @@ def cmd_estado(a):
 def fmt_num(x, dec=2):
     s = f"{x:,.{dec}f}"; return s.replace(",", "X").replace(".", ",").replace("X", ".")
 
+def porque_operacion(o):
+    """Línea con el porqué de una compra o venta ya ejecutada, para Investing (pedido por Ale el 10/11/2026).
+    Compra: qué se espera y el precio objetivo, al precio de ejecución. Venta: el motivo de la orden. Nunca falla."""
+    try:
+        if o["tipo"] == "VENTA": return f"\n> 💡 **Por qué se vende:** {o['nota']}" if o.get("nota") else ""
+        import ficha as F
+        path = P(f"tesis/{o['ticker']}.md"); txt, r, _ = F._leer(path, float(o["precio"])); res = F.resumen(txt) or {}
+        return f"\n> 💡 **Por qué se compra:** {res.get('Qué espero') or o.get('nota', '')} **{F.linea_objetivo(r)}** desde tu precio de compra."
+    except BaseException:
+        return ""
+
 def cmd_investing(a):
     ops = operaciones(); hechos = set(json.load(open(P("investing/estado.json")))["pasadas"]) if os.path.exists(P("investing/estado.json")) else set()
     bloques, info = [], []
@@ -601,6 +625,7 @@ def cmd_investing(a):
         if o["tipo"] == "DIVIDENDO":
             info.append(f"- `{o['id']}` {f} · Dividendo {o['nombre']}: {fmt_num(float(o['importe_eur']))} € netos (solo ledger, Investing no lo registra)")
             continue
+        porque = porque_operacion(o)
         if o["tipo"] == "COMPRA":
             bloques.append(f"""### `{o['id']}` ✅ COMPRA · {o['nombre']}
 ```
@@ -610,7 +635,7 @@ Fecha:     {f}
 Cantidad:  {o['cantidad']}
 Precio:    {fmt_num(float(o['precio']), dec)}{aviso}
 Comisión:  {fmt_num(float(o['costes_total_divisa']))} {o['divisa']}
-```""")
+```{porque}""")
         else:
             prev = [x for x in ops if x["id"] < o["id"]]
             cierres = lotes_fifo_a_cerrar(o["ticker"], float(o["cantidad"]), prev)
@@ -624,7 +649,7 @@ Acción:    Cerrar posición (FIFO)
 {partes}
 Fecha:     {f}
 Precio:    {fmt_num(float(o['precio']), dec)}{aviso}
-```""")
+```{porque}""")
     txt = "# 📥 Pendiente de pasar a Investing · cartera \"VALUE ex-USA\"\n\n"
     txt += "Precio en la divisa de cotización (Londres en **peniques**), comisión en la divisa del valor (Londres en **libras**). " \
            "La comisión incluye IBKR + tasas + stamp duty/TTF. Cuando las pases, dime \"pasadas\" y las marco.\n\n"

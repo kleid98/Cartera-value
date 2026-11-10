@@ -14,6 +14,12 @@ Quartr y HL; stockanalysis.com (histórico 2021–25); NL Times, DutchNews, The 
 (08/2026); noticia de sucesión del CEO (mayo 2026, fuente secundaria). Precio, volumen y dividendos: Yahoo vía `scripts/cartera.py`.
 Tweenvest no consultado (sin acceso útil).
 
+## En pocas palabras
+- **Qué es:** Uno de los mayores grupos de supermercados del mundo: Food Lion, Stop & Shop y otras cadenas en la costa este de EE. UU., Albert Heijn en Países Bajos y Delhaize en Bélgica.
+- **Por qué está barata:** Ha caído casi un 20% desde marzo: ventas casi planas en EE. UU. por los recortes de ayudas alimentarias y la guerra de precios con Walmart, Amazon y Aldi, y un ciberataque en octubre de 2026 que obligó a rebajar las previsiones del año.
+- **Qué espero:** Que siga siendo el negocio defensivo de siempre: ventas creciendo un 2–4%, margen estable en torno al 4% y casi toda la caja devuelta en dividendo y recompras del 3% anual. El ciberataque es un golpe de un trimestre.
+- **Qué me haría vender:** Que recorte o congele el dividendo o la recompra, que el margen operativo baje del 3,5%, tres trimestres seguidos de ventas comparables negativas en EE. UU. o una sanción de más de 500 M€ por el ciberataque.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

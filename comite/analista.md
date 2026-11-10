@@ -33,6 +33,9 @@ Proceso:
 4. Escribe la tesis cualitativa (por qué está barata, qué espera el mercado, qué esperas tú y por qué, catalizadores)
    **sin cifras de TIR ni de EV**: el bajista del comité solo verá esa sección y las condiciones de invalidación.
 5. Escribe 3–5 condiciones de invalidación concretas y verificables.
+   Después rellena la sección "En pocas palabras" de la plantilla: cuatro puntos de una o dos frases en lenguaje llano
+   (qué es, por qué está barata, qué esperas, qué te haría vender = las 2–4 condiciones de invalidación principales),
+   sin cifras de TIR ni precios objetivo. Es lo que leerá el dueño de la cartera cuando se compre o se venda.
 6. Escribe los 4 escenarios a 3 años (desastre, bajista, base, alcista) con probabilidades que sumen 1, relato, métrica
    del año 3 × múltiplo, precio a 3 años (en la unidad de cotización: GBX en Londres) y dividendos brutos acumulados.
    Sé honesto: estima primero y calcula después. El desastre debe ser un desastre de verdad (lo que pasa si la tesis

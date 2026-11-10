@@ -39,6 +39,7 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `panel/` | Panel web (HTML) que se publica cada noche |
 | `scripts/cartera.py` | Motor: precios, libro, órdenes, validación, costes, dividendos, estado, Investing |
 | `scripts/ev.py` | Calculadora de EV/TIR/asimetría y reconciliación del comité (`--precio-hoy` antes de cada orden) |
+| `scripts/ficha.py` | Ficha de entrada/salida: por qué se compra o se vende y precio objetivo (`orden` la genera sola; sección 4.1) |
 | `scripts/comite_registrar.py` | Escribe los informes del comité en la tesis; `--recalcular` si cambian las reglas |
 | `scripts/test_motor.py` | Pruebas del motor con datos fijos: ejecutar tras cualquier cambio en `scripts/` |
 | `ledger/predicciones.csv` | Automático: lo que predecían tesis, valorador y bajista en cada compra (para medir aciertos) |
@@ -71,15 +72,18 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
    si la TIR del comité cae por debajo de la de la reserva, entra la reserva (ver `plan/fase0.md`). Anótalo en el diario
    y pon la TIR recalculada en el motivo de la orden.
    Lanza órdenes con `cartera.py orden` (ver sección 4). Por defecto PASIVA (bid de Equiduct).
+   Cada orden imprime su **ficha** (por qué y precio objetivo, sección 4.1): pégala en el diario.
 6. Fase 0 (16–20/11/2026): si una compra lleva **2 días** caducando, el 3er día va AGRESIVA.
 7. Escribe/actualiza `diario/AAAA-MM-DD.md` (sección de la ejecución), commit y push (sección 6).
-8. `python3 scripts/cartera.py investing`. Si hubo operaciones ejecutadas o nuevas órdenes → **PushNotification**.
+8. `python3 scripts/cartera.py investing`. Si hubo operaciones ejecutadas o nuevas órdenes → **PushNotification**
+   (con el objetivo de cada compra y el motivo de cada venta, sección 8).
 
 ### 2.2 CIERRE
 1. Arranque. `validar` (caduca órdenes DAY no ejecutadas). `dividendos`. `estado --cierre`.
 2. Repasa el día: qué se movió y por qué (busca la causa de movimientos > ±4% en posiciones).
 3. Ajusta tesis si hay información nueva (historial de revisiones con TIR antes → después).
-4. Prepara el plan de mañana en el diario. Japón: si toca comprar/vender, crea orden `--tipo APERTURA` ahora.
+4. Prepara el plan de mañana en el diario. Japón: si toca comprar/vender, crea orden `--tipo APERTURA` ahora
+   (y pega su ficha en el diario, sección 4.1).
 5. `python3 scripts/panel.py` y republica el panel (sección 5). `cartera.py investing`.
 6. Viernes: informe semanal. Commit y push. Push al móvil solo si `validar` ejecutó algo.
 
@@ -157,6 +161,22 @@ python3 scripts/cartera.py anular O-0007 --motivo "..."
   la siguiente retoma y lo anota en el diario.
 - Dividendos (`dividendos`): netos de retención en origen; sin IRPF español. Plusvalías se reinvierten íntegras.
 
+### 4.1 Ficha de entrada y de salida (pedido por Ale el 10/11/2026)
+Ale quiere que **cada vez que se entra o se sale de un valor** se le explique por qué y con qué precio objetivo.
+- Toda tesis lleva una sección `## En pocas palabras` (qué es, por qué está barata, qué espero, qué me haría vender),
+  en lenguaje llano y sin cifras de TIR. **`orden` no deja comprar si falta.** Si revisas una tesis, actualízala.
+- **Precio objetivo** = precio a 3 años del escenario central (base). **Precio esperado** = media de los cuatro
+  escenarios ponderada por su probabilidad (el que da la TIR). Salen de `ev.py` (`precio_objetivo`); no son una regla
+  nueva ni se retocan: son los precios de los escenarios ya escritos, comparados con el precio de la orden.
+- `cartera.py orden` imprime la ficha al crear la orden y añade el objetivo al motivo (así llega al ledger y al panel).
+  **Pega la ficha en el diario** de esa ejecución (una vez por valor: si la orden caduca y se relanza, basta con anotar
+  el nuevo límite y el nuevo potencial). `cartera.py investing` añade el porqué debajo de cada operación.
+- **Ventas:** el `--motivo` debe decir cuál de los 4 motivos de venta aplica y el hecho concreto (qué condición de
+  invalidación, qué TIR residual, por qué valor se rota). La ficha de salida añade el resultado y lo que se esperaba al
+  comprar. En una venta por tesis rota, anota antes en el historial de la tesis qué ha pasado.
+- A mano: `python3 scripts/ficha.py tesis/X.md [--precio-hoy]` (entrada) · `--venta --motivo "..."` (salida) ·
+  `--comprobar` (qué tesis tienen el resumen).
+
 ## 5. Panel e informes
 - El panel es un Artifact de tipo Dashboard (URL y pasos en `config/panel.json`). Cada noche:
   `python3 scripts/panel.py` → subir `panel/panel.json` como asset (Artifact publish, `url`, `asset: true`) →
@@ -182,7 +202,8 @@ python3 scripts/cartera.py anular O-0007 --motivo "..."
 
 ## 8. Avisos al móvil
 Solo cuando haya operaciones (órdenes ejecutadas o nuevas órdenes lanzadas). Texto breve:
-"🟢 COMPRA 8 ULVR.L @ 4.925p · 🔴 VENTA … · Caja: X € · Ver panel". Usa la herramienta PushNotification.
+"🟢 COMPRA 8 ULVR.L @ 4.925p · objetivo 6.000p (+22%) · 🔴 VENTA … (motivo en 3–4 palabras) · Caja: X € · Ver panel".
+El objetivo es la línea que da la ficha (sección 4.1); el porqué completo va en el diario. Usa la herramienta PushNotification.
 
 ## 9. Estilo
 - Todo en español. Diario y tesis concisos pero con números. Explica *por qué*, que Ale quiere ver cómo se

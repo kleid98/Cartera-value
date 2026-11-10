@@ -23,6 +23,12 @@ Precio de referencia: 151,5 GBX (cierre 06/11/2026, `scripts/cartera.py precio C
 - PER: ≈ 13,5x BPA 2025 (11,2p); ≈ 12,5-13x BPA 2026e (≈ 11,5-12p, estimación propia: EBITDA £1,40bn − D&A/JV ≈ £0,48bn − intereses £0,1bn, tasa ≈ 33-35%).
 - Objetivos de la compañía: EBITDA £1,7bn a finales de 2028 y £2,0bn en 2030 (±£0,3bn de volatilidad; incluye £0,1bn y £0,2bn de extensiones nucleares aún no aprobadas en su momento) y **duplicar el BPA de 2025 en 2030 (≈22p)**. Jefferies (jul-26) estima 20p en 2030. Precios objetivo post-semestrales: HSBC 200p (Buy), Jefferies 210p (Hold), Kepler 180p (Buy); media ≈ 205-215p (Investing.com, jul-26).
 
+## En pocas palabras
+- **Qué es:** La dueña de British Gas: vende luz y gas en el Reino Unido e Irlanda y tiene un negocio de compraventa de energía, el 20% de las nucleares británicas de EDF y almacenamiento de gas.
+- **Por qué está barata:** Viene de normalizar los beneficios extraordinarios de la crisis energética, ha rebajado dos veces las previsiones de su negocio de compraventa y ha pausado la recompra de acciones para financiar un plan de inversión intenso.
+- **Qué espero:** Estabilidad más que crecimiento: los activos regulados y contratados (contadores, Sizewell C, terminal de gas) compensan en gran parte el declive de los antiguos; tiene caja neta y dividendo creciente. No creo que el mercado esté muy equivocado.
+- **Qué me haría vender:** Que recorte el dividendo, que rebaje formalmente sus objetivos de 2028 o 2030, que la deuda supere 1,5 veces el EBITDA o que el Reino Unido apruebe un nuevo impuesto extraordinario.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|

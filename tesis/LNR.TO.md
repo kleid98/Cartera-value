@@ -12,6 +12,12 @@ Datos de partida (precio 86,29 CAD, cierre 06/11/2026, `scripts/cartera.py preci
 - Dividendo 0,32 CAD trimestral (subido un 10% en agosto 2026) → 1,28/año, rentabilidad 1,5%. Recompras: 1,44 M de acciones en 12 meses a 92,19 CAD de media (≈2,4% del capital); NCIB renovada hasta nov-2027 por hasta 3,72 M de acciones (10% del free float).
 - Fuentes: [nota de prensa y estados intermedios Q3 2026](https://www.linamar.com/wp-content/uploads/2026/11/Q3-2026-Interim-FULL.pdf), [Q2 2026](https://www.linamar.com/wp-content/uploads/2026/08/Q2-2026-Interim-FULL.pdf), [GlobeNewswire Q3 2026](https://www.globenewswire.com/news-release/2026/11/04/3395759/0/en/linamar-corporation-sales-and-earnings-growth-continue-in-tough-markets-record-new-business-wins-in-north-america-and-strong-free-cash-flow-signals-strong-future.html), [resultados Q4 2025 (Quartr)](https://quartr.com/events/linamar-corporation-lnr-q4-2025_ozMETG5P), [StockAnalysis](https://stockanalysis.com/quote/tsx/LNR/financials/), Yahoo Finance (precio y volumen). Tweenvest no lo he consultado (no hacía falta para los datos clave).
 
+## En pocas palabras
+- **Qué es:** Fabricante canadiense de piezas mecanizadas para el automóvil, con un segundo negocio de plataformas elevadoras (Skyjack) y maquinaria agrícola.
+- **Por qué está barata:** Cotiza por debajo de su valor contable por su exposición a la política comercial de EE. UU. (tratado comercial sin renovar y arancel anunciado para el 01/01/2027) y por ser un negocio muy cíclico.
+- **Qué espero:** Una empresa familiar casi sin deuda, que genera caja, recompra acciones y gana cuota (más contenido por vehículo y cartera de contratos en máximos), lo que debería compensar en buena parte un mercado plano.
+- **Qué me haría vender:** Que EE. UU. retire la exención de aranceles a las piezas canadienses y la mayoría de sus ventas deje de estar libre de ellos (se revisa junto con Magna), que la deuda supere 2 veces el EBITDA, dos años seguidos de caja libre negativa o la pérdida de un cliente que pese más del 10%.
+
 ## Filtros duros (pregunta 6)
 | Filtro | Valor | ¿Cumple? |
 |---|---|---|
