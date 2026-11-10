@@ -81,7 +81,7 @@ se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
   día se compran, porque **`cartera.py orden` no deja comprar sin ella**.
 - `cartera.py orden` imprime la ficha (se pega en el diario) y añade el objetivo al motivo de la orden (llega al ledger
   y al panel); `cartera.py investing` pone el porqué bajo cada operación; el aviso al móvil lleva el objetivo.
-  Detalle en `CLAUDE.md` sección 4.1. Ale aún no ha visto una ficha real: preguntarle si el formato le sirve.
+  Detalle en `CLAUDE.md` sección 4.1. Ale vio un ejemplo (NatWest) y pidió subirlo a `main`; no ha pedido cambios de formato.
 
 ## 3. Qué se ha creado (rutas exactas)
 
@@ -181,10 +181,9 @@ la sesión.
 2. **Lunes 16/11, primera ejecución.** Comprobar el libro de Equiduct **en vivo** (solo se ha probado en modo replay).
    **Ayvens:** con los precios del 09/11 su desastre es −50,2% (no cumple). Azimut (−49,0%) e Intesa (−49,4%) están al
    límite. Se decide con `ev.py --precio-hoy` en el momento de comprar; si Ayvens no cumple, entra BP.L.
-3. **Lundbeck (pendiente de respuesta de Ale).** Ale preguntó si encajaría. Pasa los 6 filtros duros (solo la acción B,
-   `HLUN-B.CO`; la A no tiene liquidez), pero no está en el universo ni tiene tesis. Presenta resultados del tercer
-   trimestre el 11/11. Se le ofreció añadirla y hacer tesis con comité después de esos resultados; **no ha contestado**.
-   Lo difícil: necesita TIR del 12% (cotiza en coronas) y está en máximos de 52 semanas.
+3. **Lundbeck: cerrado (10/11/2026).** Ale aclaró que solo era un ejemplo de tamaño de empresa; añadirla o no es
+   decisión del gestor. No se añade ahora: no salió del cribado, cotiza en máximos de 52 semanas y necesitaría una TIR
+   del 12%. Si algún domingo aparece en el cribado, se trata como cualquier otra candidata.
 4. Fechas sensibles del plan:
    - FNTN: resultados de 9 meses el 11/11.
    - JD: trading statement el 19/11. Si recorta la guía, no se compra y entra BP.
