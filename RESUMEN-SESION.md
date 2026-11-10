@@ -203,6 +203,8 @@ la sesión.
 **Límite de uso (lo más importante)**
 - Ale pide **parar cuando el límite de 5 horas llegue al ~80%**. No se puede leer el porcentaje desde la sesión: estimar
   y quedarse corto. Él avisa de su porcentaje si se le pregunta. El 09/11 se quedó sin créditos a mitad de un trabajo.
+- **Límite semanal:** el 10/11 estaba en aviso (cerca del tope) y se reinicia el domingo 15/11 a las 03:00 (Madrid). Si se
+  agota, las tareas programadas fallan hasta entonces (ya pasó el 08/11 con otra tarea de Ale). Se le avisó el 10/11.
 - Costes medidos: cada comité (bajista + valorador) ≈ 220–270k tokens, un 11–12% de una ventana. Cada tesis nueva con el
   agente analista ≈ 140–155k. Lanzar agentes **de uno en uno** (como mucho el par de un comité).
 - Recalcular comités con `comite_registrar.py --recalcular` no usa agentes y gasta muy poco.
