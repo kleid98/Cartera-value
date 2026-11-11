@@ -6,5 +6,10 @@
  "APERTURA_US": {"id": "trig_01AikUWcNyEwnr1XY35S6jAY", "cron": "CRON_TZ=America/New_York 4 10 * * 1-5"},
  "CIERRE": {"id": "trig_01Q31HxP6FUV3dPWk9v1Rt2a", "cron": "CRON_TZ=America/New_York 4 17 * * 1-5"},
  "DOMINGO": {"id": "trig_01UnKHPrvh2AaPgsFJfzg9PC", "cron": "CRON_TZ=Europe/Madrid 4 18 * * 0"},
- "_estado": "12/11/2026 00:50: ver RESUMEN-SESION.md, sección de tareas programadas, para el estado al día."
+ "_hoy_2026-11-12": {
+  "APERTURA_UE": {"sesion": "session_01DhaypuDSki9g93o59vnXkg", "aviso": "trig_01TjSK9pWt7uAyXHAFAL5goN", "hora": "09:34 Madrid"},
+  "APERTURA_US": {"sesion": "session_01DhaypuFkuvH5q3hQaHFPZ3", "aviso": "trig_01JGB8CaR3HFaFAAXNmAXb1v", "hora": "10:04 Nueva York"},
+  "CIERRE": {"sesion": "session_01DhayptLF1eBHJCpofMAwmf", "aviso": "trig_01Tcxphi1map1NDyAgh533Mz", "hora": "17:04 Nueva York"}
+ },
+ "_estado": "12/11/2026 00:10: APERTURA_UE, APERTURA_US y CIERRE recurrentes PAUSADAS (sin repo adjunto). Hoy corren las tres sesiones de _hoy_2026-11-12. DOMINGO sigue activa pero tampoco tiene el repo: hay que arreglarla antes del 15/11. Para el 13/11 y siguientes aún no hay nada preparado."
 }
