@@ -37,6 +37,7 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `plan/` | Planes (Fase 0, lista de candidatos, calendario de resultados) |
 | `investing/pendiente.md` | Operaciones que Ale debe copiar en Investing |
 | `panel/` | Panel web (HTML) que se publica cada noche |
+| `config/prompts/*.md` | Prompt de cada ejecución programada (`config/tareas.json` explica cómo se lanzan) |
 | `scripts/cartera.py` | Motor: precios, libro, órdenes, validación, costes, dividendos, estado, Investing |
 | `scripts/ev.py` | Calculadora de EV/TIR/asimetría y reconciliación del comité (`--precio-hoy` antes de cada orden) |
 | `scripts/ficha.py` | Ficha de entrada/salida: por qué se compra o se vende y precio objetivo (`orden` la genera sola; sección 4.1) |
@@ -192,6 +193,8 @@ Ale quiere que **cada vez que se entra o se sale de un valor** se le explique po
 ## 6. Git
 - Trabaja en `main`. Commit al final de cada ejecución: `git add -A && git commit -m "<EJECUCIÓN> AAAA-MM-DD: resumen"`.
 - `git push origin main`; si falla por red, reintenta 4 veces (2s, 4s, 8s, 16s). Si hay conflicto: `git pull --rebase`.
+- **Comprueba siempre que el push ha funcionado.** Si falla con un error 403 (permisos), la sesión no tiene el repositorio
+  adjunto y nada de lo hecho se guardará (pasó el 11/11/2026): avisa a Ale con PushNotification y no des nada por guardado.
 
 ## 7. Investing (espejo manual de Ale, cartera "VALUE ex-USA")
 - `cartera.py investing` regenera `investing/pendiente.md` en el orden del formulario de Investing:

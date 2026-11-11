@@ -146,17 +146,29 @@ se le explique la tesis del porqué y el precio objetivo. Hecho y en `main`:
 - Límites: FR 6, GB 5, IT 2, NL 2, CA 2; fuera de Europa 10%; ningún sector pasa de 3.
 - Compra de las 20 a precios del 06/11: 9.684 € (67 € de costes); quedan ~315 € de caja.
 
-**Calendario** (en `plan/fase0.md`, rehecho el 10/11; fechas de resultados en `plan/calendario.md`)
-- Miércoles 11/11: NWG, BNP, AYV, HBR (apertura europea) y NOVO (apertura de EE. UU.).
-- Jueves 12/11: TEP, NN, SAN, AZM y MG (Toronto, tras su Investor Day del 11/11).
-- Viernes 13/11: CNA, ISP, EN, FNTN (solo si ya publicó sus 9 meses) y LNR (Toronto).
-- Lunes 16/11: MAP, SCR, AD. Martes 17/11: reintentos.
-- Miércoles 18/11: IMB (tras sus resultados anuales del 17/11). Jueves 19/11: JD (tras su trading statement).
-- Viernes 20/11: lo que quede sin ejecutar va AGRESIVA.
+**Calendario** (en `plan/fase0.md`, desplazado un día el 12/11 porque el 11/11 se perdió; resultados en `plan/calendario.md`)
+- Jueves 12/11: NWG, BNP, AYV (o BP si su desastre no cumple), HBR y NOVO (apertura de EE. UU.).
+- Viernes 13/11: TEP, NN, SAN, AZM y MG (Toronto).
+- Lunes 16/11: CNA, ISP, EN, FNTN (publicó sus 9 meses el 12/11) y LNR (Toronto).
+- Martes 17/11: MAP, SCR, AD. Miércoles 18/11: IMB (tras sus resultados del 17/11).
+- Jueves 19/11: JD (tras su trading statement). Viernes 20/11: lo que quede sin ejecutar va AGRESIVA.
 
 **Panel (Artifact de tipo Dashboard)**
 - URL: https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR. 6 datasets que leen un único asset `panel.json`.
 - Copia de la página en `panel/index.html`. No tocar `files/index.html` salvo cambios de diseño.
+
+**INCIDENTE DEL 11/11/2026 (leer antes de tocar las tareas).** Las tareas programadas abren sesiones nuevas **sin el
+repositorio adjunto**: leen el repo pero el `git push` da 403, y `add_repo` no existe en esas sesiones. Se perdió todo lo
+del CIERRE del 10/11 y de las tres ejecuciones del 11/11 (órdenes lanzadas dos veces y nunca guardadas; el 11/11 queda sin
+operaciones, ver `diario/2026-11-11.md`). Comprobado el 12/11: una sesión creada con `create_session` y `source_url` del
+repo **sí** puede escribir en `main`.
+- **Arreglo definitivo (solo Ale, desde la web):** claude.ai/code/routines → cada una de las 4 tareas → Edit → Advanced
+  settings → Repository → `kleid98/Cartera-value` → Save changes. Para comprobarlo: `update_trigger` con `enabled` igual
+  al que tiene devuelve `session_request.config.sources`, que debe incluir el repo.
+- **Mientras tanto:** las tres de entre semana están pausadas y cada ejecución se lanza con una sesión creada a mano con el
+  repo adjunto más un aviso de un solo uso (`run_once_at`, `persistent_session_id`) que le manda el prompt a su hora. Los
+  prompts están en `config/prompts/`. Hay que prepararlas cada día hasta que Ale haga el arreglo definitivo.
+- No se creó un "lanzador" automático (una sesión que cree otras sesiones): el sistema lo bloqueó y necesita permiso de Ale.
 
 **Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`)
 

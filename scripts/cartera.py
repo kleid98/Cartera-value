@@ -479,6 +479,7 @@ def cmd_dividendos(a):
 # ---------------------------------------------------------------- valoración y benchmarks
 def precios_cierre(ticker, desde_ts):
     cache = P("data/benchmarks", ticker.replace("/", "_") + ".json")
+    os.makedirs(os.path.dirname(cache), exist_ok=True)   # la carpeta no está en git: en un clon nuevo no existe (fallo del 11/11/2026)
     ch = yahoo_chart_period(ticker, desde_ts - 7 * 86400, time.time(), "1d")
     serie = {}
     for t, c in zip(ch.get("timestamp") or [], ch["indicators"]["quote"][0]["close"]):

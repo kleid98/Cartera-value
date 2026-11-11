@@ -54,15 +54,15 @@ por TIR residual < 5% (Linamar y Ahold están por debajo). Innegociables cumplid
 - Las cantidades se recalculan al lanzar la orden (`--importe 500`); los precios de referencia son del 06/11/2026.
 - El orden de la tabla cambió con el recálculo del 10/11; el calendario de abajo se mantiene (todas se compran en la semana).
 
-## Calendario (rehecho el 10/11/2026 al adelantar el inicio; fechas de resultados en `plan/calendario.md`)
+## Calendario (desplazado un día el 12/11/2026: el 11/11 se perdió porque las tareas no pudieron guardar en GitHub; ver `diario/2026-11-11.md`)
 
 | Día | APERTURA_UE (09:30) | APERTURA_US (~16:00) |
 |---|---|---|
-| Mié 11/11 | NWG.L, BNP.PA, AYV.PA, HBR.L | NOVO-B.CO |
-| Jue 12/11 | TEP.PA, NN.AS, SAN.PA, AZM.MI | MG.TO (Toronto; tras su Investor Day del 11/11) |
-| Vie 13/11 | CNA.L, ISP.MI, EN.PA, FNTN.DE (solo si ya publicó los 9M y no tocan una condición de invalidación) | LNR.TO (Toronto) |
-| Lun 16/11 | MAP.MC, SCR.PA, AD.AS; FNTN.DE si no se pudo el viernes | Reintentos |
-| Mar 17/11 | Reintentos | Reintentos (Imperial publica resultados anuales: no se compra hoy) |
+| ~~Mié 11/11~~ | Perdido: las órdenes lanzadas no se guardaron | — |
+| Jue 12/11 | NWG.L, BNP.PA, AYV.PA, HBR.L | NOVO-B.CO |
+| Vie 13/11 | TEP.PA, NN.AS, SAN.PA, AZM.MI | MG.TO (Toronto; tras su Investor Day del 11/11) |
+| Lun 16/11 | CNA.L, ISP.MI, EN.PA, FNTN.DE (publicó los 9M el 12/11: solo si no tocan una condición de invalidación) | LNR.TO (Toronto) |
+| Mar 17/11 | MAP.MC, SCR.PA, AD.AS | Reintentos (Imperial publica resultados anuales: no se compra hoy) |
 | Mié 18/11 | IMB.L (tras leer sus resultados anuales del 17/11) | Reintentos |
 | Jue 19/11 | Reintentos | JD.L (tras su trading statement del 19/11) |
 | Vie 20/11 | Reintentos | Reintentos; lo que quede sin ejecutar va AGRESIVA para cerrar las 20 |
