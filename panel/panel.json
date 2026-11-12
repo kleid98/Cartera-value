@@ -1,18 +1,18 @@
 {
  "resumen": [
   {
-   "actualizado": "2026-11-07 19:32:38",
-   "valor_total_eur": 10000.0,
+   "actualizado": "2026-11-12 23:05:23",
+   "valor_total_eur": 9991.16,
    "aportado_eur": 10000.0,
-   "rentabilidad": 0.0,
-   "caja_eur": 10000.0,
-   "invertido_eur": 0.0,
-   "n_posiciones": 0,
+   "rentabilidad": -0.00088,
+   "caja_eur": 7531.11,
+   "invertido_eur": 2460.05,
+   "n_posiciones": 5,
    "max_posiciones": 20,
-   "rent_bench_principal": 0.0,
-   "alfa": 0.0,
-   "n_provisionales": 0,
-   "pendientes_investing": 0
+   "rent_bench_principal": -0.00063,
+   "alfa": -0.00025,
+   "n_provisionales": 5,
+   "pendientes_investing": 5
   }
  ],
  "historico": [
@@ -22,10 +22,206 @@
    "principal": 0.0,
    "secundario": 0.0,
    "control": 0.0
+  },
+  {
+   "fecha": "2026-11-12",
+   "cartera": -0.00088,
+   "principal": -0.00062,
+   "secundario": -0.00062,
+   "control": -0.00062
   }
  ],
- "posiciones": [],
+ "posiciones": [
+  {
+   "ticker": "HBR.L",
+   "nombre": "Harbour Energy",
+   "mercado": "LONDRES",
+   "pais": "GB",
+   "sector": "Energía",
+   "estado": "Provisional",
+   "cantidad": 155.0,
+   "coste_eur": 503.12,
+   "valor_eur": 507.53,
+   "pyg_eur": 4.41,
+   "pyg_pct": 0.0088,
+   "var_dia_pct": 0.0103,
+   "peso": 0.0508,
+   "tir_esperada": 0.0786
+  },
+  {
+   "ticker": "BP.L",
+   "nombre": "BP plc",
+   "mercado": "LONDRES",
+   "pais": "GB",
+   "sector": "Energía",
+   "estado": "Provisional",
+   "cantidad": 74.0,
+   "coste_eur": 501.62,
+   "valor_eur": 501.78,
+   "pyg_eur": 0.16,
+   "pyg_pct": 0.0003,
+   "var_dia_pct": 0.0,
+   "peso": 0.0502,
+   "tir_esperada": 0.0388
+  },
+  {
+   "ticker": "NWG.L",
+   "nombre": "NatWest Group",
+   "mercado": "LONDRES",
+   "pais": "GB",
+   "sector": "Bancos",
+   "estado": "Provisional",
+   "cantidad": 69.0,
+   "coste_eur": 497.34,
+   "valor_eur": 492.8,
+   "pyg_eur": -4.54,
+   "pyg_pct": -0.0091,
+   "var_dia_pct": -0.0047,
+   "peso": 0.0493,
+   "tir_esperada": 0.099
+  },
+  {
+   "ticker": "NOVO-B.CO",
+   "nombre": "Novo Nordisk",
+   "mercado": "COPENHAGUE",
+   "pais": "DK",
+   "sector": "Salud",
+   "estado": "Provisional",
+   "cantidad": 13.0,
+   "coste_eur": 475.61,
+   "valor_eur": 479.53,
+   "pyg_eur": 3.92,
+   "pyg_pct": 0.0082,
+   "var_dia_pct": 0.0112,
+   "peso": 0.048,
+   "tir_esperada": 0.0731
+  },
+  {
+   "ticker": "BNP.PA",
+   "nombre": "BNP Paribas",
+   "mercado": "PARIS",
+   "pais": "FR",
+   "sector": "Bancos",
+   "estado": "Provisional",
+   "cantidad": 5.0,
+   "coste_eur": 483.42,
+   "valor_eur": 478.4,
+   "pyg_eur": -5.02,
+   "pyg_pct": -0.0104,
+   "var_dia_pct": -0.0009,
+   "peso": 0.0479,
+   "tir_esperada": 0.0982
+  }
+ ],
  "operaciones": [
+  {
+   "id": "T-0010",
+   "fecha": "2026-11-12 16:08:00",
+   "tipo": "COMPRA",
+   "nombre": "Novo Nordisk",
+   "ticker": "NOVO-B.CO",
+   "cantidad": 13.0,
+   "precio": 272.7,
+   "unidad": "DKK",
+   "importe_eur": 475.61,
+   "motivo": "Fase 0 provisional: TIR comité 7,0% (precio hoy 272,2 DKK) · Objetivo 3 años 351 DKK (+28,7%)"
+  },
+  {
+   "id": "T-0009",
+   "fecha": "2026-11-12 16:08:00",
+   "tipo": "FX",
+   "nombre": "Divisa DKK",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 477.55,
+   "motivo": "EUR→DKK para NOVO-B.CO: base 475.61€ + diferencial 0.14€ + comisión 1.80€"
+  },
+  {
+   "id": "T-0008",
+   "fecha": "2026-11-12 09:45:00",
+   "tipo": "COMPRA",
+   "nombre": "BP plc",
+   "ticker": "BP.L",
+   "cantidad": 74.0,
+   "precio": 562.6,
+   "unidad": "GBX",
+   "importe_eur": 501.62,
+   "motivo": "Fase 0 provisional (reserva por Ayvens, desastre −50,6% a precio hoy): TIR comité 3,8% (precio hoy 561,4p) · Objetivo 3 años 600 p (+6,7%)"
+  },
+  {
+   "id": "T-0007",
+   "fecha": "2026-11-12 09:45:00",
+   "tipo": "FX",
+   "nombre": "Divisa GBP",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 503.57,
+   "motivo": "EUR→GBP para BP.L: base 501.63€ + diferencial 0.15€ + comisión 1.80€"
+  },
+  {
+   "id": "T-0006",
+   "fecha": "2026-11-12 09:39:00",
+   "tipo": "COMPRA",
+   "nombre": "Harbour Energy",
+   "ticker": "HBR.L",
+   "cantidad": 155.0,
+   "precio": 269.4,
+   "unidad": "GBX",
+   "importe_eur": 503.12,
+   "motivo": "Fase 0 provisional: TIR comité 7,1% (precio hoy 269,2p) · Objetivo 3 años 350 p (+29,9%)"
+  },
+  {
+   "id": "T-0005",
+   "fecha": "2026-11-12 09:39:00",
+   "tipo": "FX",
+   "nombre": "Divisa GBP",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 505.07,
+   "motivo": "EUR→GBP para HBR.L: base 503.12€ + diferencial 0.15€ + comisión 1.80€"
+  },
+  {
+   "id": "T-0004",
+   "fecha": "2026-11-12 10:00:00",
+   "tipo": "COMPRA",
+   "nombre": "BNP Paribas",
+   "ticker": "BNP.PA",
+   "cantidad": 5.0,
+   "precio": 96.04,
+   "unidad": "EUR",
+   "importe_eur": 483.42,
+   "motivo": "Fase 0 provisional: TIR comité 8,2% (precio hoy 96,12 €) · Objetivo 3 años 111 € (+15,6%)"
+  },
+  {
+   "id": "T-0003",
+   "fecha": "2026-11-12 13:58:00",
+   "tipo": "COMPRA",
+   "nombre": "NatWest Group",
+   "ticker": "NWG.L",
+   "cantidad": 69.0,
+   "precio": 598.2,
+   "unidad": "GBX",
+   "importe_eur": 497.34,
+   "motivo": "Fase 0 provisional: TIR comité 9,2% (precio hoy 599,3p) · Objetivo 3 años 748 p (+25,0%)"
+  },
+  {
+   "id": "T-0002",
+   "fecha": "2026-11-12 13:58:00",
+   "tipo": "FX",
+   "nombre": "Divisa GBP",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 499.29,
+   "motivo": "EUR→GBP para NWG.L: base 497.35€ + diferencial 0.15€ + comisión 1.80€"
+  },
   {
    "id": "T-0001",
    "fecha": "2026-11-07 19:32:38",
@@ -39,26 +235,148 @@
    "motivo": "Capital inicial simulado"
   }
  ],
- "ordenes": [],
- "investing": [],
+ "ordenes": [
+  {
+   "id": "O-0005",
+   "creada": "2026-11-12 16:07:09",
+   "lado": "COMPRA",
+   "nombre": "Novo Nordisk",
+   "ticker": "NOVO-B.CO",
+   "cantidad": 13.0,
+   "limite": 272.7,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 7,0% (precio hoy 272,2 DKK) · Objetivo 3 años 351 DKK (+28,7%)"
+  },
+  {
+   "id": "O-0004",
+   "creada": "2026-11-12 09:37:11",
+   "lado": "COMPRA",
+   "nombre": "BP plc",
+   "ticker": "BP.L",
+   "cantidad": 74.0,
+   "limite": 562.6,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional (reserva por Ayvens, desastre −50,6% a precio hoy): TIR comité 3,8% (precio hoy 561,4p) · Objetivo 3 años 600 p (+6,7%)"
+  },
+  {
+   "id": "O-0003",
+   "creada": "2026-11-12 09:37:04",
+   "lado": "COMPRA",
+   "nombre": "Harbour Energy",
+   "ticker": "HBR.L",
+   "cantidad": 155.0,
+   "limite": 269.4,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 7,1% (precio hoy 269,2p) · Objetivo 3 años 350 p (+29,9%)"
+  },
+  {
+   "id": "O-0002",
+   "creada": "2026-11-12 09:36:48",
+   "lado": "COMPRA",
+   "nombre": "BNP Paribas",
+   "ticker": "BNP.PA",
+   "cantidad": 5.0,
+   "limite": 96.04,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 8,2% (precio hoy 96,12 €) · Objetivo 3 años 111 € (+15,6%)"
+  },
+  {
+   "id": "O-0001",
+   "creada": "2026-11-12 09:36:40",
+   "lado": "COMPRA",
+   "nombre": "NatWest Group",
+   "ticker": "NWG.L",
+   "cantidad": 69.0,
+   "limite": 598.2,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 9,2% (precio hoy 599,3p) · Objetivo 3 años 748 p (+25,0%)"
+  }
+ ],
+ "investing": [
+  {
+   "id": "T-0003",
+   "fecha": "12/11/2026",
+   "tipo": "Compra",
+   "nombre": "NatWest Group",
+   "bolsa": "Londres",
+   "cantidad": 69.0,
+   "precio": 598.2,
+   "unidad": "GBX",
+   "comision": 3.11,
+   "divisa_comision": "GBP"
+  },
+  {
+   "id": "T-0004",
+   "fecha": "12/11/2026",
+   "tipo": "Compra",
+   "nombre": "BNP Paribas",
+   "bolsa": "París",
+   "cantidad": 5.0,
+   "precio": 96.04,
+   "unidad": "EUR",
+   "comision": 3.22,
+   "divisa_comision": "EUR"
+  },
+  {
+   "id": "T-0006",
+   "fecha": "12/11/2026",
+   "tipo": "Compra",
+   "nombre": "Harbour Energy",
+   "bolsa": "Londres",
+   "cantidad": 155.0,
+   "precio": 269.4,
+   "unidad": "GBX",
+   "comision": 3.13,
+   "divisa_comision": "GBP"
+  },
+  {
+   "id": "T-0008",
+   "fecha": "12/11/2026",
+   "tipo": "Compra",
+   "nombre": "BP plc",
+   "bolsa": "Londres",
+   "cantidad": 74.0,
+   "precio": 562.6,
+   "unidad": "GBX",
+   "comision": 3.12,
+   "divisa_comision": "GBP"
+  },
+  {
+   "id": "T-0010",
+   "fecha": "12/11/2026",
+   "tipo": "Compra",
+   "nombre": "Novo Nordisk",
+   "bolsa": "Copenhague",
+   "cantidad": 13.0,
+   "precio": 272.7,
+   "unidad": "DKK",
+   "comision": 10.35,
+   "divisa_comision": "DKK"
+  }
+ ],
  "benchmarks": [
   {
    "clave": "principal",
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "rent": 0.0
+   "rent": -0.00063
   },
   {
    "clave": "secundario",
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "rent": 0.0
+   "rent": -0.00063
   },
   {
    "clave": "control",
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "rent": 0.0
+   "rent": -0.00063
   }
  ]
 }

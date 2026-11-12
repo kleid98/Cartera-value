@@ -45,3 +45,14 @@ Precio:    562,6   ⚠️ GBX (peniques)
 Comisión:  3,12 GBP
 ```
 > 💡 **Por qué se compra:** Que el arreglo interno continúe: la deuda ya está por debajo del objetivo, ha cerrado ventas de activos y recorta costes, lo que permitiría volver a recomprar acciones desde 2027. Pero a este precio el mercado ya descuenta buena parte. **Objetivo 3 años 600 p (+6,7%)** desde tu precio de compra.
+
+### `T-0010` ✅ COMPRA · Novo Nordisk
+```
+Buscar:    Novo Nordisk  → elegir la de "Copenhague" (NOVO-B.CO)
+Tipo:      Compra
+Fecha:     12/11/2026
+Cantidad:  13
+Precio:    272,70
+Comisión:  10,35 DKK
+```
+> 💡 **Por qué se compra:** Una situación más matizada, no un rebote fácil: negocio de calidad excepcional (margen operativo cercano al 40%, poca deuda, mucha caja), la pastilla de Wegovy funciona, el volumen crece y puede compensar la bajada de precios, y hay productos nuevos en camino (CagriSema). **Objetivo 3 años 351 DKK (+28,7%)** desde tu precio de compra.

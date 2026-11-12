@@ -1,45 +1,16 @@
 {
- "actualizado": "2026-11-12 16:07:16",
- "valor_total_eur": 9974.31,
- "invertido_eur": 1965.65,
- "caja_eur": 8008.66,
+ "actualizado": "2026-11-12 23:05:23",
+ "valor_total_eur": 9991.16,
+ "invertido_eur": 2460.05,
+ "caja_eur": 7531.11,
  "caja_por_divisa": {
-  "EUR": 8008.65,
+  "EUR": 7531.1,
   "GBP": 0.01
  },
  "aportado_eur": 10000.0,
- "rentabilidad": -0.00257,
- "n_posiciones": 4,
+ "rentabilidad": -0.00088,
+ "n_posiciones": 5,
  "posiciones": [
-  {
-   "ticker": "BP.L",
-   "nombre": "BP plc",
-   "mercado": "LONDRES",
-   "sector": "Energía",
-   "pais": "GB",
-   "cantidad": 74.0,
-   "precio_medio": 562.6,
-   "precio": 563.1,
-   "unidad_precio": "GBX",
-   "coste_eur": 501.62,
-   "valor_eur": 498.33,
-   "pyg_eur": -3.29,
-   "pyg_pct": -0.0066,
-   "var_dia_pct": -0.0069,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0008",
-     "fecha": "2026-11-12 09:45:00",
-     "cantidad": 74.0,
-     "precio": 562.6,
-     "coste_eur": 501.62,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.05
-  },
   {
    "ticker": "HBR.L",
    "nombre": "Harbour Energy",
@@ -48,13 +19,13 @@
    "pais": "GB",
    "cantidad": 155.0,
    "precio_medio": 269.4,
-   "precio": 266.4,
+   "precio": 273.8,
    "unidad_precio": "GBX",
    "coste_eur": 503.12,
-   "valor_eur": 493.82,
-   "pyg_eur": -9.3,
-   "pyg_pct": -0.0185,
-   "var_dia_pct": -0.017,
+   "valor_eur": 507.53,
+   "pyg_eur": 4.41,
+   "pyg_pct": 0.0088,
+   "var_dia_pct": 0.0103,
    "provisional": true,
    "lotes": [
     {
@@ -67,7 +38,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0495
+   "peso": 0.0508
+  },
+  {
+   "ticker": "BP.L",
+   "nombre": "BP plc",
+   "mercado": "LONDRES",
+   "sector": "Energía",
+   "pais": "GB",
+   "cantidad": 74.0,
+   "precio_medio": 562.6,
+   "precio": 567.0,
+   "unidad_precio": "GBX",
+   "coste_eur": 501.62,
+   "valor_eur": 501.78,
+   "pyg_eur": 0.16,
+   "pyg_pct": 0.0003,
+   "var_dia_pct": 0.0,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0008",
+     "fecha": "2026-11-12 09:45:00",
+     "cantidad": 74.0,
+     "precio": 562.6,
+     "coste_eur": 501.62,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0502
   },
   {
    "ticker": "NWG.L",
@@ -77,13 +77,13 @@
    "pais": "GB",
    "cantidad": 69.0,
    "precio_medio": 598.2,
-   "precio": 596.9,
+   "precio": 597.2,
    "unidad_precio": "GBX",
    "coste_eur": 497.34,
-   "valor_eur": 492.55,
-   "pyg_eur": -4.79,
-   "pyg_pct": -0.0096,
-   "var_dia_pct": -0.0052,
+   "valor_eur": 492.8,
+   "pyg_eur": -4.54,
+   "pyg_pct": -0.0091,
+   "var_dia_pct": -0.0047,
    "provisional": true,
    "lotes": [
     {
@@ -96,7 +96,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0494
+   "peso": 0.0493
+  },
+  {
+   "ticker": "NOVO-B.CO",
+   "nombre": "Novo Nordisk",
+   "mercado": "COPENHAGUE",
+   "sector": "Salud",
+   "pais": "DK",
+   "cantidad": 13.0,
+   "precio_medio": 272.7,
+   "precio": 275.75,
+   "unidad_precio": "DKK",
+   "coste_eur": 475.61,
+   "valor_eur": 479.53,
+   "pyg_eur": 3.92,
+   "pyg_pct": 0.0082,
+   "var_dia_pct": 0.0112,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0010",
+     "fecha": "2026-11-12 16:08:00",
+     "cantidad": 13.0,
+     "precio": 272.7,
+     "coste_eur": 475.61,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.048
   },
   {
    "ticker": "BNP.PA",
@@ -106,13 +135,13 @@
    "pais": "FR",
    "cantidad": 5.0,
    "precio_medio": 96.04,
-   "precio": 96.19,
+   "precio": 95.68,
    "unidad_precio": "EUR",
    "coste_eur": 483.42,
-   "valor_eur": 480.95,
-   "pyg_eur": -2.47,
-   "pyg_pct": -0.0051,
-   "var_dia_pct": 0.0044,
+   "valor_eur": 478.4,
+   "pyg_eur": -5.02,
+   "pyg_pct": -0.0104,
+   "var_dia_pct": -0.0009,
    "provisional": true,
    "lotes": [
     {
@@ -125,7 +154,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0482
+   "peso": 0.0479
   }
  ],
  "realizado_eur": 0.0,
@@ -133,21 +162,154 @@
   "principal": {
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "valor_eur": 9995.0,
-   "rent": -0.0005
+   "valor_eur": 9993.75,
+   "rent": -0.00063
   },
   "secundario": {
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "valor_eur": 9995.0,
-   "rent": -0.0005
+   "valor_eur": 9993.75,
+   "rent": -0.00063
   },
   "control": {
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "valor_eur": 9995.0,
-   "rent": -0.0005
+   "valor_eur": 9993.75,
+   "rent": -0.00063
   }
  },
- "descartadas": []
+ "descartadas": [
+  {
+   "ticker": "7261.T",
+   "nombre": "Mazda Motor",
+   "motivo": "Veto del bajista (condición 5)",
+   "desde": "2026-11-11",
+   "precio_ref": 1143.5,
+   "precio": 1136.0,
+   "dividendos": 0,
+   "rent_eur": -0.0066,
+   "en_cartera": false
+  },
+  {
+   "ticker": "FR.PA",
+   "nombre": "Valeo",
+   "motivo": "Desastre del comité < −50% (ambos miembros)",
+   "desde": "2026-11-11",
+   "precio_ref": 11.525,
+   "precio": 11.255,
+   "dividendos": 0,
+   "rent_eur": -0.0234,
+   "en_cartera": false
+  },
+  {
+   "ticker": "BP.L",
+   "nombre": "BP p.l.c.",
+   "motivo": "Reserva de la Fase 0 (puesto 21 por TIR)",
+   "desde": "2026-11-11",
+   "precio_ref": 567.0,
+   "precio": 567.0,
+   "dividendos": 6.5412,
+   "rent_eur": 0.0115,
+   "en_cartera": true
+  },
+  {
+   "ticker": "SU.TO",
+   "nombre": "Suncor Energy Inc.",
+   "motivo": "Desastre propio < −50%",
+   "desde": "2026-11-11",
+   "precio_ref": 98.21,
+   "precio": 98.8,
+   "dividendos": 0,
+   "rent_eur": 0.006,
+   "en_cartera": false
+  },
+  {
+   "ticker": "OMV.VI",
+   "nombre": "OMV Aktiengesellschaft",
+   "motivo": "Desastre propio < −50%",
+   "desde": "2026-11-11",
+   "precio_ref": 72.05,
+   "precio": 72.85,
+   "dividendos": 0,
+   "rent_eur": 0.0111,
+   "en_cartera": false
+  },
+  {
+   "ticker": "VOE.VI",
+   "nombre": "voestalpine AG",
+   "motivo": "Desastre propio < −50%",
+   "desde": "2026-11-11",
+   "precio_ref": 38.38,
+   "precio": 37.8,
+   "dividendos": 0,
+   "rent_eur": -0.0151,
+   "en_cartera": false
+  },
+  {
+   "ticker": "UMI.BR",
+   "nombre": "Umicore",
+   "motivo": "Desastre propio < −50%",
+   "desde": "2026-11-11",
+   "precio_ref": 18.64,
+   "precio": 18.11,
+   "dividendos": 0,
+   "rent_eur": -0.0284,
+   "en_cartera": false
+  },
+  {
+   "ticker": "ACA.PA",
+   "nombre": "Crédit Agricole S.A.",
+   "motivo": "Filtro duro: CET1 < 12%",
+   "desde": "2026-11-11",
+   "precio_ref": 15.87,
+   "precio": 15.83,
+   "dividendos": 0,
+   "rent_eur": -0.0025,
+   "en_cartera": false
+  },
+  {
+   "ticker": "VK.PA",
+   "nombre": "Vallourec",
+   "motivo": "Filtro duro: beneficio operativo 4/10",
+   "desde": "2026-11-11",
+   "precio_ref": 19.615,
+   "precio": 19.405,
+   "dividendos": 0,
+   "rent_eur": -0.0107,
+   "en_cartera": false
+  },
+  {
+   "ticker": "GALP.LS",
+   "nombre": "Galp Energia, SGPS",
+   "motivo": "TIR baja y asimetría < 2",
+   "desde": "2026-11-11",
+   "precio_ref": 19.0,
+   "precio": 19.14,
+   "dividendos": 0,
+   "rent_eur": 0.0074,
+   "en_cartera": false
+  },
+  {
+   "ticker": "NHY.OL",
+   "nombre": "Norsk Hydro ASA",
+   "motivo": "TIR baja y asimetría < 2",
+   "desde": "2026-11-11",
+   "precio_ref": 70.14,
+   "precio": 69.34,
+   "dividendos": 0,
+   "rent_eur": -0.0114,
+   "en_cartera": false
+  },
+  {
+   "ticker": "FGR.PA",
+   "nombre": "Eiffage",
+   "motivo": "Límite de país (sería la 7.ª francesa)",
+   "desde": "2026-11-11",
+   "precio_ref": 108.7,
+   "precio": 109.35,
+   "dividendos": 0,
+   "rent_eur": 0.006,
+   "en_cartera": false
+  }
+ ]
 }
