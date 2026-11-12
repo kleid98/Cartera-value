@@ -11,5 +11,10 @@
   "APERTURA_US": {"sesion": "session_01DhaypuFkuvH5q3hQaHFPZ3", "aviso": "trig_01JGB8CaR3HFaFAAXNmAXb1v", "hora": "10:04 Nueva York"},
   "CIERRE": {"sesion": "session_01DhayptLF1eBHJCpofMAwmf", "aviso": "trig_01Tcxphi1map1NDyAgh533Mz", "hora": "17:04 Nueva York"}
  },
- "_estado": "12/11/2026 00:10: APERTURA_UE, APERTURA_US y CIERRE recurrentes PAUSADAS (sin repo adjunto). Hoy corren las tres sesiones de _hoy_2026-11-12. DOMINGO sigue activa pero tampoco tiene el repo: hay que arreglarla antes del 15/11. Para el 13/11 y siguientes aún no hay nada preparado."
+ "_viernes_2026-11-13": {
+  "APERTURA_UE": {"sesion": "session_01DhaypstTimHQF2bMqVezRc", "aviso": "trig_01SYCRPVkyZogTmiuTHu8mBT", "hora": "09:34 Madrid"},
+  "APERTURA_US": {"sesion": "session_01DhaypuF8T9yUH5moWUWLRq", "aviso": "trig_01HN5xkmdSc9JFR4urdA7ZvN", "hora": "10:04 Nueva York"},
+  "CIERRE": {"sesion": "session_01DhaypveQTWoAJN8n4UUWfZ", "aviso": "trig_01QUB5mm9F87oBnN6bqAbF9x", "hora": "17:04 Nueva York (con informe semanal)"}
+ },
+ "_estado": "12/11/2026 10:30: el arreglo provisional funciona (APERTURA_UE del 12/11 guardó en main, commit a6f92e1). Recurrentes de entre semana PAUSADAS (sin repo adjunto). Preparadas las ejecuciones del 12/11 y del 13/11. DOMINGO (15/11) sigue activa pero SIN repo: fallará al guardar si Ale no la arregla antes. Del lunes 16/11 en adelante no hay nada preparado."
 }

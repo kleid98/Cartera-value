@@ -168,6 +168,10 @@ repo **sí** puede escribir en `main`.
 - **Mientras tanto:** las tres de entre semana están pausadas y cada ejecución se lanza con una sesión creada a mano con el
   repo adjunto más un aviso de un solo uso (`run_once_at`, `persistent_session_id`) que le manda el prompt a su hora. Los
   prompts están en `config/prompts/`. Hay que prepararlas cada día hasta que Ale haga el arreglo definitivo.
+- **Estado el 12/11 a las 10:30:** el arreglo provisional funciona (la APERTURA_UE del 12/11 guardó en `main`). Están
+  preparadas las ejecuciones del 12/11 y del 13/11 (IDs en `config/tareas.json`). **Del lunes 16/11 en adelante no hay nada
+  preparado, y la tarea DOMINGO del 15/11 sigue sin el repo.** Si Ale no ha hecho el arreglo definitivo, hay que volver a
+  preparar sesiones y avisos (3 por día) antes del lunes.
 - No se creó un "lanzador" automático (una sesión que cree otras sesiones): el sistema lo bloqueó y necesita permiso de Ale.
 
 **Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`)
