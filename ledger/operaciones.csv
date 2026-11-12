@@ -1,2 +1,9 @@
 id,fecha_hora,tipo,orden_id,ticker,nombre,isin,mercado,pais_emisor,sector,divisa,cantidad,precio,unidad_precio,importe_divisa,comision_ibkr,tasas_terceros,impuesto_transaccion,costes_total_divisa,fx_eur_por_unidad,importe_eur,provisional,nota
 T-0001,2026-11-07 19:32:38,APORTACION,,,,,,,,EUR,,,,10000,,,,0,1,10000,,Capital inicial simulado
+T-0002,2026-11-12 13:58:00,FX,,,,,,,,GBP,,,,415.87,1.8,,,0,1.195915,499.29,,EUR→GBP para NWG.L: base 497.35€ + diferencial 0.15€ + comisión 1.80€
+T-0003,2026-11-12 13:58:00,COMPRA,O-0001,NWG.L,NatWest Group,GB00BM8PJY71,LONDRES,GB,Bancos,GBP,69,598.2,GBX,412.76,1.0,0.04,2.06,3.11,1.195915,497.34,S,"Fase 0 provisional: TIR comité 9,2% (precio hoy 599,3p) · Objetivo 3 años 748 p (+25,0%)"
+T-0004,2026-11-12 10:00:00,COMPRA,O-0002,BNP.PA,BNP Paribas,FR0000131104,PARIS,FR,Bancos,EUR,5,96.04,EUR,480.2,1.25,0.05,1.92,3.22,1.0,483.42,S,"Fase 0 provisional: TIR comité 8,2% (precio hoy 96,12 €) · Objetivo 3 años 111 € (+15,6%)"
+T-0005,2026-11-12 09:39:00,FX,,,,,,,,GBP,,,,420.7,1.8,,,0,1.195915,505.07,,EUR→GBP para HBR.L: base 503.12€ + diferencial 0.15€ + comisión 1.80€
+T-0006,2026-11-12 09:39:00,COMPRA,O-0003,HBR.L,Harbour Energy,GB00BMBVGQ36,LONDRES,GB,Energía,GBP,155,269.4,GBX,417.57,1.0,0.04,2.09,3.13,1.195915,503.12,S,"Fase 0 provisional: TIR comité 7,1% (precio hoy 269,2p) · Objetivo 3 años 350 p (+29,9%)"
+T-0007,2026-11-12 09:45:00,FX,,,,,,,,GBP,,,,419.45,1.8,,,0,1.195915,503.57,,EUR→GBP para BP.L: base 501.63€ + diferencial 0.15€ + comisión 1.80€
+T-0008,2026-11-12 09:45:00,COMPRA,O-0004,BP.L,BP plc,GB0007980591,LONDRES,GB,Energía,GBP,74,562.6,GBX,416.32,1.0,0.04,2.08,3.12,1.195915,501.62,S,"Fase 0 provisional (reserva por Ayvens, desastre −50,6% a precio hoy): TIR comité 3,8% (precio hoy 561,4p) · Objetivo 3 años 600 p (+6,7%)"

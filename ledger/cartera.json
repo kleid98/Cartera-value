@@ -1,34 +1,153 @@
 {
- "actualizado": "2026-11-07 19:32:38",
- "valor_total_eur": 10000.0,
- "invertido_eur": 0.0,
- "caja_eur": 10000.0,
+ "actualizado": "2026-11-12 16:07:16",
+ "valor_total_eur": 9974.31,
+ "invertido_eur": 1965.65,
+ "caja_eur": 8008.66,
  "caja_por_divisa": {
-  "EUR": 10000.0
+  "EUR": 8008.65,
+  "GBP": 0.01
  },
  "aportado_eur": 10000.0,
- "rentabilidad": 0.0,
- "n_posiciones": 0,
- "posiciones": [],
+ "rentabilidad": -0.00257,
+ "n_posiciones": 4,
+ "posiciones": [
+  {
+   "ticker": "BP.L",
+   "nombre": "BP plc",
+   "mercado": "LONDRES",
+   "sector": "Energía",
+   "pais": "GB",
+   "cantidad": 74.0,
+   "precio_medio": 562.6,
+   "precio": 563.1,
+   "unidad_precio": "GBX",
+   "coste_eur": 501.62,
+   "valor_eur": 498.33,
+   "pyg_eur": -3.29,
+   "pyg_pct": -0.0066,
+   "var_dia_pct": -0.0069,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0008",
+     "fecha": "2026-11-12 09:45:00",
+     "cantidad": 74.0,
+     "precio": 562.6,
+     "coste_eur": 501.62,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.05
+  },
+  {
+   "ticker": "HBR.L",
+   "nombre": "Harbour Energy",
+   "mercado": "LONDRES",
+   "sector": "Energía",
+   "pais": "GB",
+   "cantidad": 155.0,
+   "precio_medio": 269.4,
+   "precio": 266.4,
+   "unidad_precio": "GBX",
+   "coste_eur": 503.12,
+   "valor_eur": 493.82,
+   "pyg_eur": -9.3,
+   "pyg_pct": -0.0185,
+   "var_dia_pct": -0.017,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0006",
+     "fecha": "2026-11-12 09:39:00",
+     "cantidad": 155.0,
+     "precio": 269.4,
+     "coste_eur": 503.12,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0495
+  },
+  {
+   "ticker": "NWG.L",
+   "nombre": "NatWest Group",
+   "mercado": "LONDRES",
+   "sector": "Bancos",
+   "pais": "GB",
+   "cantidad": 69.0,
+   "precio_medio": 598.2,
+   "precio": 596.9,
+   "unidad_precio": "GBX",
+   "coste_eur": 497.34,
+   "valor_eur": 492.55,
+   "pyg_eur": -4.79,
+   "pyg_pct": -0.0096,
+   "var_dia_pct": -0.0052,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0003",
+     "fecha": "2026-11-12 13:58:00",
+     "cantidad": 69.0,
+     "precio": 598.2,
+     "coste_eur": 497.34,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0494
+  },
+  {
+   "ticker": "BNP.PA",
+   "nombre": "BNP Paribas",
+   "mercado": "PARIS",
+   "sector": "Bancos",
+   "pais": "FR",
+   "cantidad": 5.0,
+   "precio_medio": 96.04,
+   "precio": 96.19,
+   "unidad_precio": "EUR",
+   "coste_eur": 483.42,
+   "valor_eur": 480.95,
+   "pyg_eur": -2.47,
+   "pyg_pct": -0.0051,
+   "var_dia_pct": 0.0044,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0004",
+     "fecha": "2026-11-12 10:00:00",
+     "cantidad": 5.0,
+     "precio": 96.04,
+     "coste_eur": 483.42,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0482
+  }
+ ],
  "realizado_eur": 0.0,
  "benchmarks": {
   "principal": {
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "valor_eur": 10000.0,
-   "rent": 0.0
+   "valor_eur": 9995.0,
+   "rent": -0.0005
   },
   "secundario": {
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "valor_eur": 10000.0,
-   "rent": 0.0
+   "valor_eur": 9995.0,
+   "rent": -0.0005
   },
   "control": {
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "valor_eur": 10000.0,
-   "rent": 0.0
+   "valor_eur": 9995.0,
+   "rent": -0.0005
   }
- }
+ },
+ "descartadas": []
 }
