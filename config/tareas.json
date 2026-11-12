@@ -1,20 +1,22 @@
 {
  "_doc": "Tareas programadas (claude.ai) que ejecutan la cartera. El prompt de cada ejecución está en config/prompts/<EJECUCION>.md.",
  "_incidente_2026-11-11": "Las tareas abrían sesiones nuevas SIN el repositorio adjunto: podían leerlo pero el push daba 403 y se perdió todo lo del 10/11 (cierre) y del 11/11. add_repo no existe en las sesiones que lanza una tarea. Ver diario/2026-11-11.md.",
- "_como_debe_quedar": "Cada tarea necesita el repositorio kleid98/Cartera-value seleccionado en su configuración (claude.ai/code/routines → la tarea → Edit → Advanced settings → Repository → Save changes). Eso solo lo puede hacer Ale desde la web. Mientras no esté hecho, las tres de entre semana están PAUSADAS y cada ejecución se lanza con una sesión creada a mano con el repo adjunto (create_session con source_url) y un aviso de un solo uso que la despierta a su hora.",
- "APERTURA_UE": {"id": "trig_01CEGapUaBpMEvxHmy3HZAt8", "cron": "CRON_TZ=Europe/Madrid 34 9 * * 1-5"},
- "APERTURA_US": {"id": "trig_01AikUWcNyEwnr1XY35S6jAY", "cron": "CRON_TZ=America/New_York 4 10 * * 1-5"},
- "CIERRE": {"id": "trig_01Q31HxP6FUV3dPWk9v1Rt2a", "cron": "CRON_TZ=America/New_York 4 17 * * 1-5"},
- "DOMINGO": {"id": "trig_01UnKHPrvh2AaPgsFJfzg9PC", "cron": "CRON_TZ=Europe/Madrid 4 18 * * 0"},
- "_hoy_2026-11-12": {
-  "APERTURA_UE": {"sesion": "session_01DhaypuDSki9g93o59vnXkg", "aviso": "trig_01TjSK9pWt7uAyXHAFAL5goN", "hora": "09:34 Madrid"},
-  "APERTURA_US": {"sesion": "session_01DhaypuFkuvH5q3hQaHFPZ3", "aviso": "trig_01JGB8CaR3HFaFAAXNmAXb1v", "hora": "10:04 Nueva York"},
-  "CIERRE": {"sesion": "session_01DhayptLF1eBHJCpofMAwmf", "aviso": "trig_01Tcxphi1map1NDyAgh533Mz", "hora": "17:04 Nueva York"}
+ "_como_debe_quedar": "Cada tarea tiene el repositorio kleid98/Cartera-value seleccionado en su configuración (claude.ai/code/routines → la tarea → Edit → Advanced settings → Repository). Hecho por Ale el 12/11/2026 y comprobado. Las sesiones de las tareas arrancan en una rama claude/...; el prompt (config/prompts/) les indica subir a main.",
+ "APERTURA_UE": {
+  "id": "trig_01CEGapUaBpMEvxHmy3HZAt8",
+  "cron": "CRON_TZ=Europe/Madrid 34 9 * * 1-5"
  },
- "_viernes_2026-11-13": {
-  "APERTURA_UE": {"sesion": "session_01DhaypstTimHQF2bMqVezRc", "aviso": "trig_01SYCRPVkyZogTmiuTHu8mBT", "hora": "09:34 Madrid"},
-  "APERTURA_US": {"sesion": "session_01DhaypuF8T9yUH5moWUWLRq", "aviso": "trig_01HN5xkmdSc9JFR4urdA7ZvN", "hora": "10:04 Nueva York"},
-  "CIERRE": {"sesion": "session_01DhaypveQTWoAJN8n4UUWfZ", "aviso": "trig_01QUB5mm9F87oBnN6bqAbF9x", "hora": "17:04 Nueva York (con informe semanal)"}
+ "APERTURA_US": {
+  "id": "trig_01AikUWcNyEwnr1XY35S6jAY",
+  "cron": "CRON_TZ=America/New_York 4 10 * * 1-5"
  },
- "_estado": "12/11/2026 10:30: el arreglo provisional funciona (APERTURA_UE del 12/11 guardó en main, commit a6f92e1). Recurrentes de entre semana PAUSADAS (sin repo adjunto). Preparadas las ejecuciones del 12/11 y del 13/11. DOMINGO (15/11) sigue activa pero SIN repo: fallará al guardar si Ale no la arregla antes. Del lunes 16/11 en adelante no hay nada preparado."
+ "CIERRE": {
+  "id": "trig_01Q31HxP6FUV3dPWk9v1Rt2a",
+  "cron": "CRON_TZ=America/New_York 4 17 * * 1-5"
+ },
+ "DOMINGO": {
+  "id": "trig_01UnKHPrvh2AaPgsFJfzg9PC",
+  "cron": "CRON_TZ=Europe/Madrid 4 18 * * 0"
+ },
+ "_estado": "12/11/2026 10:55: las cuatro recurrentes ACTIVAS con el repositorio adjunto (primera: APERTURA_US del 12/11 a las 10:04 NY). Las tareas de un solo uso del 12 y 13/11 (sesiones creadas a mano) quedan desactivadas."
 }

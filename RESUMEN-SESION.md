@@ -162,17 +162,12 @@ repositorio adjunto**: leen el repo pero el `git push` da 403, y `add_repo` no e
 del CIERRE del 10/11 y de las tres ejecuciones del 11/11 (órdenes lanzadas dos veces y nunca guardadas; el 11/11 queda sin
 operaciones, ver `diario/2026-11-11.md`). Comprobado el 12/11: una sesión creada con `create_session` y `source_url` del
 repo **sí** puede escribir en `main`.
-- **Arreglo definitivo (solo Ale, desde la web):** claude.ai/code/routines → cada una de las 4 tareas → Edit → Advanced
-  settings → Repository → `kleid98/Cartera-value` → Save changes. Para comprobarlo: `update_trigger` con `enabled` igual
-  al que tiene devuelve `session_request.config.sources`, que debe incluir el repo.
-- **Mientras tanto:** las tres de entre semana están pausadas y cada ejecución se lanza con una sesión creada a mano con el
-  repo adjunto más un aviso de un solo uso (`run_once_at`, `persistent_session_id`) que le manda el prompt a su hora. Los
-  prompts están en `config/prompts/`. Hay que prepararlas cada día hasta que Ale haga el arreglo definitivo.
-- **Estado el 12/11 a las 10:30:** el arreglo provisional funciona (la APERTURA_UE del 12/11 guardó en `main`). Están
-  preparadas las ejecuciones del 12/11 y del 13/11 (IDs en `config/tareas.json`). **Del lunes 16/11 en adelante no hay nada
-  preparado, y la tarea DOMINGO del 15/11 sigue sin el repo.** Si Ale no ha hecho el arreglo definitivo, hay que volver a
-  preparar sesiones y avisos (3 por día) antes del lunes.
-- No se creó un "lanzador" automático (una sesión que cree otras sesiones): el sistema lo bloqueó y necesita permiso de Ale.
+- **Resuelto el 12/11/2026:** Ale añadió el repositorio a las 4 tareas (claude.ai/code/routines → tarea → Edit → Advanced
+  settings → Repository). Comprobado con una ejecución real. Cuidado: hay tareas de un solo uso con nombres parecidos
+  («Cartera VALUE · APERTURA_UE del 12/11…»); las buenas son las cuatro «Cartera VALUE ex-USA · …».
+- Las 4 recurrentes están activas y su prompt solo remite a `config/prompts/<EJECUCION>.md`: para cambiar lo que hace una
+  ejecución, se edita ese fichero en el repo. Las sesiones arrancan en una rama `claude/...`; el prompt les dice subir a `main`.
+- Para comprobar el repo de una tarea: `update_trigger` con su mismo `enabled` devuelve `session_request.config.sources`.
 
 **Tareas programadas** (sesión nueva en cada disparo; clonan el repo y siguen `CLAUDE.md` sobre `main`)
 
