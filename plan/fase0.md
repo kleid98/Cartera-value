@@ -43,6 +43,7 @@ por TIR residual < 5% (Linamar y Ahold están por debajo). Innegociables cumplid
 | 19 | AD.AS | Ahold Delhaize | NL0011794037 | AMSTERDAM | NL | Distribución alimentaria | 4,8% | 4,4% | 10,0% | 34,22 € | 14 |
 | 20 | LNR.TO | Linamar | CA53278L1076 | TORONTO | CA | Automóvil | 4,4% | 3,9% | 12,0% | 86,29 CAD | 9 |
 
+- **13/11/2026:** Ayvens vuelve a cumplir el desastre (−49,8% a 9,74 €) y se compra; como BP.L ya entró el 12/11 en su lugar, el plan tendría 21 nombres: **sale Linamar (LNR.TO, la de menor TIR del comité, 4,4%)** y queda como primera reserva. Francia: 6 (completa).
 - **Reserva:** BP.L (TIR comité 3,9%; sería la 6.ª británica). FGR.PA no cabe (7.ª francesa).
 - Conteo: FR 6 · GB 5 · IT 2 · NL 2 · CA 2 · DK, ES, DE 1. Sectores: bancos 3, seguros 3, automóvil 2, salud 2, distribución 2
   (JD y AD si se cuentan juntas), resto 1. Fuera de Europa: 2 de 20 (10%).
