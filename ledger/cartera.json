@@ -1,15 +1,15 @@
 {
- "actualizado": "2026-11-12 23:05:23",
- "valor_total_eur": 9991.16,
- "invertido_eur": 2460.05,
- "caja_eur": 7531.11,
+ "actualizado": "2026-11-13 17:00:03",
+ "valor_total_eur": 9992.41,
+ "invertido_eur": 4379.14,
+ "caja_eur": 5613.26,
  "caja_por_divisa": {
-  "EUR": 7531.1,
+  "EUR": 5613.25,
   "GBP": 0.01
  },
  "aportado_eur": 10000.0,
- "rentabilidad": -0.00088,
- "n_posiciones": 5,
+ "rentabilidad": -0.00076,
+ "n_posiciones": 9,
  "posiciones": [
   {
    "ticker": "HBR.L",
@@ -19,13 +19,13 @@
    "pais": "GB",
    "cantidad": 155.0,
    "precio_medio": 269.4,
-   "precio": 273.8,
+   "precio": 274.2,
    "unidad_precio": "GBX",
    "coste_eur": 503.12,
-   "valor_eur": 507.53,
-   "pyg_eur": 4.41,
-   "pyg_pct": 0.0088,
-   "var_dia_pct": 0.0103,
+   "valor_eur": 508.42,
+   "pyg_eur": 5.3,
+   "pyg_pct": 0.0105,
+   "var_dia_pct": 0.0015,
    "provisional": true,
    "lotes": [
     {
@@ -38,7 +38,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0508
+   "peso": 0.0509
   },
   {
    "ticker": "BP.L",
@@ -48,13 +48,13 @@
    "pais": "GB",
    "cantidad": 74.0,
    "precio_medio": 562.6,
-   "precio": 567.0,
+   "precio": 573.6,
    "unidad_precio": "GBX",
    "coste_eur": 501.62,
-   "valor_eur": 501.78,
-   "pyg_eur": 0.16,
-   "pyg_pct": 0.0003,
-   "var_dia_pct": 0.0,
+   "valor_eur": 507.76,
+   "pyg_eur": 6.14,
+   "pyg_pct": 0.0122,
+   "var_dia_pct": 0.0116,
    "provisional": true,
    "lotes": [
     {
@@ -67,7 +67,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0502
+   "peso": 0.0508
+  },
+  {
+   "ticker": "AYV.PA",
+   "nombre": "Ayvens",
+   "mercado": "PARIS",
+   "sector": "Financieras",
+   "pais": "FR",
+   "cantidad": 51.0,
+   "precio_medio": 9.74,
+   "precio": 9.78,
+   "unidad_precio": "EUR",
+   "coste_eur": 500.03,
+   "valor_eur": 498.78,
+   "pyg_eur": -1.25,
+   "pyg_pct": -0.0025,
+   "var_dia_pct": -0.0036,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0014",
+     "fecha": "2026-11-13 09:38:00",
+     "cantidad": 51.0,
+     "precio": 9.74,
+     "coste_eur": 500.03,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0499
   },
   {
    "ticker": "NWG.L",
@@ -77,13 +106,13 @@
    "pais": "GB",
    "cantidad": 69.0,
    "precio_medio": 598.2,
-   "precio": 597.2,
+   "precio": 597.1,
    "unidad_precio": "GBX",
    "coste_eur": 497.34,
-   "valor_eur": 492.8,
-   "pyg_eur": -4.54,
-   "pyg_pct": -0.0091,
-   "var_dia_pct": -0.0047,
+   "valor_eur": 492.85,
+   "pyg_eur": -4.49,
+   "pyg_pct": -0.009,
+   "var_dia_pct": -0.0002,
    "provisional": true,
    "lotes": [
     {
@@ -99,6 +128,35 @@
    "peso": 0.0493
   },
   {
+   "ticker": "NN.AS",
+   "nombre": "NN Group",
+   "mercado": "AMSTERDAM",
+   "sector": "Seguros",
+   "pais": "NL",
+   "cantidad": 6.0,
+   "precio_medio": 81.44,
+   "precio": 81.4,
+   "unidad_precio": "EUR",
+   "coste_eur": 489.94,
+   "valor_eur": 488.4,
+   "pyg_eur": -1.54,
+   "pyg_pct": -0.0031,
+   "var_dia_pct": 0.0017,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0011",
+     "fecha": "2026-11-13 10:08:00",
+     "cantidad": 6.0,
+     "precio": 81.44,
+     "coste_eur": 489.94,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0489
+  },
+  {
    "ticker": "NOVO-B.CO",
    "nombre": "Novo Nordisk",
    "mercado": "COPENHAGUE",
@@ -106,13 +164,13 @@
    "pais": "DK",
    "cantidad": 13.0,
    "precio_medio": 272.7,
-   "precio": 275.75,
+   "precio": 278.45,
    "unidad_precio": "DKK",
    "coste_eur": 475.61,
-   "valor_eur": 479.53,
-   "pyg_eur": 3.92,
-   "pyg_pct": 0.0082,
-   "var_dia_pct": 0.0112,
+   "valor_eur": 484.23,
+   "pyg_eur": 8.62,
+   "pyg_pct": 0.0181,
+   "var_dia_pct": 0.0098,
    "provisional": true,
    "lotes": [
     {
@@ -125,7 +183,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.048
+   "peso": 0.0485
+  },
+  {
+   "ticker": "AZM.MI",
+   "nombre": "Azimut Holding",
+   "mercado": "MILAN",
+   "sector": "Gestión de activos",
+   "pais": "IT",
+   "cantidad": 13.0,
+   "precio_medio": 37.08,
+   "precio": 36.95,
+   "unidad_precio": "EUR",
+   "coste_eur": 483.82,
+   "valor_eur": 480.35,
+   "pyg_eur": -3.47,
+   "pyg_pct": -0.0072,
+   "var_dia_pct": -0.0048,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0013",
+     "fecha": "2026-11-13 09:40:00",
+     "cantidad": 13.0,
+     "precio": 37.08,
+     "coste_eur": 483.82,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0481
   },
   {
    "ticker": "BNP.PA",
@@ -135,13 +222,13 @@
    "pais": "FR",
    "cantidad": 5.0,
    "precio_medio": 96.04,
-   "precio": 95.68,
+   "precio": 95.63,
    "unidad_precio": "EUR",
    "coste_eur": 483.42,
-   "valor_eur": 478.4,
-   "pyg_eur": -5.02,
-   "pyg_pct": -0.0104,
-   "var_dia_pct": -0.0009,
+   "valor_eur": 478.15,
+   "pyg_eur": -5.27,
+   "pyg_pct": -0.0109,
+   "var_dia_pct": -0.0005,
    "provisional": true,
    "lotes": [
     {
@@ -155,6 +242,35 @@
    ],
    "dividendos_y_realizado_eur": 0.0,
    "peso": 0.0479
+  },
+  {
+   "ticker": "SAN.PA",
+   "nombre": "Sanofi",
+   "mercado": "PARIS",
+   "sector": "Salud",
+   "pais": "FR",
+   "cantidad": 5.0,
+   "precio_medio": 88.2,
+   "precio": 88.04,
+   "unidad_precio": "EUR",
+   "coste_eur": 444.06,
+   "valor_eur": 440.2,
+   "pyg_eur": -3.86,
+   "pyg_pct": -0.0087,
+   "var_dia_pct": 0.0007,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0012",
+     "fecha": "2026-11-13 09:37:00",
+     "cantidad": 5.0,
+     "precio": 88.2,
+     "coste_eur": 444.06,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0441
   }
  ],
  "realizado_eur": 0.0,
@@ -162,20 +278,20 @@
   "principal": {
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "valor_eur": 9993.75,
-   "rent": -0.00063
+   "valor_eur": 9987.36,
+   "rent": -0.00126
   },
   "secundario": {
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "valor_eur": 9993.75,
-   "rent": -0.00063
+   "valor_eur": 9982.18,
+   "rent": -0.00178
   },
   "control": {
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "valor_eur": 9993.75,
-   "rent": -0.00063
+   "valor_eur": 9965.25,
+   "rent": -0.00348
   }
  },
  "descartadas": [

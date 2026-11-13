@@ -255,3 +255,4 @@ PRECIO_ACTUAL: 87.38
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (tras Q3 2026, antes del Investor Day del 11/11) | — → 6,7% (propia) | — | Candidata |
 | 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,1% → 8,0% | Sin cambios | Sin cambio de decisión; puesto 8 de 20 |
+| 2026-11-13 | Investor Day del 11/11 leído: objetivos a 2030 (crecer por encima del mercado, seguir ampliando margen, disciplina de capital; >90% de las ventas de 2028 ya adjudicadas), recompra del 10% del free float (25,8 M acciones) que se completará en 12 meses. Sin adquisición grande ni subida del capex por encima del 5% de ventas (capex 2026 1.500–1.600 M USD ≈ 3,8%). Ninguna condición de invalidación tocada. Arancel del 01/01/2027 sigue sin resolver | TIR comité 8,0% → 7,4% (precio del día 88,65 CAD; escenarios sin tocar) | Sin cambios | Compra 🟡 provisional (O-0011) |
