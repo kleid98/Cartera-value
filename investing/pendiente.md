@@ -100,3 +100,14 @@ Precio:    9,7400
 Comisión:  3,29 EUR
 ```
 > 💡 **Por qué se compra:** Que el negocio principal (los contratos) siga mejorando y los costes bajen con la integración: con el usado en cero ya gana unos 1.000 M€ al año, y el usado parece haber tocado suelo. **Objetivo 3 años 12,50 € (+28,3%)** desde tu precio de compra.
+
+### `T-0016` ✅ COMPRA · Magna International
+```
+Buscar:    Magna International  → elegir la de "Toronto" (MG.TO)
+Tipo:      Compra
+Fecha:     13/11/2026
+Cantidad:  8
+Precio:    88,56
+Comisión:  1,07 CAD
+```
+> 💡 **Por qué se compra:** Que pase a ser una máquina de caja que se recompra a sí misma: ha simplificado el grupo, cierra plantas en Europa, ha bajado la inversión y el margen mejora trimestre a trimestre. **Objetivo 3 años 108 CAD (+21,9%)** desde tu precio de compra.

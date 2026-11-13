@@ -1,18 +1,18 @@
 {
  "resumen": [
   {
-   "actualizado": "2026-11-12 23:05:23",
-   "valor_total_eur": 9991.16,
+   "actualizado": "2026-11-13 23:07:07",
+   "valor_total_eur": 9987.19,
    "aportado_eur": 10000.0,
-   "rentabilidad": -0.00088,
-   "caja_eur": 7531.11,
-   "invertido_eur": 2460.05,
-   "n_posiciones": 5,
+   "rentabilidad": -0.00128,
+   "caja_eur": 5161.93,
+   "invertido_eur": 4825.25,
+   "n_posiciones": 10,
    "max_posiciones": 20,
-   "rent_bench_principal": -0.00063,
-   "alfa": -0.00025,
-   "n_provisionales": 5,
-   "pendientes_investing": 5
+   "rent_bench_principal": -0.00146,
+   "alfa": 0.00017999999999999982,
+   "n_provisionales": 10,
+   "pendientes_investing": 10
   }
  ],
  "historico": [
@@ -29,25 +29,16 @@
    "principal": -0.00062,
    "secundario": -0.00062,
    "control": -0.00062
+  },
+  {
+   "fecha": "2026-11-13",
+   "cartera": -0.00128,
+   "principal": -0.00146,
+   "secundario": -0.00173,
+   "control": -0.00332
   }
  ],
  "posiciones": [
-  {
-   "ticker": "HBR.L",
-   "nombre": "Harbour Energy",
-   "mercado": "LONDRES",
-   "pais": "GB",
-   "sector": "Energía",
-   "estado": "Provisional",
-   "cantidad": 155.0,
-   "coste_eur": 503.12,
-   "valor_eur": 507.53,
-   "pyg_eur": 4.41,
-   "pyg_pct": 0.0088,
-   "var_dia_pct": 0.0103,
-   "peso": 0.0508,
-   "tir_esperada": 0.0786
-  },
   {
    "ticker": "BP.L",
    "nombre": "BP plc",
@@ -57,12 +48,44 @@
    "estado": "Provisional",
    "cantidad": 74.0,
    "coste_eur": 501.62,
-   "valor_eur": 501.78,
-   "pyg_eur": 0.16,
-   "pyg_pct": 0.0003,
-   "var_dia_pct": 0.0,
-   "peso": 0.0502,
+   "valor_eur": 508.91,
+   "pyg_eur": 7.29,
+   "pyg_pct": 0.0145,
+   "var_dia_pct": 0.0139,
+   "peso": 0.051,
    "tir_esperada": 0.0388
+  },
+  {
+   "ticker": "HBR.L",
+   "nombre": "Harbour Energy",
+   "mercado": "LONDRES",
+   "pais": "GB",
+   "sector": "Energía",
+   "estado": "Provisional",
+   "cantidad": 155.0,
+   "coste_eur": 503.12,
+   "valor_eur": 506.56,
+   "pyg_eur": 3.44,
+   "pyg_pct": 0.0068,
+   "var_dia_pct": -0.0022,
+   "peso": 0.0507,
+   "tir_esperada": 0.0786
+  },
+  {
+   "ticker": "AYV.PA",
+   "nombre": "Ayvens",
+   "mercado": "PARIS",
+   "pais": "FR",
+   "sector": "Financieras",
+   "estado": "Provisional",
+   "cantidad": 51.0,
+   "coste_eur": 500.03,
+   "valor_eur": 498.53,
+   "pyg_eur": -1.5,
+   "pyg_pct": -0.003,
+   "var_dia_pct": -0.0041,
+   "peso": 0.0499,
+   "tir_esperada": 0.0868
   },
   {
    "ticker": "NWG.L",
@@ -73,12 +96,28 @@
    "estado": "Provisional",
    "cantidad": 69.0,
    "coste_eur": 497.34,
-   "valor_eur": 492.8,
-   "pyg_eur": -4.54,
-   "pyg_pct": -0.0091,
-   "var_dia_pct": -0.0047,
-   "peso": 0.0493,
+   "valor_eur": 495.24,
+   "pyg_eur": -2.1,
+   "pyg_pct": -0.0042,
+   "var_dia_pct": 0.0047,
+   "peso": 0.0496,
    "tir_esperada": 0.099
+  },
+  {
+   "ticker": "NN.AS",
+   "nombre": "NN Group",
+   "mercado": "AMSTERDAM",
+   "pais": "NL",
+   "sector": "Seguros",
+   "estado": "Provisional",
+   "cantidad": 6.0,
+   "coste_eur": 489.94,
+   "valor_eur": 488.04,
+   "pyg_eur": -1.9,
+   "pyg_pct": -0.0039,
+   "var_dia_pct": 0.001,
+   "peso": 0.0489,
+   "tir_esperada": 0.0719
   },
   {
    "ticker": "NOVO-B.CO",
@@ -89,12 +128,28 @@
    "estado": "Provisional",
    "cantidad": 13.0,
    "coste_eur": 475.61,
-   "valor_eur": 479.53,
-   "pyg_eur": 3.92,
-   "pyg_pct": 0.0082,
-   "var_dia_pct": 0.0112,
-   "peso": 0.048,
+   "valor_eur": 484.23,
+   "pyg_eur": 8.62,
+   "pyg_pct": 0.0181,
+   "var_dia_pct": 0.0098,
+   "peso": 0.0485,
    "tir_esperada": 0.0731
+  },
+  {
+   "ticker": "AZM.MI",
+   "nombre": "Azimut Holding",
+   "mercado": "MILAN",
+   "pais": "IT",
+   "sector": "Gestión de activos",
+   "estado": "Provisional",
+   "cantidad": 13.0,
+   "coste_eur": 483.82,
+   "valor_eur": 481.65,
+   "pyg_eur": -2.17,
+   "pyg_pct": -0.0045,
+   "var_dia_pct": -0.0022,
+   "peso": 0.0482,
+   "tir_esperada": 0.0637
   },
   {
    "ticker": "BNP.PA",
@@ -105,15 +160,119 @@
    "estado": "Provisional",
    "cantidad": 5.0,
    "coste_eur": 483.42,
-   "valor_eur": 478.4,
-   "pyg_eur": -5.02,
-   "pyg_pct": -0.0104,
-   "var_dia_pct": -0.0009,
-   "peso": 0.0479,
+   "valor_eur": 477.85,
+   "pyg_eur": -5.57,
+   "pyg_pct": -0.0115,
+   "var_dia_pct": -0.0011,
+   "peso": 0.0478,
    "tir_esperada": 0.0982
+  },
+  {
+   "ticker": "MG.TO",
+   "nombre": "Magna International",
+   "mercado": "TORONTO",
+   "pais": "CA",
+   "sector": "Automóvil",
+   "estado": "Provisional",
+   "cantidad": 8.0,
+   "coste_eur": 449.4,
+   "valor_eur": 446.23,
+   "pyg_eur": -3.17,
+   "pyg_pct": -0.007,
+   "var_dia_pct": -0.01,
+   "peso": 0.0447,
+   "tir_esperada": 0.0798
+  },
+  {
+   "ticker": "SAN.PA",
+   "nombre": "Sanofi",
+   "mercado": "PARIS",
+   "pais": "FR",
+   "sector": "Salud",
+   "estado": "Provisional",
+   "cantidad": 5.0,
+   "coste_eur": 444.06,
+   "valor_eur": 438.0,
+   "pyg_eur": -6.06,
+   "pyg_pct": -0.0136,
+   "var_dia_pct": -0.0043,
+   "peso": 0.0439,
+   "tir_esperada": 0.0686
   }
  ],
  "operaciones": [
+  {
+   "id": "T-0016",
+   "fecha": "2026-11-13 17:02:00",
+   "tipo": "COMPRA",
+   "nombre": "Magna International",
+   "ticker": "MG.TO",
+   "cantidad": 8.0,
+   "precio": 88.56,
+   "unidad": "CAD",
+   "importe_eur": 449.4,
+   "motivo": "Fase 0 provisional: TIR comité 7,4% (precio del día 88,65 CAD); Investor Day 11/11 sin tocar condiciones de invalidación · Objetivo 3 años 108 CAD (+21,9%)"
+  },
+  {
+   "id": "T-0015",
+   "fecha": "2026-11-13 17:02:00",
+   "tipo": "FX",
+   "nombre": "Divisa CAD",
+   "ticker": "",
+   "cantidad": null,
+   "precio": null,
+   "unidad": "",
+   "importe_eur": 451.33,
+   "motivo": "EUR→CAD para MG.TO: base 449.40€ + diferencial 0.13€ + comisión 1.80€"
+  },
+  {
+   "id": "T-0014",
+   "fecha": "2026-11-13 09:38:00",
+   "tipo": "COMPRA",
+   "nombre": "Ayvens",
+   "ticker": "AYV.PA",
+   "cantidad": 51.0,
+   "precio": 9.74,
+   "unidad": "EUR",
+   "importe_eur": 500.03,
+   "motivo": "Fase 0 provisional: TIR comité 8,3% (precio del día 9,725 €; desastre −49,8%) · Objetivo 3 años 12,50 € (+28,3%)"
+  },
+  {
+   "id": "T-0013",
+   "fecha": "2026-11-13 09:40:00",
+   "tipo": "COMPRA",
+   "nombre": "Azimut Holding",
+   "ticker": "AZM.MI",
+   "cantidad": 13.0,
+   "precio": 37.08,
+   "unidad": "EUR",
+   "importe_eur": 483.82,
+   "motivo": "Fase 0 provisional: TIR comité 5,1% (precio del día 37,15 €; desastre −49,6%) · Objetivo 3 años 40,00 € (+7,9%)"
+  },
+  {
+   "id": "T-0012",
+   "fecha": "2026-11-13 09:37:00",
+   "tipo": "COMPRA",
+   "nombre": "Sanofi",
+   "ticker": "SAN.PA",
+   "cantidad": 5.0,
+   "precio": 88.2,
+   "unidad": "EUR",
+   "importe_eur": 444.06,
+   "motivo": "Fase 0 provisional: TIR comité 5,1% (precio del día 88,14 €) · Objetivo 3 años 92,00 € (+4,3%)"
+  },
+  {
+   "id": "T-0011",
+   "fecha": "2026-11-13 10:08:00",
+   "tipo": "COMPRA",
+   "nombre": "NN Group",
+   "ticker": "NN.AS",
+   "cantidad": 6.0,
+   "precio": 81.44,
+   "unidad": "EUR",
+   "importe_eur": 489.94,
+   "motivo": "Fase 0 provisional: TIR comité 6,2% (precio del día 81,40 €) · Objetivo 3 años 92,00 € (+13,0%)"
+  },
   {
    "id": "T-0010",
    "fecha": "2026-11-12 16:08:00",
@@ -237,64 +396,76 @@
  ],
  "ordenes": [
   {
-   "id": "O-0005",
-   "creada": "2026-11-12 16:07:09",
+   "id": "O-0011",
+   "creada": "2026-11-13 16:59:51",
    "lado": "COMPRA",
-   "nombre": "Novo Nordisk",
-   "ticker": "NOVO-B.CO",
+   "nombre": "Magna International",
+   "ticker": "MG.TO",
+   "cantidad": 8.0,
+   "limite": 88.56,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 7,4% (precio del día 88,65 CAD); Investor Day 11/11 sin tocar condiciones de invalidación · Objetivo 3 años 108 CAD (+21,9%)"
+  },
+  {
+   "id": "O-0010",
+   "creada": "2026-11-13 09:36:35",
+   "lado": "COMPRA",
+   "nombre": "Ayvens",
+   "ticker": "AYV.PA",
+   "cantidad": 51.0,
+   "limite": 9.74,
+   "tipo": "PASIVA",
+   "estado": "EJECUTADA",
+   "motivo": "Fase 0 provisional: TIR comité 8,3% (precio del día 9,725 €; desastre −49,8%) · Objetivo 3 años 12,50 € (+28,3%)"
+  },
+  {
+   "id": "O-0009",
+   "creada": "2026-11-13 09:36:28",
+   "lado": "COMPRA",
+   "nombre": "Azimut Holding",
+   "ticker": "AZM.MI",
    "cantidad": 13.0,
-   "limite": 272.7,
+   "limite": 37.08,
    "tipo": "PASIVA",
    "estado": "EJECUTADA",
-   "motivo": "Fase 0 provisional: TIR comité 7,0% (precio hoy 272,2 DKK) · Objetivo 3 años 351 DKK (+28,7%)"
+   "motivo": "Fase 0 provisional: TIR comité 5,1% (precio del día 37,15 €; desastre −49,6%) · Objetivo 3 años 40,00 € (+7,9%)"
   },
   {
-   "id": "O-0004",
-   "creada": "2026-11-12 09:37:11",
+   "id": "O-0008",
+   "creada": "2026-11-13 09:36:21",
    "lado": "COMPRA",
-   "nombre": "BP plc",
-   "ticker": "BP.L",
-   "cantidad": 74.0,
-   "limite": 562.6,
-   "tipo": "PASIVA",
-   "estado": "EJECUTADA",
-   "motivo": "Fase 0 provisional (reserva por Ayvens, desastre −50,6% a precio hoy): TIR comité 3,8% (precio hoy 561,4p) · Objetivo 3 años 600 p (+6,7%)"
-  },
-  {
-   "id": "O-0003",
-   "creada": "2026-11-12 09:37:04",
-   "lado": "COMPRA",
-   "nombre": "Harbour Energy",
-   "ticker": "HBR.L",
-   "cantidad": 155.0,
-   "limite": 269.4,
-   "tipo": "PASIVA",
-   "estado": "EJECUTADA",
-   "motivo": "Fase 0 provisional: TIR comité 7,1% (precio hoy 269,2p) · Objetivo 3 años 350 p (+29,9%)"
-  },
-  {
-   "id": "O-0002",
-   "creada": "2026-11-12 09:36:48",
-   "lado": "COMPRA",
-   "nombre": "BNP Paribas",
-   "ticker": "BNP.PA",
+   "nombre": "Sanofi",
+   "ticker": "SAN.PA",
    "cantidad": 5.0,
-   "limite": 96.04,
+   "limite": 88.2,
    "tipo": "PASIVA",
    "estado": "EJECUTADA",
-   "motivo": "Fase 0 provisional: TIR comité 8,2% (precio hoy 96,12 €) · Objetivo 3 años 111 € (+15,6%)"
+   "motivo": "Fase 0 provisional: TIR comité 5,1% (precio del día 88,14 €) · Objetivo 3 años 92,00 € (+4,3%)"
   },
   {
-   "id": "O-0001",
-   "creada": "2026-11-12 09:36:40",
+   "id": "O-0007",
+   "creada": "2026-11-13 09:36:14",
    "lado": "COMPRA",
-   "nombre": "NatWest Group",
-   "ticker": "NWG.L",
-   "cantidad": 69.0,
-   "limite": 598.2,
+   "nombre": "NN Group",
+   "ticker": "NN.AS",
+   "cantidad": 6.0,
+   "limite": 81.44,
    "tipo": "PASIVA",
    "estado": "EJECUTADA",
-   "motivo": "Fase 0 provisional: TIR comité 9,2% (precio hoy 599,3p) · Objetivo 3 años 748 p (+25,0%)"
+   "motivo": "Fase 0 provisional: TIR comité 6,2% (precio del día 81,40 €) · Objetivo 3 años 92,00 € (+13,0%)"
+  },
+  {
+   "id": "O-0006",
+   "creada": "2026-11-13 09:36:07",
+   "lado": "COMPRA",
+   "nombre": "Teleperformance",
+   "ticker": "TEP.PA",
+   "cantidad": 7.0,
+   "limite": 70.72,
+   "tipo": "PASIVA",
+   "estado": "CADUCADA",
+   "motivo": "Fase 0 provisional: TIR comité 8,6% (precio del día 70,98 €) · Objetivo 3 años 95,00 € (+34,3%)"
   }
  ],
  "investing": [
@@ -357,6 +528,66 @@
    "unidad": "DKK",
    "comision": 10.35,
    "divisa_comision": "DKK"
+  },
+  {
+   "id": "T-0011",
+   "fecha": "13/11/2026",
+   "tipo": "Compra",
+   "nombre": "NN Group",
+   "bolsa": "Ámsterdam",
+   "cantidad": 6.0,
+   "precio": 81.44,
+   "unidad": "EUR",
+   "comision": 1.3,
+   "divisa_comision": "EUR"
+  },
+  {
+   "id": "T-0012",
+   "fecha": "13/11/2026",
+   "tipo": "Compra",
+   "nombre": "Sanofi",
+   "bolsa": "París",
+   "cantidad": 5.0,
+   "precio": 88.2,
+   "unidad": "EUR",
+   "comision": 3.06,
+   "divisa_comision": "EUR"
+  },
+  {
+   "id": "T-0013",
+   "fecha": "13/11/2026",
+   "tipo": "Compra",
+   "nombre": "Azimut Holding",
+   "bolsa": "Milán",
+   "cantidad": 13.0,
+   "precio": 37.08,
+   "unidad": "EUR",
+   "comision": 1.78,
+   "divisa_comision": "EUR"
+  },
+  {
+   "id": "T-0014",
+   "fecha": "13/11/2026",
+   "tipo": "Compra",
+   "nombre": "Ayvens",
+   "bolsa": "París",
+   "cantidad": 51.0,
+   "precio": 9.74,
+   "unidad": "EUR",
+   "comision": 3.29,
+   "divisa_comision": "EUR"
+  },
+  {
+   "id": "T-0016",
+   "fecha": "13/11/2026",
+   "tipo": "Compra",
+   "nombre": "Magna International",
+   "bolsa": "Toronto",
+   "cantidad": 8.0,
+   "precio": 88.56,
+   "unidad": "CAD",
+   "comision": 1.07,
+   "divisa_comision": "CAD"
   }
  ],
  "benchmarks": [
@@ -364,19 +595,19 @@
    "clave": "principal",
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "rent": -0.00063
+   "rent": -0.00146
   },
   {
    "clave": "secundario",
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "rent": -0.00063
+   "rent": -0.00173
   },
   {
    "clave": "control",
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "rent": -0.00063
+   "rent": -0.00332
   }
  ]
 }
