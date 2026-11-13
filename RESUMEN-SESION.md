@@ -1,7 +1,7 @@
 # RESUMEN DE SESIÓN — Cartera VALUE ex-USA
 
 > **Qué es este archivo:** el documento de traspaso para que una sesión nueva de Claude Code, que no ha visto nada de lo
-> hablado, pueda seguir el proyecto donde se dejó. Generado el **jueves 12/11/2026 a las 11:00 (Madrid)**. Se sobrescribe
+> hablado, pueda seguir el proyecto donde se dejó. Generado el **viernes 13/11/2026 a las 10:45 (Madrid)**. Se sobrescribe
 > en cada limpieza; solo vale la última versión. Para continuar, basta con decirle a Claude: *"lee RESUMEN-SESION.md y sigue"*.
 
 ---
@@ -13,14 +13,26 @@ de ~500 €, máximo 20 valores, sin empresas de EE. UU.). Cada compra se decide
 por un **comité de dos agentes independientes** (bajista y valorador ciego). Cuatro tareas programadas la gestionan solas
 cada día; Ale copia las operaciones en Investing. El manual de operación es `CLAUDE.md`; las reglas, `config/reglas.json`.
 
-**Estado (12/11/2026, 11:00):** estamos en la **Fase 0 (compra de las 20 posiciones), del 11 al 20/11/2026**.
-- **El 11/11 se perdió entero** (incidente de permisos, ver sección 6). El primer día real de compras es hoy, 12/11.
-- **Hoy a las 09:37** la APERTURA_UE lanzó 4 compras PASIVAS, guardadas en `main` (commit `a6f92e1`), **aún PENDIENTES**:
-  O-0001 NWG.L @ 598,2 p · O-0002 BNP.PA @ 96,04 € · O-0003 HBR.L @ 269,4 p · O-0004 BP.L @ 562,6 p
-  (**BP entra en lugar de Ayvens**: el desastre de Ayvens queda por debajo de −50% al precio del día).
-- Libro: solo la aportación T-0001 de 10.000 €; ninguna compra ejecutada todavía.
-- **Las 4 tareas programadas están activas y ya tienen el repositorio adjunto** (arreglado hoy por Ale y comprobado).
-  Próxima: APERTURA_US hoy a las 16:04 (Madrid), que debe comprar NOVO-B.CO y validar las 4 órdenes de la mañana.
+**Estado (13/11/2026, 10:45):** estamos en la **Fase 0 (compra de las 20 posiciones), del 11 al 20/11/2026**.
+- **El 11/11 se perdió entero** (incidente de permisos, ver sección 6). Las compras empezaron el 12/11.
+- **Las tareas programadas ya funcionan solas** desde el 12/11 por la tarde: APERTURA_US y CIERRE del 12/11 y APERTURA_UE
+  del 13/11 han guardado su trabajo en `main` (commits `9fec672`, `6d39fbd`, `04fa2e0`).
+- **5 posiciones compradas** (todas 🟡 provisionales, al límite PASIVO):
+
+  | Op. | Valor | Cantidad | Precio | € |
+  |---|---|---|---|---|
+  | T-0003 | NatWest (NWG.L) | 69 | 598,2 p | 497 |
+  | T-0004 | BNP Paribas (BNP.PA) | 5 | 96,04 € | 483 |
+  | T-0006 | Harbour Energy (HBR.L) | 155 | 269,4 p | 503 |
+  | T-0008 | BP (BP.L) | 74 | 562,6 p | 502 |
+  | T-0010 | Novo Nordisk (NOVO-B.CO) | 13 | 272,7 DKK | 476 |
+
+- **Órdenes PENDIENTES del 13/11 (09:36):** O-0006 TEP.PA 7 @ 70,72 € · O-0007 NN.AS 6 @ 81,44 € · O-0008 SAN.PA 5 @ 88,20 €
+  · O-0009 AZM.MI 13 @ 37,08 € · O-0010 AYV.PA 51 @ 9,74 €. Esta tarde (APERTURA_US): MG.TO.
+- **Cierre del 12/11:** valor 9.991 € (−0,09%) frente a −0,06% del MSCI Europe Value; caja 7.531 €.
+- **Ayvens ha vuelto** (13/11: a 9,74 € el desastre queda en −49,8%, cumple) **y BP se queda**, así que **Linamar (LNR.TO,
+  la de menor TIR, 4,4%) sale del plan**. Si otro valor no llega a entrar, Linamar es la siguiente.
+- Investing: Ale tiene pendientes de pasar T-0003, T-0004, T-0006, T-0008 y T-0010 (`investing/pendiente.md`).
 
 ## 2. Decisiones clave y por qué (no reabrirlas)
 
@@ -85,22 +97,24 @@ Arreglado el 11/11: `cartera.py` crea `data/benchmarks/` si no existe (fallaba e
 **Datos**
 - `tesis/*.md`: 33 tesis, 23 con comité. Las 20 de la Fase 0 y BP.L tienen `## En pocas palabras`; las otras 12 no.
 - `plan/fase0.md` (plan y calendario), `plan/calendario.md` (fechas de resultados), `plan/candidatos.md`, `plan/cribado.csv`.
-- `ledger/operaciones.csv` (solo T-0001), `ledger/ordenes.csv` (O-0001 a O-0004), `ledger/descartadas.csv` (12, en papel
-  desde el 11/11), `ledger/predicciones.csv` (se crea con la primera compra ejecutada), `ledger/cartera.json`, `historico.csv`.
-- `diario/2026-11-10.md`, `2026-11-11.md` (incidente), `2026-11-12.md` (compras de hoy con sus fichas).
+- `ledger/operaciones.csv` (T-0001 a T-0010: aportación, 5 FX y 5 compras), `ledger/ordenes.csv` (O-0001 a O-0010),
+  `ledger/predicciones.csv` (5 filas, una por compra), `ledger/descartadas.csv` (12, en papel desde el 11/11),
+  `ledger/cartera.json`, `ledger/historico.csv` (filas del 07/11 y del 12/11).
+- `diario/2026-11-10.md`, `2026-11-11.md` (incidente), `2026-11-12.md`, `2026-11-13.md` (con las fichas de cada compra).
 - `investing/pendiente.md`, `investing/estado.json`.
 
 **Las 20 de la Fase 0** (TIR del comité al 10/11; todas 🟡 provisionales): NWG.L 9,9 · TEP.PA 9,9 · BNP.PA 9,8 ·
 JD.L 8,8 · AYV.PA 8,7 · FNTN.DE 8,5 · IMB.L 8,4 · MG.TO 8,0 · HBR.L 7,9 · NOVO-B.CO 7,3 · NN.AS 7,2 · SAN.PA 6,9 ·
 CNA.L 6,7 · AZM.MI 6,4 · ISP.MI 6,2 · EN.PA 6,2 · MAP.MC 5,4 · SCR.PA 5,4 · AD.AS 4,8 · LNR.TO 4,4.
-**Reserva única: BP.L** (3,9%) — **ya usada hoy en lugar de Ayvens**. Ya no queda reserva con comité.
+**Reserva: BP.L** (3,9%), comprada el 12/11 cuando Ayvens no cumplía el desastre. Ayvens volvió a cumplir el 13/11 y se
+ha lanzado también, así que **la que sale es Linamar** (ahora es la reserva). Ver `diario/2026-11-13.md`.
 
 **Calendario de compras** (`plan/fase0.md`, desplazado un día por el 11/11)
-- Jue 12/11: NWG, BNP, HBR, BP (lanzadas) · tarde: NOVO.
-- Vie 13/11: TEP, NN, SAN, AZM · tarde: MG (Toronto, tras su Investor Day del 11/11).
-- Lun 16/11: CNA, ISP, EN, FNTN (publicó 9 meses el 12/11: solo si no toca una condición) · tarde: LNR.
+- ✅ Jue 12/11: NWG, BNP, HBR, BP y NOVO (ejecutadas).
+- Vie 13/11: TEP, NN, SAN, AZM y AYV (lanzadas, pendientes) · tarde: MG (Toronto, tras su Investor Day del 11/11).
+- Lun 16/11: CNA, ISP, EN, FNTN (antes leer sus 9 meses; solo si no tocan una condición de invalidación) + lo que caduque hoy.
 - Mar 17/11: MAP, SCR, AD. Mié 18/11: IMB (tras sus resultados del 17/11). Jue 19/11: JD (tras su trading statement).
-- Vie 20/11: lo que quede sin ejecutar va AGRESIVA.
+- Vie 20/11: lo que quede sin ejecutar va AGRESIVA. Linamar solo si falta alguno.
 
 **Panel:** https://claude.ai/artifact/46h4ity964Kmw8rMaB8dxR (Dashboard; 6 datasets que leen un asset `panel.json`;
 copia de la página en `panel/index.html`; no tocar `files/index.html` salvo que Ale pida cambios de diseño).
@@ -124,14 +138,11 @@ sesión (y, en las tareas, con el repositorio adjunto en su configuración).
 
 ## 5. Pendiente, en este orden
 
-1. **Comprobar hoy que las tareas guardan bien.** Tras la APERTURA_US (16:04) y el CIERRE (23:04), mirar que hay commits
-   nuevos en `main`, que las órdenes O-0001…O-0004 se han validado o caducado, que NOVO se ha comprado y que el panel se
-   ha actualizado. Es la primera vez que corren las tareas recurrentes con el repo adjunto y en una rama `claude/...`:
-   el riesgo es que suban a su rama y no a `main` (el prompt lo prohíbe, pero no se ha visto aún en una ejecución real).
-2. **Sin reserva.** BP ya entró por Ayvens. Si freenet (9 meses del 12/11), Imperial (17/11) o JD (19/11) tocan una
-   condición de invalidación, no hay sustituto con comité: la cartera se queda en 19 (o menos) y se anota. Opción, si
-   Ale quiere: preparar el domingo una tesis con comité de reserva (≈ 30% de una ventana de uso). Azimut (−49,0%) e
-   Intesa (−49,4%) estaban al límite del desastre: pueden caerse al precio del día.
+1. **Seguir la Fase 0 hasta el 20/11.** Lo hacen solas las tareas programadas; basta con revisar de vez en cuando que hay
+   commits nuevos en `main` y diario de cada ejecución. Lo que caduque se relanza al día siguiente y al 3.er día va AGRESIVA.
+2. **Reserva:** si freenet (9 meses), Imperial (17/11) o JD (19/11) tocan una condición de invalidación, o Ayvens vuelve a
+   fallar el desastre, entra Linamar. Si fallan dos, la cartera se queda en 19 y se anota. Azimut (−49,0%) e Intesa
+   (−49,4%) estaban al límite del desastre: pueden caerse al precio del día.
 3. Fechas sensibles: Magna y Linamar (arancel del 01/01/2027, se revisan juntas), SCOR (plan estratégico 03/12), Azimut
    (Banco de Italia a finales de noviembre; TNB 20/12), BP (estrategia en diciembre).
 4. A vigilar sin acción: retención francesa (el sistema usa 12,8%; IBKR podría aplicar 25%; hay 6 francesas);
@@ -142,7 +153,7 @@ sesión (y, en las tareas, con el repositorio adjunto en su configuración).
 
 ## 6. Cosas a tener en cuenta
 
-**Incidente del 11/11 (que no se repita)**
+**Incidente del 11/11 (resuelto el 12/11; que no se repita)**
 - Una tarea programada abre una sesión **nueva**; si la tarea no tiene el repositorio en su configuración, la sesión
   puede clonar y leer pero **el push da 403** y todo se pierde al cerrarse. `add_repo` no existe en esas sesiones.
 - Se arregla en claude.ai/code/routines → tarea → Edit → Advanced settings → Repository → Save changes (solo Ale).
