@@ -35,7 +35,7 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `diario/AAAA-MM-DD.md` | Qué se hizo en cada ejecución y por qué |
 | `informes/` | Informe semanal (viernes) y mensual |
 | `plan/` | Planes (Fase 0, lista de candidatos, calendario de resultados) |
-| `investing/pendiente.md` | Operaciones que Ale debe copiar en Investing |
+| `investing/pendiente.md` | Operaciones que Ale debe copiar en Investing (lo hace con Claude en Chrome: `investing/extension-chrome.md`) |
 | `panel/` | Panel web (HTML) que se publica cada noche |
 | `config/prompts/*.md` | Prompt de cada ejecución programada (`config/tareas.json` explica cómo se lanzan) |
 | `scripts/cartera.py` | Motor: precios, libro, órdenes, validación, costes, dividendos, estado, Investing |

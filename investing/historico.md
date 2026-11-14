@@ -3,3 +3,8 @@
 - 2026-11-14 18:14:40 · `T-0006` COMPRA 155 Harbour Energy @ 269.4 → pasada a Investing
 - 2026-11-14 18:14:40 · `T-0008` COMPRA 74 BP plc @ 562.6 → pasada a Investing
 - 2026-11-14 18:14:40 · `T-0010` COMPRA 13 Novo Nordisk @ 272.7 → pasada a Investing
+- 2026-11-14 18:22:57 · `T-0011` COMPRA 6 NN Group @ 81.44 → pasada a Investing
+- 2026-11-14 18:22:57 · `T-0012` COMPRA 5 Sanofi @ 88.2 → pasada a Investing
+- 2026-11-14 18:22:57 · `T-0013` COMPRA 13 Azimut Holding @ 37.08 → pasada a Investing
+- 2026-11-14 18:22:57 · `T-0014` COMPRA 51 Ayvens @ 9.74 → pasada a Investing
+- 2026-11-14 18:22:57 · `T-0016` COMPRA 8 Magna International @ 88.56 → pasada a Investing
