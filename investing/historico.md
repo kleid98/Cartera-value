@@ -1,0 +1,5 @@
+- 2026-11-14 18:14:40 · `T-0003` COMPRA 69 NatWest Group @ 598.2 → pasada a Investing
+- 2026-11-14 18:14:40 · `T-0004` COMPRA 5 BNP Paribas @ 96.04 → pasada a Investing
+- 2026-11-14 18:14:40 · `T-0006` COMPRA 155 Harbour Energy @ 269.4 → pasada a Investing
+- 2026-11-14 18:14:40 · `T-0008` COMPRA 74 BP plc @ 562.6 → pasada a Investing
+- 2026-11-14 18:14:40 · `T-0010` COMPRA 13 Novo Nordisk @ 272.7 → pasada a Investing
