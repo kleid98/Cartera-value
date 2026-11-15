@@ -108,15 +108,19 @@ Resultado `python3 scripts/ev.py tesis/SDF.DE.md --ciego` (15/11/2026, precio de
 ### 🔴 Bajista
 ### 🔵 Valorador ciego
 ### Reconciliación
-Regla aplicada, TIR final, decisión.
+No se convoca: la tesis propia ya incumple el desastre ≥ −50% (−60,9%) y la TIR (4,6%) queda muy lejos del umbral del 10%; el
+comité solo puede frenar una compra, nunca forzarla (gestor, 15/11/2026).
 
 ## Decisión
-Pendiente del gestor y del comité.
+**NO COMPRAR** (gestor, 15/11/2026): `ev.py` a 12,70 € → TIR propia 4,6%, desastre −60,9%, asimetría 2,2. Balance sin deuda y
+0,43x valor contable, pero con la caja libre comprimida hasta 2028 por la inversión en Werra y el riesgo de precio de la potasa
+(Jansen, Bielorrusia). Además roza el filtro de capitalización (falla por debajo de ~11,2 €). Pasa a `ledger/descartadas.csv`.
 
 ## Historial de revisiones
 | Fecha | Evento | TIR antes → después | Cambio en probabilidades | Acción |
 |---|---|---|---|---|
 | 2026-11-15 | Tesis inicial (analista, a ciegas respecto a los umbrales) | — → 4,6% (a ciegas) | Inicial: 0,12 / 0,30 / 0,43 / 0,15 | Candidata |
+| 2026-11-15 | Gestor aplica umbrales | 4,6% | — | NO COMPRAR: desastre −60,9% < −50%; sin comité |
 
 ## Fuentes
 - K+S, Q3/2026 Facts & Figures (10/11/2026): https://www.kpluss.com/.downloads/ir/2026/quartalsmitteilung-q3-2026/kpluss-facts-and-figures-q3-2026.pdf
