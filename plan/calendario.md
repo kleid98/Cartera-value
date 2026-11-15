@@ -1,14 +1,25 @@
 # Calendario de resultados y fechas sensibles
 
-> Hecho el 10/11/2026 a partir de la línea "Próximos resultados" de cada tesis (no se han vuelto a buscar las fechas en la
-> web). Las marcadas como estimadas hay que confirmarlas en la web de la compañía. La ejecución DOMINGO lo revisa cada semana.
+> Hecho el 10/11/2026 a partir de la línea "Próximos resultados" de cada tesis. Las marcadas como estimadas hay que confirmarlas
+> en la web de la compañía. La ejecución DOMINGO lo revisa cada semana (última revisión: **15/11/2026**, con búsqueda web de
+> IMB, JD y freenet).
+
+## Semana del 16 al 20/11/2026 (revisado el 15/11)
+
+| Fecha | Valor | Qué | Estado / efecto |
+|---|---|---|---|
+| ✅ 11/11 | FNTN.DE | 9M 2026 publicados | **Guía 2026 confirmada** (EBITDA aj. 500–530 M€, FCF aj. 270–300 M€) y dividendo mínimo 2,00 € 2026–28. EBITDA aj. 9M −5,7% (carga del acuerdo con Telefónica, ya prevista). Ninguna condición de invalidación tocada → se puede comprar el lunes 16 |
+| Mar 17/11 | IMB.L | Resultados anuales FY26 y guía FY27 (confirmado) | El 08/10 dijo que cumplía toda la guía FY26 y anunció 1.500 M£ de recompra para FY27. Se compra el 18/11 tras leerlos |
+| Jue 19/11 | JD.L | Trading statement Q3 2026/27 (confirmado en el calendario de sus resultados semestrales) | Se compra el 19/11 por la tarde si no recorta la guía |
+
+Sin resultados de las 10 posiciones en cartera esta semana.
 
 ## Durante la Fase 0 (11–20/11/2026)
 
 | Fecha | Valor | Qué | Efecto en el plan |
 |---|---|---|---|
 | 11/11 | MG.TO | Investor Day (objetivos a medio plazo) | Se compra el 12/11, después de leerlo |
-| 11/11 o 12/11 (sin confirmar) | FNTN.DE | Resultados de 9 meses | Se compra el 13/11 o después de que publique. Si rebaja previsiones o la ambición de 2028 (condición 1): no se compra y entra la reserva |
+| ✅ 11/11 (publicados) | FNTN.DE | Resultados de 9 meses | Se compra el 13/11 o después de que publique. Si rebaja previsiones o la ambición de 2028 (condición 1): no se compra y entra la reserva |
 | 17/11 | IMB.L | Resultados anuales del ejercicio 2026 (cierre 30/09) y guía de 2027 | Se compra el 18/11. Si recorta o congela dividendo o recompras (condición 1) o anticipa caída del beneficio operativo (condición 2): no se compra y entra la reserva |
 | 19/11 | JD.L | Trading statement del tercer trimestre | Se compra el 19/11 por la tarde. Si recorta la guía (condición 1): no se compra y entra BP.L |
 
