@@ -621,7 +621,7 @@ def cmd_investing(a):
     for o in ops:
         if o["tipo"] not in ("COMPRA", "VENTA", "DIVIDENDO") or o["id"] in hechos: continue
         f = datetime.strptime(o["fecha_hora"], "%Y-%m-%d %H:%M:%S").strftime("%d/%m/%Y")
-        m = MERCADOS[o["mercado"]]; dec = 1 if o["unidad_precio"] in ("GBX", "JPY") else 4 if float(o["precio"]) < 10 else 2
+        m = MERCADOS[o["mercado"]]; dec = 1 if o["unidad_precio"] == "JPY" else 2 if o["unidad_precio"] == "GBX" else 4 if float(o["precio"]) < 10 else 2
         aviso = "   ⚠️ GBX (peniques)" if o["unidad_precio"] == "GBX" else ""
         if o["tipo"] == "DIVIDENDO":
             info.append(f"- `{o['id']}` {f} · Dividendo {o['nombre']}: {fmt_num(float(o['importe_eur']))} € netos (solo ledger, Investing no lo registra)")
