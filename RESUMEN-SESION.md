@@ -128,8 +128,10 @@ copia de la página en `panel/index.html`; no tocar `files/index.html` salvo que
 | CIERRE | `trig_01Q31HxP6FUV3dPWk9v1Rt2a` | `CRON_TZ=America/New_York 4 17 * * 1-5` |
 | DOMINGO | `trig_01UnKHPrvh2AaPgsFJfzg9PC` | `CRON_TZ=Europe/Madrid 4 18 * * 0` |
 
-Hay restos **desactivados** que no deben reactivarse: seis tareas «Cartera VALUE · <EJECUCIÓN> del 12/11 / 13/11 (un solo
-uso)» con sus sesiones vacías, dos «prueba técnica» y el aviso `trig_011kX84TnoPyCTLQZhcETF4c`. Ale puede borrarlos.
+Limpieza del 16/11: archivados los 8 chats de prueba (6 «Cartera VALUE · <EJECUCIÓN> · <día>» y 2 «prueba técnica») y
+borradas las tareas de un solo uso APERTURA_UE 13/11 y CIERRE 12/11. Quedan **desactivadas** (el sistema no me dejó
+borrarlas; las puede borrar Ale en claude.ai/code/routines): «CIERRE del 13/11», «APERTURA_US del 13/11», «APERTURA_US
+del 12/11» (un solo uso) y el aviso «Activar tareas de entre semana (Fase 0)». No deben reactivarse.
 
 ## 4. Credenciales
 
