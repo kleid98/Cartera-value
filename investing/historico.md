@@ -8,3 +8,8 @@
 - 2026-11-14 18:22:57 · `T-0013` COMPRA 13 Azimut Holding @ 37.08 → pasada a Investing
 - 2026-11-14 18:22:57 · `T-0014` COMPRA 51 Ayvens @ 9.74 → pasada a Investing
 - 2026-11-14 18:22:57 · `T-0016` COMPRA 8 Magna International @ 88.56 → pasada a Investing
+- 2026-11-16 12:41:55 · `T-0018` COMPRA 263 Centrica @ 158.35 → pasada a Investing
+- 2026-11-16 12:41:55 · `T-0019` COMPRA 80 Intesa Sanpaolo @ 6.22 → pasada a Investing
+- 2026-11-16 12:41:55 · `T-0020` COMPRA 11 Bouygues @ 44.48 → pasada a Investing
+- 2026-11-16 12:41:55 · `T-0021` COMPRA 20 freenet @ 24.56 → pasada a Investing
+- 2026-11-16 12:41:55 · `T-0022` COMPRA 6 Teleperformance @ 73.18 → pasada a Investing
