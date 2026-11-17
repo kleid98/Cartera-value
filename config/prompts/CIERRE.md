@@ -14,7 +14,8 @@ EJECUCIÓN: CIERRE (1 hora después del cierre de Nueva York, ~23:00 Madrid; NO 
 1. Arranque: sección 0 de CLAUDE.md (`git fetch origin main && git checkout main && git pull --ff-only origin main`, etc.).
 2. Lee CLAUDE.md completo y sigue al pie de la letra la sección de la ejecución CIERRE (sección 2.2): validar y caducar
    órdenes, dividendos, `estado --cierre`, repaso del día, plan de mañana, panel (sección 5 y config/panel.json: subir
-   panel/panel.json como asset y actualizar los 6 datasets con ArtifactData; no toques files/index.html) e Investing. Los
+   panel/panel.json como asset y actualizar los 6 datasets con ArtifactData; no toques files/index.html), la web de seguimiento (`python3 scripts/web.py` y Artifact publish con la `url` de
+   config/panel.json → `web` y `file_path` panel/web.html) e Investing. Los
    viernes, además, el informe semanal. Las reglas numéricas están en config/reglas.json: no las cambies.
 3. Escribe el diario, haz commit y push a main. Comprueba que el push ha funcionado (`git status -sb` no debe decir "ahead"). Si falla por
    red, reintenta (2 s, 4 s, 8 s, 16 s). Si falla por permisos (error 403), no insistas: envía una PushNotification a Ale con

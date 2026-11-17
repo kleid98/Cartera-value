@@ -46,6 +46,7 @@ Comprueba la hora real (`TZ=Europe/Madrid date`) y qué ejecución te toca (secc
 | `ledger/predicciones.csv` | Automático: lo que predecían tesis, valorador y bajista en cada compra (para medir aciertos) |
 | `ledger/descartadas.csv` | Empresas analizadas y no compradas; `estado --cierre` las sigue en papel desde el 11/11/2026 |
 | `scripts/panel.py` | Genera `panel/panel.json` (datos del panel) |
+| `scripts/web.py` | Genera `panel/web.html` (web de seguimiento, plantilla `panel/web_plantilla.html`; URL en `config/panel.json` → `web`) |
 | `scripts/cribado.py` | Cribado del universo `config/universo.csv` → `plan/cribado.csv` y `plan/candidatos.md` |
 | `scripts/comite.py` | Genera los prompts ciegos del comité para una tesis |
 
@@ -85,7 +86,8 @@ Viernes CIERRE: además **informe semanal** en `informes/semana-AAAA-WW.md`. Úl
 3. Ajusta tesis si hay información nueva (historial de revisiones con TIR antes → después).
 4. Prepara el plan de mañana en el diario. Japón: si toca comprar/vender, crea orden `--tipo APERTURA` ahora
    (y pega su ficha en el diario, sección 4.1).
-5. `python3 scripts/panel.py` y republica el panel (sección 5). `cartera.py investing`.
+5. `python3 scripts/panel.py` y republica el panel (sección 5). `python3 scripts/web.py` y republica la web de seguimiento
+   (Artifact publish con `url` = `config/panel.json` → `web.url`, `file_path` = `panel/web.html`). `cartera.py investing`.
 6. Viernes: informe semanal. Commit y push. Push al móvil solo si `validar` ejecutó algo.
 
 ### 2.3 DOMINGO
