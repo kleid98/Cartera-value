@@ -23,3 +23,14 @@ Precio:    4,2760
 Comisión:  3,99 EUR
 ```
 > 💡 **Por qué se compra:** Algo parecido a lo que espera el mercado, con un sesgo algo mejor: el seguro de autos en España ya es rentable, la compra en EE. UU. suma tamaño y el dividendo sigue creciendo. Es un valor razonablemente valorado, no una ganga. **Objetivo 3 años 4,40 € (+2,9%)** desde tu precio de compra.
+
+### `T-0026` ✅ COMPRA · Linamar Corporation
+```
+Buscar:    Linamar Corporation  → elegir la de "Toronto" (LNR.TO)
+Tipo:      Compra
+Fecha:     17/11/2026
+Cantidad:  9
+Precio:    85,40
+Comisión:  1,08 CAD
+```
+> 💡 **Por qué se compra:** Una empresa familiar casi sin deuda, que genera caja, recompra acciones y gana cuota (más contenido por vehículo y cartera de contratos en máximos), lo que debería compensar en buena parte un mercado plano. **Objetivo 3 años 106 CAD (+24,1%)** desde tu precio de compra.
