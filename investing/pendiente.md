@@ -34,3 +34,14 @@ Precio:    85,40
 Comisión:  1,08 CAD
 ```
 > 💡 **Por qué se compra:** Una empresa familiar casi sin deuda, que genera caja, recompra acciones y gana cuota (más contenido por vehículo y cartera de contratos en máximos), lo que debería compensar en buena parte un mercado plano. **Objetivo 3 años 106 CAD (+24,1%)** desde tu precio de compra.
+
+### `T-0028` ✅ COMPRA · Imperial Brands PLC
+```
+Buscar:    Imperial Brands PLC  → elegir la de "Londres" (IMB.L)
+Tipo:      Compra
+Fecha:     18/11/2026
+Cantidad:  14
+Precio:    2.873,00   ⚠️ GBX (peniques)
+Comisión:  3,05 GBP
+```
+> 💡 **Por qué se compra:** Un negocio que se encoge despacio y devuelve casi toda su caja: el volumen cae poco, los precios suben algo más y, con un dividendo del 5–6% y recompras cada año, el beneficio por acción sigue creciendo. **Objetivo 3 años 3.700 p (+28,8%)** desde tu precio de compra.
