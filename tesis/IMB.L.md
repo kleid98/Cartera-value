@@ -302,5 +302,6 @@ PRECIO_ACTUAL: 2973
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (pre-resultados FY26 del 17-nov) | — → 8,2% | — | Candidata, sin compra |
 | 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 8,5% → 8,4% | Sin cambios | Sin cambio de decisión; puesto 7 de 20 |
+| 2026-11-18 | Resultados FY26 (17/11): BPA aj. +8,8% (341p), benef. operativo aj. +3,7% tc, dividendo +4% (166,72p), recompra FY27 1.500 M£, volumen tabaco −3,4% (−4,0% sin marca blanca), ingresos netos tabaco +1,7%. Ninguna condición tocada (vol. > −5%, ingresos de tabaco al alza) | TIR comité 8,4% → 9,4% (solo por precio: 2.973p → 2.889p; escenarios sin tocar) | Sin cambios | Compra 🟡 provisional (O-0020, 14 @ 2.873p) |
 
 Fuentes: RNS Trading Update 08-oct-2026 (imperialbrandsplc.com / tobaccoinsider.com PDF); Half-year Report 12-may-2026 (lse.co.uk RNS, joshthompson.co.uk resumen); Final Results FY25 18-nov-2025 (lse.co.uk RNS, Stockopedia/Reuters); Trading Update 14-abr-2026 y caída del 8,2% (MarketScreener/Dow Jones); stockanalysis.com (cuenta de resultados FY21–FY25, acciones en circulación); Yahoo Finance (precio, volumen, dividendos); ISIN GB0004544929 (Hargreaves Lansdown, Barclays, OpenSanctions). Tweenvest no accesible (404).
