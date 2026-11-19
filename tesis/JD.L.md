@@ -301,5 +301,6 @@ El retorno esperado a 3 años es de 0,10×(−47,0%) + 0,25×(−10,2%) + 0,45×
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (tras HY27 y guía FY27 £700–800m) | — → 8,6% | — | Candidata, no comprar |
 | 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 9,2% → 8,8% | Sin cambios | Sin cambio de decisión; puesto 4 de 20 |
+| 2026-11-19 | Trading statement Q3 FY27: guía de BAI ajustado FY27 rebajada de 700–800 M£ a 700–750 M£ (recorta el techo); LFL −2,6%, orgánico −1,1%; recompra de 200 M£ completada el 16/11 | 9,5% (a 93,5p) → no aplica | Sin cambios | **Condición 1 cumplida (nuevo recorte de guía): no se compra.** Pasa a descartadas; la plaza 20 de la Fase 0 la ocupa AD.AS |
 
 Fuentes: RNS Half Year 2026/27 Results (23-sep-2026, pdf.dfcfw.com/pdf/H22_AN202609231829796610_1.pdf); RNS Full Year Results 2025/26 (07-may-2026, data.fca.org.uk/artefacts/NSM/RNS/2cc0a7ae-88bf-4bae-beb8-621993259a90.html); RNS Transactions in Own Securities 05-oct, 26-oct y 02-nov-2026; Q3 2025/26 y Q4 2025/26 trading statements (nov-2025, ene-2026); stockanalysis.com (estados anuales FY22–FY26); Nike FY27 Q1 (01-oct-2026, about.nike.com); Yahoo Finance (precio, volumen, dividendos).

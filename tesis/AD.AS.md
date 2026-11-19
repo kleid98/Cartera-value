@@ -315,3 +315,4 @@ TIR no está entre las mejores del cribado. Volvería a mirarla por debajo de �
 |---|---|---|---|---|
 | 2026-11-08 | Tesis inicial (datos Q2 2026 completos, Q3 2026 de prensa, rebaja de guía por ciberincidente) | — → 4,03% | Desastre 0,10 / bajista 0,25 / base 0,45 / alcista 0,20 | Ninguna (candidata) |
 | 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 5,2% → 4,8% | Sin cambios | Sin cambio de decisión; puesto 19 de 20 |
+| 2026-11-19 | Repaso antes de comprar: JD.L cae del plan (condición 1) y AD, desplazada por LNR el 17/11, es la única candidata restante con comité que cumple filtros y desastre. Noticia no recogida antes: compra de Tesco República Checa y Eslovaquia por 1.200 M€ (bajo el umbral de 5.000 M€ de la condición 5) y recompra de 1.000 M€ desde inicios de 2027 | TIR comité 4,8% → 4,6% (a 34,45 €; solo precio) | Sin cambios | Compra 🟡 provisional como 20.ª posición |
