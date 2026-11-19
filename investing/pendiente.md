@@ -45,3 +45,14 @@ Precio:    2.873,00   ⚠️ GBX (peniques)
 Comisión:  3,05 GBP
 ```
 > 💡 **Por qué se compra:** Un negocio que se encoge despacio y devuelve casi toda su caja: el volumen cae poco, los precios suben algo más y, con un dividendo del 5–6% y recompras cada año, el beneficio por acción sigue creciendo. **Objetivo 3 años 3.700 p (+28,8%)** desde tu precio de compra.
+
+### `T-0029` ✅ COMPRA · Koninklijke Ahold Delhaize N.V.
+```
+Buscar:    Koninklijke Ahold Delhaize N.V.  → elegir la de "Ámsterdam" (AD.AS)
+Tipo:      Compra
+Fecha:     19/11/2026
+Cantidad:  14
+Precio:    34,45
+Comisión:  1,30 EUR
+```
+> 💡 **Por qué se compra:** Que siga siendo el negocio defensivo de siempre: ventas creciendo un 2–4%, margen estable en torno al 4% y casi toda la caja devuelta en dividendo y recompras del 3% anual. El ciberataque es un golpe de un trimestre. **Objetivo 3 años 38,50 € (+11,8%)** desde tu precio de compra.
