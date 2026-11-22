@@ -1,8 +1,20 @@
 # Calendario de resultados y fechas sensibles
 
 > Hecho el 10/11/2026 a partir de la línea "Próximos resultados" de cada tesis. Las marcadas como estimadas hay que confirmarlas
-> en la web de la compañía. La ejecución DOMINGO lo revisa cada semana (última revisión: **15/11/2026**, con búsqueda web de
-> IMB, JD y freenet).
+> en la web de la compañía. La ejecución DOMINGO lo revisa cada semana (última revisión: **22/11/2026**, con búsqueda web de
+> AZM, MG/LNR y el calendario europeo de la semana).
+
+## Semana del 23 al 27/11/2026 (revisado el 22/11)
+
+Ninguna de las 20 posiciones publica resultados esta semana (comprobado con la línea "Próximos resultados" de cada tesis
+y con el calendario europeo de la semana: Trigano, Valneva, Rémy Cointreau, Elia, Bekaert… ninguna nuestra).
+
+| Fecha | Valor | Qué | Estado / efecto |
+|---|---|---|---|
+| Antes del 30/11 | AZM.MI | Medidas correctoras pendientes a Banca d'Italia (la inspección de seguimiento acabó «parcialmente favorable», 05/11) | Sin novedad desde el 05/11. Si Banca d'Italia frena la solicitud de TNB o abre sanción → revisar condiciones de invalidación |
+| Primeros días de diciembre | AZM.MI | Captación de noviembre | Seguimiento |
+| 03/12 | SCR.PA | Investor Day (nuevo plan estratégico) | La semana siguiente; leerlo antes de cualquier decisión sobre SCR |
+| Continuo | MG.TO, LNR.TO | Arancel del 50% anunciado para el 01/01/2027 | Sin acuerdo ni anulación en noticias de oct–nov. Se revisan juntas |
 
 ## Semana del 16 al 20/11/2026 (revisado el 15/11)
 
@@ -30,7 +42,6 @@ compra nada sin tesis y comité para llegar a 20.
 
 | Fecha | Valor | Qué |
 |---|---|---|
-| Fin de noviembre | AZM.MI | Respuesta al Banco de Italia |
 | Primeros días de cada mes | AZM.MI | Captación mensual |
 | 03/12/2026 | SCR.PA | Investor Day con el nuevo plan estratégico |
 | Diciembre (sin día) | BP.L | Actualización estratégica de la nueva consejera delegada |
