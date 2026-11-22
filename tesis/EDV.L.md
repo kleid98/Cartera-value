@@ -1,6 +1,6 @@
 # Endeavour Mining plc (EDV.L · LONDRES) — Tesis
 
-- **Estado:** ⚪ candidata (no comprada)
+- **Estado:** ⚪ candidata (no comprada · descartada 22/11/2026)
 - **ISIN:** GB00BL6K5J42 (verificar en la orden; la búsqueda no lo confirmó en fuente primaria) · **País emisor:** GB (sede en Londres; minas en Costa de Marfil, Senegal y Burkina Faso) · **Sector:** Materias primas (oro) · **Divisa/unidad:** GBX (reporta en USD)
 - **Última revisión:** 2026-11-22 · **Próximos resultados:** Guía 2027 en enero de 2027; Q4/FY-2026 previsiblemente finales de febrero 2027 (estimado)
 
