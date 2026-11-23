@@ -16,8 +16,8 @@ pega en una conversación con la extensión y, cuando dice «pasadas», se marca
 | Bouygues | EN.PA | **BOUY** (París, pair 397) | — |
 | freenet | FNTN.DE | **FNTGn** (Xetra, pair 6285) | — |
 | Teleperformance | TEP.PA | **TEPRF** (París, pair 7087) | — |
-| SCOR | SCR.PA | **SCOR** (París) | — |
-| Mapfre, Linamar, Imperial, Ahold | MAP.MC, LNR.TO, IMB.L, AD.AS | mismo ticker (Madrid, Toronto CAD, Londres GBp, Ámsterdam) | IMB: precio en peniques (2873) |
+| SCOR | SCR.PA | **SCOR** (París, pair 7007) | — |
+| Mapfre, Linamar, Imperial, Ahold | MAP.MC, LNR.TO, IMB.L, AD.AS | MAP (466), LNR (Toronto CAD, 24576), IMB (Londres GBp, 6569), AD (Ámsterdam, 6909) | IMB: precio en peniques (2873) |
 | NN Group | NN.AS | NN (Ámsterdam, pair 943213) | — |
 | Ayvens | AYV.PA | AYV (París, pair 1012045) | — |
 | Intesa Sanpaolo | ISP.MI | ISP (Milán, pair 6951) | — |
@@ -47,6 +47,7 @@ no tocar nada más; parar y preguntar si algo no cuadra; al final, tabla con lo 
 - 23/11/2026: pasadas T-0023, T-0024, T-0026, T-0028 y T-0029 → **20/20 en Investing**. La extensión no devolvió la tabla de
   transacciones, solo el resumen: 20 posiciones, sin duplicados (en Mapfre el primer clic no guardó; comprobó que solo hay una).
   Valor de mercado a las 12:24: Investing 9.283,20 € · ledger 9.279,34 € (diferencia de tipo de cambio).
+  Después, con la tabla completa: **20/20 transacciones coinciden con el ledger** (fecha, valor, cantidad, precio, divisa), sin filas sobrantes.
 
 ## Mensaje de comprobación (modo lectura)
 Tras meter operaciones, pedir a la extensión que NO cambie nada y devuelva: (1) tabla de todas las transacciones
