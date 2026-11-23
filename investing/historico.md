@@ -13,3 +13,8 @@
 - 2026-11-16 12:41:55 · `T-0020` COMPRA 11 Bouygues @ 44.48 → pasada a Investing
 - 2026-11-16 12:41:55 · `T-0021` COMPRA 20 freenet @ 24.56 → pasada a Investing
 - 2026-11-16 12:41:55 · `T-0022` COMPRA 6 Teleperformance @ 73.18 → pasada a Investing
+- 2026-11-23 12:26:00 · `T-0023` COMPRA 14 SCOR @ 35.48 → pasada a Investing
+- 2026-11-23 12:26:00 · `T-0024` COMPRA 116 Mapfre @ 4.276 → pasada a Investing
+- 2026-11-23 12:26:00 · `T-0026` COMPRA 9 Linamar Corporation @ 85.4 → pasada a Investing
+- 2026-11-23 12:26:00 · `T-0028` COMPRA 14 Imperial Brands PLC @ 2873.0 → pasada a Investing
+- 2026-11-23 12:26:00 · `T-0029` COMPRA 14 Koninklijke Ahold Delhaize N.V. @ 34.45 → pasada a Investing
