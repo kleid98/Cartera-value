@@ -1,6 +1,6 @@
 # Sanofi (SAN.PA · PARIS) — Tesis
 
-- **Estado:** 🟡 provisional — seleccionada para la Fase 0 (pendiente de compra) 
+- **Estado:** 🔴 VENTA por tesis rota (24/11/2026, condición 3: compra de Insmed) — antes 🟡 provisional (comprada el 13/11/2026 a 88,20 €)
 - **ISIN:** FR0000120578 · **País emisor:** FR · **Sector:** Salud (farmacéutica / vacunas) · **Divisa/unidad:** EUR
 - **Última revisión:** 2026-11-07 · **Próximos resultados:** 2027-01-28 (4T/FY 2026)
 
@@ -277,6 +277,12 @@ PRECIO_ACTUAL: 83.74
 - **compra_ok (reglas completas): False**
 - Reglas del 09/11/2026: TIR del valorador exacta y en neto; si la diferencia es ≥ 5 pp, la más baja + 2,5 pp.
 
+### Comité de venta (24/11/2026, tesis rota)
+Convocado por la compra de Insmed anunciada hoy (condición de invalidación 3). Los informes completos están en git (`plan/comite_informes/SAN.PA_venta_2026-11-24_*.md`). El comité de compra de arriba se mantiene tal cual.
+- 🔴 **Bajista:** VETO: **SÍ**, condición 3. Calcula una DN/EBITDA pro forma de 2,7–3,0x (sin contar el EBITDA negativo de Insmed). Solo bajaría de 2,5x con más de 10.000 M€ en híbridos o en ventas de activos que no se han anunciado. P(desastre) 0,22.
+- 🔵 **Valorador ciego:** TIR bruta del 8,5% a 89,28 €, P(desastre) 0,10. **No incorpora la operación de Insmed**: trabaja con la deuda de 12.200 M€ (< 1x) y con recompras. Al ser ciego no conoce las condiciones, así que no cambia que la condición 3 se haya cumplido.
+- **Gestor:** con mis cuentas, la DN/EBITDA pro forma queda en ≈ 2,9–3,1x. La condición 3 es un hecho verificable que obliga a vender sin mirar el precio. Venta AGRESIVA.
+
 ## Decisión
 **PROVISIONAL 🟡 (Fase 0, puesto 12 de 20)** — TIR del comité 6,9% (TIR propia ajustada 6,7%), por debajo del umbral (10,0%) en al menos una de las dos. Reglas del 09/11/2026 (umbral 10%/12%, P(desastre) = media de las tres; TIR del valorador exacta y neta; tope +2,5 pp). Entra por la regla de la Fase 0 de completar 20 posiciones con las mejores TIR que cumplen filtros duros y desastre ≥ −50%. Rotable si aparece una alternativa con +5 pp de TIR durante sus primeras 8 semanas. Ver `plan/fase0.md`.
 
@@ -287,5 +293,6 @@ PRECIO_ACTUAL: 83.74
 |---|---|---|---|---|
 | 2026-11-07 | Tesis inicial (candidata) | — → 6,6% | Desastre 0,10 / Bajista 0,25 / Base 0,45 / Alcista 0,20 | Ninguna (no compra) |
 | 2026-11-10 | Recálculo del comité: TIR del valorador exacta y neta; tope +2,5 pp (acordado con Ale) | TIR comité 7,3% → 6,9% | Sin cambios | Sin cambio de decisión; puesto 12 de 20 |
+| 2026-11-24 | **Tesis rota (condición 3).** Sanofi anuncia la compra de Insmed por ~41.000 M$ (37.600 M€, 175 $/acción, +46% sobre el precio sin rumores) en efectivo, financiada con deuda y caja; cierre previsto en el 1S 2027; acretiva en BPA *business* solo a finales de 2028. DN pro forma ≈ 12.201 + 900 (Regeneron) + 37.600 − 1.000 (caja de Insmed) − ~2.500 (FCF 4T) ≈ 47.000 M€ sobre un EBITDA *business* de 15.000–16.000 M€ → **≈ 2,9–3,1x > 2,5x** (≈ 2,6x incluso contando Opella como caja). Comité de venta: el bajista ve **VETO: SÍ** (2,7–3,0x) | No se recalcula: condición de invalidación cumplida, se vende sin mirar el precio | Bajista: P(desastre) 0,22 (antes 0,09) | **VENTA AGRESIVA de las 5 acciones** |
 
 **Fuentes:** [Nota de prensa 3T 2026 (SEC 6-K)](https://www.sec.gov/Archives/edgar/data/0001121404/000112140426000009/pressreleaseq32026english.htm) · [Nota de prensa FY2025 (SEC 6-K)](https://www.sec.gov/Archives/edgar/data/1121404/000112140426000001/pressreleaseq42025english.htm) · [Informe semestral 2026 (SEC 6-K)](https://www.sec.gov/Archives/edgar/data/0001121404/000162828026050803/exhibit992-2026halfyearman.htm) · [Reuters 30/07/2026 vía WMBD](https://wmbdradio.com/2026/07/30/sanofi-raises-sales-outlook-on-dupixent-strength-in-boost-for-new-ceo/) · [STAT 12/02/2026, relevo del CEO](https://www.statnews.com/2026/02/12/sanofi-ceo-replaced-paul-hudson-belen-garijo/) · [BioPharma Dive, alianza Regeneron](https://www.biopharmadive.com/news/sanofi-regeneron-alliance-expanded-dupixent-immunology-drugs-development/831894/) · [Fierce Pharma, Cheplapharm](https://www.fiercepharma.com/pharma/sanofi-strikes-deal-cheplapharm-divest-20-older-medicines-new-ceos-push-innovation) · [StockAnalysis, histórico IFRS](https://stockanalysis.com/quote/epa/SAN/financials/) · Yahoo Finance (precio y volumen). Tweenvest no accesible (404).
