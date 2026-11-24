@@ -15,3 +15,4 @@ Precio:    88,94
 ## ℹ️ Solo ledger (no se meten en Investing)
 - `T-0030` 23/11/2026 · Dividendo Intesa Sanpaolo: 13,02 € netos (solo ledger, Investing no lo registra)
 - `T-0031` 20/11/2026 · Dividendo Linamar Corporation: 1,56 € netos (solo ledger, Investing no lo registra)
+- `T-0033` 24/11/2026 · Dividendo Mapfre: 9,31 € netos (solo ledger, Investing no lo registra)
