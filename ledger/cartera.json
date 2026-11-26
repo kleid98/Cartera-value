@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-26 09:35:53",
- "valor_total_eur": 9757.21,
- "invertido_eur": 9021.86,
+ "actualizado": "2026-11-26 16:05:32",
+ "valor_total_eur": 9874.06,
+ "invertido_eur": 9138.72,
  "caja_eur": 735.34,
  "caja_por_divisa": {
   "EUR": 733.76,
@@ -9,125 +9,9 @@
   "CAD": 2.45
  },
  "aportado_eur": 10000.0,
- "rentabilidad": -0.02428,
+ "rentabilidad": -0.01259,
  "n_posiciones": 19,
  "posiciones": [
-  {
-   "ticker": "LNR.TO",
-   "nombre": "Linamar Corporation",
-   "mercado": "TORONTO",
-   "sector": "Automóvil",
-   "pais": "CA",
-   "cantidad": 9.0,
-   "precio_medio": 85.4,
-   "precio": 90.83,
-   "unidad_precio": "CAD",
-   "coste_eur": 489.18,
-   "valor_eur": 524.32,
-   "pyg_eur": 35.14,
-   "pyg_pct": 0.0718,
-   "var_dia_pct": 0.0552,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0026",
-     "fecha": "2026-11-17 16:11:00",
-     "cantidad": 9.0,
-     "precio": 85.4,
-     "coste_eur": 489.18,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 1.56,
-   "peso": 0.0537
-  },
-  {
-   "ticker": "AD.AS",
-   "nombre": "Koninklijke Ahold Delhaize N.V.",
-   "mercado": "AMSTERDAM",
-   "sector": "Distribución alimentaria",
-   "pais": "NL",
-   "cantidad": 14.0,
-   "precio_medio": 34.45,
-   "precio": 35.97,
-   "unidad_precio": "EUR",
-   "coste_eur": 483.6,
-   "valor_eur": 503.58,
-   "pyg_eur": 19.98,
-   "pyg_pct": 0.0413,
-   "var_dia_pct": 0.0067,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0029",
-     "fecha": "2026-11-19 09:38:00",
-     "cantidad": 14.0,
-     "precio": 34.45,
-     "coste_eur": 483.6,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0516
-  },
-  {
-   "ticker": "SCR.PA",
-   "nombre": "SCOR",
-   "mercado": "PARIS",
-   "sector": "Seguros",
-   "pais": "FR",
-   "cantidad": 14.0,
-   "precio_medio": 35.48,
-   "precio": 35.86,
-   "unidad_precio": "EUR",
-   "coste_eur": 500.01,
-   "valor_eur": 502.04,
-   "pyg_eur": 2.03,
-   "pyg_pct": 0.0041,
-   "var_dia_pct": 0.0096,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0023",
-     "fecha": "2026-11-17 09:41:00",
-     "cantidad": 14.0,
-     "precio": 35.48,
-     "coste_eur": 500.01,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0515
-  },
-  {
-   "ticker": "FNTN.DE",
-   "nombre": "freenet",
-   "mercado": "XETRA",
-   "sector": "Telecomunicaciones",
-   "pais": "DE",
-   "cantidad": 20.0,
-   "precio_medio": 24.56,
-   "precio": 24.76,
-   "unidad_precio": "EUR",
-   "coste_eur": 492.5,
-   "valor_eur": 495.2,
-   "pyg_eur": 2.7,
-   "pyg_pct": 0.0055,
-   "var_dia_pct": 0.0024,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0021",
-     "fecha": "2026-11-16 09:44:00",
-     "cantidad": 20.0,
-     "precio": 24.56,
-     "coste_eur": 492.5,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0508
-  },
   {
    "ticker": "IMB.L",
    "nombre": "Imperial Brands PLC",
@@ -136,13 +20,13 @@
    "pais": "GB",
    "cantidad": 14.0,
    "precio_medio": 2873.0,
-   "precio": 2930.0,
+   "precio": 3446.0,
    "unidad_precio": "GBX",
    "coste_eur": 486.49,
-   "valor_eur": 489.91,
-   "pyg_eur": 3.42,
-   "pyg_pct": 0.007,
-   "var_dia_pct": -0.0195,
+   "valor_eur": 576.19,
+   "pyg_eur": 89.7,
+   "pyg_pct": 0.1844,
+   "var_dia_pct": 0.1532,
    "provisional": true,
    "lotes": [
     {
@@ -155,7 +39,94 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0502
+   "peso": 0.0584
+  },
+  {
+   "ticker": "LNR.TO",
+   "nombre": "Linamar Corporation",
+   "mercado": "TORONTO",
+   "sector": "Automóvil",
+   "pais": "CA",
+   "cantidad": 9.0,
+   "precio_medio": 85.4,
+   "precio": 90.27,
+   "unidad_precio": "CAD",
+   "coste_eur": 489.18,
+   "valor_eur": 521.09,
+   "pyg_eur": 31.91,
+   "pyg_pct": 0.0652,
+   "var_dia_pct": -0.0062,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0026",
+     "fecha": "2026-11-17 16:11:00",
+     "cantidad": 9.0,
+     "precio": 85.4,
+     "coste_eur": 489.18,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 1.56,
+   "peso": 0.0528
+  },
+  {
+   "ticker": "SCR.PA",
+   "nombre": "SCOR",
+   "mercado": "PARIS",
+   "sector": "Seguros",
+   "pais": "FR",
+   "cantidad": 14.0,
+   "precio_medio": 35.48,
+   "precio": 36.06,
+   "unidad_precio": "EUR",
+   "coste_eur": 500.01,
+   "valor_eur": 504.84,
+   "pyg_eur": 4.83,
+   "pyg_pct": 0.0097,
+   "var_dia_pct": 0.0152,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0023",
+     "fecha": "2026-11-17 09:41:00",
+     "cantidad": 14.0,
+     "precio": 35.48,
+     "coste_eur": 500.01,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0511
+  },
+  {
+   "ticker": "AD.AS",
+   "nombre": "Koninklijke Ahold Delhaize N.V.",
+   "mercado": "AMSTERDAM",
+   "sector": "Distribución alimentaria",
+   "pais": "NL",
+   "cantidad": 14.0,
+   "precio_medio": 34.45,
+   "precio": 35.9,
+   "unidad_precio": "EUR",
+   "coste_eur": 483.6,
+   "valor_eur": 502.6,
+   "pyg_eur": 19.0,
+   "pyg_pct": 0.0393,
+   "var_dia_pct": 0.0048,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0029",
+     "fecha": "2026-11-19 09:38:00",
+     "cantidad": 14.0,
+     "precio": 34.45,
+     "coste_eur": 483.6,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0509
   },
   {
    "ticker": "AYV.PA",
@@ -165,13 +136,13 @@
    "pais": "FR",
    "cantidad": 51.0,
    "precio_medio": 9.74,
-   "precio": 9.59,
+   "precio": 9.82,
    "unidad_precio": "EUR",
    "coste_eur": 500.03,
-   "valor_eur": 489.09,
-   "pyg_eur": -10.94,
-   "pyg_pct": -0.0219,
-   "var_dia_pct": 0.0208,
+   "valor_eur": 500.82,
+   "pyg_eur": 0.79,
+   "pyg_pct": 0.0016,
+   "var_dia_pct": 0.0452,
    "provisional": true,
    "lotes": [
     {
@@ -184,7 +155,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0501
+   "peso": 0.0507
+  },
+  {
+   "ticker": "FNTN.DE",
+   "nombre": "freenet",
+   "mercado": "XETRA",
+   "sector": "Telecomunicaciones",
+   "pais": "DE",
+   "cantidad": 20.0,
+   "precio_medio": 24.56,
+   "precio": 24.96,
+   "unidad_precio": "EUR",
+   "coste_eur": 492.5,
+   "valor_eur": 499.2,
+   "pyg_eur": 6.7,
+   "pyg_pct": 0.0136,
+   "var_dia_pct": 0.0105,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0021",
+     "fecha": "2026-11-16 09:44:00",
+     "cantidad": 20.0,
+     "precio": 24.56,
+     "coste_eur": 492.5,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0506
   },
   {
    "ticker": "NWG.L",
@@ -194,13 +194,13 @@
    "pais": "GB",
    "cantidad": 69.0,
    "precio_medio": 598.2,
-   "precio": 589.2,
+   "precio": 595.2,
    "unidad_precio": "GBX",
    "coste_eur": 497.34,
-   "valor_eur": 485.55,
-   "pyg_eur": -11.79,
-   "pyg_pct": -0.0237,
-   "var_dia_pct": 0.0261,
+   "valor_eur": 490.49,
+   "pyg_eur": -6.85,
+   "pyg_pct": -0.0138,
+   "var_dia_pct": 0.0366,
    "provisional": true,
    "lotes": [
     {
@@ -213,7 +213,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0498
+   "peso": 0.0497
   },
   {
    "ticker": "BP.L",
@@ -223,13 +223,13 @@
    "pais": "GB",
    "cantidad": 74.0,
    "precio_medio": 562.6,
-   "precio": 548.8,
+   "precio": 552.084,
    "unidad_precio": "GBX",
    "coste_eur": 501.62,
-   "valor_eur": 485.03,
-   "pyg_eur": -16.59,
-   "pyg_pct": -0.0331,
-   "var_dia_pct": 0.0066,
+   "valor_eur": 487.93,
+   "pyg_eur": -13.69,
+   "pyg_pct": -0.0273,
+   "var_dia_pct": 0.0126,
    "provisional": true,
    "lotes": [
     {
@@ -242,7 +242,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0497
+   "peso": 0.0494
   },
   {
    "ticker": "NOVO-B.CO",
@@ -252,13 +252,13 @@
    "pais": "DK",
    "cantidad": 13.0,
    "precio_medio": 272.7,
-   "precio": 276.8,
+   "precio": 275.3,
    "unidad_precio": "DKK",
    "coste_eur": 475.61,
-   "valor_eur": 481.44,
-   "pyg_eur": 5.83,
-   "pyg_pct": 0.0123,
-   "var_dia_pct": 0.0091,
+   "valor_eur": 478.83,
+   "pyg_eur": 3.22,
+   "pyg_pct": 0.0068,
+   "var_dia_pct": 0.0036,
    "provisional": true,
    "lotes": [
     {
@@ -271,7 +271,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0493
+   "peso": 0.0485
   },
   {
    "ticker": "EN.PA",
@@ -281,13 +281,13 @@
    "pais": "FR",
    "cantidad": 11.0,
    "precio_medio": 44.48,
-   "precio": 42.61,
+   "precio": 42.82,
    "unidad_precio": "EUR",
    "coste_eur": 492.54,
-   "valor_eur": 468.71,
-   "pyg_eur": -23.83,
-   "pyg_pct": -0.0484,
-   "var_dia_pct": 0.0128,
+   "valor_eur": 471.02,
+   "pyg_eur": -21.52,
+   "pyg_pct": -0.0437,
+   "var_dia_pct": 0.0178,
    "provisional": true,
    "lotes": [
     {
@@ -300,7 +300,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.048
+   "peso": 0.0477
   },
   {
    "ticker": "NN.AS",
@@ -310,13 +310,13 @@
    "pais": "NL",
    "cantidad": 6.0,
    "precio_medio": 81.44,
-   "precio": 78.08,
+   "precio": 78.22,
    "unidad_precio": "EUR",
    "coste_eur": 489.94,
-   "valor_eur": 468.48,
-   "pyg_eur": -21.46,
-   "pyg_pct": -0.0438,
-   "var_dia_pct": 0.0153,
+   "valor_eur": 469.32,
+   "pyg_eur": -20.62,
+   "pyg_pct": -0.0421,
+   "var_dia_pct": 0.0172,
    "provisional": true,
    "lotes": [
     {
@@ -329,7 +329,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.048
+   "peso": 0.0475
   },
   {
    "ticker": "AZM.MI",
@@ -339,13 +339,13 @@
    "pais": "IT",
    "cantidad": 13.0,
    "precio_medio": 37.08,
-   "precio": 35.96,
+   "precio": 36.1,
    "unidad_precio": "EUR",
    "coste_eur": 483.82,
-   "valor_eur": 467.48,
-   "pyg_eur": -16.34,
-   "pyg_pct": -0.0338,
-   "var_dia_pct": 0.017,
+   "valor_eur": 469.3,
+   "pyg_eur": -14.52,
+   "pyg_pct": -0.03,
+   "var_dia_pct": 0.0209,
    "provisional": true,
    "lotes": [
     {
@@ -358,7 +358,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0479
+   "peso": 0.0475
   },
   {
    "ticker": "MAP.MC",
@@ -368,13 +368,13 @@
    "pais": "ES",
    "cantidad": 116.0,
    "precio_medio": 4.276,
-   "precio": 4.028,
+   "precio": 4.016,
    "unidad_precio": "EUR",
    "coste_eur": 500.01,
-   "valor_eur": 467.25,
-   "pyg_eur": -32.76,
-   "pyg_pct": -0.0655,
-   "var_dia_pct": 0.0121,
+   "valor_eur": 465.86,
+   "pyg_eur": -34.15,
+   "pyg_pct": -0.0683,
+   "var_dia_pct": 0.009,
    "provisional": true,
    "lotes": [
     {
@@ -387,7 +387,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 9.31,
-   "peso": 0.0479
+   "peso": 0.0472
   },
   {
    "ticker": "CNA.L",
@@ -397,13 +397,13 @@
    "pais": "GB",
    "cantidad": 263.0,
    "precio_medio": 158.35,
-   "precio": 147.125,
+   "precio": 148.227,
    "unidad_precio": "GBX",
    "coste_eur": 502.14,
-   "valor_eur": 462.13,
-   "pyg_eur": -40.01,
-   "pyg_pct": -0.0797,
-   "var_dia_pct": 0.0133,
+   "valor_eur": 465.59,
+   "pyg_eur": -36.55,
+   "pyg_pct": -0.0728,
+   "var_dia_pct": 0.0208,
    "provisional": true,
    "lotes": [
     {
@@ -412,35 +412,6 @@
      "cantidad": 263.0,
      "precio": 158.35,
      "coste_eur": 502.14,
-     "provisional": "S"
-    }
-   ],
-   "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0474
-  },
-  {
-   "ticker": "MG.TO",
-   "nombre": "Magna International",
-   "mercado": "TORONTO",
-   "sector": "Automóvil",
-   "pais": "CA",
-   "cantidad": 8.0,
-   "precio_medio": 88.56,
-   "precio": 89.78,
-   "unidad_precio": "CAD",
-   "coste_eur": 449.4,
-   "valor_eur": 460.68,
-   "pyg_eur": 11.28,
-   "pyg_pct": 0.0251,
-   "var_dia_pct": 0.019,
-   "provisional": true,
-   "lotes": [
-    {
-     "op": "T-0016",
-     "fecha": "2026-11-13 17:02:00",
-     "cantidad": 8.0,
-     "precio": 88.56,
-     "coste_eur": 449.4,
      "provisional": "S"
     }
    ],
@@ -455,13 +426,13 @@
    "pais": "GB",
    "cantidad": 155.0,
    "precio_medio": 269.4,
-   "precio": 247.6,
+   "precio": 249.4,
    "unidad_precio": "GBX",
    "coste_eur": 503.12,
-   "valor_eur": 458.35,
-   "pyg_eur": -44.77,
-   "pyg_pct": -0.089,
-   "var_dia_pct": 0.0098,
+   "valor_eur": 461.69,
+   "pyg_eur": -41.43,
+   "pyg_pct": -0.0824,
+   "var_dia_pct": 0.0171,
    "provisional": true,
    "lotes": [
     {
@@ -474,7 +445,36 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.047
+   "peso": 0.0468
+  },
+  {
+   "ticker": "MG.TO",
+   "nombre": "Magna International",
+   "mercado": "TORONTO",
+   "sector": "Automóvil",
+   "pais": "CA",
+   "cantidad": 8.0,
+   "precio_medio": 88.56,
+   "precio": 89.81,
+   "unidad_precio": "CAD",
+   "coste_eur": 449.4,
+   "valor_eur": 460.83,
+   "pyg_eur": 11.43,
+   "pyg_pct": 0.0254,
+   "var_dia_pct": 0.0003,
+   "provisional": true,
+   "lotes": [
+    {
+     "op": "T-0016",
+     "fecha": "2026-11-13 17:02:00",
+     "cantidad": 8.0,
+     "precio": 88.56,
+     "coste_eur": 449.4,
+     "provisional": "S"
+    }
+   ],
+   "dividendos_y_realizado_eur": 0.0,
+   "peso": 0.0467
   },
   {
    "ticker": "BNP.PA",
@@ -484,13 +484,13 @@
    "pais": "FR",
    "cantidad": 5.0,
    "precio_medio": 96.04,
-   "precio": 90.72,
+   "precio": 90.94,
    "unidad_precio": "EUR",
    "coste_eur": 483.42,
-   "valor_eur": 453.6,
-   "pyg_eur": -29.82,
-   "pyg_pct": -0.0617,
-   "var_dia_pct": 0.0283,
+   "valor_eur": 454.7,
+   "pyg_eur": -28.72,
+   "pyg_pct": -0.0594,
+   "var_dia_pct": 0.0308,
    "provisional": true,
    "lotes": [
     {
@@ -503,7 +503,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0465
+   "peso": 0.046
   },
   {
    "ticker": "ISP.MI",
@@ -513,13 +513,13 @@
    "pais": "IT",
    "cantidad": 80.0,
    "precio_medio": 6.22,
-   "precio": 5.644,
+   "precio": 5.635,
    "unidad_precio": "EUR",
    "coste_eur": 499.4,
-   "valor_eur": 451.52,
-   "pyg_eur": -47.88,
-   "pyg_pct": -0.0959,
-   "var_dia_pct": 0.0269,
+   "valor_eur": 450.8,
+   "pyg_eur": -48.6,
+   "pyg_pct": -0.0973,
+   "var_dia_pct": 0.0253,
    "provisional": true,
    "lotes": [
     {
@@ -532,7 +532,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 13.02,
-   "peso": 0.0463
+   "peso": 0.0457
   },
   {
    "ticker": "TEP.PA",
@@ -542,13 +542,13 @@
    "pais": "FR",
    "cantidad": 6.0,
    "precio_medio": 73.18,
-   "precio": 67.92,
+   "precio": 67.94,
    "unidad_precio": "EUR",
    "coste_eur": 442.13,
-   "valor_eur": 407.52,
-   "pyg_eur": -34.61,
-   "pyg_pct": -0.0783,
-   "var_dia_pct": 0.0107,
+   "valor_eur": 407.64,
+   "pyg_eur": -34.49,
+   "pyg_pct": -0.078,
+   "var_dia_pct": 0.011,
    "provisional": true,
    "lotes": [
     {
@@ -561,7 +561,7 @@
     }
    ],
    "dividendos_y_realizado_eur": 0.0,
-   "peso": 0.0418
+   "peso": 0.0413
   }
  ],
  "realizado_eur": 23.24,
@@ -569,20 +569,20 @@
   "principal": {
    "nombre": "MSCI Europe Value",
    "ticker": "CEMS.DE",
-   "valor_eur": 9630.52,
-   "rent": -0.03695
+   "valor_eur": 9675.35,
+   "rent": -0.03247
   },
   "secundario": {
    "nombre": "MSCI World ex USA",
    "ticker": "EXUS.DE",
-   "valor_eur": 9623.1,
-   "rent": -0.03769
+   "valor_eur": 9646.89,
+   "rent": -0.03531
   },
   "control": {
    "nombre": "MSCI World",
    "ticker": "IWDA.AS",
-   "valor_eur": 9647.22,
-   "rent": -0.03528
+   "valor_eur": 9674.96,
+   "rent": -0.0325
   }
  },
  "descartadas": [
