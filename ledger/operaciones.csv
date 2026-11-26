@@ -32,3 +32,4 @@ T-0030,2026-11-23 12:00:00,DIVIDENDO,,ISP.MI,Intesa Sanpaolo,IT0000072618,MILAN,
 T-0031,2026-11-20 12:30:00,DIVIDENDO,,LNR.TO,Linamar Corporation,CA53278L1076,TORONTO,CA,Automóvil,CAD,9.0,0.32,CAD,2.45,,,,0,0.636011,1.56,,2026-11-20 ex-date; bruto 2.88 CAD; retención origen 15.000%
 T-0032,2026-11-24 09:42:02,VENTA,O-0022,SAN.PA,Sanofi,FR0000120578,PARIS,FR,Salud,EUR,5,88.94,EUR,444.7,1.25,0.04,0.0,1.29,1.0,443.41,N,"Tesis rota (condición 3): compra de Insmed por ~41.000 M$ en efectivo con deuda; DN/EBITDA pro forma ≈ 2,9–3,1x > 2,5x. Comité: veto del bajista (condición 3)"
 T-0033,2026-11-24 12:00:00,DIVIDENDO,,MAP.MC,Mapfre,ES0124244E34,MADRID,ES,Seguros,EUR,116.0,0.080248,EUR,9.31,,,,0,1.0,9.31,,2026-11-24 ex-date; bruto 9.31 EUR; retención origen 0.000%
+T-0034,2026-11-26 12:00:00,DIVIDENDO,,IMB.L,Imperial Brands PLC,GB0004544929,LONDRES,GB,Tabaco,GBP,14.0,41.68,GBX,5.84,,,,0,1.194315,6.97,,2026-11-26 ex-date; bruto 5.84 GBP; retención origen 0.000%
