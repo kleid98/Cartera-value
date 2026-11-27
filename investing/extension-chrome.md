@@ -36,6 +36,8 @@ Añadir aquí cada valor nuevo que la extensión encuentre con otro símbolo.
 Incluir, además de las operaciones (valor, bolsa, símbolo de Investing, cantidad, precio con divisa, comisión, fecha):
 comprobar cada campo antes de guardar; bolsa indicada y nunca ADR; no duplicar si ya existe la misma fecha y cantidad;
 no tocar nada más; parar y preguntar si algo no cuadra; al final, tabla con lo guardado.
+- **Ventas («Cerrar posición»): el campo es «Comisión total» y viene relleno con la comisión de la compra.** Lo que se pone ahí
+  SUSTITUYE a la comisión de compra. Hay que poner la SUMA: comisión de compra + comisión de venta (Sanofi: 3,06 + 1,29 = 4,35).
 
 ## Historial
 - 14/11/2026: pasadas T-0003, T-0004, T-0006, T-0008, T-0010 (12/11) y T-0011 a T-0014 y T-0016 (13/11).
@@ -48,6 +50,9 @@ no tocar nada más; parar y preguntar si algo no cuadra; al final, tabla con lo 
   transacciones, solo el resumen: 20 posiciones, sin duplicados (en Mapfre el primer clic no guardó; comprobó que solo hay una).
   Valor de mercado a las 12:24: Investing 9.283,20 € · ledger 9.279,34 € (diferencia de tipo de cambio).
   Después, con la tabla completa: **20/20 transacciones coinciden con el ledger** (fecha, valor, cantidad, precio, divisa), sin filas sobrantes.
+- 27/11/2026: venta de Sanofi (T-0032) cerrada en Investing. Las 19 posiciones abiertas coinciden con el ledger.
+  Valor a las 13:35–13:39: Investing 9.211,25 € · ledger 9.205,90 €. La comisión se metió como 1,29 en vez de 4,35 (ver arriba):
+  Investing daba +2,41 € y el ledger −0,65 €. Ale corrige la comisión total a 4,35.
 
 ## Mensaje de comprobación (modo lectura)
 Tras meter operaciones, pedir a la extensión que NO cambie nada y devuelva: (1) tabla de todas las transacciones

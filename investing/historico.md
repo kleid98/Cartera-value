@@ -18,3 +18,4 @@
 - 2026-11-23 12:26:00 · `T-0026` COMPRA 9 Linamar Corporation @ 85.4 → pasada a Investing
 - 2026-11-23 12:26:00 · `T-0028` COMPRA 14 Imperial Brands PLC @ 2873.0 → pasada a Investing
 - 2026-11-23 12:26:00 · `T-0029` COMPRA 14 Koninklijke Ahold Delhaize N.V. @ 34.45 → pasada a Investing
+- 2026-11-27 13:39:10 · `T-0032` VENTA 5 Sanofi @ 88.94 → pasada a Investing
