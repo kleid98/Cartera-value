@@ -641,8 +641,15 @@ Comisión:  {fmt_num(float(o['costes_total_divisa']))} {o['divisa']}
             prev = [x for x in ops if x["id"] < o["id"]]
             cierres = lotes_fifo_a_cerrar(o["ticker"], float(o["cantidad"]), prev)
             ctot = float(o["costes_total_divisa"]); qtot = float(o["cantidad"])
+            def com_compra(d, q):
+                """Comisión de compra que corresponde a q acciones del lote abierto el día d (proporcional)."""
+                cs = [x for x in prev if x["tipo"] == "COMPRA" and x["ticker"] == o["ticker"] and x["fecha_hora"][:10] == d]
+                qc = sum(float(x["cantidad"]) for x in cs)
+                return sum(float(x["costes_total_divisa"]) for x in cs) * q / qc if qc else 0.0
+            # En Investing el campo es «Comisión total» y SUSTITUYE a la de compra: hay que poner compra + venta (27/11/2026).
             partes = "\n".join(f"  · Cerrar lote abierto el {datetime.strptime(d,'%Y-%m-%d').strftime('%d/%m/%Y')}: {int(q) if q == int(q) else q} acc. (de {int(t) if t == int(t) else t})"
-                               f" · comisión {fmt_num(ctot * q / qtot)} {o['divisa']}" for d, q, t in cierres)
+                               f" · Comisión total: {fmt_num(com_compra(d, q) + ctot * q / qtot)} {o['divisa']}"
+                               f" (compra {fmt_num(com_compra(d, q))} + venta {fmt_num(ctot * q / qtot)})" for d, q, t in cierres)
             bloques.append(f"""### `{o['id']}` 📤 VENTA · {o['nombre']}
 ```
 Posición:  {o['nombre']} ({m['investing']})
