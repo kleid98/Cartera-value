@@ -52,7 +52,7 @@ no tocar nada más; parar y preguntar si algo no cuadra; al final, tabla con lo 
   Después, con la tabla completa: **20/20 transacciones coinciden con el ledger** (fecha, valor, cantidad, precio, divisa), sin filas sobrantes.
 - 27/11/2026: venta de Sanofi (T-0032) cerrada en Investing. Las 19 posiciones abiertas coinciden con el ledger.
   Valor a las 13:35–13:39: Investing 9.211,25 € · ledger 9.205,90 €. La comisión se metió como 1,29 en vez de 4,35 (ver arriba):
-  Investing daba +2,41 € y el ledger −0,65 €. Ale corrige la comisión total a 4,35.
+  Investing daba +2,41 € y el ledger −0,65 €. Ale la corrigió a 4,35 el mismo día: Investing muestra ya −0,65 €, igual que el ledger.
 
 ## Mensaje de comprobación (modo lectura)
 Tras meter operaciones, pedir a la extensión que NO cambie nada y devuelva: (1) tabla de todas las transacciones
